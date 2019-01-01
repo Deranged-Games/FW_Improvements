@@ -176,7 +176,7 @@
 	<set xpath="/recipes/recipe[@name='drinkYuccaJuiceSmoothie']/ingredient[@name='foodCropYuccaFruit']/@count">1</set>
 	<set xpath="/recipes/recipe[@name='drinkYuccaJuiceSmoothie']/ingredient[@name='foodCropBlueberries']/@count">1</set>
 
-	<set xpath="/recipes/recipe[@name='drugAntibiotics']/ingredient[@name='foodMoldyBread' and @craft_area='campfire']/@count">2</set>
+	<set xpath="/recipes/recipe[@name='drugAntibiotics' and @craft_area='campfire']/ingredient[@name='foodMoldyBread']/@count">2</set>
 
 	<set xpath="/recipes/recipe[@name='drugFortBites']/ingredient[@name='medicalBloodBag']/@count">1</set>
 	<set xpath="/recipes/recipe[@name='drugFortBites']/ingredient[@name='foodRottingFlesh']/@count">4</set>
