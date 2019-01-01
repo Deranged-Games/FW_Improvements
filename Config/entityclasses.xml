@@ -1,0 +1,16 @@
+<configs>
+<!-- Changes loot drops from .02 range to .1 -->
+    <set xpath="/entity_classes/entity_class[starts-with (@name,'zombie')]/property[@name='LootDropProb']/@value">.1</set>
+
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">0.0025</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaLossMaxMult']/@value">0.0018</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='running']/@value">1.35</set> 
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='swimming']/@value">0.6</set> 
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaLoss' and @tags='jumping']/@value">16</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaLoss' and @tags='swimming']/@value">32</set>
+	
+	<!--<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group[@name='Base Effects']">
+		<passive_effect name="DamageModifier" operation="perc_add" value="10" tags="head"/>
+	</append>-->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='DamageModifier' and @tags='head']/@value">2</set>
+</configs>

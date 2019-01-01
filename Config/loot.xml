@@ -1,0 +1,48 @@
+<configs>
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='ammoSteel']">
+		<lootgroup name="ammoJHP" count="1">
+			<item name="ammoShotgunSlug" count="2,8"/>
+			<item name="ammo9mmBulletJHP" count="4,12" prob="1.5"/>
+			<item name="ammo762mmBulletBall" count="3,15"/>
+			<item name="ammo44MagnumBulletJHP" count="1,10" prob="0.2"/>
+			<item name="ammoRocketHE" count="1,2"/>
+			<item name="ammoCrossbowBoltExploding" count="2,6"/>
+		</lootgroup>
+	</insertAfter>
+	<append xpath="/lootcontainers/lootcontainer[@id='11']">
+		<item group="ammoJHP"/>
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='42']">
+		<item group="ammoJHP"/>
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='70']">
+		<item group="ammoJHP"/>
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='108']">
+		<item group="ammoJHP"/>
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='109']">
+		<item group="ammoJHP"/>
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='110']">
+		<item group="ammoJHP"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='junk']">
+		<item name="resourceBulletCasingSteel" count="1,5"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='sportingGoods']">
+		<item name="resourceBulletCasingSteel" count="15,30"/>
+		<item name="resourceBulletSteelTip" count="15,30"/>
+		<item name="resourceBulletSoftTip" count="10,20"/>
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='37']">
+		<item name="resourceBulletCasingSteel"/>
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='92']">
+		<item name="resourceBulletCasingSteel" count="1,15"/>
+		<item name="resourceBulletSteelTip" count="1,15"/>
+		<item name="resourceBulletSoftTip" count="1,10"/>
+	</append>
+	
+</configs>
