@@ -1,11 +1,11 @@
 <configs>
-<set xpath="/lootcontainers/lootcontainer[@id='76']/@size">10,9</set>
-	<set xpath="/lootcontainers/lootcontainer[@id='1']/@size">14,10</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='1']/@size">8,10</set>
 	<set xpath="/lootcontainers/lootcontainer[@id='2']/@size">8,10</set>
-	<set xpath="/lootcontainers/lootcontainer[@id='77']/@size">10,9</set>
-	<set xpath="/lootcontainers/lootcontainer[@id='78']/@size">10,9</set>
-	<set xpath="/lootcontainers/lootcontainer[@id='79']/@size">10,9</set>
-	<set xpath="/lootcontainers/lootcontainer[@id='80']/@size">10,9</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='76']/@size">10,8</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='77']/@size">10,8</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='78']/@size">10,8</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='79']/@size">10,8</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='80']/@size">10,8</set>
 	<insertAfter xpath="/lootcontainers/lootgroup[@name='ammoSteel']">
 		<lootgroup name="ammoJHP" count="1">
 			<item name="ammoShotgunSlug" count="2,8"/>
