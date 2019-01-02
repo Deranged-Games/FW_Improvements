@@ -1,0 +1,20 @@
+<configs>
+	<!-- Toolbelt -->
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']/window[@name='windowToolbelt']"/>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+		<window name="S420XpBar" anchor="CenterBottom" />
+		<window name="S420windowToolbelt" anchor="CenterBottom" />
+	</append>
+
+	<!-- Left HUD -->
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']/window[@name='HUDLeftStatBars']"/>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+		<window name="S420HUDLeftStatBars" anchor="LeftBottom" />
+		<window name="S420ActiveBuffsWindow" anchor="LeftBottom" />
+	</append>
+
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='compass']/window[@name='windowCompass']"/>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='compass']">
+		<window name="S420windowCompass" /> 
+	</append>
+</configs>
