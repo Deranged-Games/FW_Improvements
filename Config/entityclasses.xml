@@ -9,8 +9,7 @@
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaLoss' and @tags='jumping']/@value">16</set>
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaLoss' and @tags='swimming']/@value">32</set>
 	
-	<!--<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group[@name='Base Effects']">
-		<passive_effect name="DamageModifier" operation="perc_add" value="10" tags="head"/>
-	</append>-->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity'][@value='18']/@value">33</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize'][@value='45']/@value">60</set>
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='DamageModifier' and @tags='head']/@value">2</set>
 </configs>

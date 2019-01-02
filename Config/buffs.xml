@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
+	<!-- Inventory Size Fixes -->
+	<set xpath="/buffs/buff[@name='god']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
+	<set xpath="/buffs/buff[@name='buffDrugSteroids']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
+
 	<!-- buffElementHot -->
 	<remove xpath="/buffs/buff[@name='buffElementHot']/effect_group/passive_effect[@tags='attPerception']"/>
 	<remove xpath="/buffs/buff[@name='buffElementHot']/effect_group/passive_effect[@tags='attStrength']"/>
@@ -42,4 +46,19 @@
 	
 	<!-- buffPowerAttackStaminaStunt -->
 	<set xpath="/buffs/buff[@name='buffPowerAttackStaminaStunt']/duration/@value">0.667</set>
+
+	<append xpath="/buffs">
+		<buff name="Sleeping2"  name_key="Sleeping" description_key="Sleeping in an old bed slowly regenerates health and keeps you warm" tooltip_key="You're resting in your bed" icon="ui_game_symbol_map_bed">
+			<stack_type value="ignore"/>
+			<duration value="1"/>
+			<effect_group>
+				<passive_effect name="HypothermalResist" operation="base_add" value="30"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="30"/>
+				<passive_effect name="HealthChangeOT" operation="base_add" value="1.0"/>
+				<passive_effect name="HealthMaxModifierOT" operation="base_add" value="@maxHealthIncrease"/>
+				<requirement name="CVarCompare" target="self" cvar="maxHealthAmount" operation="LTE" value="0"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="maxHealthIncrease" operation="set" value="0.25"/>
+			</effect_group>
+		</buff>
+	</append>
 </configs>
