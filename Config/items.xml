@@ -5,7 +5,7 @@
 	<!-- Reduce sensible block damage for zombies. -->
 	<append xpath="/items/item[starts-with (@name,'meleeHandZombie')]/effect_group[@name='Base Effects']">
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.6" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.98" tags="stone,concrete"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone,concrete"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.6" tags="metal"/>
 	</append>
 
