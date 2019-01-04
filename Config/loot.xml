@@ -51,5 +51,17 @@
 		<item name="resourceBulletSteelTip" count="1,15"/>
 		<item name="resourceBulletSoftTip" count="1,10"/>
 	</append>
-	
+	<append xpath="/lootcontainers/lootgroup[@name='weaponsMelee']">
+		<item name="meleeWoodStick" mods="head,sweetspot,grip,pommel" mod_chance=".50"/> 
+		<item name="meleeShortSword" prob="0.05"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='modMeleeT1']">
+		<item name="modStoneSpear"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='modMeleeT2']">
+		<item name="modIronSpear"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='modMeleeT3']">
+		<item name="modSteelSpear"/>
+	</append>
 </configs>

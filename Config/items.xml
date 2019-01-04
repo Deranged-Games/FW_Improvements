@@ -1,4 +1,196 @@
 <configs>
+	<!-- New Items -->
+	<append xpath="/items">
+		<item name="ammo44MagnumBulletJHP">
+			<property name="Extends" value="ammo44MagnumBullet"/>
+			<property name="CustomIcon" value="ammo44MagnumBullet"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="EconomicValue" value="13"/>
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="125"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="20"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+				<passive_effect name="MaxRange" operation="perc_add" value="-.33"/>
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.33"/>
+				<passive_effect name="SpreadDegreesVertical" operation="perc_add" value=".5"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value=".5"/>
+			</effect_group>
+		</item>
+		<item name="ammo762mmBulletBall">
+			<property name="Extends" value="ammo762mmBulletFMJ"/>
+			<property name="CustomIcon" value="ammo762mmBulletFMJ"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="EconomicValue" value="15"/>
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="65"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+		<item name="resourceBulletSteelTip">
+			<property name="Extends" value="resourceBulletTip"/>
+			<property name="CustomIcon" value="resourceBulletTip"/>
+			<property name="CustomIconTint" value="a0a0ff"/>
+			<property name="Material" value="MresourceScrapIron"/>
+			<property name="Stacknumber" value="500"/> <!-- STK resource -->
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources,Ammo/Weapons"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+		</item>
+		<item name="resourceBulletSoftTip">
+			<property name="Extends" value="resourceBulletTip"/>
+			<property name="CustomIcon" value="resourceBulletTip"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="Material" value="MresourceScrapLeadSmall"/>
+			<property name="Stacknumber" value="500"/> <!-- STK resource -->
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources,Ammo/Weapons"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+		</item>
+		<item name="meleeWoodStick">	
+			<property name="Tags" value="spear,melee,weapon,perkStayDown,meleeWeapon,grip,head,pommel,sweetspot"/>
+			<property name="Meshfile" value="#@modfolder:Resources/WoodStick.unity3d?WoodStick_X" /> 
+			<property name="HandMeshfile" value="#@modfolder:Resources/WoodStick.unity3d?WoodStick_X"/> 
+			<property name="CustomIcon" value="meleeWoodStick" />
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="18"/>  <!-- 18-->
+			<property name="Material" value="Mwood"/>
+			<property name="RepairTools" value="resourceWood"/>
+			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="ActionSkillGroup" value="attAgility"/>
+			<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Damage_type" value="Slashing"/>
+				<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+				<property name="Sound_start" value="swoosh"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Damage_type" value="Slashing"/>
+				<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+				<property name="Sound_start" value="swoosh"/>
+				<property name="UsePowerAttackAnimation" value="false"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="4.5"/>
+				<passive_effect name="BlockRange" operation="base_set" value="4.5"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="5"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="2"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="30"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="5" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="80,250" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
+			</effect_group>
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.2" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".5" tags="secondary"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="8" tags="secondary"/>
+				<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,100" operation="LTE" value="50"/>
+					<requirement name="IsMale" target="self"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,100" operation="LTE" value="50"/>
+					<requirement name="IsMale" target="self" invert="true"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<item name="meleeShortSword">
+			<property name="Tags" value="sword,knife,perkDeepCuts,melee,weapon,meleeWeapon,shaft,grip,head,pommel,sweetspot,notbraced"/>
+			<property name="Meshfile" value="#@modfolder:Resources/ShortSword.unity3d?ShortSword_X" /> <!-- CC 4.0 Licenced model by Gravity jack -->
+			<property name="HandMeshfile" value="#@modfolder:Resources/ShortSword.unity3d?ShortSword_X"/> 
+			<property name="CustomIcon" value="meleeShortSword" />
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="47"/> 
+			<property name="Material" value="Mmetal"/>
+			<property name="RepairTools" value="resourceForgedIron"/>
+			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="ActionSkillGroup" value="Blade Weapons"/>
+			<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Damage_type" value="Slashing"/>
+				<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+				<property name="Sound_start" value="swoosh"/>
+				<property name="ToolCategory.harvestingTools" value=".4" param1="1"/>
+				<property name="ToolCategory.Butcher" value="0" param1="4"/>
+				<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Damage_type" value="Slashing"/>
+				<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+				<property name="Sound_start" value="swoosh"/>
+				<property name="ToolCategory.harvestingTools" value=".4" param1="1"/>
+				<property name="ToolCategory.Butcher" value="0" param1="4"/>
+				<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+				<property name="UsePowerAttackAnimation" value="true"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="2.1"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="18"/> <!-- meleeClubWood -->
+				<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="54" tags="primary"/>
+				<passive_effect name="HarvestCount" operation="base_set" value=".4" tags="butcherHarvest"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="200,750" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
+			</effect_group>
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="0" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="15" tags="secondary"/>
+				<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,100" operation="LTE" value="50"/>
+					<requirement name="IsMale" target="self"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,100" operation="LTE" value="50"/>
+					<requirement name="IsMale" target="self" invert="true"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
+			</effect_group>
+		</item>
+		<item name="armorMiningHelmetMilitary">
+			<property name="Extends" value="armorMiningHelmet"/>
+			<property name="CustomIcon" value="armorMiningHelmet"/> <property name="CustomIconTint" value="26,255,140"/>
+			<property class="UMA">
+				<property name="Overlay0Tint" value="26,255,140"/>
+			</property>
+		</item>
+		<item name="armorMiningHelmetSteel">
+			<property name="Extends" value="armorMiningHelmet"/>
+			<property name="CustomIcon" value="armorMiningHelmet"/> <property name="CustomIconTint" value="255,26,255"/>
+			<property class="UMA">
+				<property name="Overlay0Tint" value="255,26,255"/>
+			</property>
+		</item>
+		<item name="armorMiningHelmetSwat">
+			<property name="Extends" value="armorMiningHelmet"/>
+			<property name="CustomIcon" value="armorMiningHelmet"/> <property name="CustomIconTint" value="26,117,255"/>
+			<property class="UMA">
+				<property name="Overlay0Tint" value="26,117,255"/>
+			</property>
+		</item>
+	</append>
+
+	<!-- Clean out all passive effect modifiers so we can overwrite those. -->
 	<remove xpath="/items/item/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage'][@operation='perc_add']"/>
 	<remove xpath="/items/item/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage'][@operation='perc_add']"/>
 
@@ -136,62 +328,6 @@
 	<!-- 12 Gauge Ammo Rework -->
 	<set xpath="/items/item[@name='ammoShotgunShell']/effect_group[@name='Base Effects']/passive_effect[@name='RoundRayCount'][@operation='base_set']/@value">10</set>
 	<set xpath="/items/item[@name='ammoShotgunSlug']/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">100</set>
-
-	<!-- New Rounds -->
-	<append xpath="/items">
-		<item name="ammo44MagnumBulletJHP">
-			<property name="Extends" value="ammo44MagnumBullet"/>
-			<property name="CustomIcon" value="ammo44MagnumBullet"/>
-			<property name="CustomIconTint" value="ffa0a0"/>
-			<property name="EconomicValue" value="13"/>
-			<effect_group name="Base Effects" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="125"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="20"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
-				<passive_effect name="MaxRange" operation="perc_add" value="-.33"/>
-				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.33"/>
-				<passive_effect name="SpreadDegreesVertical" operation="perc_add" value=".5"/>
-				<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value=".5"/>
-			</effect_group>
-		</item>
-
-		<item name="ammo762mmBulletBall">
-			<property name="Extends" value="ammo762mmBulletFMJ"/>
-			<property name="CustomIcon" value="ammo762mmBulletFMJ"/>
-			<property name="CustomIconTint" value="ffa0a0"/>
-			<property name="EconomicValue" value="15"/>
-			<effect_group name="Base Effects" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="65"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
-			</effect_group>
-		</item>
-		<item name="resourceBulletSteelTip">
-			<property name="Extends" value="resourceBulletTip"/>
-			<property name="CustomIcon" value="resourceBulletTip"/>
-			<property name="CustomIconTint" value="a0a0ff"/>
-			<property name="Material" value="MresourceScrapIron"/>
-			<property name="Stacknumber" value="500"/> <!-- STK resource -->
-			<property name="EconomicValue" value="10"/>
-			<property name="EconomicBundleSize" value="10"/>
-			<property name="Group" value="Resources,Ammo/Weapons"/>
-			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
-		</item>
-
-		<item name="resourceBulletSoftTip">
-			<property name="Extends" value="resourceBulletTip"/>
-			<property name="CustomIcon" value="resourceBulletTip"/>
-			<property name="CustomIconTint" value="ffa0a0"/>
-			<property name="Material" value="MresourceScrapLeadSmall"/>
-			<property name="Stacknumber" value="500"/> <!-- STK resource -->
-			<property name="EconomicValue" value="10"/>
-			<property name="EconomicBundleSize" value="10"/>
-			<property name="Group" value="Resources,Ammo/Weapons"/>
-			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
-		</item>
-	</append>
 	
 	<!-- ======================================= Update Projectile Weapons ======================================= -->
 	<!-- gunPistol -->
@@ -800,4 +936,8 @@
 		<property name="Focused_blockname_8" value="utilitySink" />
 		<property name="Focused_blockname_9" value="wallHungSink" />
 	</append>
+
+	<!-- Allow Nail gun and claw hammer to upgrade to steel -->
+	<set xpath="/items/item[@name='gunToolNailgun']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail,resourceSteelPolish</set>
+	<set xpath="/items/item[@name='meleeToolClawHammer']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail,resourceSteelPolish</set>
 </configs>

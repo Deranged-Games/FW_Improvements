@@ -52,82 +52,120 @@
 			<ingredient name="resourceScrapPolymers" count="6"/>
 			<ingredient name="resourceSpring" count="1"/>
 		</recipe>
-
 		<recipe name="gunAK47" craft_area="workbench" count="1" tags="learnable">
 			<ingredient name="resourceForgedSteel" count="8"/>
 			<ingredient name="resourceMechanicalParts" count="12"/>
 			<ingredient name="resourceScrapPolymers" count="10"/>
 			<ingredient name="resourceSpring" count="4"/>
 		</recipe>
-
 		<recipe name="gunBlunderbuss" count="1" >
 			<ingredient name="resourceMetalPipe" count="4"/>
 			<ingredient name="resourceDuctTape" count="1"/>
 			<ingredient name="resourceWood" count="6"/>
 		</recipe>
-
 		<recipe name="gunCompoundBow" count="1" craft_area="workbench" tags="learnable" >
 			<ingredient name="resourceScrapPolymers" count="12"/>
 			<ingredient name="resourceLeather" count="5"/>
 			<ingredient name="resourceMechanicalParts" count="4"/>
 			<ingredient name="resourceSpring" count="2"/>
 		</recipe>
-
 		<recipe name="gunCrossbow" count="1" craft_area="workbench" tags="learnable">
 			<ingredient name="resourceForgedIron" count="20"/>
 			<ingredient name="resourceMechanicalParts" count="8"/>
 			<ingredient name="resourceDuctTape" count="1"/>
 			<ingredient name="resourceWood" count="10"/>
 		</recipe>
-
 		<recipe name="gunHuntingRifle" craft_area="workbench" count="1" tags="learnable">
 			<ingredient name="resourceForgedSteel" count="10"/>
 			<ingredient name="resourceMechanicalParts" count="4"/>
 			<ingredient name="resourceWood" count="20"/>
 			<ingredient name="resourceSpring" count="3"/>
 		</recipe>
-
 		<recipe name="gunMR10" craft_area="workbench" count="1" tags="learnable">
 			<ingredient name="resourceForgedSteel" count="14"/>
 			<ingredient name="resourceMechanicalParts" count="10"/>
 			<ingredient name="resourceScrapPolymers" count="10"/>
 			<ingredient name="resourceSpring" count="5"/>
 		</recipe>
-
 		<recipe name="gunPistol" count="1" craft_area="workbench" tags="learnable">
 			<ingredient name="resourceForgedSteel" count="2"/>
 			<ingredient name="resourceMechanicalParts" count="5"/>
 			<ingredient name="resourceScrapPolymers" count="3"/>
 			<ingredient name="resourceSpring" count="2"/>
 		</recipe>
-
 		<recipe name="gunPumpShotgun" craft_area="workbench" count="1" tags="learnable">
 			<ingredient name="resourceForgedSteel" count="4"/>
 			<ingredient name="resourceMechanicalParts" count="12"/>
 			<ingredient name="resourceScrapPolymers" count="4"/>
 			<ingredient name="resourceSpring" count="4"/>
 		</recipe>
-
 		<recipe name="gunRocketLauncher" craft_area="workbench" count="1" tags="learnable">
 			<ingredient name="resourceForgedSteel" count="10"/>
 			<ingredient name="resourceMechanicalParts" count="2"/>
 			<ingredient name="resourceDuctTape" count="2"/>
 			<ingredient name="resourceElectricParts" count="2"/>
 		</recipe>
-
 		<recipe name="gunSMG5" craft_area="workbench" count="1" tags="learnable">
 			<ingredient name="resourceForgedSteel" count="5"/>
 			<ingredient name="resourceMechanicalParts" count="10"/>
 			<ingredient name="resourceScrapPolymers" count="10"/>
 			<ingredient name="resourceSpring" count="10"/>
 		</recipe>
-
 		<recipe name="gunToolNailgun" count="1" craft_area="workbench" tags="learnable">
 			<ingredient name="resourceForgedSteel" count="2"/>
 			<ingredient name="resourceMechanicalParts" count="4"/>
 			<ingredient name="resourceDuctTape" count="1"/>
 			<ingredient name="resourceScrapPolymers" count="10"/>
 			<ingredient name="resourceSpring" count="2"/>
+		</recipe>
+		<recipe name="woodLogSpike1" count="1">
+			<ingredient name="resourceWood" count="12"/>
+		</recipe>
+		<recipe name="scrapIronLogSpike4" count="1">
+			<ingredient name="resourceScrapIron" count="20"/>
+		</recipe>	
+		<recipe name="resourceSteelPolish" count="10" craft_area="chemistryStation" craft_time = "15">
+			<ingredient name="resourceForgedSteel" count="1"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+			<ingredient name="resourceAcid" count="1"/>
+		</recipe>
+		<recipe name="armorMiningHelmetMilitary" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="armorMilitaryHelmet" count="1"/>
+			<ingredient name="meleeToolFlashlight02" count="1"/>
+			<ingredient name="resourceElectricParts" count="8"/>
+			<ingredient name="resourceDuctTape" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+		</recipe>
+		<recipe name="armorMiningHelmetSteel" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="armorSteelHelmet" count="1"/>
+			<ingredient name="meleeToolFlashlight02" count="1"/>
+			<ingredient name="resourceElectricParts" count="8"/>
+			<ingredient name="resourceDuctTape" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+		</recipe>
+		<recipe name="armorMiningHelmetSwat" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="armorSwatHelmet" count="1"/>
+			<ingredient name="meleeToolFlashlight02" count="1"/>
+			<ingredient name="resourceElectricParts" count="8"/>
+			<ingredient name="resourceDuctTape" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+		</recipe>
+		<recipe name="modStoneSpear" count="1" >
+			<ingredient name="resourceRockSmall" count="10"/>
+		</recipe>
+		<recipe name="modIronSpear" count="1" >
+			<ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+		<recipe name="modSteelSpear" craft_area="workbench" count="1">
+			<ingredient name="resourceForgedSteel" count="10"/>
+		</recipe>
+		<recipe name="meleeWoodStick" count="1" >
+			<ingredient name="resourceWood" count="30"/>
+		</recipe>
+		<recipe name="meleeShortSword" craft_area="workbench" count="1">
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceLeather" count="1"/>
 		</recipe>
 	</append>
 
