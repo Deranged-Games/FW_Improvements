@@ -272,442 +272,442 @@
 	<!-- ======================================= Auto-Generated Schematic recipes. ======================================= -->
 	<append xpath="/recipes">
 		<recipe name="modGunBarrelExtenderSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunBarrelExtenderSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunMuzzleBrakeSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunMuzzleBrakeSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunSoundSuppressorSilencerSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunSoundSuppressorSilencerSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunLaserSightSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunLaserSightSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunFlashlightSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunFlashlightSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunScopeSmallSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunScopeSmallSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunScopeMediumSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunScopeMediumSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunScopeLargeSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunScopeLargeSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunReflexSightSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunReflexSightSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunTriggerGroupSemiSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunTriggerGroupSemiSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunTriggerGroupBurstSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunTriggerGroupBurstSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunTriggerGroupAutomaticSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunTriggerGroupAutomaticSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunRodAndSpringSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunRodAndSpringSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunBipodSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunBipodSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunForegripSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunForegripSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunRetractingStockSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunRetractingStockSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunDuckbillSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunDuckbillSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunChokeSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunChokeSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunMagazineExtenderSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunMagazineExtenderSchematic" count="1"/>
 		</recipe>
 		<recipe name="modShotgunSawedOffBarrelSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modShotgunSawedOffBarrelSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunMeleeFeelTheHeatSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunMeleeFeelTheHeatSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunCrippleEmSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunCrippleEmSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunBowPolymerStringSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunBowPolymerStringSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunBowArrowRestSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunBowArrowRestSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunMeleeTheHunterSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunMeleeTheHunterSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunMeleeRadRemoverSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunMeleeRadRemoverSchematic" count="1"/>
 		</recipe>
 		<recipe name="modGunMeleeBlessedMetalSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modGunMeleeBlessedMetalSchematic" count="1"/>
 		</recipe>
 		<recipe name="modMeleeTemperedBladeSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modMeleeTemperedBladeSchematic" count="1"/>
 		</recipe>
 		<recipe name="modMeleeSerratedBladeSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modMeleeSerratedBladeSchematic" count="1"/>
 		</recipe>
 		<recipe name="modMeleeWeightedHeadSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modMeleeWeightedHeadSchematic" count="1"/>
 		</recipe>
 		<recipe name="modMeleeStructuralBraceSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modMeleeStructuralBraceSchematic" count="1"/>
 		</recipe>
 		<recipe name="modMeleeErgonomicGripSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modMeleeErgonomicGripSchematic" count="1"/>
 		</recipe>
 		<recipe name="modMeleeFortifyingGripSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modMeleeFortifyingGripSchematic" count="1"/>
 		</recipe>
 		<recipe name="modMeleeClubBarbedWireSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modMeleeClubBarbedWireSchematic" count="1"/>
 		</recipe>
 		<recipe name="modMeleeClubMetalSpikesSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modMeleeClubMetalSpikesSchematic" count="1"/>
 		</recipe>
 		<recipe name="modMeleeGraveDiggerSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modMeleeGraveDiggerSchematic" count="1"/>
 		</recipe>
 		<recipe name="modMeleeBunkerBusterSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modMeleeBunkerBusterSchematic" count="1"/>
 		</recipe>
 		<recipe name="modMeleeIronBreakerSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modMeleeIronBreakerSchematic" count="1"/>
 		</recipe>
 		<recipe name="modMeleeWoodSplitterSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modMeleeWoodSplitterSchematic" count="1"/>
 		</recipe>
 		<recipe name="modMeleeClubBurningShaftSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modMeleeClubBurningShaftSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorInsulatedLinerSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorInsulatedLinerSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorCoolingMeshSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorCoolingMeshSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorImprovedFittingsSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorImprovedFittingsSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorCustomizedFittingsSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorCustomizedFittingsSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorReinforcedPaddingSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorReinforcedPaddingSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorPlasticPlatingSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorPlasticPlatingSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorMilitaryPlatingSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorMilitaryPlatingSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorScrapPlatingSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorScrapPlatingSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorIronPlatingSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorIronPlatingSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorSteelPlatingSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorSteelPlatingSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorStoragePocketSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorStoragePocketSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorDoubleStoragePocketSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorDoubleStoragePocketSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorTripleStoragePocketSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorTripleStoragePocketSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorSpikedKnucklesSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorSpikedKnucklesSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorMuffledConnectorsSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorMuffledConnectorsSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorAdvancedMuffledConnectorsSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorAdvancedMuffledConnectorsSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorImpactBracingSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorImpactBracingSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorBandolierSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorBandolierSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorWaterPurifierSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorWaterPurifierSchematic" count="1"/>
 		</recipe>
 		<recipe name="modArmorHelmetLightSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modArmorHelmetLightSchematic" count="1"/>
 		</recipe>
 		<recipe name="meleeToolSledgehammerSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="meleeToolSledgehammerSchematic" count="1"/>
 		</recipe>
 		<recipe name="meleeToolHuntingKnifeSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="meleeToolHuntingKnifeSchematic" count="1"/>
 		</recipe>
 		<recipe name="gunCompoundBowSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="gunCompoundBowSchematic" count="1"/>
 		</recipe>
 		<recipe name="gunCrossbowSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="gunCrossbowSchematic" count="1"/>
 		</recipe>
 		<recipe name="gunPistolSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="gunPistolSchematic" count="1"/>
 		</recipe>
 		<recipe name="gun44MagnumSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="gun44MagnumSchematic" count="1"/>
 		</recipe>
 		<recipe name="gunPumpShotgunSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="gunPumpShotgunSchematic" count="1"/>
 		</recipe>
 		<recipe name="gunSMG5Schematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="gunSMG5Schematic" count="1"/>
 		</recipe>
 		<recipe name="gunAK47Schematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="gunAK47Schematic" count="1"/>
 		</recipe>
 		<recipe name="gunHuntingRifleSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="gunHuntingRifleSchematic" count="1"/>
 		</recipe>
 		<recipe name="gunMR10Schematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="gunMR10Schematic" count="1"/>
 		</recipe>
 		<recipe name="gunRocketLauncherSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="gunRocketLauncherSchematic" count="1"/>
 		</recipe>
 		<recipe name="gunToolNailgunSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="gunToolNailgunSchematic" count="1"/>
 		</recipe>
 		<recipe name="armorLeatherChestSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="armorLeatherChestSchematic" count="1"/>
 		</recipe>
 		<recipe name="armorScrapChestSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="armorScrapChestSchematic" count="1"/>
 		</recipe>
 		<recipe name="armorSteelChestSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="armorSteelChestSchematic" count="1"/>
 		</recipe>
 		<recipe name="ammoArrowFlamingSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="ammoArrowFlamingSchematic" count="1"/>
 		</recipe>
 		<recipe name="ammoCrossbowBoltExplodingSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="ammoCrossbowBoltExplodingSchematic" count="1"/>
 		</recipe>
 		<recipe name="ammoShotgunSlugSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="ammoShotgunSlugSchematic" count="1"/>
 		</recipe>
 		<recipe name="ammoGasCanSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="ammoGasCanSchematic" count="1"/>
 		</recipe>
 		<recipe name="meleeToolAugerSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="meleeToolAugerSchematic" count="1"/>
 		</recipe>
 		<recipe name="meleeToolChainsawSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="meleeToolChainsawSchematic" count="1"/>
 		</recipe>
 		<recipe name="firstAidKitSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="firstAidKitSchematic" count="1"/>
 		</recipe>
 		<recipe name="batterybankSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="batterybankSchematic" count="1"/>
 		</recipe>
 		<recipe name="vehicleMinibikesForDumbshitsSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="vehicleMinibikesForDumbshitsSchematic" count="1"/>
 		</recipe>
 		<recipe name="beerSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="beerSchematic" count="1"/>
 		</recipe>
 		<recipe name="drugHerbalAntibioticsRecipeSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="drugHerbalAntibioticsRecipeSchematic" count="1"/>
 		</recipe>
 		<recipe name="shamwaySecretRecipeSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaper" count="50"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="shamwaySecretRecipeSchematic" count="1"/>
 		</recipe>
