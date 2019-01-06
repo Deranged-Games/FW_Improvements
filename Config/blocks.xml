@@ -95,133 +95,136 @@
 	<set xpath="/blocks/block[@name='bodyBagBlack']/drop[@event='Harvest' and @name='resourceFemur']/@count">1,2</set>
 	<!-- Tree mods for bonus wood and the chance of a birds nest within the tree -->
 	<append xpath="/blocks/block[@name='treeBurntMaple01']">	
-		<drop event="Destroy" name="resourceWood" count="20" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="10" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="1,3" prob="0.2"/>
 		<drop event="Destroy" name="foodEgg" count="1,2" prob="0.05"/>
 	</append>	
 	<append xpath="/blocks/block[@name='treeMountainPine12m']">	
-		<drop event="Destroy" name="resourceWood" count="20" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="10" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="1,3" prob="0.2"/>
 		<drop event="Destroy" name="foodEgg" count="1,2" prob="0.05"/>
 	</append>	
 	<append xpath="/blocks/block[@name='treeMountainPine8m']">	
-		<drop event="Destroy" name="resourceWood" count="20" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="10" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="1,3" prob="0.2"/>
 		<drop event="Destroy" name="foodEgg" count="1,2" prob="0.05"/>
 	</append>	
 	<append xpath="/blocks/block[@name='treePlantedOak08m']">	
-		<drop event="Destroy" name="resourceWood" count="20" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="10" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="1,3" prob="0.2"/>
 		<drop event="Destroy" name="foodEgg" count="1,2" prob="0.05"/>
 	</append>	
 	<append xpath="/blocks/block[@name='treePlantedWinterPine6m']">	
-		<drop event="Destroy" name="resourceWood" count="20" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="10" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="1,3" prob="0.2"/>
 		<drop event="Destroy" name="foodEgg" count="1,2" prob="0.05"/>
 	</append>	
 	<append xpath="/blocks/block[@name='treeWinterPine13m']">	
-		<drop event="Destroy" name="resourceWood" count="35" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="20" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="2,6" prob="0.25"/>
 		<drop event="Destroy" name="foodEgg" count="1,3" prob="0.05"/>
 	</append>
 	<append xpath="/blocks/block[@name='treeMountainPine19m']">	
-		<drop event="Destroy" name="resourceWood" count="35" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="20" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="2,6" prob="0.25"/>
 		<drop event="Destroy" name="foodEgg" count="1,3" prob="0.05"/>
 	</append>
 	<append xpath="/blocks/block[@name='treeOakMed01']">	
-		<drop event="Destroy" name="resourceWood" count="35" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="20" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="2,6" prob="0.25"/>
 		<drop event="Destroy" name="foodEgg" count="1,3" prob="0.05"/>
 	</append>
 	<append xpath="/blocks/block[@name='treePlantedOak16m']">	
-		<drop event="Destroy" name="resourceWood" count="35" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="20" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="2,6" prob="0.25"/>
 		<drop event="Destroy" name="foodEgg" count="1,3" prob="0.05"/>
 	</append>
 	<append xpath="/blocks/block[@name='treePlantedWinterPine13m']">	
-		<drop event="Destroy" name="resourceWood" count="35" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="20" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="2,6" prob="0.25"/>
 		<drop event="Destroy" name="foodEgg" count="1,3" prob="0.05"/>
 	</append>
 	<append xpath="/blocks/block[@name='treeBurntMaple02']">	
-		<drop event="Destroy" name="resourceWood" count="50" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="30" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="3,6" prob="0.25"/>
 		<drop event="Destroy" name="foodEgg" count="2,3" prob="0.1"/>
 	</append>
 	<append xpath="/blocks/block[@name='treeMountainPine27m']">	
-		<drop event="Destroy" name="resourceWood" count="50" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="30" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="3,6" prob="0.25"/>
 		<drop event="Destroy" name="foodEgg" count="2,3" prob="0.1"/>
 	</append>
 	<append xpath="/blocks/block[@name='treeMountainPine31m']">	
-		<drop event="Destroy" name="resourceWood" count="50" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="30" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="3,6" prob="0.25"/>
 		<drop event="Destroy" name="foodEgg" count="2,3" prob="0.1"/>
 	</append>
 	<append xpath="/blocks/block[@name='treeMountainPineDry21m']">	
-		<drop event="Destroy" name="resourceWood" count="50" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="30" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="3,6" prob="0.25"/>
 		<drop event="Destroy" name="foodEgg" count="2,3" prob="0.1"/>
 	</append>
 	<append xpath="/blocks/block[@name='treeOakMed02']">	
-		<drop event="Destroy" name="resourceWood" count="50" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="30" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="3,6" prob="0.25"/>
 		<drop event="Destroy" name="foodEgg" count="2,3" prob="0.1"/>
 	</append>
 	<append xpath="/blocks/block[@name='treePlantedOak27m']">	
-		<drop event="Destroy" name="resourceWood" count="50" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="30" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="3,6" prob="0.25"/>
 		<drop event="Destroy" name="foodEgg" count="2,3" prob="0.1"/>
 	</append>
 	<append xpath="/blocks/block[@name='treePlantedWinterPine19m']">	
-		<drop event="Destroy" name="resourceWood" count="50" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="30" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="3,6" prob="0.25"/>
 		<drop event="Destroy" name="foodEgg" count="2,3" prob="0.1"/>
 	</append>
 	<append xpath="/blocks/block[@name='treePlantedWinterPine28m']">	
-		<drop event="Destroy" name="resourceWood" count="50" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="30" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="3,6" prob="0.25"/>
 		<drop event="Destroy" name="foodEgg" count="2,3" prob="0.1"/>
 	</append>
 	<append xpath="/blocks/block[@name='treeWinterPine19m']">	
-		<drop event="Destroy" name="resourceWood" count="50" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="30" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="3,6" prob="0.25"/>
 		<drop event="Destroy" name="foodEgg" count="2,3" prob="0.1"/>
 	</append>
 	<append xpath="/blocks/block[@name='treeWinterPine28m']">	
-		<drop event="Destroy" name="resourceWood" count="50" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="30" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="3,6" prob="0.25"/>
 		<drop event="Destroy" name="foodEgg" count="2,3" prob="0.1"/>
 	</append>
 	<append xpath="/blocks/block[@name='treeBurntMaple03']">	
-		<drop event="Destroy" name="resourceWood" count="75" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="40" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="4,8" prob="0.3"/>
 		<drop event="Destroy" name="foodEgg" count="2,5" prob="0.15"/>
 	</append>
 	<append xpath="/blocks/block[@name='treeFirLrg01']">	
-		<drop event="Destroy" name="resourceWood" count="75" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="40" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="4,8" prob="0.3"/>
 		<drop event="Destroy" name="foodEgg" count="2,5" prob="0.15"/>
 	</append>
 	<append xpath="/blocks/block[@name='treeMountainPine41m']">	
-		<drop event="Destroy" name="resourceWood" count="75" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="40" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="4,8" prob="0.3"/>
 		<drop event="Destroy" name="foodEgg" count="2,5" prob="0.15"/>
 	</append>
 	<append xpath="/blocks/block[@name='treeMountainPine48m']">	
-		<drop event="Destroy" name="resourceWood" count="75" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="40" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="4,8" prob="0.3"/>
 		<drop event="Destroy" name="foodEgg" count="2,5" prob="0.15"/>
 	</append>
 	<append xpath="/blocks/block[@name='treeOakLrg01']">	
-		<drop event="Destroy" name="resourceWood" count="75" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="40" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="4,8" prob="0.3"/>
 		<drop event="Destroy" name="foodEgg" count="2,5" prob="0.15"/>
 	</append>
 	<append xpath="/blocks/block[@name='treePlantedOak41m']">	
-		<drop event="Destroy" name="resourceWood" count="75" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceWood" count="40" tag="oreWoodDestroy"/>
 		<drop event="Destroy" name="resourceFeather" count="4,8" prob="0.3"/>
 		<drop event="Destroy" name="foodEgg" count="2,5" prob="0.15"/>
 	</append>
+	<set xpath="/blocks/block[@name='garageDoorMetal_v1']/property[@name='OnlySimpleRotations']/@value">false</set>
+	<set xpath="/blocks/block[@name='garageDoorMetal_v2']/property[@name='OnlySimpleRotations']/@value">false</set>
+	<set xpath="/blocks/block[@name='garageDoorMetal_v3']/property[@name='OnlySimpleRotations']/@value">false</set>
 </configs>
