@@ -466,11 +466,6 @@
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="modMeleeWoodSplitterSchematic" count="1"/>
 		</recipe>
-		<recipe name="modYoureFiredSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="modYoureFiredSchematic" count="1"/>
-		</recipe>
 		<recipe name="modMeleeClubBurningShaftSchematic" count="2">
 			<ingredient name="resourcePaper" count="5"/>
 			<ingredient name="resourceCoal" count="1"/>
@@ -641,110 +636,20 @@
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="gunToolNailgunSchematic" count="1"/>
 		</recipe>
-		<recipe name="ammo9mmBulletSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="ammo9mmBulletSchematic" count="1"/>
-		</recipe>
-		<recipe name="ammo10mmBulletSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="ammo10mmBulletSchematic" count="1"/>
-		</recipe>
-		<recipe name="ammo762mmBulletFMJSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="ammo762mmBulletFMJSchematic" count="1"/>
-		</recipe>
-		<recipe name="ammoShotgunShellSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="ammoShotgunShellSchematic" count="1"/>
-		</recipe>
-		<recipe name="meleeToolWrenchSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="meleeToolWrenchSchematic" count="1"/>
-		</recipe>
-		<recipe name="meleeToolClawHammerSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="meleeToolClawHammerSchematic" count="1"/>
-		</recipe>
 		<recipe name="armorLeatherChestSchematic" count="2">
 			<ingredient name="resourcePaper" count="5"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="armorLeatherChestSchematic" count="1"/>
-		</recipe>
-		<recipe name="armorLeatherBootsSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="armorLeatherBootsSchematic" count="1"/>
-		</recipe>
-		<recipe name="armorLeatherPantsSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="armorLeatherPantsSchematic" count="1"/>
-		</recipe>
-		<recipe name="armorLeatherHoodSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="armorLeatherHoodSchematic" count="1"/>
-		</recipe>
-		<recipe name="armorLeatherGlovesSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="armorLeatherGlovesSchematic" count="1"/>
 		</recipe>
 		<recipe name="armorScrapChestSchematic" count="2">
 			<ingredient name="resourcePaper" count="5"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="armorScrapChestSchematic" count="1"/>
 		</recipe>
-		<recipe name="armorScrapBootsSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="armorScrapBootsSchematic" count="1"/>
-		</recipe>
-		<recipe name="armorScrapLegsSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="armorScrapLegsSchematic" count="1"/>
-		</recipe>
-		<recipe name="armorScrapHelmetSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="armorScrapHelmetSchematic" count="1"/>
-		</recipe>
-		<recipe name="armorScrapGlovesSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="armorScrapGlovesSchematic" count="1"/>
-		</recipe>
 		<recipe name="armorSteelChestSchematic" count="2">
 			<ingredient name="resourcePaper" count="5"/>
 			<ingredient name="resourceCoal" count="1"/>
 			<ingredient name="armorSteelChestSchematic" count="1"/>
-		</recipe>
-		<recipe name="armorSteelHelmetSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="armorSteelHelmetSchematic" count="1"/>
-		</recipe>
-		<recipe name="armorSteelLegsSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="armorSteelLegsSchematic" count="1"/>
-		</recipe>
-		<recipe name="armorSteelBootsSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="armorSteelBootsSchematic" count="1"/>
-		</recipe>
-		<recipe name="armorSteelGlovesSchematic" count="2">
-			<ingredient name="resourcePaper" count="5"/>
-			<ingredient name="resourceCoal" count="1"/>
-			<ingredient name="armorSteelGlovesSchematic" count="1"/>
 		</recipe>
 		<recipe name="ammoArrowFlamingSchematic" count="2">
 			<ingredient name="resourcePaper" count="5"/>
