@@ -251,18 +251,42 @@
 	</append>
 
 	<!-- Alter the Harvest amount based on type of item, i.e. Iron gets more than stone, Steel gets more than iron -->
-	<set xpath="/items/item[@name='meleeToolHuntingKnife']/effect_group[@name='Base Effects']/passive_effect[@name='HarvestCount'][@operation='perc_add']/@value">.15,.275</set>
-	<set xpath="/items/item[@name='meleeToolClawHammer']/effect_group[@name='Base Effects']/passive_effect[@name='HarvestCount'][@operation='perc_add']/@value">.15,.275</set>
-	<set xpath="/items/item[@name='meleeToolPickaxeIron']/effect_group[@name='Base Effects']/passive_effect[@name='HarvestCount'][@operation='perc_add']/@value">.15,.275</set>
-	<set xpath="/items/item[@name='meleeToolShovelIron']/effect_group[@name='Base Effects']/passive_effect[@name='HarvestCount'][@operation='perc_add']/@value">.15,.275</set>
-	<set xpath="/items/item[@name='meleeToolFireaxeIron']/effect_group[@name='Base Effects']/passive_effect[@name='HarvestCount'][@operation='perc_add']/@value">.15,.275</set>
-	<set xpath="/items/item[@name='meleeToolMachete']/effect_group[@name='Base Effects']/passive_effect[@name='HarvestCount'][@operation='perc_add']/@value">.3,.5</set>
-	<set xpath="/items/item[@name='meleeToolWrench']/effect_group[@name='Base Effects']/passive_effect[@name='HarvestCount'][@operation='perc_add']/@value">.3,.5</set>
-	<set xpath="/items/item[@name='meleeToolPickaxeSteel']/effect_group[@name='Base Effects']/passive_effect[@name='HarvestCount'][@operation='perc_add']/@value">.3,.5</set>
-	<set xpath="/items/item[@name='meleeToolShovelSteel']/effect_group[@name='Base Effects']/passive_effect[@name='HarvestCount'][@operation='perc_add']/@value">.3,.5</set>
-	<set xpath="/items/item[@name='meleeToolFireaxeSteel']/effect_group[@name='Base Effects']/passive_effect[@name='HarvestCount'][@operation='perc_add']/@value">.3,.5</set>
-	<set xpath="/items/item[@name='meleeToolChainsaw']/effect_group[@name='Base Effects']/passive_effect[@name='HarvestCount'][@operation='perc_add']/@value">.5,1</set>
-	<set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='HarvestCount'][@operation='perc_add']/@value">.5,1</set>
+	<append xpath="/items/item[@name='meleeToolHuntingKnife']/effect_group[@name='Base Effects']">
+		<passive_effect name="HarvestCount" operation="perc_add" value=".15,.275" tags="allToolsHarvest" tier="1,6"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolClawHammer']/effect_group[@name='Base Effects']">
+		<passive_effect name="HarvestCount" operation="perc_add" value=".15,.275" tags="allToolsHarvest" tier="1,6"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolPickaxeIron']/effect_group[@name='Base Effects']">
+		<passive_effect name="HarvestCount" operation="perc_add" value=".15,.275" tags="allToolsHarvest" tier="1,6"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolShovelIron']/effect_group[@name='Base Effects']">
+		<passive_effect name="HarvestCount" operation="perc_add" value=".15,.275" tags="allToolsHarvest" tier="1,6"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolFireaxeIron']/effect_group[@name='Base Effects']">
+		<passive_effect name="HarvestCount" operation="perc_add" value=".15,.275" tags="allToolsHarvest" tier="1,6"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolMachete']/effect_group[@name='Base Effects']">
+		<passive_effect name="HarvestCount" operation="perc_add" value=".3,.5" tags="allToolsHarvest" tier="1,6"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolWrench']/effect_group[@name='Base Effects']">
+		<passive_effect name="HarvestCount" operation="perc_add" value=".3,.5" tags="allToolsHarvest" tier="1,6"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolPickaxeSteel']/effect_group[@name='Base Effects']">
+		<passive_effect name="HarvestCount" operation="perc_add" value=".3,.5" tags="allToolsHarvest" tier="1,6"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolShovelSteel']/effect_group[@name='Base Effects']">
+		<passive_effect name="HarvestCount" operation="perc_add" value=".3,.5" tags="allToolsHarvest" tier="1,6"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolFireaxeSteel']/effect_group[@name='Base Effects']">
+		<passive_effect name="HarvestCount" operation="perc_add" value=".3,.5" tags="allToolsHarvest" tier="1,6"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolChainsaw']/effect_group[@name='Base Effects']">
+		<passive_effect name="HarvestCount" operation="perc_add" value=".5,1" tags="allToolsHarvest" tier="1,6"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']">
+		<passive_effect name="HarvestCount" operation="perc_add" value=".5,1" tags="allToolsHarvest" tier="1,6"/>
+	</append>
 
 	<!-- ======================================= Update Ammo ======================================= -->
 	<!-- Set new arrow damages -->
@@ -446,6 +470,22 @@
 		<passive_effect name="KickDegreesVertical" operation="perc_add" value=".1,-.3" tier="1,6"/>
 		<passive_effect name="KickDegreesHorizontal" operation="perc_add" value=".1,-.3" tier="1,6"/>
 	</append>
+
+	<!-- Auger Specific stuff -->
+	<append xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']">
+		<passive_effect name="MaxRange" operation="perc_add" value="0,.5" tier="1,6"/>
+		<passive_effect name="DamageFalloffRange" operation="perc_add" value="0,.5" tier="1,6"/>
+		<passive_effect name="RoundsPerMinute" operation="perc_add" value="0,.5" tier="1,6"/>
+		<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="0,.25" tier="1,6"/>
+		<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="0,-.5" tier="1,6"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="0,-.5" tier="1,6"/>
+		<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value="0,-.5" tier="1,6"/>
+		<passive_effect name="WeaponHandling" operation="perc_add" value="0,.5" tier="1,6"/>
+		<passive_effect name="KickDegreesVertical" operation="perc_add" value="0,-.5" tier="1,6"/>
+		<passive_effect name="KickDegreesHorizontal" operation="perc_add" value="0,-.5" tier="1,6"/>
+		<passive_effect name="MagazineSize" operation="perc_add" value="0,.5" tier="1,6"/>
+	</append>
+	<set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage']/@value">45</set>
 
 	<!-- ======================================= Update Armor Items ======================================= -->
 

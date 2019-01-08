@@ -252,17 +252,18 @@
 	<set xpath="/recipes/recipe[@name='foodVegetableStew']/ingredient[@name='foodCropCorn']/@count">1</set>
 	<set xpath="/recipes/recipe[@name='foodVegetableStew']/ingredient[@name='foodCropMushrooms']/@count">1</set>
 
+	<set xpath="/recipes/recipe[@name='plantedAloe1']/ingredient[@name='resourceCropAloeLeaf']">1</set>
 	<set xpath="/recipes/recipe[@name='plantedBlueberry1']/ingredient[@name='foodCropBlueberries']/@count">1</set>
-
+	<set xpath="/recipes/recipe[@name='plantedChrysanthemum1']/ingredient[@name='resourceCropChrysanthemumPlant']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='plantedCoffee1']/ingredient[@name='resourceCropCoffeeBeans']">1</set>
 	<set xpath="/recipes/recipe[@name='plantedCorn1']/ingredient[@name='foodCropCorn']/@count">1</set>
-
+	<set xpath="/recipes/recipe[@name='plantedCotton1']/ingredient[@name='resourceCropCottonPlant']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='plantedGoldenrod1']/ingredient[@name='resourceCropGoldenrodPlant']/@count">1</set>
 	<set xpath="/recipes/recipe[@name='plantedGraceCorn1']/ingredient[@name='foodCropGraceCorn']/@count">1</set>
-
+	<set xpath="/recipes/recipe[@name='plantedHop1']/ingredient[@name='resourceCropHopsFlower']/@count">1</set>
 	<set xpath="/recipes/recipe[@name='plantedMushroom1']/ingredient[@name='foodCropMushrooms']/@count">1</set>
 	<set xpath="/recipes/recipe[@name='plantedMushroom1']/ingredient[@name='resourceClayLump']/@count">1</set>
-
 	<set xpath="/recipes/recipe[@name='plantedPotato1']/ingredient[@name='foodCropPotato']/@count">1</set>
-
 	<set xpath="/recipes/recipe[@name='plantedYucca1']/ingredient[@name='foodCropYuccaFruit']/@count">1</set>
 
 	<remove xpath="/recipes/recipe[@name='resourceBulletTip']/ingredient[@name='unit_clay']" />
