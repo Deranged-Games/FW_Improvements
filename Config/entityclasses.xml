@@ -2,8 +2,8 @@
 <!-- Changes loot drops from .02 range to .1 -->
     <set xpath="/entity_classes/entity_class[starts-with (@name,'zombie')]/property[@name='LootDropProb']/@value">.1</set>
 
-	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">0.003</set>
-	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaLossMaxMult']/@value">0.0036</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">0.005</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaLossMaxMult']/@value">0.0045</set>
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='running']/@value">1.35</set> 
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT' and @tags='swimming']/@value">0.6</set> 
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaLoss' and @tags='jumping']/@value">16</set>

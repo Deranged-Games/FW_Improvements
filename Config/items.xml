@@ -188,6 +188,50 @@
 				<property name="Overlay0Tint" value="26,117,255"/>
 			</property>
 		</item>
+		<item name="thrownCanGrenade">
+			<property name="Tags" value="weapon,perkExplosiveWeapons"/>
+			<property name="DisplayType" value="ammoGrenade"/>
+			<property name="Class" value="ItemClassTimeBomb"/>
+			<property name="HoldType" value="25"/>
+			<property name="Meshfile" value="Items/Food/can_empty"/>
+			<property name="CustomIcon" value="foodCanBeef"/>
+			<property name="CustomIconTint" value="100,100,200"/>
+			<property name="DropScale" value="2"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Stacknumber" value="40"/> <!-- STK explosives -->
+			<property name="EconomicValue" value="41"/>
+			<property name="Weight" value="0"/>
+			<property name="Explosion.BlockDamage" value="30"/>
+			<property name="Explosion.EntityDamage" value="200"/>
+			<property name="Explosion.ParticleIndex" value="1"/>
+			<property name="Explosion.RadiusBlocks" value="3"/>
+			<property name="Explosion.RadiusEntities" value="8"/>
+			<property name="Explosion.DamageBonus.stone" value="0.1"/>
+			<property name="Explosion.DamageBonus.metal" value="0.05"/>
+			<property name="Explosion.DamageBonus.earth" value="0"/> <!-- should work? -->
+			<property name="Explosion.DamageBonus.wood" value="0.5"/>
+			<property name="Explosion.DamageBonus.water" value="0"/>
+			<property name="Explosion.BlastPower" value="150"/> <!-- (int,200) how far ragdolls and such are flung -->
+			<property name="FuseTime" value="4"/> <!-- End: Needed for  time in sec, max 6 -->
+			<property class="Action0">
+				<property name="Class" value="ThrowAway"/>
+				<property name="Delay" value="3"/>
+				<property name="Throw_strength_default" value="10"/>
+				<property name="Throw_strength_max" value="35"/>
+				<property name="Max_strain_time" value="1"/>
+				<property name="Sound_start" value="swoosh"/>
+			</property>
+			<property class="Action1"> <!-- UseAction -->
+				<property name="Class" value="Activate"/>
+				<property name="Delay" value="1"/> <!-- obsolete if rounds per minute exists -->
+			</property>
+			<property name="ThrowableDecoy" value="true"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CraftingSkillGroup" value="craftSkillScience"/>
+			<effect_group tiered="false">
+				<display_value name="ExRadius" value="5" />
+			</effect_group>
+		</item>
 	</append>
 
 	<!-- Clean out all passive effect modifiers so we can overwrite those. -->
@@ -485,7 +529,7 @@
 		<passive_effect name="KickDegreesHorizontal" operation="perc_add" value="0,-.5" tier="1,6"/>
 		<passive_effect name="MagazineSize" operation="perc_add" value="0,.5" tier="1,6"/>
 	</append>
-	<set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage']/@value">45</set>
+	<set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage'][@operation='base_set']/@value">45</set>
 
 	<!-- ======================================= Update Armor Items ======================================= -->
 
@@ -975,6 +1019,10 @@
 		<property name="Focused_blockname_7" value="cntGraniteSink" />
 		<property name="Focused_blockname_8" value="utilitySink" />
 		<property name="Focused_blockname_9" value="wallHungSink" />
+		<property name="Focused_blockname_10" value="faucet02"/>
+		<property name="Focused_blockname_11" value="faucet04"/>
+		<property name="Focused_blockname_12" value="faucetBrass02"/>
+		<property name="Focused_blockname_13" value="faucetBrass04"/>
 	</append>
 
 	<!-- Allow Nail gun and claw hammer to upgrade to steel -->

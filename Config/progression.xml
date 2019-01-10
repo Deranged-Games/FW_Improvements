@@ -105,7 +105,7 @@
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5"
 			tags="resourceRocketTip,resourceRocketCasing,ammoRocketHE,ammoRocketFrag"/>
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5"
-			tags="batterybank"/>
+			tags="batterybank,solarbank,solarCell"/>
 		<effect_description level="1" desc_key="perkYeahScienceRank1Desc"/>
 		<effect_description level="2" desc_key="perkYeahScienceRank2Desc"/>
 		<effect_description level="3" desc_key="perkYeahScienceRank3Desc"/>

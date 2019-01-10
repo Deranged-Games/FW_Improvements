@@ -167,6 +167,32 @@
 			<ingredient name="resourceWood" count="10"/>
 			<ingredient name="resourceLeather" count="1"/>
 		</recipe>
+		<recipe name="thrownCanGrenade" count="1" >
+			<ingredient name="drinkCanEmpty" count="1"/>
+			<ingredient name="resourceGunPowder" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="resourceScrapIron" count="3"/>
+		</recipe>
+		<recipe name="WorkingOven" count="1" craft_area="workbench">
+			<ingredient name="resourceScrapIron" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceMetalPipe" count="1"/>
+			<ingredient name="resourceBrokenGlass" count="1"/>
+		</recipe>
+		<recipe name="solarbank" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedSteel" count="100"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceAcid" count="9"/>
+			<ingredient name="glassBulletproofPlate" count="9"/>
+		</recipe>
+		<recipe name="solarCell" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedSteel" count="25"/>
+			<ingredient name="resourceScrapPolymers" count="20"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="resourceAcid" count="1"/>
+			<ingredient name="glassBulletproofPlate" count="1"/>
+		</recipe>
 	</append>
 
 	<!-- Why so much tape and glue? -->
