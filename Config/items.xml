@@ -458,8 +458,8 @@
 	<append xpath="/items/item[@name='gunAK47']/effect_group[@name='Base Effects']">
 		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="head"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="20" tier="1"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="30,30" tier="2,4"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="50,100" tier="5,6"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="30,30" tier="2,5"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="40" tier="6"/>
 	</append>
 
 	<!-- gunPumpShotgun -->
