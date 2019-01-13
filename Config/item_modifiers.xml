@@ -1,58 +1,70 @@
-<MeleebyEntenwerfer>
-		<append xpath="/item_modifiers" >
-			<item_modifier name="modStoneSpear" installable_tags="spear" modifier_tags="head" type="attachment" rarity="0.25">
-				<property name="CustomIcon" value="modStoneSpear"/>
-				<property name="HoldType" value="21"/> <!-- 21 open hand -->
-				<property name="HandMeshfile" value="#@modfolder:Resources/WoodStick.unity3d?modStoneSpearHand" />
-				<property name="DropMeshfile" value="#@modfolder:Resources/WoodStick.unity3d?modStoneSpearHand"/> 						
-				<property name="Stacknumber" value="1"/>
+<configs>
+	<append xpath="/item_modifiers" >
+		<item_modifier name="modStoneSpear" installable_tags="spear" modifier_tags="head" type="attachment" rarity="0.25">
+			<property name="CustomIcon" value="modStoneSpear"/>
+			<property name="HoldType" value="21"/> <!-- 21 open hand -->
+			<property name="HandMeshfile" value="#@modfolder:Resources/WoodStick.unity3d?modStoneSpearHand" />
+			<property name="DropMeshfile" value="#@modfolder:Resources/WoodStick.unity3d?modStoneSpearHand"/> 						
+			<property name="Stacknumber" value="1"/>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+			<effect_group tiered="false">
+				<passive_effect name="StaminaLoss" operation="base_add" value="8" tags="primary,secondary"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="9"/>
+				<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+				<passive_effect name="MaxRange" operation="perc_add" value=".1"/>
 				<property name="PickupJournalEntry" value="augmentGunsTip"/>
-				<effect_group tiered="false">
-					<passive_effect name="StaminaLoss" operation="base_add" value="8" tags="primary,secondary"/>
-					<passive_effect name="EntityDamage" operation="base_add" value="9"/>
-					<requirement name="EntityTagCompare" target="other" tags="zombie"/>
-					<passive_effect name="MaxRange" operation="perc_add" value=".1"/>
-					<property name="PickupJournalEntry" value="augmentGunsTip"/>
-				</effect_group>
-				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by GrizzleSyrens -->
-					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/WoodStick.unity3d?modStoneSpear" parent_transform="Attachments/Grip" local_offset="0,0,0" />
-				</effect_group>
-			</item_modifier>	
-			<item_modifier name="modIronSpear" installable_tags="spear" modifier_tags="head" type="attachment" rarity="0.25">
-				<property name="CustomIcon" value="modIronSpear"/>
-				<property name="HoldType" value="21"/> <!-- 21 open hand -->
-				<property name="HandMeshfile" value="#@modfolder:Resources/WoodStick.unity3d?modIronSpearHand" />
-				<property name="DropMeshfile" value="#@modfolder:Resources/WoodStick.unity3d?modIronSpearHand"/> 						
-				<property name="Stacknumber" value="1"/>
+			</effect_group>
+			<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by GrizzleSyrens -->
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/WoodStick.unity3d?modStoneSpear" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+			</effect_group>
+		</item_modifier>	
+		<item_modifier name="modIronSpear" installable_tags="spear" modifier_tags="head" type="attachment" rarity="0.25">
+			<property name="CustomIcon" value="modIronSpear"/>
+			<property name="HoldType" value="21"/> <!-- 21 open hand -->
+			<property name="HandMeshfile" value="#@modfolder:Resources/WoodStick.unity3d?modIronSpearHand" />
+			<property name="DropMeshfile" value="#@modfolder:Resources/WoodStick.unity3d?modIronSpearHand"/> 						
+			<property name="Stacknumber" value="1"/>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+			<effect_group tiered="false">
+				<passive_effect name="StaminaLoss" operation="base_add" value="8" tags="primary,secondary"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="12"/>
+				<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+				<passive_effect name="MaxRange" operation="perc_add" value=".12"/>
 				<property name="PickupJournalEntry" value="augmentGunsTip"/>
-				<effect_group tiered="false">
-					<passive_effect name="StaminaLoss" operation="base_add" value="8" tags="primary,secondary"/>
-					<passive_effect name="EntityDamage" operation="base_add" value="12"/>
-					<requirement name="EntityTagCompare" target="other" tags="zombie"/>
-					<passive_effect name="MaxRange" operation="perc_add" value=".12"/>
-					<property name="PickupJournalEntry" value="augmentGunsTip"/>
-				</effect_group>
-				<effect_group name="SpecialEffects" tiered="false"> <!-- CC 4.0 Licenced mesh by GrizzleSyrens -->
-					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/WoodStick.unity3d?modIronSpear" parent_transform="Attachments/Grip" local_offset="0,0,0" />
-				</effect_group>
-			</item_modifier>	
-			<item_modifier name="modSteelSpear" installable_tags="spear" modifier_tags="head" type="attachment" rarity="0.25">
-				<property name="CustomIcon" value="modSteelSpear"/>
-				<property name="HoldType" value="21"/> <!-- 21 open hand -->
-				<property name="HandMeshfile" value="#@modfolder:Resources/WoodStick.unity3d?modSteelSpearHand" />
-				<property name="DropMeshfile" value="#@modfolder:Resources/WoodStick.unity3d?modSteelSpearHand"/> 						
-				<property name="Stacknumber" value="1"/>
+			</effect_group>
+			<effect_group name="SpecialEffects" tiered="false"> <!-- CC 4.0 Licenced mesh by GrizzleSyrens -->
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/WoodStick.unity3d?modIronSpear" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+			</effect_group>
+		</item_modifier>	
+		<item_modifier name="modSteelSpear" installable_tags="spear" modifier_tags="head" type="attachment" rarity="0.25">
+			<property name="CustomIcon" value="modSteelSpear"/>
+			<property name="HoldType" value="21"/> <!-- 21 open hand -->
+			<property name="HandMeshfile" value="#@modfolder:Resources/WoodStick.unity3d?modSteelSpearHand" />
+			<property name="DropMeshfile" value="#@modfolder:Resources/WoodStick.unity3d?modSteelSpearHand"/> 						
+			<property name="Stacknumber" value="1"/>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+			<effect_group tiered="false">
+				<passive_effect name="StaminaLoss" operation="base_add" value="8" tags="primary,secondary"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="15"/>
+				<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+				<passive_effect name="MaxRange" operation="perc_add" value=".15"/>
 				<property name="PickupJournalEntry" value="augmentGunsTip"/>
-				<effect_group tiered="false">
-					<passive_effect name="StaminaLoss" operation="base_add" value="8" tags="primary,secondary"/>
-					<passive_effect name="EntityDamage" operation="base_add" value="15"/>
-					<requirement name="EntityTagCompare" target="other" tags="zombie"/>
-					<passive_effect name="MaxRange" operation="perc_add" value=".15"/>
-					<property name="PickupJournalEntry" value="augmentGunsTip"/>
-				</effect_group>
-				<effect_group name="SpecialEffects" tiered="false"> <!-- CC 4.0 Licenced mesh by GrizzleSyrens -->
-					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/WoodStick.unity3d?modSteelSpear" parent_transform="Attachments/Grip" local_offset="0,0,0" />
-				</effect_group>
-			</item_modifier>	
-		</append>
-</MeleebyEntenwerfer>
+			</effect_group>
+			<effect_group name="SpecialEffects" tiered="false"> <!-- CC 4.0 Licenced mesh by GrizzleSyrens -->
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/WoodStick.unity3d?modSteelSpear" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+			</effect_group>
+		</item_modifier>	
+	</append>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorScrapPlating']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">3</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorIronPlating']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">4</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorSteelPlating']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">6</set>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunRetractingStock']/effect_group">
+		<passive_effect name="WeaponHandling" operation="perc_add" value=".4"/>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/effect_group">
+		<passive_effect name="EntityDamage" operation="base_add" value="25"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="50"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.25"/>
+		<passive_effect name="StaminaLoss" operation="perc_add" value=".4"/>
+	</append>
+</configs>

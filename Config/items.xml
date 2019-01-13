@@ -167,27 +167,6 @@
 				<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
 			</effect_group>
 		</item>
-		<item name="armorMiningHelmetMilitary">
-			<property name="Extends" value="armorMiningHelmet"/>
-			<property name="CustomIcon" value="armorMiningHelmet"/> <property name="CustomIconTint" value="26,255,140"/>
-			<property class="UMA">
-				<property name="Overlay0Tint" value="26,255,140"/>
-			</property>
-		</item>
-		<item name="armorMiningHelmetSteel">
-			<property name="Extends" value="armorMiningHelmet"/>
-			<property name="CustomIcon" value="armorMiningHelmet"/> <property name="CustomIconTint" value="255,26,255"/>
-			<property class="UMA">
-				<property name="Overlay0Tint" value="255,26,255"/>
-			</property>
-		</item>
-		<item name="armorMiningHelmetSwat">
-			<property name="Extends" value="armorMiningHelmet"/>
-			<property name="CustomIcon" value="armorMiningHelmet"/> <property name="CustomIconTint" value="26,117,255"/>
-			<property class="UMA">
-				<property name="Overlay0Tint" value="26,117,255"/>
-			</property>
-		</item>
 		<item name="thrownCanGrenade">
 			<property name="Tags" value="weapon,perkExplosiveWeapons"/>
 			<property name="DisplayType" value="ammoGrenade"/>
@@ -395,7 +374,12 @@
 
 	<!-- 12 Gauge Ammo Rework -->
 	<set xpath="/items/item[@name='ammoShotgunShell']/effect_group[@name='Base Effects']/passive_effect[@name='RoundRayCount'][@operation='base_set']/@value">10</set>
+
 	<set xpath="/items/item[@name='ammoShotgunSlug']/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">100</set>
+	<set xpath="/items/item[@name='ammoShotgunSlug']/effect_group[@name='Base Effects']/passive_effect[@name='MaxRange'][@operation='base_set']/@value">50</set>
+	<set xpath="/items/item[@name='ammoShotgunSlug']/effect_group[@name='Base Effects']/passive_effect[@name='DamageFalloffRange'][@operation='base_set']/@value">25</set>
+	<set xpath="/items/item[@name='ammoShotgunSlug']/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesVertical'][@operation='base_set']/@value">1.5</set>
+	<set xpath="/items/item[@name='ammoShotgunSlug']/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesHorizontal'][@operation='base_set']/@value">1.5</set>
 	
 	<!-- ======================================= Update Projectile Weapons ======================================= -->
 	<!-- gunPistol -->
@@ -640,6 +624,7 @@
 		<passive_effect name="BuffResistance" operation="base_add" value="0.02" tags="buffIllInfection0,buffInjuryBleeding"/>
 	</set>
 	<set xpath="/items/item[starts-with (@name, 'plantFiber')]/effect_group/@tiered">true</set>
+	<append xpath="/items/item[starts-with (@name, 'plantFiber')]/property[@name='Tags']/@value">,armor</append>
 
 	<!-- Hazmat -->
 	<set xpath="/items/item[starts-with (@name, 'hazmat')]/effect_group">
@@ -649,9 +634,10 @@
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,1" tier="1,6"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 		<passive_effect name="BuffResistance" operation="base_add" value="0.05" tags="buffIllInfection0,buffInjuryBleeding"/>
-		<passive_effect name="ElementalDamageResist" operation="base_add" value="10,20" tags="radiation,toxic" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="20,50" tags="radiation,toxic" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[starts-with (@name, 'hazmat')]/effect_group/@tiered">true</set>
+	<append xpath="/items/item[starts-with (@name, 'hazmat')]/property[@name='Tags']/@value">,armor</append>
 
 	<!-- cowboyHat -->
 	<set xpath="/items/item[@name='cowboyHat']/effect_group">
@@ -661,6 +647,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='cowboyHat']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='cowboyHat']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- ballCap -->
 	<set xpath="/items/item[@name='ballCap']/effect_group">
@@ -670,6 +657,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='ballCap']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='ballCap']/property[@name='Tags']/@value">,armor</append>
 	
 	<!-- skullCap -->
 	<set xpath="/items/item[@name='skullCap']/effect_group">
@@ -679,6 +667,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='skullCap']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='skullCap']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- gasMask -->
 	<set xpath="/items/item[@name='gasMask']/effect_group">
@@ -688,6 +677,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='gasMask']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='gasMask']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- shades -->
 	<set xpath="/items/item[@name='shades']/effect_group">
@@ -696,6 +686,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='shades']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='shades']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- goggles -->
 	<set xpath="/items/item[@name='goggles']/effect_group">
@@ -704,6 +695,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='goggles']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='goggles']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- nerdGlasses -->
 	<set xpath="/items/item[@name='nerdGlasses']/effect_group">
@@ -714,6 +706,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='nerdGlasses']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='nerdGlasses']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- cigar -->
 	<set xpath="/items/item[@name='cigar']/effect_group">
@@ -723,6 +716,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='cigar']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='cigar']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- cigarette -->
 	<set xpath="/items/item[@name='cigarette']/effect_group">
@@ -731,6 +725,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='cigarette']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='cigarette']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- bandana -->
 	<set xpath="/items/item[@name='bandana']/effect_group">
@@ -740,6 +735,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='bandana']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='bandana']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- denimPants -->
 	<set xpath="/items/item[@name='denimPants']/effect_group">
@@ -750,6 +746,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='denimPants']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='denimPants']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- army Items -->
 	<set xpath="/items/item[starts-with (@name, 'army')]/effect_group">
@@ -760,6 +757,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[starts-with (@name, 'army')]/effect_group/@tiered">true</set>
+	<append xpath="/items/item[starts-with (@name, 'army')]/property[@name='Tags']/@value">,armor</append>
 
 	<!-- tankTop -->
 	<set xpath="/items/item[@name='tankTop']/effect_group">
@@ -770,6 +768,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='tankTop']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='tankTop']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- wornBoots -->
 	<set xpath="/items/item[@name='wornBoots']/effect_group">
@@ -781,6 +780,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='wornBoots']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='wornBoots']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- runningShoes -->
 	<set xpath="/items/item[@name='runningShoes']/effect_group">
@@ -792,6 +792,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='runningShoes']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='runningShoes']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- hpRunningShoes -->
 	<set xpath="/items/item[@name='hpRunningShoes']/effect_group">
@@ -803,6 +804,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='hpRunningShoes']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='hpRunningShoes']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- shirt -->
 	<set xpath="/items/item[@name='shirt']/effect_group">
@@ -813,6 +815,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='shirt']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='shirt']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- leatherPoncho -->
 	<set xpath="/items/item[@name='leatherPoncho']/effect_group">
@@ -823,6 +826,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='leatherPoncho']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='leatherPoncho']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- leatherDusters -->
 	<set xpath="/items/item[starts-with (@name, 'leatherDust')]/effect_group">
@@ -833,6 +837,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[starts-with (@name, 'leatherDust')]/effect_group/@tiered">true</set>
+	<append xpath="/items/item[starts-with (@name, 'leatherDust')]/property[@name='Tags']/@value">,armor</append>
 
 	<!-- pufferCoat -->
 	<set xpath="/items/item[@name='pufferCoat']/effect_group">
@@ -843,6 +848,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='pufferCoat']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='pufferCoat']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- sweatshirt -->
 	<set xpath="/items/item[@name='sweatshirt']/effect_group">
@@ -853,6 +859,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='sweatshirt']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='sweatshirt']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- tshirt -->
 	<set xpath="/items/item[@name='tshirt']/effect_group">
@@ -863,6 +870,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='tshirt']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='tshirt']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- skirt -->
 	<set xpath="/items/item[@name='skirt']/effect_group">
@@ -872,6 +880,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='skirt']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='skirt']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- jacketWhite -->
 	<set xpath="/items/item[@name='jacketWhite']/effect_group">
@@ -882,6 +891,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='jacketWhite']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='jacketWhite']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- jacketLetter -->
 	<set xpath="/items/item[@name='jacketLetter']/effect_group">
@@ -892,6 +902,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='jacketLetter']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='jacketLetter']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- tshirtZUWhite -->
 	<set xpath="/items/item[@name='tshirtZUWhite']/effect_group">
@@ -902,6 +913,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='tshirtZUWhite']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='tshirtZUWhite']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- denimShortsPants -->
 	<set xpath="/items/item[@name='denimShortsPants']/effect_group">
@@ -912,6 +924,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='denimShortsPants']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='denimShortsPants']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- hoodedSweatshirt -->
 	<set xpath="/items/item[@name='hoodedSweatshirt']/effect_group">
@@ -922,6 +935,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='hoodedSweatshirt']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='hoodedSweatshirt']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- pressboyCap -->
 	<set xpath="/items/item[@name='pressboyCap']/effect_group">
@@ -931,6 +945,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='pressboyCap']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='pressboyCap']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- cowboyBoots -->
 	<set xpath="/items/item[@name='cowboyBoots']/effect_group">
@@ -940,6 +955,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='cowboyBoots']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='cowboyBoots']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- gothBootsBlack -->
 	<set xpath="/items/item[@name='gothBootsBlack']/effect_group">
@@ -949,6 +965,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='gothBootsBlack']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='gothBootsBlack']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- gothicPants -->
 	<set xpath="/items/item[@name='gothicPants']/effect_group">
@@ -958,6 +975,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='gothicPants']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='gothicPants']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- overalls -->
 	<set xpath="/items/item[@name='overalls']/effect_group">
@@ -967,6 +985,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='overalls']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='overalls']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- flannelShirt -->
 	<set xpath="/items/item[@name='flannelShirt']/effect_group">
@@ -976,6 +995,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='flannelShirt']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='flannelShirt']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- flannelShirtRed -->
 	<set xpath="/items/item[@name='flannelShirtRed']/effect_group">
@@ -985,6 +1005,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='flannelShirtRed']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='flannelShirtRed']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- suitPants -->
 	<set xpath="/items/item[@name='suitPants']/effect_group">
@@ -994,6 +1015,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='suitPants']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='suitPants']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- suitJacket -->
 	<set xpath="/items/item[@name='suitJacket']/effect_group">
@@ -1003,6 +1025,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='suitJacket']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='suitJacket']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- dressShoes -->
 	<set xpath="/items/item[@name='dressShoes']/effect_group">
@@ -1012,6 +1035,7 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='dressShoes']/effect_group/@tiered">true</set>
+	<append xpath="/items/item[@name='dressShoes']/property[@name='Tags']/@value">,armor</append>
 
 	<!-- Water from sinks -->
 	<append xpath="/items/item[@name='drinkJarEmpty']/property[@class='Action1']">
@@ -1028,4 +1052,17 @@
 	<!-- Allow Nail gun and claw hammer to upgrade to steel -->
 	<set xpath="/items/item[@name='gunToolNailgun']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail,resourceSteelPolish</set>
 	<set xpath="/items/item[@name='meleeToolClawHammer']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail,resourceSteelPolish</set>
+
+	<!-- I want my jars back -->
+	<append xpath="/items/item[@name='drugHerbalAntibiotics']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+	<append xpath="/items/item[@name='drugAntibiotics']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+	<append xpath="/items/item[@name='foodEggBoiled']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+	<append xpath="/items/item[@name='foodBlueberryPie']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+	<append xpath="/items/item[@name='foodBoiledMeat']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+	<append xpath="/items/item[@name='foodCornBread']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+	<append xpath="/items/item[@name='foodCornOnTheCob']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+	<append xpath="/items/item[@name='foodHoboStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+	<append xpath="/items/item[@name='foodMeatStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+	<append xpath="/items/item[@name='foodVegetableStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+	<append xpath="/items/item[@name='drugRecog']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
 </configs>

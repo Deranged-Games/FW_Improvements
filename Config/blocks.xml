@@ -279,4 +279,19 @@
 	<set xpath="/blocks/block[@name='garageDoorMetal_v1']/property[@name='OnlySimpleRotations']/@value">false</set>
 	<set xpath="/blocks/block[@name='garageDoorMetal_v2']/property[@name='OnlySimpleRotations']/@value">false</set>
 	<set xpath="/blocks/block[@name='garageDoorMetal_v3']/property[@name='OnlySimpleRotations']/@value">false</set>
+
+	<!-- Crushed cars are still cars. -->
+	<append xpath="/blocks/block[@name='crushedCars']">	
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceLeather" count="2,7" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="30,50" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceCloth" count="4,12" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="50" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceElectricParts" count="0,10" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="0,11" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceRadiator" count="1,2" prob="0.5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceSpring" count="4,8" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMetalPipe" count="10" prob="0.5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="5,12" tag="salvageHarvest"/>
+	</append>
 </configs>

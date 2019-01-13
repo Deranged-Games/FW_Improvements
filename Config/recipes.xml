@@ -129,27 +129,6 @@
 			<ingredient name="resourcePotassiumNitratePowder" count="5"/>
 			<ingredient name="resourceAcid" count="1"/>
 		</recipe>
-		<recipe name="armorMiningHelmetMilitary" count="1" craft_area="workbench" tags="learnable">
-			<ingredient name="armorMilitaryHelmet" count="1"/>
-			<ingredient name="meleeToolFlashlight02" count="1"/>
-			<ingredient name="resourceElectricParts" count="8"/>
-			<ingredient name="resourceDuctTape" count="5"/>
-			<ingredient name="resourceScrapPolymers" count="4"/>
-		</recipe>
-		<recipe name="armorMiningHelmetSteel" count="1" craft_area="workbench" tags="learnable">
-			<ingredient name="armorSteelHelmet" count="1"/>
-			<ingredient name="meleeToolFlashlight02" count="1"/>
-			<ingredient name="resourceElectricParts" count="8"/>
-			<ingredient name="resourceDuctTape" count="5"/>
-			<ingredient name="resourceScrapPolymers" count="4"/>
-		</recipe>
-		<recipe name="armorMiningHelmetSwat" count="1" craft_area="workbench" tags="learnable">
-			<ingredient name="armorSwatHelmet" count="1"/>
-			<ingredient name="meleeToolFlashlight02" count="1"/>
-			<ingredient name="resourceElectricParts" count="8"/>
-			<ingredient name="resourceDuctTape" count="5"/>
-			<ingredient name="resourceScrapPolymers" count="4"/>
-		</recipe>
 		<recipe name="modStoneSpear" count="1" >
 			<ingredient name="resourceRockSmall" count="10"/>
 		</recipe>
@@ -192,6 +171,15 @@
 			<ingredient name="resourceElectricParts" count="10"/>
 			<ingredient name="resourceAcid" count="1"/>
 			<ingredient name="glassBulletproofPlate" count="1"/>
+		</recipe>
+		<recipe name="resourceAcid" count="1" craft_area="chemistryStation">
+			<ingredient name="resourceScrapLead" count="20"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="20"/>
+			<ingredient name="drinkJarGrainAlcohol" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="3"/>
+		</recipe>
+		<recipe name="ammoGasCan" count="50" craft_area="chemistryStation" tags="learnable" craft_time="5">
+			<ingredient name="drinkJarGrainAlcohol" count="1"/>
 		</recipe>
 	</append>
 
@@ -295,6 +283,8 @@
 	<remove xpath="/recipes/recipe[@name='resourceBulletTip']/ingredient[@name='unit_clay']" />
 
 	<set xpath="/recipes/recipe[@name='resourceGunPowder']/@count">5</set>
+	
+	<set xpath="/recipes/recipe[@name='resourceMilitaryFiber']/@count">5</set>
 
 	<!-- ======================================= Auto-Generated Schematic recipes. ======================================= -->
 	<append xpath="/recipes">
