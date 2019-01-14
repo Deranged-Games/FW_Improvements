@@ -112,4 +112,5 @@
 		<effect_description level="4" desc_key="perkYeahScienceRank4Desc"/>
 		<effect_description level="5" desc_key="perkYeahScienceRank5Desc"/>
 	</set>
+	<append xpath="/progression/perks/perk[@name='perkHammerForge']/effect_group/passive_effect[@level='5']/@tags">,meleeToolSteelSledgehammer</append>
 </configs>

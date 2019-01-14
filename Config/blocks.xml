@@ -294,4 +294,15 @@
 		<drop event="Harvest" name="resourceMetalPipe" count="10" prob="0.5" tag="salvageHarvest"/>
 		<drop event="Harvest" name="resourceScrapPolymers" count="5,12" tag="salvageHarvest"/>
 	</append>
+	
+	<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='Explosion.EntityDamage']">140</set>
+	<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='Explosion.RadiusEntities']">10</set>
+	<set xpath="/blocks/block[@name='mineHubcap']/property[@name='Explosion.EntityDamage']">270</set>
+	<set xpath="/blocks/block[@name='mineHubcap']/property[@name='Explosion.RadiusEntities']">13</set>
+	<set xpath="/blocks/block[@name='mineAirFilter']/property[@name='Explosion.EntityDamage']">559</set>
+	<set xpath="/blocks/block[@name='mineAirFilter']/property[@name='Explosion.RadiusEntities']">13</set>
+	<set xpath="/blocks/block[@name='mineCookingPot']/property[@name='Explosion.EntityDamage']">240</set>
+	<set xpath="/blocks/block[@name='mineCookingPot']/property[@name='Explosion.RadiusEntities']">8</set>
+	<set xpath="/blocks/block[@name='rScrapIronPlateMine']/property[@name='Explosion.EntityDamage']">225</set>
+	<set xpath="/blocks/block[@name='rScrapIronPlateMine']/property[@name='Explosion.RadiusEntities']">8</set>
 </configs>

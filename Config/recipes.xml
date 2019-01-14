@@ -124,7 +124,7 @@
 		<recipe name="scrapIronLogSpike4" count="1">
 			<ingredient name="resourceScrapIron" count="20"/>
 		</recipe>	
-		<recipe name="resourceSteelPolish" count="10" craft_area="chemistryStation" craft_time = "15">
+		<recipe name="resourceSteelPolish" count="50" craft_area="chemistryStation" craft_time="15">
 			<ingredient name="resourceForgedSteel" count="1"/>
 			<ingredient name="resourcePotassiumNitratePowder" count="5"/>
 			<ingredient name="resourceAcid" count="1"/>
@@ -180,6 +180,10 @@
 		</recipe>
 		<recipe name="ammoGasCan" count="50" craft_area="chemistryStation" tags="learnable" craft_time="5">
 			<ingredient name="drinkJarGrainAlcohol" count="1"/>
+		</recipe>
+		<recipe name="meleeToolSteelSledgehammer" count="1" tags="learnable">
+			<ingredient name="resourceForgedSteel" count="38"/>
+			<ingredient name="resourceWood" count="10"/>
 		</recipe>
 	</append>
 

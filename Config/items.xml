@@ -211,6 +211,36 @@
 				<display_value name="ExRadius" value="5" />
 			</effect_group>
 		</item>
+		<item name="meleeToolSteelSledgehammer">
+			<property name="Extends" value="meleeToolSledgehammer"/>
+			<property name="RepairTools" value="resourceForgedSteel"/>
+			<property name="EconomicValue" value="900"/>
+			<property name="CustomIcon" value="meleeToolSledgehammer"/>
+			<property name="CustomIconTint" value="a0a0ff"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="2.9"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="60"/> <!-- meleeToolSledgehammer -->
+				<passive_effect name="BlockDamage" operation="base_set" value="120"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="31"/> <!-- A16 1.8 -->
+				<passive_effect name="StaminaLoss" operation="base_set" value="33" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="400,1500" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+
+				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allToolsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="oreWoodHarvest"/>
+			</effect_group>
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="58" tags="secondary"/>
+			</effect_group>
+		</item>
 	</append>
 
 	<!-- Clean out all passive effect modifiers so we can overwrite those. -->
@@ -267,6 +297,9 @@
 		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 	</append>
 	<append xpath="/items/item[@name='meleeToolSledgehammer']/effect_group[@name='Base Effects']">
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="head"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolSteelSledgehammer']/effect_group[@name='Base Effects']">
 		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="head"/>
 	</append>
 	<append xpath="/items/item[@name='meleeToolPickaxeSteel']/effect_group[@name='Base Effects']">
