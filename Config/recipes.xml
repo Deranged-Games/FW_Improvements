@@ -19,6 +19,11 @@
 			<ingredient name="resourceGunPowder" count="3"/>
 			<ingredient name="resourceBulletCasing" count="1"/>
 		</recipe>
+		<recipe name="ammo44MagnumBulletBuck" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceBuckshot" count="1"/>
+			<ingredient name="resourceGunPowder" count="2"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>
 		<recipe name="ammo762mmBulletBall" count="1" craft_area="workbench" tags="learnable">
 			<ingredient name="resourceBulletSoftTip" count="1"/>
 			<ingredient name="resourceGunPowder" count="3"/>

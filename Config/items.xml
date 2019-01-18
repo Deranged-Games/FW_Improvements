@@ -1,6 +1,29 @@
 <configs>
 	<!-- New Items -->
 	<append xpath="/items">
+		<item name="ammo44MagnumBulletBuck">
+			<property name="Extends" value="ammo44MagnumBullet"/>
+			<property name="CustomIcon" value="ammo44MagnumBullet"/>
+			<property name="CustomIconTint" value="a0ffa0"/>
+			<property name="EconomicValue" value="13"/>
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="15"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="5.0"/>
+				<passive_effect name="RoundRayCount" operation="base_set" value="6"/>
+				<passive_effect name="MaxRange" operation="base_set" value="21"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="4"/>
+				<passive_effect name="SpreadDegreesVertical" operation="perc_add" value=".75"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value=".75"/>
+				<passive_effect name="DismemberChance" operation="perc_subtract" value="0.875" tags="head"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value=".9"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="0.5"/>
+				<passive_effect name="KickDegreesVertical" operation="perc_add" value=".5"/>
+				<passive_effect name="KickDegreesHorizontal" operation="perc_add" value=".2"/>
+			</effect_group>
+		</item>
 		<item name="ammo44MagnumBulletJHP">
 			<property name="Extends" value="ammo44MagnumBullet"/>
 			<property name="CustomIcon" value="ammo44MagnumBullet"/>
@@ -440,7 +463,7 @@
 	<!-- gun44Magnum -->
 	<remove xpath="/items/item[@name='gun44Magnum']/property[@class='Action0']/property[@name='Magazine_items']" />
 	<append xpath="/items/item[@name='gun44Magnum']/property[@class='Action0']">
-		<property name="Magazine_items" value="ammo44MagnumBullet,ammo44MagnumBulletSteel,ammo44MagnumBulletJHP"/>
+		<property name="Magazine_items" value="ammo44MagnumBullet,ammo44MagnumBulletSteel,ammo44MagnumBulletJHP,ammo44MagnumBulletBuck"/>
 	</append>
 	<append xpath="/items/item[@name='gun44Magnum']/effect_group[@name='Base Effects']">
 		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="head"/>
