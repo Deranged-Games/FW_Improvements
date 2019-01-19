@@ -12,6 +12,7 @@
 	<remove xpath="/recipes/recipe[@name='gunRocketLauncher']" />
 	<remove xpath="/recipes/recipe[@name='gunSMG5']" />
 	<remove xpath="/recipes/recipe[@name='gunToolNailgun']" />
+	<remove xpath="/recipes/recipe[@name='foodCanHam']" />
 
 	<append xpath="/recipes">
 		<recipe name="ammo44MagnumBulletJHP" count="1" craft_area="workbench" tags="learnable">
@@ -189,6 +190,23 @@
 		<recipe name="meleeToolSteelSledgehammer" count="1" tags="learnable">
 			<ingredient name="resourceForgedSteel" count="38"/>
 			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		<recipe name="foodShamChowder" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+			<ingredient name="foodCanHam" count="1"/>
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="foodCropCorn" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="foodFishTacos" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
+			<ingredient name="foodCanTuna" count="1"/>
+			<ingredient name="foodCornMeal" count="2"/>
+		</recipe>
+		<recipe name="foodCanHam" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable" craft_time="15">
+			<ingredient name="drinkCanEmpty" count="1"/>
+			<ingredient name="foodRottingFlesh" count="1"/>
+			<ingredient name="resourceFemur" count="1"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<ingredient name="resourcePaint" count="1"/>
 		</recipe>
 	</append>
 
