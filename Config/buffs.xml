@@ -38,11 +38,12 @@
 	<!-- buffStatusHungry2 -->
 	<set xpath="/buffs/buff[@name='buffStatusHungry1']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate']/requirement[@name='StatComparePercModMaxToMax']/@value">0.1</set>
 	
-	<!-- buffStatusThirsty1 -->
-	<set xpath="/buffs/buff[@name='buffStatusThirsty1']/effect_group/triggered_effect/requirement[@name='StatComparePercCurrentToMax']/@value">0.5</set>
-
-	<!-- buffStatusThirsty2 -->
+	<!-- buffStatusThirsty fixes -->
+	<set xpath="/buffs/buff[@name='buffStatusCheck']/effect_group/triggered_effect[@buff='buffStatusThirsty1']/requirement[@name='StatComparePercCurrentToMax']/@value">0.4</set>
+	<set xpath="/buffs/buff[@name='buffStatusCheck']/effect_group/triggered_effect[@buff='buffStatusThirsty2']/requirement[@name='StatComparePercCurrentToMax']/@value">0.1</set>
+	<set xpath="/buffs/buff[@name='buffStatusThirsty1']/effect_group/triggered_effect/requirement[@name='StatComparePercCurrentToMax']/@value">0.4</set>
 	<set xpath="/buffs/buff[@name='buffStatusThirsty2']/effect_group/triggered_effect/requirement[@name='StatComparePercCurrentToMax']/@value">0.1</set>
+	<set xpath="/buffs/buff[@name='buffStatusThirsty2']/effect_group/requirement[@name='StatComparePercCurrentToMax']/@value">0.12</set>
 	
 	<!-- buffPowerAttackStaminaStunt -->
 	<set xpath="/buffs/buff[@name='buffPowerAttackStaminaStunt']/duration/@value">0.667</set>

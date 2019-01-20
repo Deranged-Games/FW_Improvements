@@ -437,6 +437,9 @@
 	<set xpath="/items/item[@name='ammoShotgunSlug']/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesVertical'][@operation='base_set']/@value">1.5</set>
 	<set xpath="/items/item[@name='ammoShotgunSlug']/effect_group[@name='Base Effects']/passive_effect[@name='SpreadDegreesHorizontal'][@operation='base_set']/@value">1.5</set>
 	
+	<!-- Rocket range increase, for luls -->
+	<set xpath="/items/item[@name='ammoRocketHE']/property[@class='Action1']/property[@name='LifeTime']/@value">999</set>
+	
 	<!-- ======================================= Update Projectile Weapons ======================================= -->
 	<!-- gunPistol -->
 	<remove xpath="/items/item[@name='gunPistol']/property[@class='Action0']/property[@name='Magazine_items']" />

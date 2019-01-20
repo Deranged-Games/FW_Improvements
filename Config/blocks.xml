@@ -295,14 +295,20 @@
 		<drop event="Harvest" name="resourceScrapPolymers" count="5,12" tag="salvageHarvest"/>
 	</append>
 	
-	<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='Explosion.EntityDamage']">140</set>
-	<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='Explosion.RadiusEntities']">10</set>
-	<set xpath="/blocks/block[@name='mineHubcap']/property[@name='Explosion.EntityDamage']">270</set>
-	<set xpath="/blocks/block[@name='mineHubcap']/property[@name='Explosion.RadiusEntities']">13</set>
-	<set xpath="/blocks/block[@name='mineAirFilter']/property[@name='Explosion.EntityDamage']">559</set>
-	<set xpath="/blocks/block[@name='mineAirFilter']/property[@name='Explosion.RadiusEntities']">13</set>
-	<set xpath="/blocks/block[@name='mineCookingPot']/property[@name='Explosion.EntityDamage']">240</set>
-	<set xpath="/blocks/block[@name='mineCookingPot']/property[@name='Explosion.RadiusEntities']">8</set>
-	<set xpath="/blocks/block[@name='rScrapIronPlateMine']/property[@name='Explosion.EntityDamage']">225</set>
-	<set xpath="/blocks/block[@name='rScrapIronPlateMine']/property[@name='Explosion.RadiusEntities']">8</set>
+	<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='Explosion.EntityDamage']/@value">70</set>
+	<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='Explosion.RadiusEntities']/@value">6</set>
+	<set xpath="/blocks/block[@name='mineHubcap']/property[@name='Explosion.EntityDamage']/@value">135</set>
+	<set xpath="/blocks/block[@name='mineHubcap']/property[@name='Explosion.RadiusEntities']/@value">8</set>
+	<set xpath="/blocks/block[@name='mineAirFilter']/property[@name='Explosion.EntityDamage']/@value">230</set>
+	<set xpath="/blocks/block[@name='mineAirFilter']/property[@name='Explosion.RadiusEntities']/@value">12</set>
+	<set xpath="/blocks/block[@name='mineCookingPot']/property[@name='Explosion.EntityDamage']/@value">120</set>
+	<set xpath="/blocks/block[@name='mineCookingPot']/property[@name='Explosion.RadiusEntities']/@value">5</set>
+	<set xpath="/blocks/block[@name='rScrapIronPlateMine']/property[@name='Explosion.EntityDamage']/@value">115</set>
+	<set xpath="/blocks/block[@name='rScrapIronPlateMine']/property[@name='Explosion.RadiusEntities']/@value">5</set>
+	
+	<set xpath="/blocks/block[starts-with (@name,'mine')]/property[@name='Explosion.DamageBonus.stone']/@value">-.9</set>
+	<set xpath="/blocks/block[starts-with (@name,'mine')]/property[@name='Explosion.DamageBonus.metal']/@value">-.9</set>
+	<set xpath="/blocks/block[starts-with (@name,'mine')]/property[@name='Explosion.DamageBonus.earth']/@value">-1</set>
+	<set xpath="/blocks/block[starts-with (@name,'mine')]/property[@name='Explosion.DamageBonus.wood']/@value">-1</set>
+	<set xpath="/blocks/block[starts-with (@name,'mine')]/property[@name='Explosion.DamageBonus.water']/@value">-1</set>
 </configs>
