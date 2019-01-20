@@ -572,7 +572,7 @@
 		<passive_effect name="KickDegreesHorizontal" operation="perc_add" value="0,-.5" tier="1,6"/>
 		<passive_effect name="MagazineSize" operation="perc_add" value="0,.5" tier="1,6"/>
 	</append>
-	<set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage'][@operation='base_set']/@value">45</set>
+	<set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage'][@operation='base_set']/@value">100</set>
 
 	<!-- ======================================= Update Armor Items ======================================= -->
 
