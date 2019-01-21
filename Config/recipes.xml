@@ -49,7 +49,7 @@
 			<ingredient name="unit_brass" count="1"/>
 			<ingredient name="unit_clay" count="1"/>
 		</recipe>
-		<recipe name="foodMoldyBread" count="1">
+		<recipe name="foodMoldyBread" count="1" craft_time="1">
 			<ingredient name="foodShamSandwich" count="1"/>
 		</recipe>
 		<recipe name="gun44Magnum" craft_area="workbench" count="1" tags="learnable">
@@ -208,7 +208,7 @@
 			<ingredient name="resourceAnimalFat" count="1"/>
 			<ingredient name="resourcePaint" count="1"/>
 		</recipe>
-		<recipe name="resourcePaper" count="10" craft_area="tablesaw" craft_time="1">
+		<recipe name="resourcePaper" count="5" craft_area="tablesaw" craft_time="3">
 			<ingredient name="resourceWood" count="1"/>
 			<ingredient name="resourceYuccaFibers" count="3"/>
 		</recipe>
