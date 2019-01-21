@@ -208,6 +208,10 @@
 			<ingredient name="resourceAnimalFat" count="1"/>
 			<ingredient name="resourcePaint" count="1"/>
 		</recipe>
+		<recipe name="resourcePaper" count="10" craft_area="tablesaw" craft_time="1">
+			<ingredient name="resourceWood" count="1"/>
+			<ingredient name="resourceYuccaFibers" count="3"/>
+		</recipe>
 	</append>
 
 	<!-- Why so much tape and glue? -->
