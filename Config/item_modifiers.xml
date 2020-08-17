@@ -9,7 +9,7 @@
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
 			<effect_group tiered="false">
 				<passive_effect name="StaminaLoss" operation="base_add" value="8" tags="primary,secondary"/>
-				<passive_effect name="EntityDamage" operation="base_add" value="9"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="7"/>
 				<requirement name="EntityTagCompare" target="other" tags="zombie"/>
 				<passive_effect name="MaxRange" operation="perc_add" value=".1"/>
 				<property name="PickupJournalEntry" value="augmentGunsTip"/>
@@ -27,7 +27,7 @@
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
 			<effect_group tiered="false">
 				<passive_effect name="StaminaLoss" operation="base_add" value="8" tags="primary,secondary"/>
-				<passive_effect name="EntityDamage" operation="base_add" value="12"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="10"/>
 				<requirement name="EntityTagCompare" target="other" tags="zombie"/>
 				<passive_effect name="MaxRange" operation="perc_add" value=".12"/>
 				<property name="PickupJournalEntry" value="augmentGunsTip"/>
@@ -45,7 +45,7 @@
 			<property name="PickupJournalEntry" value="augmentGunsTip"/>
 			<effect_group tiered="false">
 				<passive_effect name="StaminaLoss" operation="base_add" value="8" tags="primary,secondary"/>
-				<passive_effect name="EntityDamage" operation="base_add" value="15"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="13"/>
 				<requirement name="EntityTagCompare" target="other" tags="zombie"/>
 				<passive_effect name="MaxRange" operation="perc_add" value=".15"/>
 				<property name="PickupJournalEntry" value="augmentGunsTip"/>

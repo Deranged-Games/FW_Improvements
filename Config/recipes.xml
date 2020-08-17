@@ -164,6 +164,18 @@
 			<ingredient name="resourceMetalPipe" count="1"/>
 			<ingredient name="resourceBrokenGlass" count="1"/>
 		</recipe>
+		<recipe name="cntCabinetOldSink" count="1" craft_area="workbench">
+			<ingredient name="resourceCobblestones" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceMetalPipe" count="1"/>
+			<ingredient name="cntCupboardCabinetRedTopClosed" count="1"/>
+		</recipe>
+		<recipe name="cntGraniteSink" count="1" craft_area="workbench">
+			<ingredient name="resourceCobblestones" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceMetalPipe" count="1"/>
+			<ingredient name="cntCupboardCabinetRedTopClosed" count="1"/>
+		</recipe>
 		<recipe name="solarbank" count="1" craft_area="workbench" tags="learnable">
 			<ingredient name="resourceForgedSteel" count="100"/>
 			<ingredient name="resourceScrapPolymers" count="50"/>
@@ -222,6 +234,19 @@
 	<set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='12']/@count">2</set>
 	<set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='25']/@count">5</set>
 	<set xpath="/recipes/recipe/ingredient[@name='resourceGlue']/@count">1</set>
+
+  <!-- They act like just finding mods is not end-game enough -->
+  <set xpath="/recipes/recipe[starts-with (@name,'mod')]/ingredient[@name='resourceSpring' and @count='10']/@count">1</set>
+  <set xpath="/recipes/recipe[starts-with (@name,'mod')]/ingredient[@name='resourceSpring' and @count='20']/@count">2</set>
+  
+  <set xpath="/recipes/recipe[starts-with (@name,'mod')]/ingredient[@name='resourceMechanicalParts' and @count='5']/@count">2</set>
+  <set xpath="/recipes/recipe[starts-with (@name,'mod')]/ingredient[@name='resourceMechanicalParts' and @count='20']/@count">5</set>
+
+  <set xpath="/recipes/recipe[starts-with (@name,'mod')]/ingredient[@name='resourceScrapPolymers' and @count='10']/@count">5</set>
+  <set xpath="/recipes/recipe[starts-with (@name,'mod')]/ingredient[@name='resourceScrapPolymers' and @count='15']/@count">8</set>
+  <set xpath="/recipes/recipe[starts-with (@name,'mod')]/ingredient[@name='resourceScrapPolymers' and @count='20']/@count">10</set>
+  <set xpath="/recipes/recipe[starts-with (@name,'mod')]/ingredient[@name='resourceScrapPolymers' and @count='30']/@count">12</set>
+  <set xpath="/recipes/recipe[starts-with (@name,'mod')]/ingredient[@name='resourceScrapPolymers' and @count='60']/@count">15</set>
 
 	<!-- I dont want to use a gun made with duct tape -->
 	<remove xpath="/recipes/recipe[starts-with (@name,'gun')]/ingredient[@name='resourceDuctTape']" />

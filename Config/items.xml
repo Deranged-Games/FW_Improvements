@@ -311,7 +311,7 @@
 		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 	</append>
 	<append xpath="/items/item[@name='meleeToolMachete']/effect_group[@name='Base Effects']">
-		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1.5" tags="head"/>
 	</append>
 	<append xpath="/items/item[@name='meleeToolPickaxeIron']/effect_group[@name='Base Effects']">
 		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="head"/>
@@ -320,10 +320,10 @@
 		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 	</append>
 	<append xpath="/items/item[@name='meleeToolSledgehammer']/effect_group[@name='Base Effects']">
-		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="head"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 	</append>
 	<append xpath="/items/item[@name='meleeToolSteelSledgehammer']/effect_group[@name='Base Effects']">
-		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="head"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 	</append>
 	<append xpath="/items/item[@name='meleeToolPickaxeSteel']/effect_group[@name='Base Effects']">
 		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="head"/>
@@ -771,7 +771,8 @@
 	<set xpath="/items/item[@name='cigar']/effect_group">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
-		<passive_effect name="Bartering" operation="base_add" value=".1,.2" tier="1,6"/>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".1,.2" tier="1,6"/>
+    <passive_effect name="BarteringSelling" operation="base_add" value=".1,.2" tier="1,6"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='cigar']/effect_group/@tiered">true</set>
@@ -780,7 +781,8 @@
 	<!-- cigarette -->
 	<set xpath="/items/item[@name='cigarette']/effect_group">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="Bartering" operation="base_add" value="0.1,0.2" tier="1,6"/>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".1,.2" tier="1,6"/>
+    <passive_effect name="BarteringSelling" operation="base_add" value=".1,.2" tier="1,6"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 	</set>
 	<set xpath="/items/item[@name='cigarette']/effect_group/@tiered">true</set>
