@@ -1,64 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
-	<!-- Inventory Size Fixes -->
-	<set xpath="/buffs/buff[@name='god']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
-	<set xpath="/buffs/buff[@name='buffDrugSteroids']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
-
-	<!-- buffElementHot -->
-	<remove xpath="/buffs/buff[@name='buffElementHot']/effect_group/passive_effect[@tags='attPerception']"/>
-	<remove xpath="/buffs/buff[@name='buffElementHot']/effect_group/passive_effect[@tags='attStrength']"/>
-	<remove xpath="/buffs/buff[@name='buffElementHot']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @buff='buffPerkAbilityUpdate']"/>
-	<remove xpath="/buffs/buff[@name='buffElementHot']/effect_group/triggered_effect[@trigger='onSelfBuffRemove' and @buff='buffPerkAbilityUpdate']"/>
-	<set xpath="/buffs/buff[@name='buffElementHot']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">1</set>
-
-	<!-- buffElementSweltering -->
-	<remove xpath="/buffs/buff[@name='buffElementSweltering']/effect_group/passive_effect[@tags='attPerception']"/>
-	<remove xpath="/buffs/buff[@name='buffElementSweltering']/effect_group/passive_effect[@tags='attStrength']"/>
-	<remove xpath="/buffs/buff[@name='buffElementSweltering']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @buff='buffPerkAbilityUpdate']"/>
-	<remove xpath="/buffs/buff[@name='buffElementSweltering']/effect_group/triggered_effect[@trigger='onSelfBuffRemove' and @buff='buffPerkAbilityUpdate']"/>
-	<set xpath="/buffs/buff[@name='buffElementSweltering']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">2</set>
-
-	<!-- buffElementCold -->
-	<remove xpath="/buffs/buff[@name='buffElementCold']/effect_group/passive_effect[@tags='attFortitude']"/>
-	<remove xpath="/buffs/buff[@name='buffElementCold']/effect_group/passive_effect[@tags='attStrength']"/>
-	<remove xpath="/buffs/buff[@name='buffElementCold']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @buff='buffPerkAbilityUpdate']"/>
-	<remove xpath="/buffs/buff[@name='buffElementCold']/effect_group/triggered_effect[@trigger='onSelfBuffRemove' and @buff='buffPerkAbilityUpdate']"/>
-	<set xpath="/buffs/buff[@name='buffElementCold']/effect_group/passive_effect[@name='StaminaLossMaxMult']/@value">0.5</set>
-
-	<!-- buffElementFreezing -->
-	<remove xpath="/buffs/buff[@name='buffElementFreezing']/effect_group/passive_effect[@tags='attFortitude']"/>
-	<remove xpath="/buffs/buff[@name='buffElementFreezing']/effect_group/passive_effect[@tags='attStrength']"/>
-	<remove xpath="/buffs/buff[@name='buffElementFreezing']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @buff='buffPerkAbilityUpdate']"/>
-	<remove xpath="/buffs/buff[@name='buffElementFreezing']/effect_group/triggered_effect[@trigger='onSelfBuffRemove' and @buff='buffPerkAbilityUpdate']"/>
-	<set xpath="/buffs/buff[@name='buffElementFreezing']/effect_group/passive_effect[@name='StaminaLossMaxMult']/@value">2</set>
-
-	<!-- buffStatusHungry1 -->
-	<set xpath="/buffs/buff[@name='buffStatusHungry1']/effect_group/triggered_effect[@buff='buffStatusHungry1']/requirement[@name='StatComparePercModMaxToMax']/@value">0.50</set>
-
-	<!-- buffStatusHungry2 -->
-	<set xpath="/buffs/buff[@name='buffStatusHungry1']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate']/requirement[@name='StatComparePercModMaxToMax']/@value">0.1</set>
-
-	<!-- buffStatusThirsty fixes -->
-	<set xpath="/buffs/buff[@name='buffStatusCheck']/effect_group/triggered_effect[@buff='buffStatusThirsty1']/requirement[@name='StatComparePercCurrentToMax']/@value">0.4</set>
-	<set xpath="/buffs/buff[@name='buffStatusCheck']/effect_group/triggered_effect[@buff='buffStatusThirsty2']/requirement[@name='StatComparePercCurrentToMax']/@value">0.1</set>
-	<set xpath="/buffs/buff[@name='buffStatusThirsty1']/effect_group/triggered_effect/requirement[@name='StatComparePercCurrentToMax']/@value">0.4</set>
-	<set xpath="/buffs/buff[@name='buffStatusThirsty2']/effect_group/triggered_effect/requirement[@name='StatComparePercCurrentToMax']/@value">0.1</set>
-	<set xpath="/buffs/buff[@name='buffStatusThirsty2']/effect_group/requirement[@name='StatComparePercCurrentToMax']/@value">0.12</set>
-
-	<!-- buffPowerAttackStaminaStunt -->
-	<set xpath="/buffs/buff[@name='buffPowerAttackStaminaStunt']/duration/@value">0.667</set>
-
 	<append xpath="/buffs">
-		<buff name="Sleeping2"  name_key="Sleeping" description_key="Sleeping in an old bed slowly regenerates health and keeps you warm" tooltip_key="You're resting in your bed" icon="ui_game_symbol_map_bed">
+		<buff name="Sleeping2"  name_key="Sleeping" description_key="Sleeping in an old bed slowly regenerates health and keeps you warm" tooltip_key="You're resting in a bed" icon="ui_game_symbol_map_bed">
 			<stack_type value="ignore"/>
 			<duration value="1"/>
 			<effect_group>
 				<passive_effect name="HypothermalResist" operation="base_add" value="30"/>
 				<passive_effect name="HyperthermalResist" operation="base_add" value="30"/>
-				<passive_effect name="HealthChangeOT" operation="base_add" value="1.0"/>
-				<passive_effect name="HealthMaxModifierOT" operation="base_add" value="@maxHealthIncrease"/>
-				<requirement name="CVarCompare" target="self" cvar="maxHealthAmount" operation="LTE" value="0"/>
-				<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="maxHealthIncrease" operation="set" value="0.25"/>
+				<passive_effect name="HealthChangeOT" operation="base_add" value="0.5"/>
 			</effect_group>
 		</buff>
 	</append>
