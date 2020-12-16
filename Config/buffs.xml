@@ -7,7 +7,8 @@
 			<effect_group>
 				<passive_effect name="HypothermalResist" operation="base_add" value="30"/>
 				<passive_effect name="HyperthermalResist" operation="base_add" value="30"/>
-				<passive_effect name="HealthChangeOT" operation="base_add" value="0.5"/>
+				<passive_effect name="HealthChangeOT" operation="base_add" value="0.25"/>
+				<passive_effect name="FoodLossPerHealthPointLost" operation="perc_add" value="-0.5"/>
 			</effect_group>
 		</buff>
 	</append>

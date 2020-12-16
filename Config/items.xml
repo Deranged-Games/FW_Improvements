@@ -40,4 +40,17 @@
 	<append xpath="/items/item[@name='foodMeatStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
 	<append xpath="/items/item[@name='foodVegetableStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
 	<append xpath="/items/item[@name='drugRecog']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+
+  <!-- Ok, food values are big imbalanced -->
+  <set xpath="/items/item[@name='foodCornBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">10</set>
+  <set xpath="/items/item[@name='foodCharredMeat']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>
+  <set xpath="/items/item[@name='foodGrilledMeat']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">25</set>
+  <set xpath="/items/item[@name='foodBoiledMeat']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">20</set>
+  <set xpath="/items/item[@name='foodMeatStew']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">35</set>
+  <set xpath="/items/item[@name='foodSteakAndPotato']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">35</set>
+  <set xpath="/items/item[@name='foodFishTacos']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">35</set>
+  <set xpath="/items/item[@name='foodChiliDog']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">35</set>
+  <set xpath="/items/item[@name='foodBakedPotato']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">10</set>
+  <set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">20</set>
+  <set xpath="/items/item[@name='foodRawMeat']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">10</set>
 </configs>

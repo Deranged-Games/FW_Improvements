@@ -5,8 +5,8 @@
 
   <!-- Weighted Head Buff -->
 	<append xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/effect_group">
-		<passive_effect name="EntityDamage" operation="base_add" value="15"/>
-		<passive_effect name="BlockDamage" operation="base_add" value="30"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value=".35"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value=".35"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.15"/>
 		<passive_effect name="StaminaLoss" operation="perc_add" value=".25"/>
 	</append>

@@ -117,4 +117,7 @@
 	<set xpath="/recipes/recipe[@name='plantedMushroom1']/ingredient[@name='resourceClayLump']/@count">1</set>
 	<set xpath="/recipes/recipe[@name='plantedPotato1']/ingredient[@name='foodCropPotato']/@count">1</set>
 	<set xpath="/recipes/recipe[@name='plantedYucca1']/ingredient[@name='foodCropYuccaFruit']/@count">1</set>
+
+	<!-- More skill craftsman does not mean more wasteful -->
+	<remove xpath="/recipes/recipe[starts-with (@name,'melee')]/effect_group/passive_effect[@name='CraftingIngredientCount']" />
 </configs>
