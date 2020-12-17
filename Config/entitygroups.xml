@@ -1,4 +1,4 @@
 <configs>
   <!-- Forests should be better hunting grounds -->
-	<set xpath="/entitygroups/entitygroup/entity[@name='invisibleAnimal']/@prob">20</set>
+  <set xpath="/entitygroups/entitygroup/entity[@name='invisibleAnimal']/@prob">20</set>
 </configs>

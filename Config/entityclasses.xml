@@ -1,7 +1,7 @@
 <configs>
-	<!-- Loot and player bag remain for longer -->
-	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']/property[@name='TimeStayAfterDeath']/@value">1800</set>
-	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']/property[@name='TimeStayAfterDeath']/@value">1800</set>
-	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']/@value">1800</set>
-	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerBandit']/property[@name='TimeStayAfterDeath']/@value">1800</set>
+  <!-- Loot and player bag remain for longer -->
+  <set xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']/property[@name='TimeStayAfterDeath']/@value">1800</set>
+  <set xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']/property[@name='TimeStayAfterDeath']/@value">1800</set>
+  <set xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']/@value">1800</set>
+  <set xpath="/entity_classes/entity_class[@name='EntityLootContainerBandit']/property[@name='TimeStayAfterDeath']/@value">1800</set>
 </configs>

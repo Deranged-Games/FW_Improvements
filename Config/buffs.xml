@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
-	<append xpath="/buffs">
-		<buff name="Sleeping2"  name_key="Sleeping" description_key="Sleeping in an old bed slowly regenerates health and keeps you warm" tooltip_key="You're resting in a bed" icon="ui_game_symbol_map_bed">
-			<stack_type value="ignore"/>
-			<duration value="1"/>
-			<effect_group>
-				<passive_effect name="HypothermalResist" operation="base_add" value="30"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value="30"/>
-				<passive_effect name="HealthChangeOT" operation="base_add" value="0.25"/>
-				<passive_effect name="FoodLossPerHealthPointLost" operation="perc_add" value="-0.5"/>
-			</effect_group>
-		</buff>
-	</append>
+  <append xpath="/buffs">
+    <buff name="Sleeping2"  name_key="Sleeping" description_key="Sleeping in an old bed slowly regenerates health and keeps you warm" tooltip_key="You're resting in a bed" icon="ui_game_symbol_map_bed">
+      <stack_type value="ignore"/>
+      <duration value="1"/>
+      <effect_group>
+        <passive_effect name="HypothermalResist" operation="base_add" value="30"/>
+        <passive_effect name="HyperthermalResist" operation="base_add" value="30"/>
+        <passive_effect name="HealthChangeOT" operation="base_add" value="0.25"/>
+        <passive_effect name="FoodLossPerHealthPointLost" operation="perc_add" value="-0.5"/>
+      </effect_group>
+    </buff>
+  </append>
+  <remove xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group/passive_effect[@name='HealthMax']" />
 </configs>

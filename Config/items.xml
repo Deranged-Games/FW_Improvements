@@ -1,5 +1,5 @@
 <configs>
-	<!-- Reduce sensible block damage for zombies. -->
+  <!-- Reduce sensible block damage for zombies. -->
 	<append xpath="/items/item[starts-with (@name,'meleeHandZombie')]/effect_group">
 		<passive_effect name="DamageModifier" operation="perc_set" value=".4" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="stone,concrete"/>

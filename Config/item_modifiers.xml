@@ -1,13 +1,13 @@
 <configs>
   <!-- Armor Mod Buffs -->
-	<set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingBasic']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">2</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingReinforced']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">4</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingBasic']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">2</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingReinforced']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">4</set>
 
   <!-- Weighted Head Buff -->
-	<append xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/effect_group">
-		<passive_effect name="EntityDamage" operation="perc_add" value=".35"/>
-		<passive_effect name="BlockDamage" operation="perc_add" value=".35"/>
-		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.15"/>
-		<passive_effect name="StaminaLoss" operation="perc_add" value=".25"/>
-	</append>
+  <append xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/effect_group">
+    <passive_effect name="EntityDamage" operation="perc_add" value=".35"/>
+    <passive_effect name="BlockDamage" operation="perc_add" value=".35"/>
+    <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.15"/>
+    <passive_effect name="StaminaLoss" operation="perc_add" value=".25"/>
+  </append>
 </configs>
