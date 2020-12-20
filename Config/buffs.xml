@@ -13,4 +13,8 @@
     </buff>
   </append>
   <remove xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group/passive_effect[@name='HealthMax']" />
+  <remove xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group/passive_effect[@name='HealthMax']" />
+  <remove xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group/passive_effect[@name='StaminaMax']" />
+  <remove xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group/passive_effect[@name='WaterMax']" />
+  <remove xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group/passive_effect[@name='FoodMax']" />
 </configs>

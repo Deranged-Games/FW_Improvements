@@ -4,6 +4,7 @@
   <set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingReinforced']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">4</set>
 
   <!-- Weighted Head Buff -->
+  <remove xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/effect_group/requirement" />
   <append xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/effect_group">
     <passive_effect name="EntityDamage" operation="perc_add" value=".35"/>
     <passive_effect name="BlockDamage" operation="perc_add" value=".35"/>
