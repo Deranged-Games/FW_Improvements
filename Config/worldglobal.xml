@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+  <set xpath="/worldglobal/environment/property[@name='ambientInsideThreshold']/@value">1.5</set>
+  <set xpath="/worldglobal/environment/property[@name='fogPower']/@value">1,1</set>
+  <set xpath="/worldglobal/environment/property[@name='ambientMoon']/@value">0.3,0.01</set>
+</configs>

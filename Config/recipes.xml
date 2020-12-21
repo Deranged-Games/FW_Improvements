@@ -129,4 +129,6 @@
 
   <!-- More skill craftsman does not mean more wasteful -->
   <remove xpath="/recipes/recipe[starts-with (@name,'melee')]/effect_group/passive_effect[@name='CraftingIngredientCount']" />
+  <remove xpath="/recipes/recipe[starts-with (@name,'gun')]/effect_group/passive_effect[@name='CraftingIngredientCount']" />
+  <remove xpath="/recipes/recipe[starts-with (@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount']" />
 </configs>

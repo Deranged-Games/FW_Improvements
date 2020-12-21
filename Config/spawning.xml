@@ -9,7 +9,7 @@
   <set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesNight']/@maxcount">3</set>
   <set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesNight']/@maxcount">3</set>
   <set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesNight']/@maxcount">3</set>
-  <set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesNight']/@maxcount">4</set>
+  <set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandNight']/@maxcount">4</set>
   <set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='ZombiesNight']/@maxcount">3</set>
 </configs>
 

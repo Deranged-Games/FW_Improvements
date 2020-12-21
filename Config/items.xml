@@ -55,10 +55,13 @@
   <set xpath="/items/item[@name='foodRawMeat']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">10</set>
 
   <!-- Fireaxes (specifically iron) are under powered -->
-  <set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/effect_group/passive_effect[@name='$BlockDamage']/@value">60</set>
-  <set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/effect_group/passive_effect[@name='$BlockDamage']/@value">105</set>
+  <set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/effect_group[@name='meleeToolAxeT1IronFireaxe']/passive_effect[@name='BlockDamage']/@value">60</set>
+  <set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/effect_group[@name='meleeToolAxeT2SteelAxe']/passive_effect[@name='BlockDamage']/@value">105</set>
 
   <!-- Autoshotty is not auto.. and baddy -->
-  <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='RoundsPerMinute']/@value">249</set>
-  <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='BurstRoundCount']/@value">100</set>
+  <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='RoundsPerMinute']/@value">18</set>
+  <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='BurstRoundCount']/@value">50</set>
+
+  <!-- Mods for M60 -->
+  <set xpath="/items/item[@name='gunMGT3M60']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic</set>
 </configs>

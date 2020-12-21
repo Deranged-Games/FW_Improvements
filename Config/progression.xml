@@ -18,14 +18,17 @@
     <passive_effect name="EntityDamage" operation="perc_add" level="2,10" value=".05,.5" tags="perkPummelPete,perkSkullCrusher,perkMiner69r,perkBrawler"/>
   </append>
   <append xpath="/progression/attributes/attribute[@name='attFortitude']/effect_group">
-    <passive_effect name="HealthMax" operation="base_add" level="2,10" value="10,100"/>
-    <passive_effect name="FoodMax" operation="base_add" level="2,10" value="10,100"/>
+    <!--<passive_effect name="HealthMax" operation="base_add" level="2,10" value="10,100"/>-->
+    <!--<passive_effect name="FoodMax" operation="base_add" level="2,10" value="10,100"/>-->
+    <passive_effect name="HypothermalResist" operation="base_add" level="2,10" value="5,50"/>
+    <passive_effect name="HyperthermalResist" operation="base_add" level="2,10" value="5,50"/>
     <passive_effect name="WaterLossPerHealthPointGained" operation="perc_add" level="2,10" value="-.03,-.3"/>
     <passive_effect name="FoodLossPerHealthPointLost" operation="perc_add" level="2,10" value="-.03,-.3"/>
   </append>
   <append xpath="/progression/attributes/attribute[@name='attAgility']/effect_group">
-    <passive_effect name="StaminaMax" operation="base_add" level="2,10" value="10,100"/>
-    <passive_effect name="WaterMax" operation="base_add" level="2,10" value="10,100"/>
+    <!--<passive_effect name="StaminaMax" operation="base_add" level="2,10" value="10,100"/>-->
+    <!--<passive_effect name="WaterMax" operation="base_add" level="2,10" value="10,100"/>-->
+    <passive_effect name="StaminaLoss" operation="perc_add" level="2,10" value="-.02,-.2"/>
     <passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" level="2,10" value="-.03,-.3"/>
     <passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" level="2,10" value="-.03,-.3"/>
   </append>
