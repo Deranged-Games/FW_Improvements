@@ -13,8 +13,27 @@
   <set xpath="/lootcontainers/lootcontainer[@id='1']/@size">10,9</set>
   <set xpath="/lootcontainers/lootcontainer[@id='5']/@size">10,9</set>
   <set xpath="/lootcontainers/lootcontainer[@id='3']/@size">10,9</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='6']/@size">8,8</set> <!-- wallSafe / deskSafe -->
+	<set xpath="/lootcontainers/lootcontainer[@id='8']/@size">7,5</set> <!-- kitchen sink, cupboards (lower) -->
+	<set xpath="/lootcontainers/lootcontainer[@id='11']/@size">8,6</set> <!-- stove/oven, cooking pots -->
+	<set xpath="/lootcontainers/lootcontainer[@id='17']/@size">8,6</set> <!-- canned or dry food cupboard door open sound-->
+	<set xpath="/lootcontainers/lootcontainer[@id='24']/@size">8,6</set> <!-- metal desk -->
+	<set xpath="/lootcontainers/lootcontainer[@id='40']/@size">10,9</set> <!-- military munitions ammo box -->
+	<set xpath="/lootcontainers/lootcontainer[@id='42']/@size">10,9</set> <!-- cntNightstandClosed and dressers, wooden desk -->
+	<set xpath="/lootcontainers/lootcontainer[@id='43']/@size">7,5</set> <!-- lockers -->
+	<set xpath="/lootcontainers/lootcontainer[@id='44']/@size">6,6</set> <!-- file cabinet -->
+	<set xpath="/lootcontainers/lootcontainer[@id='46']/@size">8,6</set> <!-- trash compactor, trash deluxe! -->
+	<set xpath="/lootcontainers/lootcontainer[@id='47']/@size">9,9</set> <!-- frozen or refridgerated food, spoiled food (Helper) -->
+	<set xpath="/lootcontainers/lootcontainer[@id='49']/@size">7,5</set> <!-- bookcase -->
+	<set xpath="/lootcontainers/lootcontainer[@id='52']/@size">8,6</set> <!-- beer cooler -->
+	<set xpath="/lootcontainers/lootcontainer[@id='76']/@size">10,2</set> <!-- vehicleBicycle storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='77']/@size">10,4</set> <!-- vehicleMinibike storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='78']/@size">10,7</set> <!-- vehicleMotorcycle storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='79']/@size">10,9</set> <!-- vehicle4x4Truck storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='80']/@size">10,6</set> <!-- vehicleGyrocopter storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='121']/@size">10,9</set> <!-- cntHardenedChestSecure, hero, big, fancy chest -->
 
-  <!-- All Loot - Prep -->
+  <!-- All Loot Stages - Prep -->
   <remove xpath="/lootcontainers/lootprobtemplates/lootprobtemplate[@name='baseProbTemplate']"/>
   <remove xpath="/lootcontainers/lootprobtemplates/lootprobtemplate[@name='probTemplate1.0']"/>
   <remove xpath="/lootcontainers/lootprobtemplates/lootprobtemplate[@name='probTemplate0.75']"/>
@@ -29,7 +48,7 @@
   <remove xpath="/lootcontainers/lootprobtemplates/lootprobtemplate[@name='ProbT2']"/>
   <remove xpath="/lootcontainers/lootprobtemplates/lootprobtemplate[@name='ProbT3']"/>
 
-  <!-- All Loot - Implementation -->
+  <!-- All Loot Stages - Implementation -->
   <append xpath="/lootcontainers/lootprobtemplates">  
     <lootprobtemplate name="baseProbTemplate">
       <loot level="1,999999" prob="0.25"/>

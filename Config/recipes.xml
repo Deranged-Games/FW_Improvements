@@ -6,26 +6,6 @@
     <recipe name="foodMoldyBread" count="1" craft_time="1">
       <ingredient name="foodShamSandwich" count="1"/>
     </recipe>
-    <recipe name="WorkingOven" count="1" craft_area="workbench">
-      <ingredient name="resourceScrapIron" count="10"/>
-      <ingredient name="resourceMechanicalParts" count="4"/>
-      <ingredient name="resourceMetalPipe" count="1"/>
-      <ingredient name="resourceBrokenGlass" count="1"/>
-    </recipe>
-    <recipe name="cntCabinetOldSink" count="1" craft_area="workbench">
-      <ingredient name="resourceRockSmall" count="20"/>
-      <ingredient name="resourceMechanicalParts" count="1"/>
-      <ingredient name="resourceMetalPipe" count="1"/>
-      <ingredient name="resourceNail" count="10"/>
-      <ingredient name="resourceWood" count="12"/>
-    </recipe>
-    <recipe name="cntGraniteSink" count="1" craft_area="workbench">
-      <ingredient name="resourceCobblestones" count="10"/>
-      <ingredient name="resourceMechanicalParts" count="1"/>
-      <ingredient name="resourceMetalPipe" count="1"/>
-      <ingredient name="resourceNail" count="10"/>
-      <ingredient name="resourceWood" count="12"/>
-    </recipe>
     <recipe name="foodFishTacos" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
       <ingredient name="foodCanTuna" count="1"/>
       <ingredient name="foodCornMeal" count="2"/>
@@ -63,6 +43,11 @@
       <ingredient name="resourceGunPowder" count="3"/>
       <ingredient name="resourceBulletCasingSteel" count="1"/>
     </recipe>
+		<recipe name="modernCookingHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceMetalPipe" count="1"/>
+		</recipe>
   </append>
 
   <!-- Why so much tape and glue? -->
@@ -155,7 +140,7 @@
   <set xpath="/recipes/recipe[@name='plantedCoffee1']/ingredient[@name='resourceCropCoffeeBeans']/@count">1</set>
   <set xpath="/recipes/recipe[@name='plantedPumpkin1']/ingredient[@name='foodCropPumpkin']/@count">1</set>
 
-  <!-- More skill craftsman does not mean more wasteful -->
+  <!-- A more skilled craftsman does not mean more wasteful -->
   <remove xpath="/recipes/recipe[starts-with (@name,'melee')]/effect_group/passive_effect[@name='CraftingIngredientCount']" />
   <remove xpath="/recipes/recipe[starts-with (@name,'gun')]/effect_group/passive_effect[@name='CraftingIngredientCount']" />
   <remove xpath="/recipes/recipe[starts-with (@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount']" />
