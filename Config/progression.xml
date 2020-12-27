@@ -4,8 +4,15 @@
   <set xpath="/progression/attributes/@cost_multiplier_per_level">1.05</set>
   <set xpath="/progression/level/@max_level">999</set>
 
+  <!-- Main attribute buff prep -->
+  <remove xpath="/progression/attributes/attribute/effect_group/requirement"/>
+  <remove xpath="/progression/attributes/attribute/effect_group/passive_effect"/>
+
   <!-- Main attribute buffs -->
   <append xpath="/progression/attributes/attribute[@name='attPerception']/effect_group">
+    <passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"><requirement name="ItemHasTags" tags="attPerception"/></passive_effect>
+    <passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"><requirement name="ItemHasTags" tags="attPerception"/></passive_effect>
+    <passive_effect name="DismemberChance" operation="base_add" level="2,10" value=".05,.45"><requirement name="ItemHasTags" tags="attPerception"/></passive_effect>
     <passive_effect name="LootGamestage" operation="perc_add" level="2,10" value=".03,.3"/>
     <passive_effect name="LootQuantity" operation="perc_add" level="2,10" value=".03,.3"/>
     <passive_effect name="ScavengingTime" operation="perc_subtract" level="2,10" value=".02,.2"/>
@@ -13,30 +20,62 @@
     <passive_effect name="LockPickBreakChance" operation="perc_subtract" level="2,10" value=".03,.3"/>
   </append>
   <append xpath="/progression/attributes/attribute[@name='attStrength']/effect_group">
+    <passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"><requirement name="ItemHasTags" tags="attStrength"/></passive_effect>
+    <passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"><requirement name="ItemHasTags" tags="attStrength"/></passive_effect>
+    <passive_effect name="DismemberChance" operation="base_add" level="2,10" value=".05,.45"><requirement name="ItemHasTags" tags="attStrength"/></passive_effect>
     <passive_effect name="BuffResistance" operation="base_add" level="2,10" value=".03,.3" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffInjuryStunned01,buffInjuryStunned02"/>
     <passive_effect name="BlockDamage" operation="perc_add" level="2,10" value=".05,.5" tags="perkPummelPete,perkSkullCrusher,perkMiner69r,perkBrawler"/>
     <passive_effect name="EntityDamage" operation="perc_add" level="2,10" value=".05,.5" tags="perkPummelPete,perkSkullCrusher,perkMiner69r,perkBrawler"/>
   </append>
   <append xpath="/progression/attributes/attribute[@name='attFortitude']/effect_group">
-    <!--<passive_effect name="HealthMax" operation="base_add" level="2,10" value="10,100"/>-->
-    <!--<passive_effect name="FoodMax" operation="base_add" level="2,10" value="10,100"/>-->
+    <passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"><requirement name="ItemHasTags" tags="attFortitude"/></passive_effect>
+    <passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"><requirement name="ItemHasTags" tags="attFortitude"/></passive_effect>
+    <passive_effect name="DismemberChance" operation="base_add" level="2,10" value=".05,.45"><requirement name="ItemHasTags" tags="attFortitude"/></passive_effect>
     <passive_effect name="HypothermalResist" operation="base_add" level="2,10" value="5,50"/>
     <passive_effect name="HyperthermalResist" operation="base_add" level="2,10" value="5,50"/>
     <passive_effect name="WaterLossPerHealthPointGained" operation="perc_add" level="2,10" value="-.03,-.3"/>
     <passive_effect name="FoodLossPerHealthPointLost" operation="perc_add" level="2,10" value="-.03,-.3"/>
   </append>
   <append xpath="/progression/attributes/attribute[@name='attAgility']/effect_group">
-    <!--<passive_effect name="StaminaMax" operation="base_add" level="2,10" value="10,100"/>-->
-    <!--<passive_effect name="WaterMax" operation="base_add" level="2,10" value="10,100"/>-->
+    <passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"><requirement name="ItemHasTags" tags="attAgility"/></passive_effect>
+    <passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"><requirement name="ItemHasTags" tags="attAgility"/></passive_effect>
+    <passive_effect name="DismemberChance" operation="base_add" level="2,10" value=".05,.45"><requirement name="ItemHasTags" tags="attAgility"/></passive_effect>
     <passive_effect name="StaminaLoss" operation="perc_add" level="2,10" value="-.02,-.2"/>
     <passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" level="2,10" value="-.03,-.3"/>
     <passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" level="2,10" value="-.03,-.3"/>
   </append>
   <append xpath="/progression/attributes/attribute[@name='attIntellect']/effect_group">
+    <passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"><requirement name="ItemHasTags" tags="attIntellect"/></passive_effect>
+    <passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"><requirement name="ItemHasTags" tags="attIntellect"/></passive_effect>
+    <passive_effect name="DismemberChance" operation="base_add" level="2,10" value=".05,.45"><requirement name="ItemHasTags" tags="attIntellect"/></passive_effect>
     <passive_effect name="PlayerExpGain" operation="perc_add" level="2,10" value=".05,.5"/>
   </append>
 
   <!-- Turret big control -->
   <set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='JunkTurretActiveCount' and @operation='base_add']/@level">1,5</set>
   <set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='JunkTurretActiveCount' and @operation='base_add']/@value">1,5</set>
+
+  <!-- Tier 6 Crafting -->
+  <set xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
+  <set xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
+  <set xpath="/progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
+  <set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
+  <set xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
+  <set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
+  <set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
+  <set xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
+  <set xpath="/progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
+  <set xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
+  <set xpath="/progression/perks/perk[@name='perkHeavyArmor']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">2,5</set>
+  <set xpath="/progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
+  <set xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
+  <set xpath="/progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
+  <set xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">2,5</set>
+  <set xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
+  <set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
+
+  <!-- Adding steel ammo to approprite perk so it can be unlocked -->
+  <append xpath="/progression/perks/perk[@name='perkPistolPeteHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo9mmBulletSteel</append>
+  <append xpath="/progression/perks/perk[@name='perkEnforcerHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo44MagnumBulletSteel</append>
+  <append xpath="/progression/perks/perk[@name='perkSniperHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo762mmBulletFMJSteel</append>
 </configs>

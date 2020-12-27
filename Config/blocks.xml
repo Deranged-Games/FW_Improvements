@@ -98,4 +98,22 @@
     <drop event="Destroy" name="resourceFeather" count="1,3" prob="0.2"/>
     <drop event="Destroy" name="foodEgg" count="1" prob="0.1"/>
   </append>
+
+  <!-- Break trash/nests post loot -->
+  <set xpath="/blocks/block[@name='cntBin']/property[@name='LootList']/@value">650</set>
+  <set xpath="/blocks/block[@name='cntBruteStyleTrashCanFull']/property[@name='LootList']/@value">650</set>
+  <set xpath="/blocks/block[@name='cntTiltTruckFull']/property[@name='LootList']/@value">650</set>
+  <set xpath="/blocks/block[@name='cntTiltTruckFullFlies']/property[@name='LootList']/@value">650</set>
+  <set xpath="/blocks/block[@name='cntBirdnest']/property[@name='Material']/@value">Mplants</set>
+
+  <!-- Pickup Traps -->
+  <append xpath="/blocks/block[@name='trapSpikesWoodMaster']">
+    <property name="CanPickup" value="true" param1="trapSpikesWoodDmg0" />
+  </append>
+  <append xpath="/blocks/block[@name='trapSpikesScrapIronMaster']">
+    <property name="CanPickup" value="true" param1="trapSpikesIronDmg0" />
+  </append>
+  <append xpath="/blocks/block[@name='barbedFence']">
+    <property name="CanPickup" value="true" />
+  </append>
 </configs>

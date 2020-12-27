@@ -4,4 +4,11 @@
   <set xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']/property[@name='TimeStayAfterDeath']/@value">1800</set>
   <set xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']/@value">1800</set>
   <set xpath="/entity_classes/entity_class[@name='EntityLootContainerBandit']/property[@name='TimeStayAfterDeath']/@value">1800</set>
+
+  <!-- AI Sight Distance Increase -->
+  <set xpath="/entity_classes/entity_class[starts-with(@name, 'zombie')]/property[@name='SightRange']/@value">60</set>
+  <remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AITarget-4']"/>
+  <insertAfter xpath="entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AITarget-3']" >
+    <property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,60,30,EntityNPC,0,0"/>
+  </insertAfter>
 </configs>

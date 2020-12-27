@@ -1,0 +1,31 @@
+<configs>
+  <append xpath="/xui/ruleset">
+    <window_group name="workstation_WorkingOven" controller="XUiC_WorkstationWindowGroup">
+      <window name="windowCraftingList"/>
+      <window name="craftingInfoPanel"/>
+      <window name="windowCraftingQueue"/>
+      <window name="windowToolsCampfire"/>
+      <window name="windowFuel"/>
+      <window name="windowOutput"/>
+      <window name="windowNonPagingHeader"/>
+    </window_group>
+  </append>
+
+  <!-- Crafting Slots -->
+  <set xpath="/xui/ruleset[@name='default']/window_group[@name='crafting']/window[@name='windowCraftingQueue']/@name">PhDwindowCraftingQueue</set>
+  <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_campfire']/window[@name='windowCraftingQueue']/@name">PhDwindowCraftingQueue</set>
+  <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowCraftingQueue']/@name">PhDwindowCraftingQueue</set>
+  <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_cementMixer']/window[@name='windowCraftingQueue']/@name">PhDwindowCraftingQueue</set>
+  <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_workbench']/window[@name='windowCraftingQueue']/@name">PhDwindowCraftingQueue</set>
+  <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_chemistryStation']/window[@name='windowCraftingQueue']/@name">PhDwindowCraftingQueue</set>
+
+  <!-- Expanded Output -->
+  <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_campfire']/window[@name='windowOutput']/@name">PhDWindowOutputQueue</set>
+  <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowOutput']/@name">PhDWindowOutputQueue</set>
+  <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_cementMixer']/window[@name='windowOutput']/@name">PhDWindowOutputQueue</set>
+  <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_workbench']/window[@name='windowOutput']/@name">PhDWindowOutputQueue</set>
+  <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_chemistryStation']/window[@name='windowOutput']/@name">PhDWindowOutputQueue</set>
+
+  <!-- Forge input slots -->
+  <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">PhDwindowForgeInput</set>
+</configs>

@@ -1,45 +1,118 @@
 <configs>
+  <!-- Add Steel Ammo Items -->
+  <append xpath="/items">
+    <item name="resourceBulletCasingSteel">
+      <property name="Extends" value="resourceBulletCasing"/>
+      <property name="CustomIcon" value="resourceBulletCasing"/><property name="CustomIconTint" value="a0a0ff"/>
+      <property name="DescriptionKey" value="resourceBulletCasingSteelDesc"/>
+      <property name="Material" value="MresourceScrapIron"/>
+      <property name="Stacknumber" value="500"/> <!-- STK resource -->
+      <property name="EconomicValue" value="10"/>
+      <property name="EconomicBundleSize" value="10"/>
+      <property name="Group" value="Resources,Ammo/Weapons"/>
+      <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    </item>
+    <item name="ammo9mmBulletSteel">
+      <property name="Extends" value="ammo9mmBulletBall"/>
+      <property name="CustomIcon" value="ammo9mmBulletBall"/><property name="CustomIconTint" value="a0a0ff"/>
+      <property name="DisplayType" value="ammoBulletSteel"/>
+      <property name="Material" value="Msteel"/>
+      <property name="EconomicValue" value="8"/>
+      <property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
+      <property name="UnlockedBy" value="perkPistolPeteHPAmmo"/>
+      <effect_group name="Base Effects" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="29"/>
+        <passive_effect name="BlockDamage" operation="base_set" value="6"/>
+        <passive_effect name="DegradationPerUse" operation="perc_add" value="1"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+      </effect_group>
+    </item>
+    <item name="ammo44MagnumBulletSteel">
+      <property name="Extends" value="ammo44MagnumBulletBall"/>
+      <property name="CustomIcon" value="ammo44MagnumBulletBall"/><property name="CustomIconTint" value="a0a0ff"/>
+      <property name="DisplayType" value="ammoBulletSteel"/>
+      <property name="Material" value="Msteel"/>
+      <property name="EconomicValue" value="9"/>
+      <property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
+      <property name="UnlockedBy" value="perkEnforcerHPAmmo"/>
+      <effect_group name="Base Effects" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="76"/>
+        <passive_effect name="BlockDamage" operation="base_set" value="10"/>
+        <passive_effect name="DegradationPerUse" operation="perc_add" value="1"/>
+      </effect_group>
+    </item>
+    <item name="ammo762mmBulletFMJSteel">
+      <property name="Extends" value="ammo762mmBulletBall"/>
+      <property name="CustomIcon" value="ammo762mmBulletBall"/><property name="CustomIconTint" value="a0a0ff"/>
+      <property name="DisplayType" value="ammoBulletSteel"/>
+      <property name="Material" value="Msteel"/>
+      <property name="EconomicValue" value="10"/>
+      <property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
+      <property name="UnlockedBy" value="perkSniperHPAmmo"/>
+      <effect_group name="Base Effects" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="46"/>
+        <passive_effect name="BlockDamage" operation="base_set" value="7"/>
+        <passive_effect name="DegradationPerUse" operation="perc_add" value="1"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+      </effect_group>
+    </item>
+  </append>
+
+  <!-- Append Steel Ammo to Weapons. -->
+  <append xpath="/items/item[@name='gunHandgunT1Pistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
+  <append xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteel</append>
+  <append xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteel</append>
+  <append xpath="/items/item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
+  <append xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
+  <append xpath="/items/item[@name='gunRifleT2MarksmanRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
+  <append xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
+  <append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
+  <append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>  
+  <append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>  
+
   <!-- Reduce sensible block damage for zombies. -->
-	<append xpath="/items/item[starts-with (@name,'meleeHandZombie')]/effect_group">
-		<passive_effect name="DamageModifier" operation="perc_set" value=".4" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="stone,concrete"/>
-		<passive_effect name="DamageModifier" operation="perc_set" value=".4" tags="metal"/>
-	</append>
+  <append xpath="/items/item[starts-with (@name,'meleeHandZombie')]/effect_group">
+    <passive_effect name="DamageModifier" operation="perc_set" value=".4" tags="earth"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="stone,concrete"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value=".4" tags="metal"/>
+  </append>
 
-	<!-- Reduce sensible block damage for animals. -->
-	<append xpath="/items/item[starts-with (@name,'meleeHandAnimal')]/effect_group">
-		<passive_effect name="DamageModifier" operation="perc_set" value=".5" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="stone,concrete"/>
-		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="metal"/>
-	</append>
+  <!-- Reduce sensible block damage for animals. -->
+  <append xpath="/items/item[starts-with (@name,'meleeHandAnimal')]/effect_group">
+    <passive_effect name="DamageModifier" operation="perc_set" value=".5" tags="earth"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="stone,concrete"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="metal"/>
+  </append>
 
-	<!-- Rocket range increase, for luls -->
-	<set xpath="/items/item[@name='ammoRocketHE']/property[@class='Action1']/property[@name='LifeTime']/@value">999</set>
+  <!-- Rocket range increase, for luls -->
+  <set xpath="/items/item[@name='ammoRocketHE']/property[@class='Action1']/property[@name='LifeTime']/@value">999</set>
 
-	<!-- Water from sinks -->
-	<append xpath="/items/item[@name='drinkJarEmpty']/property[@class='Action1']">
-		<property name="Focused_blockname_6" value="cntCabinetOldSink" />
-		<property name="Focused_blockname_7" value="cntGraniteSink" />
-		<property name="Focused_blockname_8" value="utilitySink" />
-		<property name="Focused_blockname_9" value="wallHungSink" />
-		<property name="Focused_blockname_10" value="faucet02"/>
-		<property name="Focused_blockname_11" value="faucet04"/>
-		<property name="Focused_blockname_12" value="faucetBrass02"/>
-		<property name="Focused_blockname_13" value="faucetBrass04"/>
-	</append>
+  <!-- Water from sinks -->
+  <append xpath="/items/item[@name='drinkJarEmpty']/property[@class='Action1']">
+    <property name="Focused_blockname_6" value="cntCabinetOldSink" />
+    <property name="Focused_blockname_7" value="cntGraniteSink" />
+    <property name="Focused_blockname_8" value="utilitySink" />
+    <property name="Focused_blockname_9" value="wallHungSink" />
+    <property name="Focused_blockname_10" value="faucet02"/>
+    <property name="Focused_blockname_11" value="faucet04"/>
+    <property name="Focused_blockname_12" value="faucetBrass02"/>
+    <property name="Focused_blockname_13" value="faucetBrass04"/>
+  </append>
 
-	<!-- I want my jars back -->
-	<append xpath="/items/item[@name='drugHerbalAntibiotics']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-	<append xpath="/items/item[@name='drugAntibiotics']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-	<append xpath="/items/item[@name='foodEggBoiled']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-	<append xpath="/items/item[@name='foodBlueberryPie']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-	<append xpath="/items/item[@name='foodBoiledMeat']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-	<append xpath="/items/item[@name='foodCornBread']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-	<append xpath="/items/item[@name='foodCornOnTheCob']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-	<append xpath="/items/item[@name='foodHoboStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-	<append xpath="/items/item[@name='foodMeatStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-	<append xpath="/items/item[@name='foodVegetableStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-	<append xpath="/items/item[@name='drugRecog']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+  <!-- I want my jars back -->
+  <append xpath="/items/item[@name='drugHerbalAntibiotics']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+  <append xpath="/items/item[@name='drugAntibiotics']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+  <append xpath="/items/item[@name='foodEggBoiled']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+  <append xpath="/items/item[@name='foodBlueberryPie']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+  <append xpath="/items/item[@name='foodBoiledMeat']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+  <append xpath="/items/item[@name='foodCornBread']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+  <append xpath="/items/item[@name='foodCornOnTheCob']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+  <append xpath="/items/item[@name='foodHoboStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+  <append xpath="/items/item[@name='foodMeatStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+  <append xpath="/items/item[@name='foodVegetableStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+  <append xpath="/items/item[@name='drugRecog']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
 
   <!-- Ok, food values are big imbalanced -->
   <set xpath="/items/item[@name='foodCornBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">10</set>

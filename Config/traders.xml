@@ -1,0 +1,79 @@
+<config>
+  <setattribute xpath="//trader_info[@id='1']" name="reset_interval">1</setattribute>
+  <setattribute xpath="//trader_info[@id='1']" name="min_inventory">100</setattribute>
+  <setattribute xpath="//trader_info[@id='1']" name="max_inventory">250</setattribute>
+  <setattribute xpath="//trader_info[@id='1']" name="min_items_swapped">100</setattribute>
+  <setattribute xpath="//trader_info[@id='1']" name="max_items_swapped">250</setattribute>
+  
+  <setattribute xpath="//trader_info[@id='2']" name="reset_interval">1</setattribute>
+  <setattribute xpath="//trader_info[@id='2']" name="min_inventory">100</setattribute>
+  <setattribute xpath="//trader_info[@id='2']" name="max_inventory">250</setattribute>
+  <setattribute xpath="//trader_info[@id='2']" name="min_items_swapped">100</setattribute>
+  <setattribute xpath="//trader_info[@id='2']" name="max_items_swapped">250</setattribute>
+  
+  <setattribute xpath="//trader_info[@id='3']" name="reset_interval">1</setattribute>
+  <setattribute xpath="//trader_info[@id='3']" name="min_inventory">100</setattribute>
+  <setattribute xpath="//trader_info[@id='3']" name="max_inventory">250</setattribute>
+  <setattribute xpath="//trader_info[@id='3']" name="min_items_swapped">100</setattribute>
+  <setattribute xpath="//trader_info[@id='3']" name="max_items_swapped">250</setattribute>
+  
+  <setattribute xpath="//trader_info[@id='4']" name="reset_interval">1</setattribute>
+  <setattribute xpath="//trader_info[@id='4']" name="allow_sell">True</setattribute>
+  <setattribute xpath="//trader_info[@id='4']" name="min_inventory">100</setattribute>
+  <setattribute xpath="//trader_info[@id='4']" name="max_inventory">250</setattribute>
+  <setattribute xpath="//trader_info[@id='4']" name="min_items_swapped">100</setattribute>
+  <setattribute xpath="//trader_info[@id='4']" name="max_items_swapped">250</setattribute>
+  
+  <setattribute xpath="//trader_info[@id='5']" name="reset_interval">1</setattribute>
+  <setattribute xpath="//trader_info[@id='5']" name="min_inventory">100</setattribute>
+  <setattribute xpath="//trader_info[@id='5']" name="max_inventory">250</setattribute>
+  <setattribute xpath="//trader_info[@id='5']" name="min_items_swapped">100</setattribute>
+  <setattribute xpath="//trader_info[@id='5']" name="max_items_swapped">250</setattribute>
+  
+  <setattribute xpath="//trader_info[@id='6']" name="reset_interval">1</setattribute>
+  <setattribute xpath="//trader_info[@id='6']" name="min_inventory">100</setattribute>
+  <setattribute xpath="//trader_info[@id='6']" name="max_inventory">250</setattribute>
+  <setattribute xpath="//trader_info[@id='6']" name="min_items_swapped">100</setattribute>
+  <setattribute xpath="//trader_info[@id='6']" name="max_items_swapped">250</setattribute>
+  
+  <setattribute xpath="//trader_info[@id='7']" name="reset_interval">1</setattribute>
+  <setattribute xpath="//trader_info[@id='7']" name="min_inventory">100</setattribute>
+  <setattribute xpath="//trader_info[@id='7']" name="max_inventory">250</setattribute>
+  <setattribute xpath="//trader_info[@id='7']" name="min_items_swapped">100</setattribute>
+  <setattribute xpath="//trader_info[@id='7']" name="max_items_swapped">250</setattribute>
+  
+  <setattribute xpath="//trader_info[@id='8']" name="reset_interval">1</setattribute>
+  <setattribute xpath="//trader_info[@id='8']" name="min_inventory">100</setattribute> 
+  <setattribute xpath="//trader_info[@id='8']" name="max_inventory">250</setattribute>
+  <setattribute xpath="//trader_info[@id='8']" name="min_items_swapped">100</setattribute>
+  <setattribute xpath="//trader_info[@id='8']" name="max_items_swapped">250</setattribute>
+    
+  <!-- GROUPS FOR TRADERS -->
+  <insertBefore xpath="/traders/trader_item_groups/trader_item_group[@name='modMeleeT1']">
+    <trader_item_group name="SEEDSFORALL">
+      <item name="plantedCoffee1" count="10"/>
+      <item name="treePlantedOak1m" count="10"/>
+      <item name="treePlantedMountainPine1m" count="10"/>
+      <item name="plantedYucca1" count="10"/>
+      <item name="plantedSnowberry1" count="10"/>
+      <item name="plantedPotato1" count="10"/>
+      <item name="plantedMushroom1" count="10"/>
+      <item name="plantedHop1" count="10"/>
+      <item name="plantedGoldenrod1" count="10"/>
+      <item name="plantedCotton1" count="10"/>
+      <item name="plantedCorn1" count="10"/>
+      <item name="plantedChrysanthemum1" count="10"/>
+      <item name="plantedBlueberry1" count="10"/>
+      <item name="plantedAloe1" count="10"/>
+    </trader_item_group>
+  </insertBefore>
+
+  <!-- CODE TO ADD TO TRADERS -->
+  <append xpath="//trader_info[@id='1']/trader_items"><item group="SEEDSFORALL" count="1,2"/></append>
+  <append xpath="//trader_info[@id='2']/trader_items"><item group="SEEDSFORALL" count="1,2"/></append>
+  <append xpath="//trader_info[@id='4']/trader_items"><item group="SEEDSFORALL" count="1,2"/></append>
+  <append xpath="//trader_info[@id='6']/trader_items"><item group="SEEDSFORALL" count="1,2"/></append>
+  <append xpath="//trader_info[@id='7']/trader_items"><item group="SEEDSFORALL" count="1,2"/></append>
+  <append xpath="//trader_info[@id='8']/trader_items"><item group="SEEDSFORALL" count="1,2"/></append>
+  <append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']"><item group="SEEDSFORALL" count="5,6"/></append>
+</config>
