@@ -1,4 +1,4 @@
-<khaine>
+<configs>
   <!-- Adding Steel Ammo to ui_display so stats display correctly -->
   <append xpath="/ui_display_info/item_display">
     <item_display_info display_type="ammoBulletSteel" display_group="groupAmmo">
@@ -6,6 +6,10 @@
       <display_entry name="BlockDamage" title_key="statBlockDamage"/>
       <display_entry name="DegradationPerUse" title_key="statDegradationPerUse" display_type="Percent" negative_preferred="true"/>
     </item_display_info>
+  </append>
+
+  <append xpath="/ui_display_info/crafting_category_display/crafting_category_list[@display_type='chemistryStation']">
+    <crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
   </append>
 
   <!-- Add cooking blocks to UI -->
@@ -62,4 +66,4 @@
       <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
     </crafting_category_list>
   </append>
-</khaine>
+</configs>

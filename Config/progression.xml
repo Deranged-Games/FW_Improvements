@@ -78,4 +78,51 @@
   <append xpath="/progression/perks/perk[@name='perkPistolPeteHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo9mmBulletSteel</append>
   <append xpath="/progression/perks/perk[@name='perkEnforcerHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo44MagnumBulletSteel</append>
   <append xpath="/progression/perks/perk[@name='perkSniperHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo762mmBulletFMJSteel</append>
+
+  <!-- Item part crafting unlocked via perks -->
+  <insertAfter xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@tags='gunRifleT1HuntingRifle']">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunRifleT1HuntingRifleParts"/>
+  </insertAfter>
+  <insertAfter xpath="/progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@tags='meleeWpnSpearT1IronSpear']">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="meleeWpnSpearT3SteelSpearParts"/>
+  </insertAfter>
+  <insertAfter xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@tags='gunShotgunT1DoubleBarrel']">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunShotgunT1DoubleBarrelParts"/>
+  </insertAfter>
+  <insertAfter xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/passive_effect[@tags='meleeWpnClubT1BaseballBat']">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="meleeWpnClubT3SteelClubParts"/>
+  </insertAfter>
+  <insertAfter xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/passive_effect[@tags='meleeWpnSledgeT1IronSledgehammer']">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="meleeWpnSledgeT3SteelSledgehammerParts"/>
+  </insertAfter>
+  <insertAfter xpath="/progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@tags='meleeWpnKnucklesT1IronKnuckles']">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="meleeWpnKnucklesT3SteelKnucklesParts"/>
+  </insertAfter>
+  <insertAfter xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@tags='gunMGT1AK47']">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunMGT1AK47Parts"/>
+  </insertAfter>
+  <insertAfter xpath="/progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@tags='gunBowT1WoodenBow,gunBowT1IronCrossbow']">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunBowT1WoodenBowParts"/>
+  </insertAfter>
+  <insertAfter xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@tags='gunHandgunT1Pistol']">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunHandgunT1PistolParts"/>
+  </insertAfter>
+  <insertAfter xpath="/progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@tags='meleeWpnBladeT1HuntingKnife']">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="meleeWpnBladeT3MacheteParts"/>
+  </insertAfter>
+  <insertAfter xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@tags='meleeWpnBatonT2StunBaton']">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="meleeWpnBatonT2StunBatonParts"/>
+  </insertAfter>
+  <insertAfter xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@tags='gunBotT1JunkSledge']">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunBotRoboticsParts"/>
+  </insertAfter>
+  <insertAfter xpath="/progression/perks/perk[@name='perkHeavyArmor']/effect_group/passive_effect[@tags='armorIronHelmet,armorIronChest,armorIronGloves,armorIronLegs,armorIronBoots']">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="armorSteelSetParts"/>
+  </insertAfter>
+  <insertAfter xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@tags='armorLeatherHood,armorLeatherChest,armorLeatherGloves,armorLeatherPants,armorLeatherBoots']">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="armorMilitarySetParts"/>
+  </insertAfter>
+  <append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@tags='thrownGrenade,resourceGunPowderBundle']/@tags">,gunExplosivesT3RocketLauncherParts</append>
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='5']/@tags">,solarbank,solarCell</append>
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='3,5']/@tags">,smallEngine</append>
 </configs>

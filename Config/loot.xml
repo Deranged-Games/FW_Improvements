@@ -33,6 +33,52 @@
 	<set xpath="/lootcontainers/lootcontainer[@id='80']/@size">10,6</set> <!-- vehicleGyrocopter storage -->
 	<set xpath="/lootcontainers/lootcontainer[@id='121']/@size">10,9</set> <!-- cntHardenedChestSecure, hero, big, fancy chest -->
 
+  <!-- New Schematics added to loot tables -->
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT0']">
+		<item name="meleeWpnSpearT3SteelSpearPartsSchematic"/>
+		<item name="meleeWpnClubT3SteelClubPartsSchematic"/>
+		<item name="meleeWpnSledgeT3SteelSledgehammerPartsSchematic"/>
+		<item name="meleeWpnKnucklesT3SteelKnucklesPartsSchematic"/>
+		<item name="meleeWpnBladeT3MachetePartsSchematic"/>
+		<item name="meleeWpnBatonT2StunBatonPartsSchematic"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT1']">
+		<item name="gunRifleT1HuntingRiflePartsSchematic"/>
+		<item name="gunShotgunT1DoubleBarrelPartsSchematic"/>
+		<item name="gunMGT1AK47PartsSchematic"/>
+		<item name="gunBowT1WoodenBowPartsSchematic"/>
+		<item name="gunHandgunT1PistolPartsSchematic"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']">
+		<item name="gunBotRoboticsPartsSchematic"/>
+		<item name="gunExplosivesT3RocketLauncherPartsSchematic"/>
+		<item name="armorSteelSetPartsSchematic"/>
+		<item name="armorMilitarySetPartsSchematic"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsElectrical']">
+		<item name="solarbankSchematic"/>
+		<item name="solarCellSchematic"/>
+		<item name="smallEngineSchematic"/>
+	</append>
+
+  <!-- Steel Ammo Added to Loot Tables -->
+  <!-- ammo9mmBulletSteel ammo44MagnumBulletSteel ammo762mmBulletFMJSteel -->
+  <append xpath="/lootcontainers/lootgroup[@name='groupAmmoRegular']">
+	  <item name="ammo9mmBulletSteel" prob="0.1" count="5,12"/>
+	  <item name="ammo44MagnumBulletSteel" prob="0.1" count="4,10"/>
+	  <item name="ammo762mmBulletFMJSteel" prob="0.1" count="6,15"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='groupAmmoAdvanced']">
+	  <item name="ammo9mmBulletSteel" prob="0.15" count="10,20"/>
+	  <item name="ammo44MagnumBulletSteel" prob="0.15" count="8,16"/>
+	  <item name="ammo762mmBulletFMJSteel" prob="0.15" count="15,25"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='groupQuestAmmo']">
+	  <item name="ammo9mmBulletSteel" count="100" loot_prob_template="QuestT1Prob"/>
+	  <item name="ammo44MagnumBulletSteel" count="80" loot_prob_template="QuestT1Prob"/>
+	  <item name="ammo762mmBulletFMJSteel" count="60" loot_prob_template="QuestT1Prob"/>
+  </append>
+
   <!-- All Loot Stages - Prep -->
   <remove xpath="/lootcontainers/lootprobtemplates/lootprobtemplate[@name='baseProbTemplate']"/>
   <remove xpath="/lootcontainers/lootprobtemplates/lootprobtemplate[@name='probTemplate1.0']"/>

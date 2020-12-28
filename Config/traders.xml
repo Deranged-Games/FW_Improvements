@@ -1,4 +1,27 @@
 <config>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsWeaponsCommon']">
+		<item name="gunRifleT1HuntingRiflePartsSchematic"/>
+		<item name="meleeWpnSpearT3SteelSpearPartsSchematic"/>
+		<item name="gunShotgunT1DoubleBarrelPartsSchematic"/>
+		<item name="meleeWpnClubT3SteelClubPartsSchematic"/>
+		<item name="meleeWpnSledgeT3SteelSledgehammerPartsSchematic"/>
+		<item name="meleeWpnKnucklesT3SteelKnucklesPartsSchematic"/>
+		<item name="gunMGT1AK47PartsSchematic"/>
+		<item name="gunBowT1WoodenBowPartsSchematic"/>
+		<item name="gunHandgunT1PistolPartsSchematic"/>
+		<item name="meleeWpnBladeT3MachetePartsSchematic"/>
+		<item name="meleeWpnBatonT2StunBatonPartsSchematic"/>
+		<item name="gunBotRoboticsPartsSchematic"/>
+		<item name="gunExplosivesT3RocketLauncherPartsSchematic"/>
+		<item name="armorSteelSetPartsSchematic"/>
+		<item name="armorMilitarySetPartsSchematic"/>
+	</append>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsElectrical']">
+		<item name="solarbankSchematic"/>
+		<item name="solarCellSchematic"/>
+		<item name="smallEngineSchematic"/>
+	</append>
+
   <setattribute xpath="//trader_info[@id='1']" name="reset_interval">1</setattribute>
   <setattribute xpath="//trader_info[@id='1']" name="min_inventory">100</setattribute>
   <setattribute xpath="//trader_info[@id='1']" name="max_inventory">250</setattribute>

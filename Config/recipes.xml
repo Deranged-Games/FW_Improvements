@@ -43,10 +43,129 @@
       <ingredient name="resourceGunPowder" count="3"/>
       <ingredient name="resourceBulletCasingSteel" count="1"/>
     </recipe>
-		<recipe name="modernCookingHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
-			<ingredient name="resourceForgedIron" count="10"/>
+    <recipe name="modernCookingHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="resourceForgedIron" count="10"/>
+      <ingredient name="resourceElectricParts" count="4"/>
+      <ingredient name="resourceMetalPipe" count="1"/>
+    </recipe>
+    <recipe name="resourceElectricParts" count="1" craft_area="workbench" tags="perkAdvancedEngineering">
+      <ingredient name="resourceForgedIron" count="1"/>
+      <ingredient name="resourceScrapPolymers" count="2"/>
+      <ingredient name="resourceScrapBrass" count="2"/>
+    </recipe>
+    <recipe name="resourceMechanicalParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible">
+      <ingredient name="unit_iron" count="2"/>
+    </recipe>
+    <recipe name="resourceSpring" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible">
+      <ingredient name="unit_iron" count="2"/>
+    </recipe>
+    <recipe name="resourceScrapPolymers" count="5" craft_area="chemistryStation" tags="perkAdvancedEngineering">
+      <ingredient name="resourceYuccaFibers" count="20"/>
+      <ingredient name="drinkJarGrainAlcohol" count="1"/>
+    </recipe>
+    <recipe name="resourceScrapPolymers" count="5" craft_area="chemistryStation" tags="perkAdvancedEngineering">
+      <ingredient name="resourceOilShale" count="1"/>
+      <ingredient name="drinkJarGrainAlcohol" count="1"/>
+    </recipe>
+    <recipe name="toolBeaker" count="1" material_based="true" craft_area="forge">
+      <ingredient name="unit_glass" count="30"/>
+      <ingredient name="unit_lead" count="2"/>
+      <ingredient name="unit_clay" count="2"/>
+    </recipe>
+    <recipe name="meleeToolAxeT3ChainsawParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible">
+      <ingredient name="unit_iron" count="100"/>
+      <ingredient name="unit_clay" count="50"/>
+    </recipe>
+    <recipe name="meleeToolAllSteelParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible">
+      <ingredient name="unit_iron" count="100"/>
+      <ingredient name="unit_clay" count="50"/>
+    </recipe>
+    <recipe name="resourceHeadlight" count="1" craft_area="workbench">
+      <ingredient name="resourceForgedIron" count="2"/>
+      <ingredient name="resourceBrokenGlass" count="10"/>
+      <ingredient name="resourceElectricParts" count="2"/>
+    </recipe>
+    <recipe name="resourceSewingKit" count="1">
+      <ingredient name="resourceCropCottonPlant" count="3"/>
+      <ingredient name="resourceScrapIron" count="1"/>
+    </recipe>
+		<recipe name="gunRifleT1HuntingRifleParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkDeadEye,learnable">
+			<ingredient name="unit_iron" count="200"/>
+			<ingredient name="unit_clay" count="40"/>
+		</recipe>
+		<recipe name="meleeWpnSpearT3SteelSpearParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkJavelinMaster,learnable">
+			<ingredient name="unit_iron" count="75"/>
+			<ingredient name="unit_clay" count="15"/>
+		</recipe>
+		<recipe name="gunShotgunT1DoubleBarrelParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkBoomstick,learnable">
+			<ingredient name="unit_iron" count="200"/>
+			<ingredient name="unit_clay" count="40"/>
+		</recipe>
+		<recipe name="meleeWpnClubT3SteelClubParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkPummelPete,learnable">
+			<ingredient name="unit_iron" count="30"/>
+			<ingredient name="unit_clay" count="5"/>
+		</recipe>
+		<recipe name="meleeWpnSledgeT3SteelSledgehammerParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkSkullCrusher,learnable">
+			<ingredient name="unit_iron" count="75"/>
+			<ingredient name="unit_clay" count="15"/>
+		</recipe>
+		<recipe name="meleeWpnKnucklesT3SteelKnucklesParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkBrawler,learnable">
+			<ingredient name="unit_iron" count="30"/>
+			<ingredient name="unit_clay" count="5"/>
+		</recipe>
+		<recipe name="gunMGT1AK47Parts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkMachineGunner,learnable">
+			<ingredient name="unit_iron" count="200"/>
+			<ingredient name="unit_clay" count="40"/>
+		</recipe>
+		<recipe name="gunBowT1WoodenBowParts" count="1" craft_area="workbench" tags="perkArchery,learnable">
+			<ingredient name="resourceForgedIron" count="1"/>
+			<ingredient name="resourceWood" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="2"/>
+		</recipe>
+		<recipe name="gunHandgunT1PistolParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkGunslinger,learnable">
+			<ingredient name="unit_iron" count="100"/>
+			<ingredient name="unit_clay" count="20"/>
+		</recipe>
+		<recipe name="meleeWpnBladeT3MacheteParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkDeepCuts,learnable">
+			<ingredient name="unit_iron" count="100"/>
+			<ingredient name="unit_clay" count="20"/>
+		</recipe>
+		<recipe name="meleeWpnBatonT2StunBatonParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkElectrocutioner,learnable">
+			<ingredient name="unit_iron" count="100"/>
+			<ingredient name="unit_clay" count="20"/>
+		</recipe>
+		<recipe name="gunBotRoboticsParts" count="1" craft_area="workbench" tags="perkTurrets,learnable">
+			<ingredient name="resourceForgedIron" count="15"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="gunExplosivesT3RocketLauncherParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkDemolitionsExpert,learnable">
+			<ingredient name="unit_iron" count="300"/>
+			<ingredient name="unit_clay" count="60"/>
+		</recipe>
+		<recipe name="armorSteelSetParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkHeavyArmor,learnable">
+			<ingredient name="unit_iron" count="150"/>
+			<ingredient name="unit_clay" count="30"/>
+		</recipe>
+		<recipe name="armorMilitarySetParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkLightArmor,learnable">
+			<ingredient name="unit_iron" count="100"/>
+			<ingredient name="unit_clay" count="20"/>
+		</recipe>
+		<recipe name="solarbank" count="1" craft_area="workbench" tags="learnable,perkAdvancedEngineering,solarbankSchematic">
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceElectricParts" count="15"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="glassBlockVariantHelper" count="4"/>
+		</recipe>
+	  <recipe name="solarCell" count="1" craft_area="workbench" craft_time="216" tags="learnable,perkAdvancedEngineering,solarCellSchematic">
+			<ingredient name="resourceForgedSteel" count="2"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="glassBlockVariantHelper" count="1"/>
+		</recipe>
+		<recipe name="smallEngine" count="1" craft_area="workbench" craft_time="252" tags="learnable,perkGreaseMonkey,smallEngineSchematic">
+			<ingredient name="resourceForgedSteel" count="20"/>
 			<ingredient name="resourceElectricParts" count="4"/>
-			<ingredient name="resourceMetalPipe" count="1"/>
+			<ingredient name="resourceOil" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
 		</recipe>
   </append>
 
