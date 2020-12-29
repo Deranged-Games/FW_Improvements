@@ -374,7 +374,4 @@
 
   <!-- Mods for M60 -->
   <set xpath="/items/item[@name='gunMGT3M60']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic</set>
-
-  <!-- DOOOOOoooooooooommmmmm! -->
-  <set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">15</set>
 </configs>

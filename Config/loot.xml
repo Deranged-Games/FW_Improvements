@@ -64,9 +64,9 @@
   <!-- Steel Ammo Added to Loot Tables -->
   <!-- ammo9mmBulletSteel ammo44MagnumBulletSteel ammo762mmBulletFMJSteel -->
   <append xpath="/lootcontainers/lootgroup[@name='groupAmmoRegular']">
-	  <item name="ammo9mmBulletSteel" prob="0.1" count="5,12"/>
-	  <item name="ammo44MagnumBulletSteel" prob="0.1" count="4,10"/>
-	  <item name="ammo762mmBulletFMJSteel" prob="0.1" count="6,15"/>
+	  <item name="ammo9mmBulletSteel" prob="0.07" count="5,12"/>
+	  <item name="ammo44MagnumBulletSteel" prob="0.07" count="4,10"/>
+	  <item name="ammo762mmBulletFMJSteel" prob="0.07" count="6,15"/>
   </append>
   <append xpath="/lootcontainers/lootgroup[@name='groupAmmoAdvanced']">
 	  <item name="ammo9mmBulletSteel" prob="0.15" count="10,20"/>
