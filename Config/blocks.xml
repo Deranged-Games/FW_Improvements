@@ -182,6 +182,33 @@
     <property name="BuffsWhenWalkedOn" value="Sleeping2"/>
   </append>
 
+  <!-- Pickup Doors and Hatches with land claim -->
+  <append xpath="blocks/block[@name='secureDoorWooden']"><property name="TakeDelay" value="3"/></append>
+  <append xpath="blocks/block[@name='secureReinforcedDoorWooden']"><property name="TakeDelay" value="4"/></append>
+  <append xpath="blocks/block[@name='metalReinforcedDoorWooden']"><property name="TakeDelay" value="5"/></append>
+  <append xpath="blocks/block[@name='ironDoor1_v1']"><property name="TakeDelay" value="8"/></append>
+  <append xpath="blocks/block[@name='ironDoor1_v2']"><property name="TakeDelay" value="10"/></append>
+  <append xpath="blocks/block[@name='ironDoor1_v3']"><property name="TakeDelay" value="12"/></append>
+  <append xpath="blocks/block[@name='vaultDoor01']"><property name="TakeDelay" value="15"/></append>
+  <append xpath="blocks/block[@name='vaultDoor02']"><property name="TakeDelay" value="18"/></append>
+  <append xpath="blocks/block[@name='vaultDoor03']"><property name="TakeDelay" value="21"/></append>
+  <append xpath="blocks/block[@name='vaultDoor03_Powered']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='garageDoorMetal_v1']"><property name="TakeDelay" value="12"/></append>
+  <append xpath="blocks/block[@name='garageDoorMetal_v2']"><property name="TakeDelay" value="15"/></append>
+  <append xpath="blocks/block[@name='garageDoorMetal_v3']"><property name="TakeDelay" value="18"/></append>
+  <append xpath="blocks/block[@name='garageDoorMetal_v1Powered']"><property name="TakeDelay" value="15"/></append>
+  <append xpath="blocks/block[@name='woodHatch1_v1']"><property name="TakeDelay" value="3"/></append>
+  <append xpath="blocks/block[@name='woodHatch1_v2']"><property name="TakeDelay" value="5"/></append>
+  <append xpath="blocks/block[@name='woodHatch1_v3']"><property name="TakeDelay" value="7"/></append>
+  <append xpath="blocks/block[@name='scrapHatch_v1']"><property name="TakeDelay" value="5"/></append>
+  <append xpath="blocks/block[@name='scrapHatch_v2']"><property name="TakeDelay" value="8"/></append>
+  <append xpath="blocks/block[@name='scrapHatch_v3']"><property name="TakeDelay" value="11"/></append>
+  <append xpath="blocks/block[@name='vaultHatch_v1']"><property name="TakeDelay" value="12"/></append>
+  <append xpath="blocks/block[@name='vaultHatch_v2']"><property name="TakeDelay" value="16"/></append>
+  <append xpath="blocks/block[@name='vaultHatch_v3']"><property name="TakeDelay" value="20"/></append>
+  <append xpath="blocks/block[@name='vaultHatch_v3_Powered']"><property name="TakeDelay" value="20"/></append>
+  <append xpath="blocks/block[@name='metalReinforcedWoodDrawBridge']"><property name="TakeDelay" value="15"/></append>
+
   <!-- Crushed cars are still cars -->
   <append xpath="/blocks/block[@name='crushedCars']">
     <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>

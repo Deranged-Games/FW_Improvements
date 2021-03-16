@@ -53,10 +53,10 @@
       <ingredient name="resourceScrapPolymers" count="2"/>
       <ingredient name="resourceScrapBrass" count="2"/>
     </recipe>
-    <recipe name="resourceMechanicalParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible">
+    <recipe name="resourceMechanicalParts" count="1" material_based="true" craft_area="forge">
       <ingredient name="unit_iron" count="2"/>
     </recipe>
-    <recipe name="resourceSpring" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible">
+    <recipe name="resourceSpring" count="1" material_based="true" craft_area="forge">
       <ingredient name="unit_iron" count="2"/>
     </recipe>
     <recipe name="resourceScrapPolymers" count="5" craft_area="chemistryStation" tags="perkAdvancedEngineering">
