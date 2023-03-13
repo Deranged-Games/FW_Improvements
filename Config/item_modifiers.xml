@@ -10,7 +10,7 @@
   <remove xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']/effect_group/passive_effect[starts-with (@name,'KickDegrees')]"/>
 
   <!-- Bipod spread dampening was garbage -->
-  <set xpath="/item_modifiers/item_modifier[@name='modGunBipod']/effect_group/passive_effect[@name='SpreadMultiplierAiming']/@value">-.4</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunBipod']/effect_group/passive_effect[@name='SpreadMultiplierAiming']/@value">-.25</set>
 
   <!-- Weighted Head Buff -->
   <remove xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/effect_group/requirement" />

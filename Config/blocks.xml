@@ -63,9 +63,10 @@
     <block name="modernCookingOldStove">
       <property name="Extends" value="modernCookingMaster"/>
       <property name="CustomIcon" value="cntStoveOldVer1Closed"/>
-      <property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
-      <property name="Model" value="Appliances/stove_old" param1="main_mesh"/> <property name="Place" value="TowardsPlacerInverted"/>
-      <property name="Mesh" value="models"/>
+	    <property name="Shape" value="ModelEntity"/>
+      <property name="Texture" value="293"/>
+	    <property name="Model" value="#Entities/LootContainers?stoveElectricRetro_01Prefab.prefab"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
       <property name="Path" value="solid"/>
       <property name="ParticleOffset" value="0.5,.6,0.5"/>
     </block>
@@ -83,9 +84,9 @@
     <block name="modernCookingMicrowave">
       <property name="Extends" value="modernCookingMaster"/>
       <property name="CustomIcon" value="cntMicrowaveOvenVer1Open"/>
-      <property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
-      <property name="Mesh" value="models"/>
-      <property name="Model" value="Appliances/microwave_oven_ver1" param1="main_mesh"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Texture" value="293"/>
+	    <property name="Model" value="#Entities/LootContainers?microwaveElectricModern_01Prefab.prefab"/>
       <property name="StabilitySupport" value="false"/> <!-- build restriction -->
       <property name="Path" value="solid"/>
       <property name="Place" value="TowardsPlacerInverted"/>
@@ -175,9 +176,6 @@
   <append xpath="blocks/block[@name='bedroll']">
     <property name="BuffsWhenWalkedOn" value="Sleeping2"/>
   </append>
-  <append xpath="blocks/block[@name='bed01']">
-    <property name="BuffsWhenWalkedOn" value="Sleeping2"/>
-  </append>
   <append xpath="blocks/block[@name='bed02']">
     <property name="BuffsWhenWalkedOn" value="Sleeping2"/>
   </append>
@@ -193,6 +191,30 @@
   <append xpath="blocks/block[@name='vaultDoor02']"><property name="TakeDelay" value="18"/></append>
   <append xpath="blocks/block[@name='vaultDoor03']"><property name="TakeDelay" value="21"/></append>
   <append xpath="blocks/block[@name='vaultDoor03_Powered']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='cellarDoorDoubleWood']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='cellarDoorDoubleIron']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='cellarDoorDoubleSteel']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='shuttersWood01']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='shuttersIron01']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='shuttersSteel01']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='shuttersWood02']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='shuttersIron02']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='shuttersSteel02']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='commercialDoor1_v1']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='commercialDoor1_v2']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='commercialDoor1_v3']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='commercialDoor2_v1']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='commercialDoor2_v2']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='commercialDoor2_v3']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='commercialDoor4_v1']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='commercialDoor4_v2']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='commercialDoor4_v3']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='houseFrontDoor1_v1']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='houseFrontDoor1_v2']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='houseFrontDoor1_v3']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='houseFrontDoor2_v1']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='houseFrontDoor2_v2']"><property name="TakeDelay" value="24"/></append>
+  <append xpath="blocks/block[@name='houseFrontDoor2_v3']"><property name="TakeDelay" value="24"/></append>
   <append xpath="blocks/block[@name='garageDoorMetal_v1']"><property name="TakeDelay" value="12"/></append>
   <append xpath="blocks/block[@name='garageDoorMetal_v2']"><property name="TakeDelay" value="15"/></append>
   <append xpath="blocks/block[@name='garageDoorMetal_v3']"><property name="TakeDelay" value="18"/></append>
@@ -231,21 +253,20 @@
   </append>
   <append xpath="/blocks/block[starts-with (@name,'treeMountain')]">  
     <drop event="Destroy" name="resourceWood" count="40" tag="oreWoodDestroy"/>
-    <drop event="Destroy" name="resourceFeather" count="2,10" prob="0.3"/>
-    <drop event="Destroy" name="foodEgg" count="1,3" prob="0.15"/>
+    <drop event="Destroy" name="resourceFeather" count="2,10" prob="0.25"/>
+    <drop event="Destroy" name="foodEgg" count="1,3" prob="0.1"/>
   </append>
- 
   <append xpath="/blocks/block[starts-with (@name,'treeWinter')]">  
     <drop event="Destroy" name="resourceWood" count="40" tag="oreWoodDestroy"/>
-    <drop event="Destroy" name="resourceFeather" count="1,3" prob="0.2"/>
+    <drop event="Destroy" name="resourceFeather" count="1,3" prob="0.25"/>
     <drop event="Destroy" name="foodEgg" count="1" prob="0.1"/>
   </append>
 
   <!-- Break trash/nests post loot -->
-  <set xpath="/blocks/block[@name='cntBin']/property[@name='LootList']/@value">650</set>
-  <set xpath="/blocks/block[@name='cntBruteStyleTrashCanFull']/property[@name='LootList']/@value">650</set>
-  <set xpath="/blocks/block[@name='cntTiltTruckFull']/property[@name='LootList']/@value">650</set>
-  <set xpath="/blocks/block[@name='cntTiltTruckFullFlies']/property[@name='LootList']/@value">650</set>
+  <set xpath="/blocks/block[@name='cntBin']/property[@name='LootList']/@value">breakingJunk</set>
+  <set xpath="/blocks/block[@name='cntBruteStyleTrashCanFull']/property[@name='LootList']/@value">breakingJunk</set>
+  <set xpath="/blocks/block[@name='cntTiltTruckFull']/property[@name='LootList']/@value">breakingJunk</set>
+  <set xpath="/blocks/block[@name='cntTiltTruckFullFlies']/property[@name='LootList']/@value">breakingJunk</set>
   <set xpath="/blocks/block[@name='cntBirdnest']/property[@name='Material']/@value">Mplants</set>
 
   <!-- Pickup Traps -->
@@ -263,10 +284,10 @@
   <insertAfter xpath="/blocks/block[@name='solarbank']/property[@name='DescriptionKey']">
     <property name="UnlockedBy" value="perkAdvancedEngineering,solarbankSchematic"/>
   </insertAfter>
-  <set xpath="/blocks/block[@name='generatorbank']/property[@name='MaxFuel']/@value">10000</set>
-  <set xpath="/blocks/block[@name='generatorbank']/property[@name='OutputPerStack']/@value">400</set>
-  <set xpath="/blocks/block[@name='solarbank']/property[@name='OutputPerStack']/@value">150</set>
-  <set xpath="/blocks/block[@name='solarbank']/property[@name='MaxPower']/@value">900</set>
+  <set xpath="/blocks/block[@name='generatorbank']/property[@name='MaxFuel']/@value">2500</set>
+  <set xpath="/blocks/block[@name='generatorbank']/property[@name='OutputPerStack']/@value">200</set>
+  <set xpath="/blocks/block[@name='solarbank']/property[@name='OutputPerStack']/@value">75</set>
+  <set xpath="/blocks/block[@name='solarbank']/property[@name='MaxPower']/@value">300</set>
   <set xpath="/blocks/block[@name='batterybank']/property[@name='OutputPerStack']/@value">100</set>
   <set xpath="/blocks/block[@name='batterybank']/property[@name='MaxPower']/@value">800</set>
 </configs>

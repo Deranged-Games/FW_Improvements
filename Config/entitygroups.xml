@@ -1,9 +1,4 @@
 <configs>
-  <!-- More animals -->
-  <set xpath="/entitygroups/entitygroup/entity[@name='invisibleAnimal']/@prob">20</set>
-  <set xpath="/entitygroups/entitygroup/entity[@name='invisibleAnimalEnemy' and @prob='40']/@prob">20</set>
-  <set xpath="/entitygroups/entitygroup/entity[@name='invisibleAnimalEnemy' and @prob='85']/@prob">40</set>
-
   <!-- Night Zombie Tweaks -->
   <set xpath="/entitygroups/entitygroup[@name='ZombiesNight']/entity[@prob='.25']/@prob">.5</set>
   <append xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
@@ -14,6 +9,5 @@
     <entity name="animalZombieVulture" prob=".2"/>
     <entity name="zombieSoldier" prob=".2"/>
     <entity name="zombieSoldierFeral" prob=".1"/>
-    <entity name="zombieFootballPlayer" prob=".3"/>
   </append>
 </configs>

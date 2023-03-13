@@ -27,50 +27,50 @@
   <setattribute xpath="//trader_info[@id='1']" name="max_inventory">250</setattribute>
   <setattribute xpath="//trader_info[@id='1']" name="min_items_swapped">100</setattribute>
   <setattribute xpath="//trader_info[@id='1']" name="max_items_swapped">250</setattribute>
-  
+
   <setattribute xpath="//trader_info[@id='2']" name="reset_interval">1</setattribute>
   <setattribute xpath="//trader_info[@id='2']" name="min_inventory">100</setattribute>
   <setattribute xpath="//trader_info[@id='2']" name="max_inventory">250</setattribute>
   <setattribute xpath="//trader_info[@id='2']" name="min_items_swapped">100</setattribute>
   <setattribute xpath="//trader_info[@id='2']" name="max_items_swapped">250</setattribute>
-  
+
   <setattribute xpath="//trader_info[@id='3']" name="reset_interval">1</setattribute>
   <setattribute xpath="//trader_info[@id='3']" name="min_inventory">100</setattribute>
   <setattribute xpath="//trader_info[@id='3']" name="max_inventory">250</setattribute>
   <setattribute xpath="//trader_info[@id='3']" name="min_items_swapped">100</setattribute>
   <setattribute xpath="//trader_info[@id='3']" name="max_items_swapped">250</setattribute>
-  
+
   <setattribute xpath="//trader_info[@id='4']" name="reset_interval">1</setattribute>
   <setattribute xpath="//trader_info[@id='4']" name="allow_sell">True</setattribute>
   <setattribute xpath="//trader_info[@id='4']" name="min_inventory">100</setattribute>
   <setattribute xpath="//trader_info[@id='4']" name="max_inventory">250</setattribute>
   <setattribute xpath="//trader_info[@id='4']" name="min_items_swapped">100</setattribute>
   <setattribute xpath="//trader_info[@id='4']" name="max_items_swapped">250</setattribute>
-  
+
   <setattribute xpath="//trader_info[@id='5']" name="reset_interval">1</setattribute>
   <setattribute xpath="//trader_info[@id='5']" name="min_inventory">100</setattribute>
   <setattribute xpath="//trader_info[@id='5']" name="max_inventory">250</setattribute>
   <setattribute xpath="//trader_info[@id='5']" name="min_items_swapped">100</setattribute>
   <setattribute xpath="//trader_info[@id='5']" name="max_items_swapped">250</setattribute>
-  
+
   <setattribute xpath="//trader_info[@id='6']" name="reset_interval">1</setattribute>
   <setattribute xpath="//trader_info[@id='6']" name="min_inventory">100</setattribute>
   <setattribute xpath="//trader_info[@id='6']" name="max_inventory">250</setattribute>
   <setattribute xpath="//trader_info[@id='6']" name="min_items_swapped">100</setattribute>
   <setattribute xpath="//trader_info[@id='6']" name="max_items_swapped">250</setattribute>
-  
+
   <setattribute xpath="//trader_info[@id='7']" name="reset_interval">1</setattribute>
   <setattribute xpath="//trader_info[@id='7']" name="min_inventory">100</setattribute>
   <setattribute xpath="//trader_info[@id='7']" name="max_inventory">250</setattribute>
   <setattribute xpath="//trader_info[@id='7']" name="min_items_swapped">100</setattribute>
   <setattribute xpath="//trader_info[@id='7']" name="max_items_swapped">250</setattribute>
-  
+
   <setattribute xpath="//trader_info[@id='8']" name="reset_interval">1</setattribute>
   <setattribute xpath="//trader_info[@id='8']" name="min_inventory">100</setattribute> 
   <setattribute xpath="//trader_info[@id='8']" name="max_inventory">250</setattribute>
   <setattribute xpath="//trader_info[@id='8']" name="min_items_swapped">100</setattribute>
   <setattribute xpath="//trader_info[@id='8']" name="max_items_swapped">250</setattribute>
-    
+
   <!-- GROUPS FOR TRADERS -->
   <insertBefore xpath="/traders/trader_item_groups/trader_item_group[@name='modMeleeT1']">
     <trader_item_group name="SEEDSFORALL">

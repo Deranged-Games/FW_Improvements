@@ -295,29 +295,34 @@
   </insertAfter>
 
   <!-- Append Steel Ammo to Weapons. -->
+  <append xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
   <append xpath="/items/item[@name='gunHandgunT1Pistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
   <append xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteel</append>
   <append xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteel</append>
   <append xpath="/items/item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
+
+  <append xpath="/items/item[@name='gunRifleT0PipeRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
   <append xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
-  <append xpath="/items/item[@name='gunRifleT2MarksmanRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
+  <append xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
   <append xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
+
+  <append xpath="/items/item[@name='gunMGT0PipeMachineGun']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
   <append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
   <append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>  
   <append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>  
 
   <!-- Reduce sensible block damage for zombies. -->
   <append xpath="/items/item[starts-with (@name,'meleeHandZombie')]/effect_group">
-    <passive_effect name="DamageModifier" operation="perc_set" value=".4" tags="earth"/>
-    <passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="stone,concrete"/>
-    <passive_effect name="DamageModifier" operation="perc_set" value=".4" tags="metal"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value=".5" tags="earth"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value=".25" tags="stone,concrete"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value=".5" tags="metal"/>
   </append>
 
   <!-- Reduce sensible block damage for animals. -->
   <append xpath="/items/item[starts-with (@name,'meleeHandAnimal')]/effect_group">
     <passive_effect name="DamageModifier" operation="perc_set" value=".5" tags="earth"/>
     <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="stone,concrete"/>
-    <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="metal"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value="0.2" tags="metal"/>
   </append>
 
   <!-- Rocket range increase, for luls -->
@@ -343,10 +348,7 @@
   <append xpath="/items/item[@name='drugHerbalAntibiotics']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
   <append xpath="/items/item[@name='drugAntibiotics']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
   <append xpath="/items/item[@name='foodEggBoiled']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-  <append xpath="/items/item[@name='foodBlueberryPie']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
   <append xpath="/items/item[@name='foodBoiledMeat']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-  <append xpath="/items/item[@name='foodCornBread']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-  <append xpath="/items/item[@name='foodCornOnTheCob']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
   <append xpath="/items/item[@name='foodHoboStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
   <append xpath="/items/item[@name='foodMeatStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
   <append xpath="/items/item[@name='foodVegetableStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
@@ -370,7 +372,7 @@
   <set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/effect_group[@name='meleeToolAxeT2SteelAxe']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">105</set>
 
   <!-- Autoshotty is not auto.. and baddy -->
-  <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">250</set>
+  <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">210</set>
   <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='BurstRoundCount']/@value">50</set>
 
   <!-- Mods for M60 -->

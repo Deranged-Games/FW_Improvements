@@ -1,25 +1,15 @@
 <configs>
-  <remove xpath="/recipes/recipe[@name='foodMoldyBread']" />
-  <remove xpath="/recipes/recipe[@name='farmPlotBlockPlayer']" />
+  <remove xpath="/recipes/recipe[@name='farmPlotBlockVariantHelper']" />
 
   <append xpath="/recipes">
-    <recipe name="foodMoldyBread" count="1" craft_time="1">
-      <ingredient name="foodShamSandwich" count="1"/>
-    </recipe>
     <recipe name="foodFishTacos" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
       <ingredient name="foodCanTuna" count="1"/>
       <ingredient name="foodCornMeal" count="2"/>
     </recipe>
-    <recipe name="farmPlotBlockPlayer" count="1" tags="perkLivingOffTheLandCrafting" craft_time="10">
+    <recipe name="farmPlotBlockVariantHelper" count="1" tags="perkLivingOffTheLandCrafting" craft_time="10">
       <ingredient name="foodRottingFlesh" count="3"/>
       <ingredient name="resourcePotassiumNitratePowder" count="5"/>
       <ingredient name="resourceClayLump" count="20"/>
-    </recipe>
-    <recipe name="woodLogSpike1" count="1">
-      <ingredient name="resourceWood" count="15" />
-    </recipe>
-    <recipe name="scrapIronLogSpike4" count="1">
-      <ingredient name="resourceScrapIron" count="40" />
     </recipe>
     <recipe name="resourceBulletCasingSteel" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
       <ingredient name="unit_iron" count="2"/>
@@ -54,23 +44,23 @@
       <ingredient name="resourceScrapBrass" count="2"/>
     </recipe>
     <recipe name="resourceMechanicalParts" count="1" material_based="true" craft_area="forge">
-      <ingredient name="unit_iron" count="2"/>
+      <ingredient name="unit_iron" count="20"/>
     </recipe>
     <recipe name="resourceSpring" count="1" material_based="true" craft_area="forge">
-      <ingredient name="unit_iron" count="2"/>
+      <ingredient name="unit_iron" count="20"/>
     </recipe>
     <recipe name="resourceScrapPolymers" count="5" craft_area="chemistryStation" tags="perkAdvancedEngineering">
       <ingredient name="resourceYuccaFibers" count="20"/>
-      <ingredient name="drinkJarGrainAlcohol" count="1"/>
+      <ingredient name="drinkJarBeer" count="1"/>
     </recipe>
     <recipe name="resourceScrapPolymers" count="5" craft_area="chemistryStation" tags="perkAdvancedEngineering">
       <ingredient name="resourceOilShale" count="1"/>
-      <ingredient name="drinkJarGrainAlcohol" count="1"/>
+      <ingredient name="drinkJarBeer" count="1"/>
     </recipe>
     <recipe name="toolBeaker" count="1" material_based="true" craft_area="forge">
-      <ingredient name="unit_glass" count="30"/>
-      <ingredient name="unit_lead" count="2"/>
-      <ingredient name="unit_clay" count="2"/>
+      <ingredient name="unit_glass" count="80"/>
+      <ingredient name="unit_lead" count="20"/>
+      <ingredient name="unit_clay" count="20"/>
     </recipe>
     <recipe name="meleeToolAxeT3ChainsawParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible">
       <ingredient name="unit_iron" count="100"/>
@@ -172,11 +162,13 @@
   <!-- Why so much tape and glue? -->
   <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='2']/@count">1</set>
   <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='3']/@count">1</set>
-  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='4']/@count">1</set>
-  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='5']/@count">1</set>
-  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='10']/@count">2</set>
-  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='20']/@count">5</set>
-  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='25']/@count">10</set>
+  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='4']/@count">2</set>
+  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='5']/@count">2</set>
+  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='10']/@count">4</set>
+  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='15']/@count">5</set>
+  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='20']/@count">6</set>
+  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='25']/@count">12</set>
+  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='60']/@count">20</set>
   <set xpath="/recipes/recipe/ingredient[@name='resourceGlue']/@count">1</set>
 
   <!-- Mods are more expensive than the weapons themselves -->
@@ -202,44 +194,44 @@
   <remove xpath="/recipes/recipe[starts-with (@name,'gun')]/ingredient[@name='resourceDuctTape']" />
   
   <!-- ======================================= Starting the stupidly specific stuff. ======================================= -->
-  <set xpath="/recipes/recipe[@name='drinkJarGrainAlcohol']/ingredient[@name='foodCornMeal']/@count">1</set>
+  <set xpath="/recipes/recipe[@name='drinkJarBeer']/ingredient[@name='resourceCropHopsFlower']/@count">2</set>
 
   <set xpath="/recipes/recipe[@name='drinkYuccaJuiceSmoothie']/ingredient[@name='foodCropYuccaFruit']/@count">2</set>
   <set xpath="/recipes/recipe[@name='drinkYuccaJuiceSmoothie']/ingredient[@name='foodCropBlueberries']/@count">2</set>
 
-  <set xpath="/recipes/recipe[@name='drugAntibiotics' and @craft_area='campfire']/ingredient[@name='foodMoldyBread']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='drugAntibiotics' and @craft_area='campfire']/ingredient[@name='foodShamSandwich']/@count">2</set>
 
   <set xpath="/recipes/recipe[@name='drugFortBites']/ingredient[@name='medicalBloodBag']/@count">1</set>
-  <set xpath="/recipes/recipe[@name='drugFortBites']/ingredient[@name='foodRottingFlesh']/@count">4</set>
+  <set xpath="/recipes/recipe[@name='drugFortBites']/ingredient[@name='foodRottingFlesh']/@count">5</set>
 
   <set xpath="/recipes/recipe[@name='drugHerbalAntibiotics' and @craft_area='campfire']/ingredient[@name='foodCropBlueberries']/@count">2</set>
-  <set xpath="/recipes/recipe[@name='drugHerbalAntibiotics' and @craft_area='campfire']/ingredient[@name='foodCropMushrooms']/@count">1</set>
-  <set xpath="/recipes/recipe[@name='drugHerbalAntibiotics' and @craft_area='campfire']/ingredient[@name='resourceCropChrysanthemumPlant']/@count">1</set>
+  <set xpath="/recipes/recipe[@name='drugHerbalAntibiotics' and @craft_area='campfire']/ingredient[@name='foodCropMushrooms']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='drugHerbalAntibiotics' and @craft_area='campfire']/ingredient[@name='resourceCropChrysanthemumPlant']/@count">2</set>
   <set xpath="/recipes/recipe[@name='drugHerbalAntibiotics' and @craft_area='campfire']/ingredient[@name='resourcePotassiumNitratePowder']/@count">2</set>
 
   <set xpath="/recipes/recipe[@name='drugHerbalAntibiotics' and @craft_area='chemistryStation']/ingredient[@name='foodCropBlueberries']/@count">1</set>
 
-  <set xpath="/recipes/recipe[@name='foodBlueberryPie']/ingredient[@name='foodCropBlueberries']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='foodBlueberryPie']/ingredient[@name='foodCropBlueberries']/@count">3</set>
 
-  <set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']/@count">1</set>
-  <set xpath="/recipes/recipe[@name='foodBoiledMeat']/ingredient[@name='foodRawMeat']/@count">2</set>
-  <set xpath="/recipes/recipe[@name='foodCharredMeat']/ingredient[@name='foodRawMeat']/@count">2</set>
-  <set xpath="/recipes/recipe[@name='foodChiliDog']/ingredient[@name='foodRawMeat']/@count">1</set>
-  <set xpath="/recipes/recipe[@name='foodGrilledMeat']/ingredient[@name='foodRawMeat']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='foodBoiledMeat']/ingredient[@name='foodRawMeat']/@count">3</set>
+  <set xpath="/recipes/recipe[@name='foodCharredMeat']/ingredient[@name='foodRawMeat']/@count">3</set>
+  <set xpath="/recipes/recipe[@name='foodChiliDog']/ingredient[@name='foodRawMeat']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='foodGrilledMeat']/ingredient[@name='foodRawMeat']/@count">3</set>
 
-  <set xpath="/recipes/recipe[@name='foodMeatStew']/ingredient[@name='foodRawMeat']/@count">1</set>
-  <set xpath="/recipes/recipe[@name='foodMeatStew']/ingredient[@name='foodCropPotato']/@count">1</set>
-  <set xpath="/recipes/recipe[@name='foodMeatStew']/ingredient[@name='foodCropCorn']/@count">1</set>
+  <set xpath="/recipes/recipe[@name='foodMeatStew']/ingredient[@name='foodRawMeat']/@count">3</set>
+  <set xpath="/recipes/recipe[@name='foodMeatStew']/ingredient[@name='foodCropPotato']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='foodMeatStew']/ingredient[@name='foodCropCorn']/@count">2</set>
 
-  <set xpath="/recipes/recipe[@name='foodShamChowder']/ingredient[@name='foodCropPotato']/@count">1</set>
-  <set xpath="/recipes/recipe[@name='foodShamChowder']/ingredient[@name='foodCropCorn']/@count">1</set>
+  <set xpath="/recipes/recipe[@name='foodShamChowder']/ingredient[@name='foodCropPotato']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='foodShamChowder']/ingredient[@name='foodCropCorn']/@count">2</set>
 
-  <set xpath="/recipes/recipe[@name='foodSteakAndPotato']/ingredient[@name='foodRawMeat']/@count">1</set>
+  <set xpath="/recipes/recipe[@name='foodSteakAndPotato']/ingredient[@name='foodRawMeat']/@count">3</set>
   <set xpath="/recipes/recipe[@name='foodSteakAndPotato']/ingredient[@name='foodCropPotato']/@count">1</set>
 
-  <set xpath="/recipes/recipe[@name='foodVegetableStew']/ingredient[@name='foodCropPotato']/@count">1</set>
-  <set xpath="/recipes/recipe[@name='foodVegetableStew']/ingredient[@name='foodCropCorn']/@count">1</set>
-  <set xpath="/recipes/recipe[@name='foodVegetableStew']/ingredient[@name='foodCropMushrooms']/@count">1</set>
+  <set xpath="/recipes/recipe[@name='foodVegetableStew']/ingredient[@name='foodCropPotato']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='foodVegetableStew']/ingredient[@name='foodCropCorn']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='foodVegetableStew']/ingredient[@name='foodCropMushrooms']/@count">2</set>
 
   <!-- Crop to seed ratios -->
   <set xpath="/recipes/recipe[@name='plantedAloe1']/ingredient[@name='resourceCropAloeLeaf']">1</set>
@@ -265,5 +257,5 @@
   <remove xpath="/recipes/recipe[starts-with (@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount']" />
 
   <!-- But, brass is usually so small -->
-  <set xpath="/recipes/recipe[@name='resourceBulletCasing']/ingredient[@name='unit_brass']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='resourceBulletCasing']/ingredient[@name='unit_brass']/@count">3</set>
 </configs>
