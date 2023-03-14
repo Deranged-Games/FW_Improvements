@@ -4,27 +4,27 @@
   <setattribute xpath="//trader_info[@id='1']" name="max_inventory">100</setattribute>
   <setattribute xpath="//trader_info[@id='1']" name="min_items_swapped">20</setattribute>
   <setattribute xpath="//trader_info[@id='1']" name="max_items_swapped">30</setattribute>
-  
+
   <setattribute xpath="//trader_info[@id='2']" name="reset_interval">1</setattribute>
   <setattribute xpath="//trader_info[@id='2']" name="min_inventory">50</setattribute>
   <setattribute xpath="//trader_info[@id='2']" name="max_inventory">100</setattribute>
   <setattribute xpath="//trader_info[@id='2']" name="min_items_swapped">20</setattribute>
   <setattribute xpath="//trader_info[@id='2']" name="max_items_swapped">30</setattribute>
-  
+
   <setattribute xpath="//trader_info[@id='6']" name="reset_interval">1</setattribute>
   <setattribute xpath="//trader_info[@id='6']" name="min_inventory">50</setattribute>
   <setattribute xpath="//trader_info[@id='6']" name="max_inventory">100</setattribute>
   <setattribute xpath="//trader_info[@id='6']" name="min_items_swapped">20</setattribute>
   <setattribute xpath="//trader_info[@id='6']" name="max_items_swapped">30</setattribute>
-  
+
   <setattribute xpath="//trader_info[@id='7']" name="reset_interval">1</setattribute>
   <setattribute xpath="//trader_info[@id='7']" name="min_inventory">50</setattribute>
   <setattribute xpath="//trader_info[@id='7']" name="max_inventory">100</setattribute>
   <setattribute xpath="//trader_info[@id='7']" name="min_items_swapped">20</setattribute>
   <setattribute xpath="//trader_info[@id='7']" name="max_items_swapped">30</setattribute>
-  
+
   <setattribute xpath="//trader_info[@id='8']" name="reset_interval">1</setattribute>
-  <setattribute xpath="//trader_info[@id='8']" name="min_inventory">50</setattribute> 
+  <setattribute xpath="//trader_info[@id='8']" name="min_inventory">50</setattribute>
   <setattribute xpath="//trader_info[@id='8']" name="max_inventory">100</setattribute>
   <setattribute xpath="//trader_info[@id='8']" name="min_items_swapped">20</setattribute>
   <setattribute xpath="//trader_info[@id='8']" name="max_items_swapped">30</setattribute>

@@ -75,8 +75,8 @@
 
   <append xpath="/items/item[@name='gunMGT0PipeMachineGun']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
   <append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
-  <append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>  
-  <append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>  
+  <append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
+  <append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
 
   <!-- Parts unlocked by perks -->
   <insertAfter xpath="/items/item[@name='solarCell']/property[@name='Material']">
@@ -88,9 +88,9 @@
 
   <!-- Reduce sensible block damage for zombies. -->
   <append xpath="/items/item[starts-with (@name,'meleeHandZombie')]/effect_group">
-    <passive_effect name="DamageModifier" operation="perc_set" value=".6" tags="earth"/>
-    <passive_effect name="DamageModifier" operation="perc_set" value=".3" tags="stone,concrete"/>
-    <passive_effect name="DamageModifier" operation="perc_set" value=".6" tags="metal"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value=".5" tags="earth"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value=".2" tags="stone,concrete"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value=".4" tags="metal"/>
   </append>
 
   <!-- Reduce sensible block damage for animals. -->

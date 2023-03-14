@@ -7,7 +7,7 @@
     <recipe name="resourceBulletCasingSteel" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
       <ingredient name="unit_iron" count="2"/>
       <ingredient name="unit_clay" count="1"/>
-    </recipe> 
+    </recipe>
     <recipe name="ammo9mmBulletSteel" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
       <ingredient name="resourceBulletTip" count="1"/>
       <ingredient name="resourceGunPowder" count="1"/>
@@ -143,23 +143,23 @@
       <ingredient name="unit_iron" count="150"/>
       <ingredient name="unit_clay" count="30"/>
     </recipe>
-		<recipe name="solarbank" count="1" craft_area="workbench" tags="learnable,perkAdvancedEngineering,solarbankSchematic">
-			<ingredient name="resourceForgedSteel" count="10"/>
-			<ingredient name="resourceElectricParts" count="15"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="glassBlockVariantHelper" count="4"/>
-		</recipe>
-	  <recipe name="solarCell" count="1" craft_area="workbench" craft_time="216" tags="learnable,perkAdvancedEngineering,solarCellSchematic">
-			<ingredient name="resourceForgedSteel" count="2"/>
-			<ingredient name="resourceElectricParts" count="10"/>
-			<ingredient name="glassBlockVariantHelper" count="1"/>
-		</recipe>
-		<recipe name="smallEngine" count="1" craft_area="workbench" craft_time="252" tags="learnable,perkGreaseMonkey,smallEngineSchematic">
-			<ingredient name="resourceForgedSteel" count="20"/>
-			<ingredient name="resourceElectricParts" count="4"/>
-			<ingredient name="resourceOil" count="4"/>
-			<ingredient name="resourceMechanicalParts" count="10"/>
-		</recipe>
+    <recipe name="solarbank" count="1" craft_area="workbench" tags="learnable,perkAdvancedEngineering,solarbankSchematic">
+      <ingredient name="resourceForgedSteel" count="10"/>
+      <ingredient name="resourceElectricParts" count="15"/>
+      <ingredient name="resourceMechanicalParts" count="5"/>
+      <ingredient name="glassBlockVariantHelper" count="4"/>
+    </recipe>
+    <recipe name="solarCell" count="1" craft_area="workbench" craft_time="216" tags="learnable,perkAdvancedEngineering,solarCellSchematic">
+      <ingredient name="resourceForgedSteel" count="2"/>
+      <ingredient name="resourceElectricParts" count="10"/>
+      <ingredient name="glassBlockVariantHelper" count="1"/>
+    </recipe>
+    <recipe name="smallEngine" count="1" craft_area="workbench" craft_time="252" tags="learnable,perkGreaseMonkey,smallEngineSchematic">
+      <ingredient name="resourceForgedSteel" count="20"/>
+      <ingredient name="resourceElectricParts" count="4"/>
+      <ingredient name="resourceOil" count="4"/>
+      <ingredient name="resourceMechanicalParts" count="10"/>
+    </recipe>
   </append>
 
   <!-- Why so much tape and glue? -->
@@ -179,10 +179,10 @@
 
   <!-- I dont want to use a gun made with duct tape -->
   <remove xpath="/recipes/recipe[starts-with (@name,'gun')]/ingredient[@name='resourceDuctTape']" />
-  
+
     <!-- Uhhhhh, what the actual fuck -->
   <set xpath="/recipes/recipe[@name='modArmorHelmetLight']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
-  
+
   <!-- ======================================= Starting the stupidly specific stuff. ======================================= -->
   <set xpath="/recipes/recipe[@name='drinkJarBeer']/ingredient[@name='resourceCropHopsFlower']/@count">2</set>
 

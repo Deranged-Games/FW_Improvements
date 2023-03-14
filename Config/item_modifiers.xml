@@ -25,7 +25,7 @@
   <!-- Bipods should negate sway, and massive recoil when they are set -->
   <remove xpath="/item_modifiers/item_modifier[@name='modGunBipod']/effect_group/passive_effect"/>
   <append xpath="/item_modifiers/item_modifier[@name='modGunBipod']/effect_group">
-	  <passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.8"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
+    <passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.8"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
     <passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.8"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
     <passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.8"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
     <passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.8"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>

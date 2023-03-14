@@ -125,6 +125,6 @@
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="4" value="1" tags="armorMilitarySetParts"/>
   </insertAfter>
   <append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@tags='thrownGrenade,resourceGunPowderBundle']/@tags">,gunExplosivesT3RocketLauncherParts</append>
-	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='5']/@tags">,solarbank,solarCell</append>
-	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='3,5']/@tags">,smallEngine</append>
+  <append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='5']/@tags">,solarbank,solarCell</append>
+  <append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='3,5']/@tags">,smallEngine</append>
 </configs>

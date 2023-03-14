@@ -1,0 +1,8 @@
+<configs>
+  <remove xpath="/controls/recipe_stack/rect/label[@name='timer']"/>
+  <append xpath="/controls/recipe_stack/rect">
+    <label depth="4" name="timer" pos="36,-40" width="70" height="22" font_size="20" justify="center" pivot="center" color="252, 140, 3"><!--the color of the timers on crafting-->
+      <sprite depth="-1" name="timerBackground" pos="-37,12" width="73" height="22" color="0,0,0,255" type="sliced"/>
+    </label>
+  </append>
+</configs>
