@@ -3,99 +3,58 @@
   <set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingBasic']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">2</set>
   <set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingReinforced']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">4</set>
 
-  <!-- Muzzle Breaks for shoguns -->
-  <set xpath="/item_modifiers/item_modifier[@name='modGunMuzzleBrake']/@blocked_tags">noMods</set>
+  <!-- More range buff for long barrel -->
+  <set xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']/effect_group/passive_effect[@name='DamageFalloffRange']/@value">.4</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']/effect_group/passive_effect[@name='MaxRange']/@value">.4</set>
+  <remove xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']/effect_group/passive_effect[starts-with (@name,'Spread')]"/>
 
-  <!-- Remove kick for long barrel -->
-  <remove xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']/effect_group/passive_effect[starts-with (@name,'KickDegrees')]"/>
+  <!-- Muzzle Brake Recoil reduction buff -->
+  <set xpath="/item_modifiers/item_modifier[@name='modGunMuzzleBrake']/effect_group/passive_effect[@name='KickDegreesVerticalMin']/@value">-.4</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunMuzzleBrake']/effect_group/passive_effect[@name='KickDegreesVerticalMax']/@value">-.4</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunMuzzleBrake']/effect_group/passive_effect[@name='KickDegreesHorizontalMin']/@value">-.25</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunMuzzleBrake']/effect_group/passive_effect[@name='KickDegreesHorizontalMax']/@value">-.25</set>
 
-  <!-- Bipod spread dampening was garbage -->
-  <set xpath="/item_modifiers/item_modifier[@name='modGunBipod']/effect_group/passive_effect[@name='SpreadMultiplierAiming']/@value">-.25</set>
+  <!-- Laser Sight hip accuracy buff -->
+  <set xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/effect_group/passive_effect[@name='SpreadMultiplierHip']/@value">-.4</set>
+
+  <!-- Sight aiming accuracy buff -->
+  <set xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/effect_group/passive_effect[@name='SpreadMultiplierAiming']/@value">-.2</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']/effect_group/passive_effect[@name='SpreadMultiplierAiming']/@value">-.3</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']/effect_group/passive_effect[@name='SpreadMultiplierAiming']/@value">-.4</set>
+
+  <!-- Bipods should negate sway, and massive recoil when they are set -->
+  <remove xpath="/item_modifiers/item_modifier[@name='modGunBipod']/effect_group/passive_effect"/>
+  <append xpath="/item_modifiers/item_modifier[@name='modGunBipod']/effect_group">
+	  <passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.8"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
+    <passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.8"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
+    <passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.8"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
+    <passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.8"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
+    <passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.5"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
+    <passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.5"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
+    <passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="2"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
+    <passive_effect name="WeaponHandling" operation="perc_add" value="-.1"/>
+  </append>
+
+  <!-- Foregrips are not fucking magic -->
+  <set xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/effect_group/passive_effect[@name='KickDegreesVerticalMin']/@value">-.3</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/effect_group/passive_effect[@name='KickDegreesVerticalMax']/@value">-.3</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/effect_group/passive_effect[@name='KickDegreesHorizontalMin']/@value">-.3</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/effect_group/passive_effect[@name='KickDegreesHorizontalMax']/@value">-.3</set>
+
+  <!-- Arrow Rest Mod Buffs -->
+  <set xpath="/item_modifiers/item_modifier[@name='modGunBowArrowRest']/effect_group/passive_effect[@name='SpreadMultiplierAiming']/@value">-.2</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunBowArrowRest']/effect_group/passive_effect[@name='SpreadMultiplierHip']/@value">-.2</set>
+
+  <!-- Tempered Blade Mod Buffs -->
+  <set xpath="/item_modifiers/item_modifier[@name='modMeleeTemperedBlade']/effect_group/passive_effect[@name='BlockDamage']/@value">.2</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modMeleeTemperedBlade']/effect_group/passive_effect[@name='DegradationPerUse']/@value">-.3</set>
 
   <!-- Weighted Head Buff -->
   <remove xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/effect_group/requirement" />
   <append xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/effect_group">
-    <passive_effect name="EntityDamage" operation="perc_add" value=".35"/>
-    <passive_effect name="BlockDamage" operation="perc_add" value=".35"/>
-    <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.15"/>
-    <passive_effect name="StaminaLoss" operation="perc_add" value=".25"/>
+    <passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+    <passive_effect name="BlockDamage" operation="perc_add" value=".2"/>
+    <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.1"/>
+    <passive_effect name="StaminaLoss" operation="perc_add" value=".15"/>
   </append>
-
-  <!-- Khaos cant stand to be told no -->
-  <set xpath="//@blocked_tags">noMods</set>
-  <set xpath="/item_modifiers/item_modifier[1]/@modifier_tags">1</set>
-  <set xpath="/item_modifiers/item_modifier[2]/@modifier_tags">2</set>
-  <set xpath="/item_modifiers/item_modifier[3]/@modifier_tags">3</set>
-  <set xpath="/item_modifiers/item_modifier[4]/@modifier_tags">4</set>
-  <set xpath="/item_modifiers/item_modifier[5]/@modifier_tags">5</set>
-  <set xpath="/item_modifiers/item_modifier[6]/@modifier_tags">6</set>
-  <set xpath="/item_modifiers/item_modifier[7]/@modifier_tags">7</set>
-  <set xpath="/item_modifiers/item_modifier[8]/@modifier_tags">8</set>
-  <set xpath="/item_modifiers/item_modifier[9]/@modifier_tags">9</set>
-  <set xpath="/item_modifiers/item_modifier[10]/@modifier_tags">10</set>
-  <set xpath="/item_modifiers/item_modifier[11]/@modifier_tags">11</set>
-  <set xpath="/item_modifiers/item_modifier[12]/@modifier_tags">12</set>
-  <set xpath="/item_modifiers/item_modifier[13]/@modifier_tags">13</set>
-  <set xpath="/item_modifiers/item_modifier[14]/@modifier_tags">14</set>
-  <set xpath="/item_modifiers/item_modifier[15]/@modifier_tags">15</set>
-  <set xpath="/item_modifiers/item_modifier[16]/@modifier_tags">16</set>
-  <set xpath="/item_modifiers/item_modifier[17]/@modifier_tags">17</set>
-  <set xpath="/item_modifiers/item_modifier[18]/@modifier_tags">18</set>
-  <set xpath="/item_modifiers/item_modifier[19]/@modifier_tags">19</set>
-  <set xpath="/item_modifiers/item_modifier[20]/@modifier_tags">20</set>
-  <set xpath="/item_modifiers/item_modifier[21]/@modifier_tags">21</set>
-  <set xpath="/item_modifiers/item_modifier[25]/@modifier_tags">25</set>
-  <set xpath="/item_modifiers/item_modifier[26]/@modifier_tags">26</set>
-  <set xpath="/item_modifiers/item_modifier[27]/@modifier_tags">27</set>
-  <set xpath="/item_modifiers/item_modifier[28]/@modifier_tags">28</set>
-  <set xpath="/item_modifiers/item_modifier[29]/@modifier_tags">29</set>
-  <set xpath="/item_modifiers/item_modifier[30]/@modifier_tags">30</set>
-  <set xpath="/item_modifiers/item_modifier[31]/@modifier_tags">31</set>
-  <set xpath="/item_modifiers/item_modifier[32]/@modifier_tags">32</set>
-  <set xpath="/item_modifiers/item_modifier[33]/@modifier_tags">33</set>
-  <set xpath="/item_modifiers/item_modifier[34]/@modifier_tags">34</set>
-  <set xpath="/item_modifiers/item_modifier[35]/@modifier_tags">35</set>
-  <set xpath="/item_modifiers/item_modifier[36]/@modifier_tags">36</set>
-  <set xpath="/item_modifiers/item_modifier[37]/@modifier_tags">37</set>
-  <set xpath="/item_modifiers/item_modifier[38]/@modifier_tags">38</set>
-  <set xpath="/item_modifiers/item_modifier[39]/@modifier_tags">39</set>
-  <set xpath="/item_modifiers/item_modifier[40]/@modifier_tags">40</set>
-  <set xpath="/item_modifiers/item_modifier[41]/@modifier_tags">41</set>
-  <set xpath="/item_modifiers/item_modifier[42]/@modifier_tags">42</set>
-  <set xpath="/item_modifiers/item_modifier[43]/@modifier_tags">43</set>
-  <set xpath="/item_modifiers/item_modifier[44]/@modifier_tags">44</set>
-  <set xpath="/item_modifiers/item_modifier[45]/@modifier_tags">45</set>
-  <set xpath="/item_modifiers/item_modifier[46]/@modifier_tags">46</set>
-  <set xpath="/item_modifiers/item_modifier[47]/@modifier_tags">47</set>
-  <set xpath="/item_modifiers/item_modifier[48]/@modifier_tags">48</set>
-  <set xpath="/item_modifiers/item_modifier[49]/@modifier_tags">49</set>
-  <set xpath="/item_modifiers/item_modifier[50]/@modifier_tags">50</set>
-  <set xpath="/item_modifiers/item_modifier[51]/@modifier_tags">51</set>
-  <set xpath="/item_modifiers/item_modifier[52]/@modifier_tags">52</set>
-  <set xpath="/item_modifiers/item_modifier[53]/@modifier_tags">53</set>
-  <set xpath="/item_modifiers/item_modifier[54]/@modifier_tags">54</set>
-  <set xpath="/item_modifiers/item_modifier[55]/@modifier_tags">55</set>
-  <set xpath="/item_modifiers/item_modifier[56]/@modifier_tags">56</set>
-  <set xpath="/item_modifiers/item_modifier[57]/@modifier_tags">57</set>
-  <set xpath="/item_modifiers/item_modifier[58]/@modifier_tags">58</set>
-  <set xpath="/item_modifiers/item_modifier[59]/@modifier_tags">59</set>
-  <set xpath="/item_modifiers/item_modifier[60]/@modifier_tags">60</set>
-  <set xpath="/item_modifiers/item_modifier[61]/@modifier_tags">61</set>
-  <set xpath="/item_modifiers/item_modifier[62]/@modifier_tags">62</set>
-  <set xpath="/item_modifiers/item_modifier[63]/@modifier_tags">63</set>
-  <set xpath="/item_modifiers/item_modifier[64]/@modifier_tags">64</set>
-  <set xpath="/item_modifiers/item_modifier[65]/@modifier_tags">65</set>
-  <set xpath="/item_modifiers/item_modifier[66]/@modifier_tags">66</set>
-  <set xpath="/item_modifiers/item_modifier[67]/@modifier_tags">67</set>
-  <set xpath="/item_modifiers/item_modifier[68]/@modifier_tags">68</set>
-  <set xpath="/item_modifiers/item_modifier[69]/@modifier_tags">69</set>
-  <set xpath="/item_modifiers/item_modifier[70]/@modifier_tags">70</set>
-  <set xpath="/item_modifiers/item_modifier[81]/@modifier_tags">81</set>
-  <set xpath="/item_modifiers/item_modifier[82]/@modifier_tags">82</set>
-  <set xpath="/item_modifiers/item_modifier[83]/@modifier_tags">83</set>
-  <set xpath="/item_modifiers/item_modifier[84]/@modifier_tags">84</set>
-  <set xpath="/item_modifiers/item_modifier[85]/@modifier_tags">85</set>
-  <set xpath="/item_modifiers/item_modifier[86]/@modifier_tags">86</set>
-  <set xpath="/item_modifiers/item_modifier[87]/@modifier_tags">87</set>
-  <set xpath="/item_modifiers/item_modifier[88]/@modifier_tags">88</set>
 </configs>

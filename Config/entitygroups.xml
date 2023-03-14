@@ -1,13 +1,4 @@
 <configs>
-  <!-- Night Zombie Tweaks -->
-  <set xpath="/entitygroups/entitygroup[@name='ZombiesNight']/entity[@prob='.25']/@prob">.5</set>
-  <append xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
-    <entity name="zombieWightFeral" prob=".3"/>
-    <entity name="animalZombieBear" prob=".1"/>
-    <entity name="zombieFatCop" prob=".2"/>
-    <entity name="zombieFatCopFeral" prob=".1"/>
-    <entity name="animalZombieVulture" prob=".2"/>
-    <entity name="zombieSoldier" prob=".2"/>
-    <entity name="zombieSoldierFeral" prob=".1"/>
-  </append>
+  <set xpath="/entitygroups/entitygroup[starts-with (@name,'scoutHordeStage')]/entity[starts-with (@name,'zombieScream')]/@prob">0.1</set>
+  <set xpath="/entitygroups/entitygroup[starts-with (@name,'feralHordeStage')]/entity[@name='zombieDemolition']/@name">zombieMutated</set>
 </configs>

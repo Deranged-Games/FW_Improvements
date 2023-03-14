@@ -31,10 +31,10 @@
       <property name="CraftSound" value="campfire_cook_click"/>
       <property name="CraftCompleteSound" value="campfire_complete_item"/>
       <property name="WorkstationJournalTip" value="campfireTip"/>
-        <property class="RepairItems">
-          <property name="resourceForgedIron" value="2"/>
-          <property name="resourceElectricParts" value="2"/>
-        </property>
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="2"/>
+        <property name="resourceElectricParts" value="2"/>
+      </property>
       <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
       <drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
       <drop event="Harvest" name="resourceScrapIron" count="1,5" tag="salvageHarvest"/>
@@ -63,10 +63,11 @@
     <block name="modernCookingOldStove">
       <property name="Extends" value="modernCookingMaster"/>
       <property name="CustomIcon" value="cntStoveOldVer1Closed"/>
-	    <property name="Shape" value="ModelEntity"/>
+      <property name="Shape" value="ModelEntity"/>
       <property name="Texture" value="293"/>
 	    <property name="Model" value="#Entities/LootContainers?stoveElectricRetro_01Prefab.prefab"/>
       <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="Mesh" value="models"/>
       <property name="Path" value="solid"/>
       <property name="ParticleOffset" value="0.5,.6,0.5"/>
     </block>
@@ -75,7 +76,7 @@
       <property name="CustomIcon" value="cntWoodBurningStove"/>
       <property name="Shape" value="ModelEntity"/>
       <property name="Model" value="Entities/Furniture/woodBurningStovePrefab"/>
-      <property name="StabilitySupport" value="false"/> <!-- build restriction -->
+      <property name="StabilitySupport" value="false"/> 
       <property name="Path" value="solid"/>
       <property name="Place" value="TowardsPlacerInverted"/>
       <property name="ParticleName" value="forge"/>
@@ -86,8 +87,9 @@
       <property name="CustomIcon" value="cntMicrowaveOvenVer1Open"/>
       <property name="Shape" value="ModelEntity"/>
       <property name="Texture" value="293"/>
-	    <property name="Model" value="#Entities/LootContainers?microwaveElectricModern_01Prefab.prefab"/>
-      <property name="StabilitySupport" value="false"/> <!-- build restriction -->
+      <property name="Mesh" value="models"/>
+      <property name="Model" value="#Entities/LootContainers?microwaveElectricModern_01Prefab.prefab"/>
+      <property name="StabilitySupport" value="false"/> 
       <property name="Path" value="solid"/>
       <property name="Place" value="TowardsPlacerInverted"/>
       <property name="ParticleName" value="candle_flame"/>
@@ -98,7 +100,7 @@
       <property name="CustomIcon" value="cntCharcoalGrillClosed"/>
       <property name="Shape" value="ModelEntity"/>
       <property name="Model" value="#Entities/LootContainers?Grill_Simple_ClosedPrefab.prefab"/>
-      <property name="StabilitySupport" value="false"/> <!-- build restriction -->
+      <property name="StabilitySupport" value="false"/> 
       <property name="Path" value="solid"/>
       <property name="Place" value="TowardsPlacerInverted"/>
       <property name="ParticleName" value="torch_wall"/>
@@ -109,7 +111,7 @@
       <property name="CustomIcon" value="cntCharcoalGrillOpen"/>
       <property name="Shape" value="ModelEntity"/>
       <property name="Model" value="#Entities/LootContainers?Grill_Simple_EmptyPrefab.prefab"/>
-      <property name="StabilitySupport" value="false"/> <!-- build restriction -->
+      <property name="StabilitySupport" value="false"/> 
       <property name="Path" value="solid"/>
       <property name="Place" value="TowardsPlacerInverted"/>
       <property name="ParticleName" value="torch_wall"/>
@@ -120,7 +122,7 @@
       <property name="CustomIcon" value="cntGasGrillClosed"/>
       <property name="Shape" value="ModelEntity"/>
       <property name="Model" value="#Entities/LootContainers?GasGrill_FullPrefab.prefab"/>
-      <property name="StabilitySupport" value="false"/> <!-- build restriction -->
+      <property name="StabilitySupport" value="false"/> 
       <property name="Path" value="solid"/>
       <property name="Place" value="TowardsPlacerInverted"/>
       <property name="ParticleName" value="torch_wall"/>
@@ -131,7 +133,7 @@
       <property name="CustomIcon" value="cntGasGrillOpen"/>
       <property name="Shape" value="ModelEntity"/>
       <property name="Model" value="#Entities/LootContainers?GasGrill_EmptyPrefab.prefab"/>
-      <property name="StabilitySupport" value="false"/> <!-- build restriction -->
+      <property name="StabilitySupport" value="false"/> 
       <property name="Path" value="solid"/>
       <property name="Place" value="TowardsPlacerInverted"/>
       <property name="ParticleName" value="torch_wall"/>
@@ -141,8 +143,8 @@
       <property name="Extends" value="modernCookingMaster"/>
       <property name="CustomIcon" value="cntToaster"/>
       <property name="Shape" value="ModelEntity"/>
-      <property name="Model" value="Entities/Appliances/toasterPrefab"/>
-      <property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	    <property name="Model" value="Entities/Appliances/toasterPrefab"/>
+      <property name="StabilitySupport" value="false"/> 
       <property name="Path" value="solid"/>
       <property name="Place" value="TowardsPlacerInverted"/>
       <property name="ParticleName" value="candle_flame"/>
@@ -152,8 +154,8 @@
       <property name="Extends" value="modernCookingMaster"/>
       <property name="CustomIcon" value="cntCoffeeMaker"/>
       <property name="Shape" value="ModelEntity"/>
-      <property name="Model" value="Entities/Appliances/coffeeMakerPrefab"/>
-      <property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	    <property name="Model" value="Entities/Appliances/coffeeMakerPrefab"/>
+      <property name="StabilitySupport" value="false"/> 
       <property name="Path" value="solid"/>
       <property name="Place" value="TowardsPlacerInverted"/>
       <property name="ParticleName" value="candle_flame"/>
@@ -163,8 +165,8 @@
       <property name="Extends" value="modernCookingMaster"/>
       <property name="CustomIcon" value="cntCoffeeMakerCommercial"/>
       <property name="Shape" value="ModelEntity"/>
-      <property name="Model" value="Entities/Appliances/commercialCoffeeMakerPrefab"/>
-      <property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	    <property name="Model" value="Entities/Appliances/commercialCoffeeMakerPrefab"/>
+      <property name="StabilitySupport" value="false"/> 
       <property name="Path" value="solid"/>
       <property name="Place" value="TowardsPlacerInverted"/>
       <property name="ParticleName" value="candle_flame"/>
@@ -180,71 +182,6 @@
     <property name="BuffsWhenWalkedOn" value="Sleeping2"/>
   </append>
 
-  <!-- Pickup Doors and Hatches with land claim -->
-  <append xpath="blocks/block[@name='secureDoorWooden']"><property name="TakeDelay" value="3"/></append>
-  <append xpath="blocks/block[@name='secureReinforcedDoorWooden']"><property name="TakeDelay" value="4"/></append>
-  <append xpath="blocks/block[@name='metalReinforcedDoorWooden']"><property name="TakeDelay" value="5"/></append>
-  <append xpath="blocks/block[@name='ironDoor1_v1']"><property name="TakeDelay" value="8"/></append>
-  <append xpath="blocks/block[@name='ironDoor1_v2']"><property name="TakeDelay" value="10"/></append>
-  <append xpath="blocks/block[@name='ironDoor1_v3']"><property name="TakeDelay" value="12"/></append>
-  <append xpath="blocks/block[@name='vaultDoor01']"><property name="TakeDelay" value="15"/></append>
-  <append xpath="blocks/block[@name='vaultDoor02']"><property name="TakeDelay" value="18"/></append>
-  <append xpath="blocks/block[@name='vaultDoor03']"><property name="TakeDelay" value="21"/></append>
-  <append xpath="blocks/block[@name='vaultDoor03_Powered']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='cellarDoorDoubleWood']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='cellarDoorDoubleIron']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='cellarDoorDoubleSteel']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='shuttersWood01']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='shuttersIron01']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='shuttersSteel01']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='shuttersWood02']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='shuttersIron02']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='shuttersSteel02']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor1_v1']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor1_v2']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor1_v3']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor2_v1']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor2_v2']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor2_v3']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor4_v1']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor4_v2']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor4_v3']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='houseFrontDoor1_v1']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='houseFrontDoor1_v2']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='houseFrontDoor1_v3']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='houseFrontDoor2_v1']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='houseFrontDoor2_v2']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='houseFrontDoor2_v3']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='garageDoorMetal_v1']"><property name="TakeDelay" value="12"/></append>
-  <append xpath="blocks/block[@name='garageDoorMetal_v2']"><property name="TakeDelay" value="15"/></append>
-  <append xpath="blocks/block[@name='garageDoorMetal_v3']"><property name="TakeDelay" value="18"/></append>
-  <append xpath="blocks/block[@name='garageDoorMetal_v1Powered']"><property name="TakeDelay" value="15"/></append>
-  <append xpath="blocks/block[@name='woodHatch1_v1']"><property name="TakeDelay" value="3"/></append>
-  <append xpath="blocks/block[@name='woodHatch1_v2']"><property name="TakeDelay" value="5"/></append>
-  <append xpath="blocks/block[@name='woodHatch1_v3']"><property name="TakeDelay" value="7"/></append>
-  <append xpath="blocks/block[@name='scrapHatch_v1']"><property name="TakeDelay" value="5"/></append>
-  <append xpath="blocks/block[@name='scrapHatch_v2']"><property name="TakeDelay" value="8"/></append>
-  <append xpath="blocks/block[@name='scrapHatch_v3']"><property name="TakeDelay" value="11"/></append>
-  <append xpath="blocks/block[@name='vaultHatch_v1']"><property name="TakeDelay" value="12"/></append>
-  <append xpath="blocks/block[@name='vaultHatch_v2']"><property name="TakeDelay" value="16"/></append>
-  <append xpath="blocks/block[@name='vaultHatch_v3']"><property name="TakeDelay" value="20"/></append>
-  <append xpath="blocks/block[@name='vaultHatch_v3_Powered']"><property name="TakeDelay" value="20"/></append>
-  <append xpath="blocks/block[@name='metalReinforcedWoodDrawBridge']"><property name="TakeDelay" value="15"/></append>
-
-  <!-- Crushed cars are still cars -->
-  <append xpath="/blocks/block[@name='crushedCars']">
-    <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-    <drop event="Harvest" name="resourceLeather" count="2,7" tag="allHarvest"/>
-    <drop event="Harvest" name="resourceCloth" count="4,12" tag="allHarvest"/>
-    <drop event="Harvest" name="resourceScrapIron" count="50" tag="salvageHarvest"/>
-    <drop event="Harvest" name="resourceElectricParts" count="0,3" tag="salvageHarvest"/>
-    <drop event="Harvest" name="resourceMechanicalParts" count="0,5" tag="salvageHarvest"/>
-    <drop event="Harvest" name="resourceRadiator" count="1,1" prob="0.5" tag="salvageHarvest"/>
-    <drop event="Harvest" name="resourceSpring" count="2,4" tag="salvageHarvest"/>
-    <drop event="Harvest" name="resourceMetalPipe" count="10" prob="0.5" tag="salvageHarvest"/>
-    <drop event="Harvest" name="resourceScrapPolymers" count="5,12" tag="salvageHarvest"/>
-  </append>
-
   <!-- Tree mods for bonus wood and the chance of a birds nest within the tree -->
   <append xpath="/blocks/block[starts-with (@name,'treeOak')]">  
     <drop event="Destroy" name="resourceWood" count="40" tag="oreWoodDestroy"/>
@@ -253,20 +190,20 @@
   </append>
   <append xpath="/blocks/block[starts-with (@name,'treeMountain')]">  
     <drop event="Destroy" name="resourceWood" count="40" tag="oreWoodDestroy"/>
-    <drop event="Destroy" name="resourceFeather" count="2,10" prob="0.25"/>
-    <drop event="Destroy" name="foodEgg" count="1,3" prob="0.1"/>
+    <drop event="Destroy" name="resourceFeather" count="2,10" prob="0.3"/>
+    <drop event="Destroy" name="foodEgg" count="1,3" prob="0.15"/>
   </append>
   <append xpath="/blocks/block[starts-with (@name,'treeWinter')]">  
     <drop event="Destroy" name="resourceWood" count="40" tag="oreWoodDestroy"/>
-    <drop event="Destroy" name="resourceFeather" count="1,3" prob="0.25"/>
+    <drop event="Destroy" name="resourceFeather" count="1,3" prob="0.2"/>
     <drop event="Destroy" name="foodEgg" count="1" prob="0.1"/>
   </append>
 
   <!-- Break trash/nests post loot -->
-  <set xpath="/blocks/block[@name='cntBin']/property[@name='LootList']/@value">breakingJunk</set>
-  <set xpath="/blocks/block[@name='cntBruteStyleTrashCanFull']/property[@name='LootList']/@value">breakingJunk</set>
-  <set xpath="/blocks/block[@name='cntTiltTruckFull']/property[@name='LootList']/@value">breakingJunk</set>
-  <set xpath="/blocks/block[@name='cntTiltTruckFullFlies']/property[@name='LootList']/@value">breakingJunk</set>
+  <set xpath="/blocks/block[@name='cntBin']/property[@name='LootList']/@value">nonExplosiveJunk</set>
+  <set xpath="/blocks/block[@name='cntBruteStyleTrashCanFull']/property[@name='LootList']/@value">nonExplosiveJunk</set>
+  <set xpath="/blocks/block[@name='cntTiltTruckFull']/property[@name='LootList']/@value">nonExplosiveJunk</set>
+  <set xpath="/blocks/block[@name='cntTiltTruckFullFlies']/property[@name='LootList']/@value">nonExplosiveJunk</set>
   <set xpath="/blocks/block[@name='cntBirdnest']/property[@name='Material']/@value">Mplants</set>
 
   <!-- Pickup Traps -->
@@ -279,15 +216,4 @@
   <append xpath="/blocks/block[@name='barbedFence']">
     <property name="CanPickup" value="true" />
   </append>
-
-  <!-- Better Power -->
-  <insertAfter xpath="/blocks/block[@name='solarbank']/property[@name='DescriptionKey']">
-    <property name="UnlockedBy" value="perkAdvancedEngineering,solarbankSchematic"/>
-  </insertAfter>
-  <set xpath="/blocks/block[@name='generatorbank']/property[@name='MaxFuel']/@value">2500</set>
-  <set xpath="/blocks/block[@name='generatorbank']/property[@name='OutputPerStack']/@value">200</set>
-  <set xpath="/blocks/block[@name='solarbank']/property[@name='OutputPerStack']/@value">75</set>
-  <set xpath="/blocks/block[@name='solarbank']/property[@name='MaxPower']/@value">300</set>
-  <set xpath="/blocks/block[@name='batterybank']/property[@name='OutputPerStack']/@value">100</set>
-  <set xpath="/blocks/block[@name='batterybank']/property[@name='MaxPower']/@value">800</set>
 </configs>

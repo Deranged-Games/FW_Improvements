@@ -1,64 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
   <!-- Trash/Nests cleanup after looting -->
-  <insertAfter xpath="/lootcontainers/lootcontainer[@id='124']">
-    <lootcontainer id="650" name="breakingJunk" count="0,2" size="6,2" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate">
+  <insertAfter xpath="/lootcontainers/lootcontainer[@id='551']">
+    <lootcontainer id="650" name="nonExplosiveJunk" count="0,2" size="6,2" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate">
       <item group="groupJunk"/>
     </lootcontainer>
   </insertAfter>
+  <setattribute xpath="/lootcontainers/lootcontainer[@id='9']" name="destroy_on_close">true</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@id='10']" name="destroy_on_close">true</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@id='25']" name="destroy_on_close">true</setattribute>
-
-  <!-- Big Storage -->
-  <set xpath="/lootcontainers/lootcontainer[@id='1']/@size">10,9</set>
-  <set xpath="/lootcontainers/lootcontainer[@id='5']/@size">10,9</set>
-  <set xpath="/lootcontainers/lootcontainer[@id='3']/@size">10,9</set>
-	<set xpath="/lootcontainers/lootcontainer[@id='6']/@size">8,8</set> <!-- wallSafe / deskSafe -->
-	<set xpath="/lootcontainers/lootcontainer[@id='8']/@size">7,5</set> <!-- kitchen sink, cupboards (lower) -->
-	<set xpath="/lootcontainers/lootcontainer[@id='11']/@size">8,6</set> <!-- stove/oven, cooking pots -->
-	<set xpath="/lootcontainers/lootcontainer[@id='17']/@size">8,6</set> <!-- canned or dry food cupboard door open sound-->
-	<set xpath="/lootcontainers/lootcontainer[@id='24']/@size">8,6</set> <!-- metal desk -->
-	<set xpath="/lootcontainers/lootcontainer[@id='40']/@size">10,9</set> <!-- military munitions ammo box -->
-	<set xpath="/lootcontainers/lootcontainer[@id='42']/@size">10,9</set> <!-- cntNightstandClosed and dressers, wooden desk -->
-	<set xpath="/lootcontainers/lootcontainer[@id='43']/@size">7,5</set> <!-- lockers -->
-	<set xpath="/lootcontainers/lootcontainer[@id='44']/@size">6,6</set> <!-- file cabinet -->
-	<set xpath="/lootcontainers/lootcontainer[@id='46']/@size">8,6</set> <!-- trash compactor, trash deluxe! -->
-	<set xpath="/lootcontainers/lootcontainer[@id='47']/@size">9,9</set> <!-- frozen or refridgerated food, spoiled food (Helper) -->
-	<set xpath="/lootcontainers/lootcontainer[@id='49']/@size">7,5</set> <!-- bookcase -->
-	<set xpath="/lootcontainers/lootcontainer[@id='52']/@size">8,6</set> <!-- beer cooler -->
-	<set xpath="/lootcontainers/lootcontainer[@id='76']/@size">10,2</set> <!-- vehicleBicycle storage -->
-	<set xpath="/lootcontainers/lootcontainer[@id='77']/@size">10,4</set> <!-- vehicleMinibike storage -->
-	<set xpath="/lootcontainers/lootcontainer[@id='78']/@size">10,6</set> <!-- vehicleMotorcycle storage -->
-	<set xpath="/lootcontainers/lootcontainer[@id='79']/@size">10,10</set> <!-- vehicle4x4Truck storage -->
-	<set xpath="/lootcontainers/lootcontainer[@id='80']/@size">10,6</set> <!-- vehicleGyrocopter storage -->
-
-  <!-- New Schematics added to loot tables -->
-	<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT0']">
-		<item name="meleeWpnSpearT3SteelSpearPartsSchematic"/>
-		<item name="meleeWpnClubT3SteelClubPartsSchematic"/>
-		<item name="meleeWpnSledgeT3SteelSledgehammerPartsSchematic"/>
-		<item name="meleeWpnKnucklesT3SteelKnucklesPartsSchematic"/>
-		<item name="meleeWpnBladeT3MachetePartsSchematic"/>
-		<item name="meleeWpnBatonT2StunBatonPartsSchematic"/>
-	</append>
-	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT1']">
-		<item name="gunRifleT1HuntingRiflePartsSchematic"/>
-		<item name="gunShotgunT1DoubleBarrelPartsSchematic"/>
-		<item name="gunMGT1AK47PartsSchematic"/>
-		<item name="gunBowT1WoodenBowPartsSchematic"/>
-		<item name="gunHandgunT1PistolPartsSchematic"/>
-	</append>
-	<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']">
-		<item name="gunBotRoboticsPartsSchematic"/>
-		<item name="gunExplosivesT3RocketLauncherPartsSchematic"/>
-		<item name="armorSteelSetPartsSchematic"/>
-		<item name="armorMilitarySetPartsSchematic"/>
-	</append>
-	<append xpath="/lootcontainers/lootgroup[@name='schematicsElectrical']">
-		<item name="solarbankSchematic"/>
-		<item name="solarCellSchematic"/>
-		<item name="smallEngineSchematic"/>
-	</append>
 
   <!-- Steel Ammo Added to Loot Tables -->
   <!-- ammo9mmBulletSteel ammo44MagnumBulletSteel ammo762mmBulletFMJSteel -->
