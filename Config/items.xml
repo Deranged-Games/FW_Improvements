@@ -79,6 +79,57 @@
   <append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
 
   <!-- Parts unlocked by perks -->
+  <insertAfter xpath="/items/item[@name='gunRifleT1HuntingRifleParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkDeadEye"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeWpnSpearT3SteelSpearParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkJavelinMaster"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='gunShotgunT1DoubleBarrelParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkBoomstick"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeWpnClubT3SteelClubParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkPummelPete"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkSkullCrusher"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnucklesParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkBrawler"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeToolAxeT3ChainsawParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkMiner69r"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeToolAllSteelParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkMiner69r"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkMachineGunner"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='gunBowT1WoodenBowParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkArchery"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='gunHandgunT1PistolParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkGunslinger"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeWpnBladeT3MacheteParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkDeepCuts"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeWpnBatonT2StunBatonParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkElectrocutioner"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='gunBotRoboticsParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkTurrets"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='armorSteelSetParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkHeavyArmor"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='armorMilitarySetParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkLightArmor"/>
+  </insertAfter>
+  <insertAfter xpath="/items/item[@name='gunExplosivesT3RocketLauncherParts']/property[@name='Material']">
+    <property name="UnlockedBy" value="perkDemolitionsExpert"/>
+  </insertAfter>
   <insertAfter xpath="/items/item[@name='solarCell']/property[@name='Material']">
     <property name="UnlockedBy" value="perkAdvancedEngineering"/>
   </insertAfter>
@@ -95,24 +146,24 @@
 
   <!-- Reduce sensible block damage for animals. -->
   <append xpath="/items/item[starts-with (@name,'meleeHandAnimal')]/effect_group">
-    <passive_effect name="DamageModifier" operation="perc_set" value=".5" tags="earth"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value=".4" tags="earth"/>
     <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="stone,concrete"/>
-    <passive_effect name="DamageModifier" operation="perc_set" value="0.25" tags="metal"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value=".2" tags="metal"/>
   </append>
 
   <!-- Rocket range increase, for luls -->
   <set xpath="/items/item[@name='ammoRocketHE']/property[@class='Action1']/property[@name='LifeTime']/@value">999</set>
 
   <!-- Shotguns Be Better -->
-  <set xpath="/items/item[@name='ammoShotgunShell']/effect_group/passive_effect[@name='MaxRange']/@value">20</set>
-  <set xpath="/items/item[@name='ammoShotgunShell']/effect_group/passive_effect[@name='SpreadDegreesVertical']/@value">3</set>
-  <set xpath="/items/item[@name='ammoShotgunShell']/effect_group/passive_effect[@name='SpreadDegreesHorizontal']/@value">3</set>
+  <set xpath="/items/item[@name='ammoShotgunShell']/effect_group/passive_effect[@name='MaxRange']/@value">25</set>
+  <set xpath="/items/item[@name='ammoShotgunShell']/effect_group/passive_effect[@name='SpreadDegreesVertical']/@value">2.5</set>
+  <set xpath="/items/item[@name='ammoShotgunShell']/effect_group/passive_effect[@name='SpreadDegreesHorizontal']/@value">2.5</set>
 
-  <set xpath="/items/item[@name='ammoShotgunSlug']/effect_group/passive_effect[@name='MaxRange']/@value">35</set>
-  <set xpath="/items/item[@name='ammoShotgunSlug']/effect_group/passive_effect[@name='SpreadDegreesVertical']/@value">1.2</set>
-  <set xpath="/items/item[@name='ammoShotgunSlug']/effect_group/passive_effect[@name='SpreadDegreesHorizontal']/@value">1.2</set>
+  <set xpath="/items/item[@name='ammoShotgunSlug']/effect_group/passive_effect[@name='MaxRange']/@value">40</set>
+  <set xpath="/items/item[@name='ammoShotgunSlug']/effect_group/passive_effect[@name='SpreadDegreesVertical']/@value">1.0</set>
+  <set xpath="/items/item[@name='ammoShotgunSlug']/effect_group/passive_effect[@name='SpreadDegreesHorizontal']/@value">1.0</set>
 
-  <set xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group/passive_effect[@name='MaxRange']/@value">10</set>
+  <set xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group/passive_effect[@name='MaxRange']/@value">20</set>
   <set xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group/passive_effect[@name='SpreadDegreesVertical']/@value">1.2</set>
   <set xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group/passive_effect[@name='SpreadDegreesHorizontal']/@value">1.2</set>
 

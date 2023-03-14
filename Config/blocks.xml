@@ -216,4 +216,8 @@
   <append xpath="/blocks/block[@name='barbedFence']">
     <property name="CanPickup" value="true" />
   </append>
+
+  <append xpath="/blocks/block[@name='solarbank']">
+    <property name="UnlockedBy" value="perkAdvancedEngineering"/>
+  </append>
 </configs>
