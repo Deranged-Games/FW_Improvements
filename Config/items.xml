@@ -151,6 +151,9 @@
     <passive_effect name="DamageModifier" operation="perc_set" value=".2" tags="metal"/>
   </append>
 
+  <!-- Remove exp debuff from higher tier tools -->
+  <remove xpath="/items/item[starts-with (@name,'meleeTool')]/effect_group/passive_effect[@name='PlayerExpGain']"/>
+
   <!-- Rocket range increase, for luls -->
   <set xpath="/items/item[@name='ammoRocketHE']/property[@class='Action1']/property[@name='LifeTime']/@value">999</set>
 
@@ -173,7 +176,6 @@
     <property name="Focused_blockname_7" value="utilitySink" />
     <property name="Focused_blockname_8" value="wallMountSinkCommercial" />
     <property name="Focused_blockname_9" value="counterMountedSinkCommercial" />
-    <property name="Focused_blockname_10" value="cntCabinetGraniteSinkHoleRound" />
     <property name="Focused_blockname_11" value="cntCabinetOldSink"/>
     <property name="Focused_blockname_12" value="cntGraniteSink"/>
     <property name="Focused_blockname_13" value="drinkingfountainSingle"/>
@@ -188,7 +190,10 @@
   <append xpath="/items/item[@name='drugHerbalAntibiotics']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
   <append xpath="/items/item[@name='drugAntibiotics']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
   <append xpath="/items/item[@name='foodEggBoiled']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+  <append xpath="/items/item[@name='foodBlueberryPie']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
   <append xpath="/items/item[@name='foodBoiledMeat']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+  <append xpath="/items/item[@name='foodCornBread']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
+  <append xpath="/items/item[@name='foodCornOnTheCob']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
   <append xpath="/items/item[@name='foodHoboStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
   <append xpath="/items/item[@name='foodMeatStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
   <append xpath="/items/item[@name='foodVegetableStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>

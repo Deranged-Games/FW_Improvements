@@ -10,6 +10,16 @@
   <setattribute xpath="/lootcontainers/lootcontainer[@id='10']" name="destroy_on_close">true</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@id='25']" name="destroy_on_close">true</setattribute>
 
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='sinks']" name="size">8,6</setattribute>
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='cupboard']" name="size">8,6</setattribute>
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='woodenDesk']" name="size">8,6</setattribute>
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='metalDesk']" name="size">8,6</setattribute>
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='nightstand']" name="size">8,6</setattribute>
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='lockers']" name="size">8,9</setattribute>
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='bookcase']" name="size">8,6</setattribute>
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='beerCooler']" name="size">8,6</setattribute>
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='medicineCabinet']" name="size">8,6</setattribute>
+
   <!-- Steel Ammo Added to Loot Tables -->
   <!-- ammo9mmBulletSteel ammo44MagnumBulletSteel ammo762mmBulletFMJSteel -->
   <append xpath="/lootcontainers/lootgroup[@name='groupAmmoRegular']">

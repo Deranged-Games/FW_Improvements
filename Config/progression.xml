@@ -51,7 +51,8 @@
   </append>
 
   <!-- Turret big control -->
-  <set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='JunkTurretActiveCount' and @operation='base_add']/@level">1,5</set>
+  <set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='JunkTurretActiveCount' and @operation='base_add']/@level">2,5</set>
+  <set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='JunkTurretActiveCount' and @operation='base_add']/@value">1,4</set>
 
   <!-- Tier 6 Crafting -->
   <set xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='CraftingTier'][@operation='base_add']/@value">1,2,3,4,5</set>
@@ -127,4 +128,9 @@
   <append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@tags='thrownGrenade,resourceGunPowderBundle']/@tags">,gunExplosivesT3RocketLauncherParts</append>
   <append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='5']/@tags">,solarbank,solarCell</append>
   <append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='3,5']/@tags">,smallEngine</append>
+
+  <!-- Remove EXP debuffs for perks -->
+  <remove xpath="/progression/perks/perk[@name='perkArtOfMiningCoffee']/effect_group/passive_effect[@name='PlayerExpGain']"/>
+  <remove xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='PlayerExpGain']"/>
+  <remove xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='PlayerExpGain']"/>
 </configs>

@@ -57,4 +57,19 @@
     <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.1"/>
     <passive_effect name="StaminaLoss" operation="perc_add" value=".15"/>
   </append>
+
+  <!-- Rework Fortifying Grip Buff -->
+  <remove xpath="/item_modifiers/item_modifier[@name='modMeleeFortifyingGrip']/effect_group" />
+  <append xpath="/item_modifiers/item_modifier[@name='modMeleeFortifyingGrip']">
+		<effect_group tiered="false">
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1"/>
+		</effect_group>
+  </append>
+
+  <!-- Remove exp debuff from using modifiers -->
+  <remove xpath="/item_modifiers/item_modifier[@name='modMeleeFiremansAxeMod']/effect_group/triggered_effect"/>
+  <remove xpath="/item_modifiers/item_modifier[@name='modMeleeGraveDigger']/effect_group/triggered_effect"/>
+  <remove xpath="/item_modifiers/item_modifier[@name='modMeleeBunkerBuster']/effect_group/triggered_effect"/>
+  <remove xpath="/item_modifiers/item_modifier[@name='modMeleeIronBreaker']/effect_group/triggered_effect"/>
+  <remove xpath="/item_modifiers/item_modifier[@name='modMeleeWoodSplitter']/effect_group/triggered_effect"/>
 </configs>
