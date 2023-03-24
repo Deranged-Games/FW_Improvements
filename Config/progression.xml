@@ -78,6 +78,9 @@
   <append xpath="/progression/perks/perk[@name='perkEnforcerHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo44MagnumBulletSteel</append>
   <append xpath="/progression/perks/perk[@name='perkSniperHPAmmo']/effect_group/passive_effect[@level='1']/@tags">,ammo762mmBulletFMJSteel</append>
 
+  <!-- Adding Snowberries. -->
+  <append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='3,5']/@tags">,drinkJarWine</append>
+
   <!-- Item part crafting unlocked via perks -->
   <insertAfter xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@tags='gunRifleT1HuntingRifle']">
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="gunRifleT1HuntingRifleParts"/>

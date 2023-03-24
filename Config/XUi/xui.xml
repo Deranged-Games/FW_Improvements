@@ -1,7 +1,7 @@
 <configs>
   <!-- Add cooking UIs with extended queue/output panels pre-installed -->
   <append xpath="/xui/ruleset">
-    <window_group name="workstation_modernCookingMaster" controller="XUiC_WorkstationWindowGroup">
+    <window_group name="workstation_modernCookingMaster" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
       <window name="PhDwindowCraftingQueue"/>
@@ -10,7 +10,7 @@
       <window name="PhDWindowOutputQueue" />
       <window name="windowNonPagingHeader" />
     </window_group>
-    <window_group name="workstation_modernCookingWallOven" controller="XUiC_WorkstationWindowGroup">
+    <window_group name="workstation_modernCookingWallOven" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
       <window name="PhDwindowCraftingQueue"/>
@@ -19,7 +19,7 @@
       <window name="PhDWindowOutputQueue" />
       <window name="windowNonPagingHeader" />
     </window_group>
-    <window_group name="workstation_modernCookingOldStove" controller="XUiC_WorkstationWindowGroup">
+    <window_group name="workstation_modernCookingOldStove" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
       <window name="PhDwindowCraftingQueue"/>
@@ -28,7 +28,7 @@
       <window name="PhDWindowOutputQueue" />
       <window name="windowNonPagingHeader" />
     </window_group>
-    <window_group name="workstation_modernCookingWoodStove" controller="XUiC_WorkstationWindowGroup">
+    <window_group name="workstation_modernCookingWoodStove" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
       <window name="PhDwindowCraftingQueue"/>
@@ -37,7 +37,7 @@
       <window name="PhDWindowOutputQueue" />
       <window name="windowNonPagingHeader" />
     </window_group>
-    <window_group name="workstation_modernCookingMicrowave" controller="XUiC_WorkstationWindowGroup">
+    <window_group name="workstation_modernCookingMicrowave" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
       <window name="PhDwindowCraftingQueue"/>
@@ -46,7 +46,7 @@
       <window name="PhDWindowOutputQueue" />
       <window name="windowNonPagingHeader" />
     </window_group>
-    <window_group name="workstation_modernCookingCharcoalGrillClosed" controller="XUiC_WorkstationWindowGroup">
+    <window_group name="workstation_modernCookingCharcoalGrillClosed" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
       <window name="PhDwindowCraftingQueue"/>
@@ -55,7 +55,7 @@
       <window name="PhDWindowOutputQueue" />
       <window name="windowNonPagingHeader" />
     </window_group>
-    <window_group name="workstation_modernCookingCharcoalGrillOpen" controller="XUiC_WorkstationWindowGroup">
+    <window_group name="workstation_modernCookingCharcoalGrillOpen" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
       <window name="PhDwindowCraftingQueue"/>
@@ -64,7 +64,7 @@
       <window name="PhDWindowOutputQueue" />
       <window name="windowNonPagingHeader" />
     </window_group>
-    <window_group name="workstation_modernCookingGasGrillClosed" controller="XUiC_WorkstationWindowGroup">
+    <window_group name="workstation_modernCookingGasGrillClosed" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
       <window name="PhDwindowCraftingQueue"/>
@@ -73,7 +73,7 @@
       <window name="PhDWindowOutputQueue" />
       <window name="windowNonPagingHeader" />
     </window_group>
-    <window_group name="workstation_modernCookingGasGrillOpen" controller="XUiC_WorkstationWindowGroup">
+    <window_group name="workstation_modernCookingGasGrillOpen" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
       <window name="PhDwindowCraftingQueue"/>
@@ -82,7 +82,7 @@
       <window name="PhDWindowOutputQueue" />
       <window name="windowNonPagingHeader" />
     </window_group>
-    <window_group name="workstation_modernCookingToaster" controller="XUiC_WorkstationWindowGroup">
+    <window_group name="workstation_modernCookingToaster" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
       <window name="PhDwindowCraftingQueue"/>
@@ -91,7 +91,7 @@
       <window name="PhDWindowOutputQueue" />
       <window name="windowNonPagingHeader" />
     </window_group>
-    <window_group name="workstation_modernCookingCoffeeMaker" controller="XUiC_WorkstationWindowGroup">
+    <window_group name="workstation_modernCookingCoffeeMaker" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
       <window name="PhDwindowCraftingQueue"/>
@@ -100,7 +100,7 @@
       <window name="PhDWindowOutputQueue" />
       <window name="windowNonPagingHeader" />
     </window_group>
-    <window_group name="workstation_modernCookingCoffeeMakerCommercial" controller="XUiC_WorkstationWindowGroup">
+    <window_group name="workstation_modernCookingCoffeeMakerCommercial" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
       <window name="PhDwindowCraftingQueue"/>

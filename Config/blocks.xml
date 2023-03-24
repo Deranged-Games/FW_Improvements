@@ -174,6 +174,12 @@
     </block>
   </append>
 
+  <!-- Adding Snowberries. -->
+  <set xpath="/blocks/block[@name='plantedSnowberry3Harvest']/drop/@name">foodCropSnowberries</set>
+  <append xpath="blocks/block[@name='plantedSnowberry3Harvest']">
+    <drop event="Harvest" name="foodCropSnowberries" prob="0.5" count="1" tag="bonusCropHarvest"/>
+  </append>
+
   <!-- Bed buffs -->
   <append xpath="blocks/block[@name='bedroll']">
     <property name="BuffsWhenWalkedOn" value="Sleeping2"/>
@@ -186,17 +192,17 @@
   <append xpath="/blocks/block[starts-with (@name,'treeOak')]">
     <drop event="Destroy" name="resourceWood" count="40" tag="oreWoodDestroy"/>
     <drop event="Destroy" name="resourceFeather" count="1,5" prob="0.25"/>
-    <drop event="Destroy" name="foodEgg" count="1,2" prob="0.1"/>
+    <drop event="Destroy" name="foodEgg" count="1,3" prob="0.15"/>
   </append>
   <append xpath="/blocks/block[starts-with (@name,'treeMountain')]">
     <drop event="Destroy" name="resourceWood" count="40" tag="oreWoodDestroy"/>
     <drop event="Destroy" name="resourceFeather" count="2,10" prob="0.3"/>
-    <drop event="Destroy" name="foodEgg" count="1,3" prob="0.15"/>
+    <drop event="Destroy" name="foodEgg" count="2,5" prob="0.2"/>
   </append>
   <append xpath="/blocks/block[starts-with (@name,'treeWinter')]">
     <drop event="Destroy" name="resourceWood" count="40" tag="oreWoodDestroy"/>
     <drop event="Destroy" name="resourceFeather" count="1,3" prob="0.2"/>
-    <drop event="Destroy" name="foodEgg" count="1" prob="0.1"/>
+    <drop event="Destroy" name="foodEgg" count="1,2" prob="0.15"/>
   </append>
 
   <!-- Break trash/nests post loot -->
@@ -217,50 +223,10 @@
     <property name="CanPickup" value="true" />
   </append>
 
-  <!-- Pickup Doors and Hatches with land claim -->
-  <append xpath="blocks/block[@name='secureDoorWooden']"><property name="TakeDelay" value="3"/></append>
-  <append xpath="blocks/block[@name='secureReinforcedDoorWooden']"><property name="TakeDelay" value="4"/></append>
-  <append xpath="blocks/block[@name='metalReinforcedDoorWooden']"><property name="TakeDelay" value="5"/></append>
-  <append xpath="blocks/block[@name='ironDoor1_v1']"><property name="TakeDelay" value="8"/></append>
-  <append xpath="blocks/block[@name='ironDoor1_v2']"><property name="TakeDelay" value="10"/></append>
-  <append xpath="blocks/block[@name='ironDoor1_v3']"><property name="TakeDelay" value="12"/></append>
-  <append xpath="blocks/block[@name='vaultDoor01']"><property name="TakeDelay" value="15"/></append>
-  <append xpath="blocks/block[@name='vaultDoor02']"><property name="TakeDelay" value="18"/></append>
-  <append xpath="blocks/block[@name='vaultDoor03']"><property name="TakeDelay" value="21"/></append>
-  <append xpath="blocks/block[@name='vaultDoor03_Powered']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='cellarDoorDoubleWood']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='cellarDoorDoubleIron']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='cellarDoorDoubleSteel']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='shuttersWood01']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='shuttersIron01']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='shuttersSteel01']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='shuttersWood02']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='shuttersIron02']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='shuttersSteel02']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor1_v1']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor1_v2']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor1_v3']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor2_v1']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor2_v2']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor2_v3']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor4_v1']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor4_v2']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='commercialDoor4_v3']"><property name="TakeDelay" value="24"/></append>
-  <append xpath="blocks/block[@name='garageDoorMetal_v1']"><property name="TakeDelay" value="12"/></append>
-  <append xpath="blocks/block[@name='garageDoorMetal_v2']"><property name="TakeDelay" value="15"/></append>
-  <append xpath="blocks/block[@name='garageDoorMetal_v3']"><property name="TakeDelay" value="18"/></append>
-  <append xpath="blocks/block[@name='garageDoorMetal_v1Powered']"><property name="TakeDelay" value="15"/></append>
-  <append xpath="blocks/block[@name='woodHatch1_v1']"><property name="TakeDelay" value="3"/></append>
-  <append xpath="blocks/block[@name='woodHatch1_v2']"><property name="TakeDelay" value="5"/></append>
-  <append xpath="blocks/block[@name='woodHatch1_v3']"><property name="TakeDelay" value="7"/></append>
-  <append xpath="blocks/block[@name='scrapHatch_v1']"><property name="TakeDelay" value="5"/></append>
-  <append xpath="blocks/block[@name='scrapHatch_v2']"><property name="TakeDelay" value="8"/></append>
-  <append xpath="blocks/block[@name='scrapHatch_v3']"><property name="TakeDelay" value="11"/></append>
-  <append xpath="blocks/block[@name='vaultHatch_v1']"><property name="TakeDelay" value="12"/></append>
-  <append xpath="blocks/block[@name='vaultHatch_v2']"><property name="TakeDelay" value="16"/></append>
-  <append xpath="blocks/block[@name='vaultHatch_v3']"><property name="TakeDelay" value="20"/></append>
-  <append xpath="blocks/block[@name='vaultHatch_v3_Powered']"><property name="TakeDelay" value="20"/></append>
-  <append xpath="blocks/block[@name='metalReinforcedWoodDrawBridge']"><property name="TakeDelay" value="15"/></append>
+	<!-- Pickup wild plants -->
+	<append xpath="/blocks/block[contains(@name,'3Harvest') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
 
   <!-- Unlock Solar Bank with Advanced Engineering -->
   <append xpath="/blocks/block[@name='solarbank']">
@@ -280,4 +246,9 @@
     <drop event="Harvest" name="resourceMetalPipe" count="10" prob="0.5" tag="salvageHarvest"/>
     <drop event="Harvest" name="resourceScrapPolymers" count="5,12" tag="salvageHarvest"/>
   </append>
+
+	<!-- Return garage doors and draw bridges -->
+  <remove xpath="/blocks/block[@name='garageDoorMetal_v1']/drop"/>
+  <remove xpath="/blocks/block[@name='garageDoorHousePlayer']/drop"/>
+  <remove xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']/drop"/>
 </configs>

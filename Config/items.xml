@@ -4,7 +4,8 @@
   <append xpath="/items">
     <item name="resourceBulletCasingSteel">
       <property name="Extends" value="resourceBulletCasing"/>
-      <property name="CustomIcon" value="resourceBulletCasing"/><property name="CustomIconTint" value="a0a0ff"/>
+      <property name="CustomIcon" value="resourceBulletCasing"/>
+      <property name="CustomIconTint" value="a0a0ff"/>
       <property name="DescriptionKey" value="resourceBulletCasingSteelDesc"/>
       <property name="Material" value="MresourceScrapIron"/>
       <property name="Stacknumber" value="500"/> <!-- STK resource -->
@@ -15,7 +16,8 @@
     </item>
     <item name="ammo9mmBulletSteel">
       <property name="Extends" value="ammo9mmBulletBall"/>
-      <property name="CustomIcon" value="ammo9mmBulletBall"/><property name="CustomIconTint" value="a0a0ff"/>
+      <property name="CustomIcon" value="ammo9mmBulletBall"/>
+      <property name="CustomIconTint" value="a0a0ff"/>
       <property name="DisplayType" value="ammoBulletSteel"/>
       <property name="Material" value="Msteel"/>
       <property name="EconomicValue" value="8"/>
@@ -31,7 +33,8 @@
     </item>
     <item name="ammo44MagnumBulletSteel">
       <property name="Extends" value="ammo44MagnumBulletBall"/>
-      <property name="CustomIcon" value="ammo44MagnumBulletBall"/><property name="CustomIconTint" value="a0a0ff"/>
+      <property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+      <property name="CustomIconTint" value="a0a0ff"/>
       <property name="DisplayType" value="ammoBulletSteel"/>
       <property name="Material" value="Msteel"/>
       <property name="EconomicValue" value="9"/>
@@ -45,7 +48,8 @@
     </item>
     <item name="ammo762mmBulletFMJSteel">
       <property name="Extends" value="ammo762mmBulletBall"/>
-      <property name="CustomIcon" value="ammo762mmBulletBall"/><property name="CustomIconTint" value="a0a0ff"/>
+      <property name="CustomIcon" value="ammo762mmBulletBall"/>
+      <property name="CustomIconTint" value="a0a0ff"/>
       <property name="DisplayType" value="ammoBulletSteel"/>
       <property name="Material" value="Msteel"/>
       <property name="EconomicValue" value="10"/>
@@ -57,6 +61,72 @@
         <passive_effect name="DegradationPerUse" operation="perc_add" value="1"/>
         <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
         <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+      </effect_group>
+    </item>
+
+    <!-- Adding Snowberries. -->
+    <item name="foodCropSnowberries">
+      <property name="Tags" value="food"/>
+      <property name="HoldType" value="31"/>
+      <property name="DisplayType" value="foodRaw"/>
+      <property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="MresourceCrop"/>
+      <property name="Stacknumber" value="125"/> <!-- STK resource -->
+      <property name="EconomicValue" value="10"/>
+      <property name="EconomicBundleSize" value="5"/>
+      <property name="CraftingIngredientTime" value="30"/>
+      <property name="CustomIcon" value="foodCropBlueberries"/>
+      <property name="CustomIconTint" value="ff1010"/>
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="1.0"/>
+        <property name="Use_time" value="..."/>
+        <property name="Sound_start" value="player_eating"/>
+      </property>
+      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+      <effect_group tiered="false" name="Food Tier 0">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+      </effect_group>
+    </item>
+    <item name="drinkJarWine">
+      <property name="HoldType" value="3"/>
+      <property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Mglass"/>
+      <property name="Weight" value="10"/>
+      <property name="Stacknumber" value="10"/> <!-- STK drink -->
+      <property name="EconomicValue" value="200"/>
+      <property name="UnlockedBy" value="perkMasterChef,drinkJarBeerSchematic"/>
+      <property name="DisplayType" value="waterBeer"/>
+      <property name="Group" value="Food/Cooking,CFDrink/Cooking,Medical"/>
+      <property name="CustomIcon" value="drinkJarRiverWater"/>
+      <property name="CustomIconTint" value="ff30a0"/>
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="2"/>
+        <property name="Use_time" value="..."/>
+        <property name="Sound_start" value="player_drinking"/>
+        <property name="Create_item" value="drinkJarEmpty"/>
+      </property>
+      <effect_group tiered="false" name="Drink Tier 3">
+        <requirement name="NotHasBuff" buff="buffIsOnFire"/>
+        <display_value name="dStaminaRegen" value=".4"/>
+        <display_value name="dEntityDamageBrawling" value="3"/>
+        <display_value name="dStunResist" value="1"/>
+        <display_value name="dDuration" value="180"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="add" value="180"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="set" value="600">
+          <requirement name="CVarCompare" cvar="$buffBeerDuration" operation="GT" value="180"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffBeer"/>
+      </effect_group>
+
+      <effect_group tiered="false">
+        <requirement name="HasBuff" buff="buffIsOnFire"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
       </effect_group>
     </item>
   </append>
