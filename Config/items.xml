@@ -131,6 +131,9 @@
     </item>
   </append>
 
+  <!-- Append types to acid group for campfire crafting. -->
+  <append xpath="/items/item[@name='resourceAcid']/property[@name='Group']/@value">,Chemicals,CFChemicals</append>
+
   <!-- Append Steel Ammo to Weapons. -->
   <append xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
   <append xpath="/items/item[@name='gunHandgunT1Pistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>

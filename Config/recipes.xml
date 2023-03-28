@@ -69,18 +69,18 @@
       <ingredient name="resourceWood" count="2"/>
     </recipe>
     <recipe name="resourceAcid" count="1" craft_area="campfire" craft_tool="toolBeaker">
-      <ingredient name="resourcePotassiumNitratePowder" count="300"/>
-      <ingredient name="resourceCoal" count="300"/>
-      <ingredient name="resourceOilShale" count="100"/>
-      <ingredient name="resourceScrapPolymers" count="100"/>
-      <ingredient name="drinkJarRiverWater" count="10"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="150"/>
+      <ingredient name="resourceCoal" count="150"/>
+      <ingredient name="resourceOilShale" count="50"/>
+      <ingredient name="resourceScrapPolymers" count="50"/>
+      <ingredient name="drinkJarRiverWater" count="5"/>
     </recipe>
     <recipe name="resourceAcid" count="1" craft_area="chemistryStation">
-      <ingredient name="resourcePotassiumNitratePowder" count="100"/>
-      <ingredient name="resourceCoal" count="100"/>
-      <ingredient name="resourceOilShale" count="20"/>
-      <ingredient name="resourceScrapPolymers" count="100"/>
-      <ingredient name="drinkJarRiverWater" count="10"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="50"/>
+      <ingredient name="resourceCoal" count="50"/>
+      <ingredient name="resourceOilShale" count="10"/>
+      <ingredient name="resourceScrapPolymers" count="50"/>
+      <ingredient name="drinkJarRiverWater" count="5"/>
     </recipe>
     <recipe name="gunRifleT1HuntingRifleParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkDeadEye,learnable">
       <ingredient name="unit_iron" count="300"/>
