@@ -1,40 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
-  <!-- Trash/Nests cleanup after looting -->
-  <insertAfter xpath="/lootcontainers/lootcontainer[@id='551']">
-    <lootcontainer id="650" name="nonExplosiveJunk" count="0,2" size="6,2" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate">
-      <item group="groupJunk"/>
-    </lootcontainer>
-  </insertAfter>
-  <setattribute xpath="/lootcontainers/lootcontainer[@id='9']" name="destroy_on_close">true</setattribute>
-  <setattribute xpath="/lootcontainers/lootcontainer[@id='10']" name="destroy_on_close">true</setattribute>
-  <setattribute xpath="/lootcontainers/lootcontainer[@id='25']" name="destroy_on_close">true</setattribute>
-
   <setattribute xpath="/lootcontainers/lootcontainer[@name='sinks']" name="size">8,6</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@name='cupboard']" name="size">8,6</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@name='woodenDesk']" name="size">8,6</setattribute>
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='woodenDeskNOPOP']" name="size">8,6</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@name='metalDesk']" name="size">8,6</setattribute>
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='metalDeskNOPOP']" name="size">8,6</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@name='nightstand']" name="size">8,6</setattribute>
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='nightstandNOPOP']" name="size">8,6</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@name='lockers']" name="size">8,9</setattribute>
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='lockersNOPOP']" name="size">8,9</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@name='bookcase']" name="size">8,6</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@name='beerCooler']" name="size">8,6</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@name='medicineCabinet']" name="size">8,6</setattribute>
 
   <!-- Steel Ammo Added to Loot Tables -->
   <!-- ammo9mmBulletSteel ammo44MagnumBulletSteel ammo762mmBulletFMJSteel -->
-  <append xpath="/lootcontainers/lootgroup[@name='groupAmmoRegular']">
-    <item name="ammo9mmBulletSteel" prob="0.2" count="5,12"/>
-    <item name="ammo44MagnumBulletSteel" prob="0.2" count="4,10"/>
-    <item name="ammo762mmBulletFMJSteel" prob="0.2" count="6,15"/>
-  </append>
-  <append xpath="/lootcontainers/lootgroup[@name='groupAmmoAdvanced']">
-    <item name="ammo9mmBulletSteel" prob="0.2" count="10,20"/>
-    <item name="ammo44MagnumBulletSteel" prob="0.2" count="8,16"/>
-    <item name="ammo762mmBulletFMJSteel" prob="0.2" count="15,25"/>
-  </append>
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='group44MagnumLarge']">
+    <lootgroup name="group9mmSmallSteel">
+      <item name="ammo9mmBulletSteel" count="6,8" loot_stage_count_mod="0.01"/>
+    </lootgroup>
+    <lootgroup name="group9mmMediumSteel">
+      <item name="ammo9mmBulletSteel" count="10,20" loot_stage_count_mod="0.01"/>
+    </lootgroup>
+    <lootgroup name="group9mmLargeSteel">
+      <item name="ammo9mmBulletSteel" count="25,35" loot_stage_count_mod="0.01"/>
+    </lootgroup>
+    <lootgroup name="group762mmSmallSteel">
+      <item name="ammo762mmBulletFMJSteel" count="5,7" loot_stage_count_mod="0.01"/>
+    </lootgroup>
+    <lootgroup name="group762mmMediumSteel">
+      <item name="ammo762mmBulletFMJSteel" count="8,15" loot_stage_count_mod="0.01"/>
+    </lootgroup>
+    <lootgroup name="group762mmLargeSteel">
+      <item name="ammo762mmBulletFMJSteel" count="20,30" loot_stage_count_mod="0.01"/>
+    </lootgroup>
+    <lootgroup name="group44MagnumSmallSteel">
+      <item name="ammo44MagnumBulletSteel" count="4,6" loot_stage_count_mod="0.01"/>
+    </lootgroup>
+    <lootgroup name="group44MagnumMediumSteel">
+      <item name="ammo44MagnumBulletSteel" count="8,12" loot_stage_count_mod="0.01"/>
+    </lootgroup>
+    <lootgroup name="group44MagnumLargeSteel">
+      <item name="ammo44MagnumBulletSteel" count="16,26" loot_stage_count_mod="0.01"/>
+    </lootgroup>
+  </insertAfter>
+
   <append xpath="/lootcontainers/lootgroup[@name='groupQuestAmmo']">
     <item name="ammo9mmBulletSteel" count="100" loot_prob_template="QuestT1Prob"/>
-    <item name="ammo44MagnumBulletSteel" count="80" loot_prob_template="QuestT1Prob"/>
+    <item name="ammo44MagnumBulletSteel" count="75" loot_prob_template="QuestT1Prob"/>
     <item name="ammo762mmBulletFMJSteel" count="60" loot_prob_template="QuestT1Prob"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='groupAmmoSmall']">
+	  <item group="group9mmSmallSteel"/>
+	  <item group="group762mmSmallSteel"/>
+	  <item group="group44MagnumSmallSteel" loot_prob_template="ProbT1Cap"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='groupAmmoSmallNoArrow']">
+	  <item group="group9mmSmallSteel"/>
+	  <item group="group762mmSmallSteel"/>
+	  <item group="group44MagnumSmallSteel" loot_prob_template="ProbT1Cap"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='groupAmmoMedium']">
+	  <item group="group9mmMediumSteel"/>
+	  <item group="group762mmMediumSteel"/>
+	  <item group="group44MagnumMediumSteel" loot_prob_template="ProbT1Cap"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='groupAmmoMediumNoArrow']">
+	  <item group="group9mmMediumSteel"/>
+	  <item group="group762mmMediumSteel"/>
+	  <item group="group44MagnumMediumSteel" loot_prob_template="ProbT1Cap"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='groupAmmoLarge']">
+	  <item group="group9mmLargeSteel"/>
+	  <item group="group762mmLargeSteel"/>
+	  <item group="group44MagnumLargeSteel" loot_prob_template="ProbT1Cap"/>
   </append>
 </configs>

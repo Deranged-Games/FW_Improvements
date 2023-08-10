@@ -1,4 +1,2944 @@
 <configs>
-  <set xpath="/entitygroups/entitygroup[starts-with (@name,'scoutHordeStage')]/entity[starts-with (@name,'zombieScream')]/@prob">0.1</set>
-  <set xpath="/entitygroups/entitygroup[starts-with (@name,'feralHordeStage')]/entity[@name='zombieDemolition']/@name">zombieMutated</set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS36']">
+		zombieSteve
+		zombieBoe
+		zombieUtilityWorker
+		zombieSpider, .12
+		zombieYo
+		zombieTomClark
+		zombieDarlene
+		zombieArlene
+		zombieBusinessMan
+		zombieNurse
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS46']">
+		zombieBusinessMan
+		zombieYo
+		zombieBoe
+		zombieFatHawaiian, .21
+		zombieArlene
+		zombieLumberjack, .28
+		zombieFatCop, .23
+		zombieSpider, .19
+		zombieMaleHazmat, .26
+		zombieJanitor
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS52']">
+		zombieMoe
+		zombieArlene
+		zombieFemaleFat, .24
+		zombieJoe
+		zombieLumberjack, .33
+		zombieBoe
+		zombieMaleHazmat, .31
+		zombiePartyGirl
+		zombieSkateboarder, .23
+		zombieUtilityWorker
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS64']">
+		zombiePartyGirl
+		zombieDarlene
+		zombieMoe
+		zombieFatCop, .38
+		zombieMaleHazmat, .41
+		zombieFemaleFat, .35
+		zombieJanitor
+		zombieSpider, .32
+		zombieMarlene
+		zombieArleneFeral, .28
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS76']">
+		zombieFemaleFat, .45
+		zombieMarleneFeral, .28
+		zombieSteve
+		zombieSpider, .41
+		zombieDarlene
+		zombieJanitorFeral, .31
+		zombieBoeFeral, .36
+		zombieTomClark
+		zombieFatCop, .48
+		zombieNurseFeral, .24
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS89']">
+		zombieJoeFeral, .41
+		zombieFemaleFat, .56
+		zombieBoeFeral, .47
+		zombieMoeFeral, .37
+		zombieFatHawaiian, .58
+		zombieFatCop, .59
+		zombieSkateboarderFeral, .22
+		zombieArleneFeral, .49
+		zombieUtilityWorker
+		zombieBikerFeral, .2
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS96']">
+		zombieBusinessMan
+		zombieJoeFeral, .47
+		zombieSpider, .55
+		zombieFatCop, .65
+		zombiePartyGirlFeral, .4
+		zombieSteve
+		zombieTomClark
+		zombieJanitorFeral, .48
+		zombieJanitor
+		zombieDarlene
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS164']">
+		zombieMoeRadiated, .55
+		zombieLumberjack, .8
+		zombieSpider, .6
+		zombieMarleneFeral, .8
+		zombieMoeFeral, .8
+		zombieNurseRadiated, .54
+		zombieNurseFeral, .8
+		zombieFatHawaiianFeral, .8
+		zombieYoRadiated, .49
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS172']">
+		zombieBusinessMan
+		zombieUtilityWorkerFeral, .8
+		zombieDarlene
+		zombieMarleneFeral, .8
+		zombiePartyGirlFeral, .8
+		zombieBoeFeral, .8
+		zombieMaleHazmatFeral, .8
+		zombieSteveFeral, .8
+		zombieMoeFeral, .8
+		zombieSpiderRadiated, .54
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS181']">
+		zombieSkateboarder, .8
+		zombieYo
+		zombieSteveFeral, .8
+		zombieArleneRadiated, .7
+		zombieFemaleFatRadiated, .51
+		zombieFatHawaiian, .8
+		zombieMarleneFeral, .8
+		zombieWightRadiated, .49
+		zombieUtilityWorker
+		zombieSpider, .6
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS198']">
+		zombieSteveFeral, .8
+		zombieBoe
+		zombiePartyGirlFeral, .8
+		zombieBikerFeral, .8
+		zombieWightRadiated, .61
+		zombieBoeFeral, .8
+		zombieUtilityWorkerFeral, .8
+		zombieSoldier, .8
+		zombieDarleneFeral, .8
+		zombieFemaleFat, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS234']">
+		zombieMaleHazmat, .8
+		zombieYoRadiated, .7
+		zombieNurseRadiated, .7
+		zombieSpiderRadiated, .7
+		zombieTomClarkFeral, .8
+		zombieFatCop, .8
+		zombiePartyGirl
+		zombieBusinessManFeral, .8
+		zombieSkateboarderFeral, .8
+		zombieBusinessMan
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS322']">
+		zombieBikerRadiated, .7
+		zombieFatHawaiian, .8
+		zombieFemaleFat, .8
+		zombieSteveFeral, .8
+		zombieBoeRadiated, .7
+		zombieLumberjack, .8
+		zombieSkateboarderFeral, .8
+		zombieNurse
+		zombieFatHawaiianFeral, .8
+		zombiePartyGirlFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS332']">
+		zombieLumberjackFeral, .8
+		zombieSkateboarderRadiated, .7
+		zombieJanitorFeral, .8
+		zombieLumberjack, .8
+		zombieBoe
+		zombieMaleHazmatRadiated, .7
+		zombieSoldier, .8
+		zombieSteveFeral, .8
+		zombieFatHawaiianRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS364']">
+		zombieBusinessManFeral, .8
+		zombieMarleneFeral, .8
+		zombieSteve
+		zombieMoe
+		zombieBikerFeral, .8
+		zombieJanitor
+		zombieNurse
+		zombieUtilityWorkerFeral, .8
+		zombieFemaleFat, .8
+		zombieLumberjack, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS385']">
+		zombieMoeRadiated, .7
+		zombieBoeFeral, .8
+		zombieLumberjackFeral, .8
+		zombieWightFeral, .8
+		zombieSpider, .6
+		zombieSkateboarder, .8
+		zombieSkateboarderRadiated, .7
+		zombieMarlene
+		zombieFatCopRadiated, .7
+		zombieFemaleFat, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS430']">
+		zombieUtilityWorker
+		zombieSteve
+		zombieArleneRadiated, .7
+		zombieFatHawaiianFeral, .8
+		zombieMaleHazmatRadiated, .7
+		zombieJanitor
+		zombieFatCopRadiated, .7
+		zombieNurseRadiated, .7
+		zombiePartyGirlFeral, .8
+		zombieTomClarkFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS476']">
+		zombieMaleHazmat, .8
+		zombieFatCopFeral, .8
+		zombieJanitorRadiated, .7
+		zombieMoe
+		zombieMaleHazmatFeral, .8
+		zombieDarleneFeral, .8
+		zombieMoeRadiated, .7
+		zombieBusinessMan
+		zombieMoeFeral, .8
+		zombieTomClarkFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS500']">
+		zombieMarleneRadiated, .7
+		zombieMaleHazmatRadiated, .7
+		zombieMaleHazmatFeral, .8
+		zombieFatCopRadiated, .7
+		zombieBikerFeral, .8
+		zombieBusinessMan
+		zombieYo
+		zombieJoe
+		zombieNurseRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS548']">
+		zombieSteveRadiated, .7
+		zombieJoeFeral, .8
+		zombieSteve
+		zombieUtilityWorker
+		zombieMaleHazmatRadiated, .7
+		zombieFemaleFatFeral, .8
+		zombieSkateboarderRadiated, .7
+		zombieBusinessManFeral, .8
+		zombieFatHawaiian, .8
+		zombieLumberjackFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS560']">
+		zombieMarleneFeral, .8
+		zombieSteveRadiated, .7
+		zombieMoe
+		zombieSpiderFeral, .8
+		zombieJoeFeral, .8
+		zombieJoe
+		zombieFatHawaiianRadiated, .7
+		zombieSpider, .6
+		zombieFatHawaiianFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS585']">
+		zombieFatCopRadiated, .7
+		zombieNurseFeral, .8
+		zombieBoeFeral, .8
+		zombieFatHawaiianFeral, .8
+		zombieLumberjackFeral, .8
+		zombieMaleHazmatRadiated, .7
+		zombieFemaleFatRadiated, .7
+		zombieDarleneFeral, .8
+		zombieSpiderFeral, .8
+		zombieBikerFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS662']">
+		zombieArleneRadiated, .7
+		zombieFatHawaiianRadiated, .7
+		zombieMoeFeral, .8
+		zombieJanitorRadiated, .7
+		zombieFatCop, .8
+		zombieSteveFeral, .8
+		zombieSteve
+		zombieLumberjack, .8
+		zombieDarleneRadiated, .7
+		zombieMarleneFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS882']">
+		zombieFemaleFat, .8
+		zombieSoldierFeral, .8
+		zombieJanitor
+		zombieDarleneRadiated, .7
+		zombieFatCopRadiated, .7
+		zombieJoe
+		zombieSpiderFeral, .8
+		zombieBoe
+		zombieSoldier, .8
+		zombieLumberjack, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS911']">
+		zombieYoFeral, .8
+		zombieTomClark
+		zombieYoRadiated, .7
+		zombieSoldierFeral, .8
+		zombieSoldier, .8
+		zombieBoeRadiated, .7
+		zombiePartyGirlFeral, .8
+		zombieBikerFeral, .8
+		zombieMaleHazmatRadiated, .7
+		zombieFatCopRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1091']">
+		zombieFatCopFeral, .8
+		zombieMoe
+		zombieBikerRadiated, .7
+		zombieSpiderRadiated, .7
+		zombieMaleHazmatFeral, .8
+		zombieBusinessManFeral, .8
+		zombieSpiderFeral, .8
+		zombieTomClark
+		zombieJoe
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1153']">
+		zombiePartyGirlFeral, .8
+		zombieSteve
+		zombieSteveRadiated, .7
+		zombieLumberjack, .8
+		zombieSteveFeral, .8
+		zombieMarleneRadiated, .7
+		zombieMarleneFeral, .8
+		zombieJoe
+		zombieDarleneRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1201']">
+		zombieLumberjackFeral, .8
+		zombieJoe
+		zombieMaleHazmatFeral, .8
+		zombieNurseRadiated, .7
+		zombieSteveRadiated, .7
+		zombieArlene
+		zombieSkateboarderFeral, .8
+		zombieMarleneRadiated, .7
+		zombieYo
+		zombieFatCop, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1281']">
+		zombieFatHawaiian, .8
+		zombieJanitorRadiated, .7
+		zombieMarleneRadiated, .7
+		zombieArleneRadiated, .7
+		zombieJoe
+		zombiePartyGirl
+		zombieBikerRadiated, .7
+		zombieLumberjack, .8
+		zombieJanitor
+		zombieFatCopRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1347']">
+		zombiePartyGirlFeral, .8
+		zombieSoldierFeral, .8
+		zombieFemaleFatRadiated, .7
+		zombieYoRadiated, .7
+		zombieJanitor
+		zombieMoeFeral, .8
+		zombieMaleHazmat, .8
+		zombieNurseFeral, .8
+		zombieSteveFeral, .8
+		zombieBikerFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1533']">
+		zombieJoeFeral, .8
+		zombieFemaleFatFeral, .8
+		zombieSoldier, .8
+		zombieFemaleFatRadiated, .7
+		zombieSoldierFeral, .8
+		zombieSpiderRadiated, .7
+		zombieNurse
+		zombieLumberjackFeral, .8
+		zombieMarlene
+		zombieMaleHazmatRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1551']">
+		zombieTomClarkFeral, .8
+		zombieBoeRadiated, .7
+		zombieMoeRadiated, .7
+		zombieSteveFeral, .8
+		zombieDarleneFeral, .8
+		zombieSkateboarderFeral, .8
+		zombieFatHawaiianRadiated, .7
+		zombieSteveRadiated, .7
+		zombieSpider, .6
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1568']">
+		zombieNurseRadiated, .7
+		zombieFemaleFat, .8
+		zombieJoeFeral, .8
+		zombieUtilityWorker
+		zombieDarleneRadiated, .7
+		zombieSoldierRadiated, .7
+		zombieYo
+		zombieBoeRadiated, .7
+		zombiePartyGirl
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1692']">
+		zombieBoeFeral, .8
+		zombieBusinessMan
+		zombieUtilityWorker
+		zombieMarleneRadiated, .7
+		zombieArleneRadiated, .7
+		zombieBusinessManFeral, .8
+		zombieBikerFeral, .8
+		zombieMoeRadiated, .7
+		zombieBikerRadiated, .7
+		zombieBoeRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1967']">
+		zombieMoe
+		zombieSpider, .6
+		zombieFatHawaiianFeral, .8
+		zombieSpiderFeral, .8
+		zombieTomClarkFeral, .8
+		zombieBoeRadiated, .7
+		zombieJoe
+		zombieBikerRadiated, .7
+		zombieSoldier, .8
+		zombieFatCopRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1986']">
+		zombieTomClarkFeral, .8
+		zombieSkateboarderFeral, .8
+		zombieBusinessMan
+		zombieMarlene
+		zombieSoldier, .8
+		zombieNurseFeral, .8
+		zombieFatHawaiianFeral, .8
+		zombieFatCopRadiated, .7
+		zombieJanitorFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2023']">
+		zombieJoeRadiated, .7
+		zombieMarlene
+		zombieArlene
+		zombieFatHawaiian, .8
+		zombieSoldier, .8
+		zombieDarleneRadiated, .7
+		zombieSpiderFeral, .8
+		zombieBikerRadiated, .7
+		zombieMarleneRadiated, .7
+		zombieYoFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2081']">
+		zombieFemaleFatFeral, .8
+		zombieLumberjack, .8
+		zombieSkateboarderRadiated, .7
+		zombieTomClarkFeral, .8
+		zombieArlene
+		zombieBoeFeral, .8
+		zombieBikerRadiated, .7
+		zombieSpiderFeral, .8
+		zombieFemaleFat, .8
+		zombieSoldierRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2119']">
+		zombieBiker, .8
+		zombieTomClarkFeral, .8
+		zombieSkateboarder, .8
+		zombieFatCopRadiated, .7
+		zombieMoeRadiated, .7
+		zombieLumberjack, .8
+		zombieSpiderFeral, .8
+		zombieArlene
+		zombieFatCopFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2138']">
+		zombieJanitor
+		zombieJoe
+		zombieBoeRadiated, .7
+		zombieTomClark
+		zombieBiker, .8
+		zombieMoeRadiated, .7
+		zombieLumberjackFeral, .8
+		zombieMoe
+		zombieJanitorFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2177']">
+		zombieLumberjackFeral, .8
+		zombieMarlene
+		zombieJanitor
+		zombieJanitorRadiated, .7
+		zombieMoeFeral, .8
+		zombieJoeFeral, .8
+		zombieSkateboarder, .8
+		zombieDarleneRadiated, .7
+		zombieSkateboarderFeral, .8
+		zombieBiker, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2197']">
+		zombiePartyGirl
+		zombieSkateboarderFeral, .8
+		zombieFemaleFatFeral, .8
+		zombieSteve
+		zombieMoeFeral, .8
+		zombieJoeRadiated, .7
+		zombieFatHawaiianRadiated, .7
+		zombieTomClarkRadiated, .7
+		zombieLumberjackRadiated, .7
+		zombieBiker, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2236']">
+		zombieSteve
+		zombieUtilityWorkerFeral, .8
+		zombieMarleneFeral, .8
+		zombieBusinessManFeral, .8
+		zombieLumberjackFeral, .8
+		zombieBusinessMan
+		zombieMoeRadiated, .7
+		zombieLumberjack, .8
+		zombieYoRadiated, .7
+		zombieSoldier, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2255']">
+		zombieFatHawaiianRadiated, .7
+		zombieBoe
+		zombieMarleneFeral, .8
+		zombieBikerRadiated, .7
+		zombieMaleHazmatRadiated, .7
+		zombieBoeRadiated, .7
+		zombieSteveRadiated, .7
+		zombieNurseFeral, .8
+		zombieMarlene
+		zombieSkateboarderRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2435']">
+		zombieUtilityWorker
+		zombieJoe
+		zombieMaleHazmat, .8
+		zombieMaleHazmatFeral, .8
+		zombieYoRadiated, .7
+		zombieNurseRadiated, .7
+		zombieTomClark
+		zombieArleneFeral, .8
+		zombieSteveFeral, .8
+		zombieBusinessMan
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2455']">
+		zombieWightFeral, .8
+		zombieLumberjack, .8
+		zombieTomClarkFeral, .8
+		zombieFemaleFatRadiated, .7
+		zombieMaleHazmatFeral, .8
+		zombieMoe
+		zombieLumberjackRadiated, .7
+		zombieUtilityWorker
+		zombiePartyGirlFeral, .8
+		zombieBusinessMan
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2516']">
+		zombieFatHawaiianRadiated, .7
+		zombieUtilityWorkerFeral, .8
+		zombieSoldier, .8
+		zombieMarleneRadiated, .7
+		zombieJanitorRadiated, .7
+		zombieFatCop, .8
+		zombieBoeRadiated, .7
+		zombieFemaleFatRadiated, .7
+		zombieWightRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2660']">
+		zombieMoeFeral, .8
+		zombieFatCop, .8
+		zombieBoe
+		zombieMaleHazmatRadiated, .7
+		zombieNurse
+		zombieFatHawaiian, .8
+		zombieLumberjack, .8
+		zombieBikerFeral, .8
+		zombieArleneFeral, .8
+		zombieSoldier, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2765']">
+		zombieMarleneRadiated, .7
+		zombieLumberjack, .8
+		zombieNurseFeral, .8
+		zombieFatCopRadiated, .7
+		zombieYo
+		zombieBikerRadiated, .7
+		zombieDarleneRadiated, .7
+		zombieFatCopFeral, .8
+		zombieMaleHazmatFeral, .8
+		zombieBoeRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2978']">
+		zombieLumberjack, .8
+		zombieSoldierFeral, .8
+		zombieBikerFeral, .8
+		zombieSoldierRadiated, .7
+		zombieSkateboarderRadiated, .7
+		zombieFemaleFatRadiated, .7
+		zombieBiker, .8
+		zombieBoeFeral, .8
+		zombieSpider, .6
+		zombieJoeFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2999']">
+		zombieJoe
+		zombieBusinessMan
+		zombieUtilityWorkerFeral, .8
+		zombieJoeFeral, .8
+		zombieMoe
+		zombieSkateboarderRadiated, .7
+		zombieSpider, .6
+		zombieSkateboarder, .8
+		zombieBoeFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS3152']">
+		zombieLumberjackRadiated, .7
+		zombieArleneFeral, .8
+		zombieJanitor
+		zombieFatHawaiianFeral, .8
+		zombieFemaleFat, .8
+		zombieSpider, .6
+		zombieBoe
+		zombieTomClark
+		zombieBusinessMan
+		zombieJanitorFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS3196']">
+		zombieFatHawaiianFeral, .8
+		zombieMaleHazmatFeral, .8
+		zombieTomClarkFeral, .8
+		zombieMarleneFeral, .8
+		zombieDarleneRadiated, .7
+		zombieWightRadiated, .7
+		zombieDarlene
+		zombieFemaleFatRadiated, .7
+		zombieArleneRadiated, .7
+		zombieTomClark
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS3240']">
+		zombieMarleneRadiated, .7
+		zombieMaleHazmatRadiated, .7
+		zombieBusinessManFeral, .8
+		zombieNurse
+		zombieTomClarkRadiated, .7
+		zombieBikerFeral, .8
+		zombieMaleHazmat, .8
+		zombieTomClarkFeral, .8
+		zombieFatHawaiianRadiated, .7
+		zombieJanitorFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS3263']">
+		zombieSpiderFeral, .8
+		zombieSkateboarderFeral, .8
+		zombieFatHawaiianFeral, .8
+		zombieMoeRadiated, .7
+		zombieNurseRadiated, .7
+		zombieUtilityWorkerFeral, .8
+		zombieArlene
+		zombieTomClarkFeral, .8
+		zombieMarlene
+		zombieFemaleFat, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS3330']">
+		zombieTomClarkRadiated, .7
+		zombieYoRadiated, .7
+		zombieNurse
+		zombieLumberjackFeral, .8
+		zombieJanitorFeral, .8
+		zombiePartyGirl
+		zombieBikerFeral, .8
+		zombieLumberjackRadiated, .7
+		zombieSpider, .6
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS3352']">
+		zombieSoldier, .8
+		zombieSoldierFeral, .8
+		zombieMarleneRadiated, .7
+		zombieBoe
+		zombieFatCopRadiated, .7
+		zombieFatHawaiian, .8
+		zombieMoe
+		zombieSteve
+		zombieMoeRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS3533']">
+		zombieUtilityWorkerFeral, .8
+		zombieMaleHazmatRadiated, .7
+		zombieWightFeral, .8
+		zombieSoldier, .8
+		zombieJoeRadiated, .7
+		zombieLumberjackFeral, .8
+		zombieMarleneFeral, .8
+		zombieNurseRadiated, .7
+		zombieFatHawaiian, .8
+		zombieMaleHazmatFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS3625']">
+		zombieJanitorFeral, .8
+		zombieMarleneFeral, .8
+		zombieDarleneRadiated, .7
+		zombieDarleneFeral, .8
+		zombieLumberjack, .8
+		zombiePartyGirlFeral, .8
+		zombieJoe
+		zombieArlene
+		zombieSoldier, .8
+		zombieFatHawaiian, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS3671']">
+		zombieFatCopFeral, .8
+		zombieBoeRadiated, .7
+		zombiePartyGirl
+		zombieSkateboarderRadiated, .7
+		zombieSkateboarderFeral, .8
+		zombieMarleneRadiated, .7
+		zombieMoeRadiated, .7
+		zombieMaleHazmatFeral, .8
+		zombieMaleHazmat, .8
+		zombieJoeFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS3694']">
+		zombieSpiderRadiated, .7
+		zombieSpider, .6
+		zombiePartyGirl
+		zombieMaleHazmatFeral, .8
+		zombieMoeRadiated, .7
+		zombieFatHawaiianFeral, .8
+		zombieYoRadiated, .7
+		zombieYo
+		zombieFemaleFatRadiated, .7
+		zombieJoe
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS3718']">
+		zombieBusinessMan
+		zombieTomClark
+		zombieYoRadiated, .7
+		zombieSteveFeral, .8
+		zombieTomClarkRadiated, .7
+		zombieMarleneFeral, .8
+		zombieSoldierRadiated, .7
+		zombieBusinessManFeral, .8
+		zombieSkateboarderFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS3741']">
+		zombieMoe
+		zombieMaleHazmat, .8
+		zombieJoeRadiated, .7
+		zombieJanitorRadiated, .7
+		zombieMarleneRadiated, .7
+		zombieLumberjackFeral, .8
+		zombieMarleneFeral, .8
+		zombieArleneFeral, .8
+		zombieBikerRadiated, .7
+		zombieSteve
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS3787']">
+		zombieSteveFeral, .8
+		zombieFatHawaiianFeral, .8
+		zombieJanitorRadiated, .7
+		zombieNurse
+		zombieWightFeral, .8
+		zombieJoe
+		zombieFatCopFeral, .8
+		zombiePartyGirlFeral, .8
+		zombieArleneFeral, .8
+		zombieArlene
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS3811']">
+		zombieMaleHazmatFeral, .8
+		zombieFatHawaiianRadiated, .7
+		zombieUtilityWorkerFeral, .8
+		zombieJoeFeral, .8
+		zombieSteve
+		zombieBiker, .8
+		zombieFatHawaiian, .8
+		zombieBoeRadiated, .7
+		zombieSpiderRadiated, .7
+		zombieDarleneRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS3929']">
+		zombieFemaleFat, .8
+		zombieWightFeral, .8
+		zombieYoRadiated, .7
+		zombieSpider, .6
+		zombieBusinessMan
+		zombieUtilityWorkerFeral, .8
+		zombieMaleHazmatFeral, .8
+		zombieBoeRadiated, .7
+		zombiePartyGirl
+		zombieYo
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS4048']">
+		zombieYo
+		zombieArleneRadiated, .7
+		zombieUtilityWorker
+		zombieJanitorRadiated, .7
+		zombieDarleneFeral, .8
+		zombieFemaleFatRadiated, .7
+		zombieBiker, .8
+		zombieMoe
+		zombieJanitor
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS4168']">
+		zombieBoe
+		zombieTomClarkRadiated, .7
+		zombieMaleHazmatFeral, .8
+		zombieYo
+		zombieMoeFeral, .8
+		zombieMaleHazmatRadiated, .7
+		zombiePartyGirl
+		zombieSoldier, .8
+		zombieWightRadiated, .7
+		zombieLumberjackFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS4216']">
+		zombieJoeFeral, .8
+		zombieArleneFeral, .8
+		zombieNurse
+		zombieJanitor
+		zombieJoe
+		zombieSpiderFeral, .8
+		zombieWightRadiated, .7
+		zombieMoeRadiated, .7
+		zombieBoe
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS4313']">
+		zombieJanitor
+		zombieMarleneFeral, .8
+		zombieFatHawaiianFeral, .8
+		zombieMaleHazmatRadiated, .7
+		zombieSoldier, .8
+		zombieFemaleFat, .8
+		zombieFemaleFatRadiated, .7
+		zombieArleneRadiated, .7
+		zombieDarlene
+		zombieTomClarkRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS4436']">
+		zombieUtilityWorkerFeral, .8
+		zombieMarleneFeral, .8
+		zombieDarleneFeral, .8
+		zombieLumberjackRadiated, .7
+		zombieFatHawaiianFeral, .8
+		zombieFatCopRadiated, .7
+		zombieSteveFeral, .8
+		zombieSteveRadiated, .7
+		zombieBoeFeral, .8
+		zombieYoFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS4635']">
+		zombieFemaleFat, .8
+		zombieDarleneFeral, .8
+		zombieJanitorFeral, .8
+		zombieSkateboarderFeral, .8
+		zombieUtilityWorkerFeral, .8
+		zombieFatCopRadiated, .7
+		zombieFatCopFeral, .8
+		zombieSkateboarderRadiated, .7
+		zombieFatHawaiianRadiated, .7
+		zombieSpider, .6
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS4660']">
+		zombieBoeFeral, .8
+		zombieMarlene
+		zombieDarleneFeral, .8
+		zombieLumberjack, .8
+		zombieSteveRadiated, .7
+		zombieYo
+		zombieMoe
+		zombieMoeFeral, .8
+		zombieSoldierRadiated, .7
+		zombieSpider, .6
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS4760']">
+		zombieSteve
+		zombieDarlene
+		zombieWightRadiated, .7
+		zombieMaleHazmat, .8
+		zombieTomClarkFeral, .8
+		zombieBusinessManFeral, .8
+		zombieBiker, .8
+		zombieYo
+		zombieMoe
+		zombieMoeRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS4938']">
+		zombieSoldier, .8
+		zombieBikerRadiated, .7
+		zombieLumberjackFeral, .8
+		zombieUtilityWorkerFeral, .8
+		zombieMaleHazmatRadiated, .7
+		zombieTomClarkRadiated, .7
+		zombieJoeFeral, .8
+		zombieSoldierRadiated, .7
+		zombieArleneRadiated, .7
+		zombieBusinessMan
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS4964']">
+		zombieWightFeral, .8
+		zombieMarleneRadiated, .7
+		zombieYoFeral, .8
+		zombieSoldier, .8
+		zombieBusinessManFeral, .8
+		zombieBoe
+		zombieSteve
+		zombieFatCopRadiated, .7
+		zombieSoldierRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS5015']">
+		zombieSpiderFeral, .8
+		zombieJoeFeral, .8
+		zombieSkateboarder, .8
+		zombieFatCop, .8
+		zombieWightRadiated, .7
+		zombieFemaleFatRadiated, .7
+		zombieUtilityWorkerFeral, .8
+		zombieMoeRadiated, .7
+		zombieArlene
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS5041']">
+		zombieFemaleFat, .8
+		zombieSpiderRadiated, .7
+		zombieYoRadiated, .7
+		zombieSkateboarderFeral, .8
+		zombieTomClark
+		zombieWightFeral, .8
+		zombieBoeRadiated, .7
+		zombieSoldier, .8
+		zombieArlene
+		zombieYoFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS5066']">
+		zombieTomClark
+		zombieMarleneFeral, .8
+		zombieJoe
+		zombieFatHawaiian, .8
+		zombieMarlene
+		zombieLumberjackRadiated, .7
+		zombieFatCop, .8
+		zombieSkateboarderFeral, .8
+		zombieBikerRadiated, .7
+		zombieSoldierFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS5196']">
+		zombieSoldierFeral, .8
+		zombieJanitor
+		zombiePartyGirlFeral, .8
+		zombieWightRadiated, .7
+		zombieMaleHazmatFeral, .8
+		zombieFatCopFeral, .8
+		zombieTomClarkRadiated, .7
+		zombieBusinessMan
+		zombieMaleHazmat, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS5379']">
+		zombieFemaleFat, .8
+		zombieSpiderFeral, .8
+		zombieTomClark
+		zombieMarleneRadiated, .7
+		zombieFemaleFatFeral, .8
+		zombieMarleneFeral, .8
+		zombieBoe
+		zombieYo
+		zombiePartyGirlFeral, .8
+		zombieMaleHazmatRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS5405']">
+		zombieFemaleFatRadiated, .7
+		zombieSteve
+		zombieSoldierRadiated, .7
+		zombieTomClarkFeral, .8
+		zombieYo
+		zombieSkateboarderRadiated, .7
+		zombieBiker, .8
+		zombieArleneFeral, .8
+		zombieMoeFeral, .8
+		zombieWightRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS5484']">
+		zombieNurseFeral, .8
+		zombieDarleneRadiated, .7
+		zombieFatCopFeral, .8
+		zombieUtilityWorkerFeral, .8
+		zombieSteveRadiated, .7
+		zombieMaleHazmatRadiated, .7
+		zombieDarlene
+		zombieBoeRadiated, .7
+		zombieSpiderFeral, .8
+		zombieArleneRadiated, .7
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS5590']">
+		zombieJoe
+		zombiePartyGirlFeral, .8
+		zombieYo
+		zombieLumberjackRadiated, .7
+		zombieFatHawaiianFeral, .8
+		zombieMoeFeral, .8
+		zombieMoe
+		zombieJanitorFeral, .8
+		zombieSoldierFeral, .8
+		zombieMaleHazmatFeral, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS5670']">
+		zombieSteveFeral, .8
+		zombieSpiderRadiated, .7
+		zombieSoldierFeral, .8
+		zombieUtilityWorker
+		zombieBoeRadiated, .7
+		zombieMoe
+		zombieLumberjack, .8
+		zombiePartyGirlFeral, .8
+		zombieFatHawaiianFeral, .8
+		zombieBiker, .8
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS5724']">
+		zombieSpiderFeral, .8
+		zombieSpiderRadiated, .7
+		zombieDarleneRadiated, .7
+		zombieJanitorRadiated, .7
+		zombieLumberjackRadiated, .7
+		zombieSteve
+		zombieWightFeral, .8
+		zombieArleneFeral, .8
+		zombieBusinessManFeral, .8
+		zombieFemaleFat, .8
+  </set>
+
+
+
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS147']">
+		zombieTomClarkRadiated, .41
+		zombieYoRadiated, .38
+		zombieJoeRadiated, .52
+		zombieMutated, .15
+		zombieJoe
+		zombieFatCopFeral, .75
+		zombieBikerFeral, .77
+		zombieJanitor
+		zombieSpiderRadiated, .23
+		zombieMaleHazmatFeral, .83
+		zombiePartyGirlFeral, .96
+		zombieJanitorRadiated, .54
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS153']">
+		zombieMoe
+		zombieMarleneRadiated, .56
+		zombieMoeRadiated, .53
+		zombieJanitorFeral
+		zombieBoeFeral
+		zombieMaleHazmatRadiated, .43
+		zombieSkateboarder
+		zombieArlene
+		zombieWightFeral, .72
+		zombieMutated, .18
+		zombieLumberjack
+		zombieNurseRadiated, .51
+		zombieBusinessMan
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS167']">
+		zombieSkateboarderRadiated, .49
+		zombieArlene
+		zombieSteveRadiated, .63
+		zombieNurseFeral
+		zombieFemaleFat
+		zombieFemaleFatFeral, .9
+		zombieMutated, .23
+		zombieUtilityWorker
+		zombieYoFeral
+		zombieTomClarkFeral
+		zombieMarleneFeral
+		zombieYoRadiated, .58
+		zombieFatCop
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS181']">
+		zombiePartyGirl
+		zombieSoldier
+		zombieMutated, .28
+		zombieMaleHazmatFeral
+		zombieTomClarkRadiated, .75
+		zombieJanitorFeral
+		animalZombieVulture, .3
+		zombieFatCopRadiated, .58
+		zombieFemaleFatFeral
+		zombieMarleneFeral
+		animalZombieVultureRadiated, .29
+		zombieDarleneRadiated, .91
+		zombieSteveFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS202']">
+		zombieMutated, .15
+		zombieFatHawaiianFeral
+		zombieArleneFeral
+		zombieMaleHazmat
+		zombieLumberjack
+		zombieMoeFeral
+		zombieSteve
+		zombieFemaleFat
+		zombiePartyGirl
+		zombieFatCopRadiated, .79
+		zombieLumberjackRadiated, .86
+		zombieBikerFeral
+		zombieMarleneFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS225']">
+		zombieLumberjackRadiated
+		zombieJoeFeral
+		zombieSoldierFeral
+		zombieBikerFeral
+		zombieMoeRadiated
+		zombiePartyGirlFeral
+		zombieJoeRadiated
+		zombieArlene
+		zombieSoldierRadiated, .96
+		zombieLumberjack
+		zombieBoe
+		zombieSkateboarderFeral
+		zombieMutated, .4
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS240']">
+		zombieFatHawaiian
+		zombieNurseFeral
+		zombieMutated, .5
+		zombieSteveFeral
+		zombieNurseRadiated
+		zombieArleneFeral
+		zombieLumberjackRadiated
+		zombieSkateboarderRadiated
+		zombieSpiderFeral, .6
+		zombieSoldierFeral
+		zombieMarlene
+		zombieSoldier
+		zombieLumberjackFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS271']">
+		zombieMutated, .4
+		zombieFatCopFeral
+		zombieDarleneRadiated
+		zombieBoe
+		zombieLumberjack
+		zombieSkateboarderRadiated
+		zombieJoeFeral
+		zombieFatHawaiianRadiated
+		zombieSkateboarderFeral
+		zombieMoeRadiated
+		zombieWightFeral
+		animalZombieVulture, .3
+		zombieBusinessManFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS279']">
+		zombieLumberjack
+		zombieFemaleFatFeral
+		zombieDarleneRadiated
+		zombieFatCop
+		zombieYoRadiated
+		zombieMutated, .4
+		zombieBusinessMan
+		zombieArleneFeral
+		zombieBikerRadiated
+		zombieMarleneRadiated
+		zombieTomClark
+		zombieSkateboarderRadiated
+		zombieSoldierFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS295']">
+		zombieLumberjackRadiated
+		zombieBoe
+		zombieMutated, .4
+		zombieNurseFeral
+		zombieMarleneFeral
+		zombieBoeRadiated
+		zombieBoeFeral
+		zombieSoldierFeral
+		zombieBikerRadiated
+		zombieBiker
+		zombiePartyGirl
+		zombieSpider, .6
+		zombieNurse
+		zombieMaleHazmat
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS329']">
+		zombieMutated, .4
+		zombieDarleneRadiated
+		animalZombieDog
+		zombiePartyGirl
+		zombieBikerFeral
+		zombieSkateboarderRadiated
+		zombieMaleHazmatRadiated
+		zombieTomClarkRadiated
+		zombieBusinessManFeral
+		zombieFatCop
+		zombieJoeFeral
+		zombieArlene
+		zombieSpiderFeral, .6
+		zombieSoldierFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS354']">
+		zombieMutated, .4
+		zombieMoe
+		zombieDarlene
+		zombieFatCopFeral
+		zombieJanitor
+		zombieBoeFeral
+		zombieBikerRadiated
+		zombieArleneRadiated
+		zombieFatHawaiian
+		zombieFatCop
+		zombieSpiderFeral, .6
+		zombieTomClark
+		zombieMarleneRadiated
+		zombieBikerFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS389']">
+		zombieMutated, .5
+		zombieUtilityWorkerFeral
+		zombieWightRadiated
+		zombieFatHawaiianRadiated
+		zombieBikerFeral
+		zombieLumberjack
+		zombieBikerRadiated
+		zombieNurseFeral
+		zombieFatCopRadiated
+		zombieMoe
+		zombieLumberjackRadiated
+		zombieSpiderFeral, .6
+		zombieBoe
+		animalZombieDog
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS426']">
+		zombieSoldier
+		zombieFemaleFat
+		zombieLumberjackRadiated
+		zombieFatHawaiian
+		zombieBoe
+		zombieFemaleFatRadiated
+		zombieSpider, .6
+		zombieMoeRadiated
+		zombieMutated, .5
+		zombieDarleneRadiated
+		zombieJoeFeral
+		zombieMaleHazmatFeral
+		zombieMarleneRadiated
+		zombieSpiderRadiated, .6
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS472']">
+		zombieSoldierRadiated
+		zombieNurse
+		zombieJanitor
+		zombieArleneFeral
+		zombieMutated, .4
+		zombieTomClarkFeral
+		zombieMoeFeral
+		zombieWightFeral
+		zombieBikerRadiated
+		zombieSteveFeral
+		zombieArleneRadiated
+		zombieSteve
+		zombieJoe
+		zombieMarleneFeral
+		zombiePartyGirl
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS520']">
+		zombieJanitor
+		zombieFatHawaiianFeral
+		zombieUtilityWorkerFeral
+		zombieSoldier
+		zombieBoe
+		zombieSteveRadiated
+		zombieBusinessManFeral
+		zombieJoeFeral
+		zombieMarleneRadiated
+		zombiePartyGirl
+		zombieJanitorRadiated
+		zombieNurseFeral
+		zombieLumberjackFeral
+		zombieMutated, .4
+		zombieLumberjack
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS540']">
+		zombiePartyGirl
+		zombieBoe
+		zombieSpider, .6
+		zombieMutated, .5
+		zombieFemaleFatFeral
+		zombieWightFeral
+		zombieFatCop
+		zombieFemaleFat
+		zombieNurse
+		zombieSkateboarder
+		zombieUtilityWorker
+		zombieJoe
+		zombieMarleneFeral
+		zombieMarleneRadiated
+		zombieBusinessMan
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS570']">
+		animalZombieVulture, .3
+		zombieFatHawaiianRadiated
+		zombieBusinessMan
+		zombieMaleHazmatFeral
+		zombiePartyGirl
+		zombieLumberjackRadiated
+		zombieFatHawaiianFeral
+		zombieJanitor
+		zombieBoe
+		zombieLumberjackFeral
+		zombieFatCopFeral
+		zombieJoeFeral
+		zombieMutated, .5
+		zombieJoeRadiated
+		zombieSkateboarder
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS590']">
+		zombieMutated, .5
+		zombieBusinessMan
+		zombieMarlene
+		zombieMoeFeral
+		zombieNurse
+		zombieMaleHazmatRadiated
+		zombieSkateboarderRadiated
+		zombieMarleneRadiated
+		zombieFatHawaiianRadiated
+		animalZombieVulture, .3
+		zombieUtilityWorkerFeral
+		zombieJanitorFeral
+		zombieDarleneRadiated
+		zombieSpiderRadiated, .6
+		zombieMoeRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS600']">
+		zombieFatCopFeral
+		zombieBusinessMan
+		zombieFemaleFat
+		zombieFatCop
+		zombieSpiderRadiated, .6
+		zombieSteveFeral
+		zombieDarlene
+		zombieArleneFeral
+		zombieJanitorFeral
+		zombieMaleHazmatRadiated
+		zombieJanitorRadiated
+		zombieNurseRadiated
+		zombieBikerFeral
+		zombieMutated, .5
+		zombieMaleHazmat
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS620']">
+		zombieSpiderFeral, .6
+		zombieJanitorRadiated
+		zombieYoRadiated
+		zombieBusinessMan
+		zombieFemaleFat
+		zombieNurse
+		zombieJoe
+		zombieLumberjackRadiated
+		zombieBiker
+		zombieJoeFeral
+		zombieDarleneFeral
+		zombieMutated, .5
+		zombieSoldier
+		zombieNurseFeral
+		zombieLumberjack
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS672']">
+		zombieSkateboarder
+		zombieNurseFeral
+		zombieFemaleFatRadiated
+		zombieJanitor
+		zombieFatHawaiianRadiated
+		zombieBikerFeral
+		zombieJoeFeral
+		zombieWightFeral
+		zombieMutated, .4
+		zombieBiker
+		zombieYoFeral
+		zombieDarleneFeral
+		zombieJanitorFeral
+		zombieBusinessMan
+		zombieJoe
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS693']">
+		zombieTomClarkRadiated
+		animalZombieDog
+		zombieSteveRadiated
+		zombieArleneRadiated
+		zombieSteveFeral
+		zombieJanitor
+		zombieSkateboarder
+		zombieBoe
+		zombieMutated, .4
+		zombieSpider, .6
+		zombieFatCopFeral
+		zombieSoldierRadiated
+		zombieTomClark
+		zombieLumberjackFeral
+		zombieUtilityWorkerFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS704']">
+		zombieMutated, .5
+		zombieDarleneFeral
+		zombieBikerRadiated
+		zombieJanitorRadiated
+		zombieBiker
+		zombieSpiderRadiated, .6
+		zombieSoldierFeral
+		zombieMaleHazmat
+		zombieFatCop
+		animalZombieDog
+		zombieArleneRadiated
+		zombieArlene
+		zombieMarleneRadiated
+		zombieYoRadiated
+		zombieFatCopFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS726']">
+		zombieMutated, .4
+		zombieSkateboarderRadiated
+		zombieLumberjackFeral
+		zombieBusinessMan
+		zombieSpiderFeral, .6
+		animalZombieVulture, .3
+		zombieArleneRadiated
+		zombieFatCopFeral
+		zombieMarleneRadiated
+		zombieArleneFeral
+		zombieNurseRadiated
+		zombieDarleneFeral
+		zombieDarleneRadiated
+		zombieSkateboarder
+		zombieTomClarkFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS747']">
+		zombieSkateboarderFeral
+		zombiePartyGirlFeral
+		zombieDarlene
+		zombieMutated, .5
+		zombieFatCopRadiated
+		zombieFemaleFat
+		zombieJanitorRadiated
+		zombieDarleneRadiated
+		zombieUtilityWorker
+		zombieWightRadiated
+		zombieSkateboarderRadiated
+		zombieMoeFeral
+		zombieBikerRadiated
+		zombieSteve
+		zombieBoeFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS769']">
+		zombieFatHawaiianRadiated
+		zombieMarleneFeral
+		zombieFemaleFatFeral
+		zombieMutated, .4
+		zombieLumberjackFeral
+		zombieBoe
+		zombieYoFeral
+		zombieNurseFeral
+		zombieMaleHazmat
+		zombieLumberjack
+		zombieSteveFeral
+		zombieFemaleFat
+		zombieArleneRadiated
+		zombieYoRadiated
+		zombieArleneFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS791']">
+		zombieBoe
+		zombieDarleneFeral
+		zombieDarlene
+		zombieNurse
+		zombieMaleHazmatFeral
+		zombieBikerFeral
+		zombieSkateboarderFeral
+		zombieSpiderFeral, .6
+		zombieWightRadiated
+		zombieLumberjackRadiated
+		zombieArleneRadiated
+		zombieMutated, .5
+		zombieArlene
+		zombieArleneFeral
+		zombieMoe
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS824']">
+		zombieFatCopFeral
+		zombieFatHawaiianRadiated
+		zombieNurseFeral
+		zombieNurseRadiated
+		zombieArlene
+		zombieLumberjackRadiated
+		zombieJoeFeral
+		zombieUtilityWorkerFeral
+		zombieYo
+		zombieMutated, .4
+		zombieBoe
+		zombieBoeRadiated
+		zombieSpiderRadiated, .6
+		zombieWightRadiated
+		zombieDarleneRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS858']">
+		zombieMutated, .5
+		zombieSteveRadiated
+		zombieSkateboarderFeral
+		zombieSkateboarder
+		zombieUtilityWorker
+		zombieJanitorFeral
+		zombieSkateboarderRadiated
+		zombieMarleneRadiated
+		zombieMoeFeral
+		zombieFemaleFatRadiated
+		animalZombieDog
+		zombieMoeRadiated
+		zombiePartyGirlFeral
+		zombieTomClarkFeral
+		zombieJoeRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS904']">
+		zombieSteveRadiated
+		zombieDarleneFeral
+		animalZombieVultureRadiated, .3
+		zombieMoeFeral
+		zombieMoe
+		zombieFatHawaiian
+		zombieFatCop
+		zombieArleneRadiated
+		zombieMutated, .5
+		zombieFemaleFatRadiated
+		zombieMoeRadiated
+		zombieMutated, .4
+		zombieWightFeral
+		zombieFemaleFatFeral
+		zombieBiker
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS939']">
+		zombieMutated, .5
+		zombieLumberjackRadiated
+		zombieMaleHazmatFeral
+		zombieJanitorFeral
+		zombieUtilityWorker
+		zombieArlene
+		zombieFatCopFeral
+		zombieSkateboarderFeral
+		zombieNurse
+		zombieJoeRadiated
+		zombieSpiderRadiated, .6
+		zombieSteveRadiated
+		zombieWightFeral
+		zombieFatHawaiianRadiated
+		zombieFatCopRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS986']">
+		zombieMutated, .5
+		zombieFatHawaiianFeral
+		zombieSoldierRadiated
+		zombieWightRadiated
+		zombieArleneRadiated
+		zombieSpiderRadiated, .6
+		zombieSkateboarder
+		zombieBikerFeral
+		zombieWightFeral
+		zombieSoldierFeral
+		zombieLumberjackRadiated
+		zombieFemaleFatRadiated
+		zombieBusinessMan
+		zombieSkateboarderFeral
+		zombieSpider, .6
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1034']">
+		zombieNurseFeral
+		zombieBoeRadiated
+		zombieTomClark
+		zombieArlene
+		zombieSkateboarder
+		animalZombieVulture, .3
+		zombieMutated, .4
+		zombieSteve
+		zombieJoeRadiated
+		zombieJanitor
+		zombieSkateboarderFeral
+		zombieNurseRadiated
+		zombiePartyGirlFeral
+		zombieYo
+		zombieJoe
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1058']">
+		zombieFatHawaiianFeral
+		zombieYoFeral
+		zombieBusinessMan
+		zombieFemaleFatFeral
+		zombieMaleHazmatFeral
+		zombieMaleHazmatRadiated
+		zombieMutated, .4
+		zombieMarleneFeral
+		zombieYoRadiated
+		zombieMarleneRadiated
+		zombieSpiderFeral, .6
+		zombieTomClark
+		zombieLumberjackRadiated
+		zombieSteveFeral
+		zombieFatCop
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1082']">
+		zombieNurse
+		zombieDarleneFeral
+		zombieFatHawaiianFeral
+		zombieFatCopRadiated
+		zombieSkateboarderRadiated
+		zombieFatHawaiianRadiated
+		animalZombieDog
+		zombieMutated, .4
+		animalZombieVulture, .3
+		zombieMaleHazmatRadiated
+		zombieFemaleFatFeral
+		zombieMarleneFeral
+		zombieArlene
+		zombieTomClarkFeral
+		zombieYoRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1106']">
+		zombieMutated, .4
+		zombieFemaleFatFeral
+		zombieLumberjack
+		zombieSoldierRadiated
+		zombieJanitorFeral
+		zombieFatCop
+		zombieBiker
+		animalZombieDog
+		zombieMutated, .5
+		zombieFatCopFeral
+		zombieDarleneFeral
+		zombieSkateboarderRadiated
+		zombieFemaleFat
+		zombieYoFeral
+		zombieArleneFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1119']">
+		animalZombieVultureRadiated, .3
+		zombieSpiderRadiated, .6
+		zombieLumberjackRadiated
+		zombieFemaleFat
+		zombieYoRadiated
+		zombieFemaleFatFeral
+		zombieFatHawaiianRadiated
+		zombieUtilityWorkerFeral
+		zombieNurse
+		zombieMutated, .5
+		zombieLumberjack
+		zombieNurseFeral
+		zombieMarleneFeral
+		zombieJanitorRadiated
+		zombiePartyGirl
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1143']">
+		zombieDarleneFeral
+		zombieBikerRadiated
+		zombieArleneFeral
+		zombieNurseFeral
+		zombieFatHawaiianFeral
+		zombieNurseRadiated
+		zombieSpiderFeral, .6
+		zombieArlene
+		zombieBiker
+		zombieBoe
+		zombieWightRadiated
+		zombieMutated, .5
+		animalZombieVulture, .3
+		zombieDarleneRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1156']">
+		zombieSpiderRadiated, .6
+		zombieMarleneRadiated
+		zombieUtilityWorker
+		zombieArlene
+		zombieLumberjack
+		zombieFatHawaiian
+		zombieBikerRadiated
+		zombieMutated, .5
+		zombieSteveRadiated
+		zombieJanitorFeral
+		zombieMarleneFeral
+		zombieDarleneRadiated
+		zombieSoldierRadiated
+		zombieMoeFeral
+		zombieBusinessManFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1168']">
+		zombieMoeFeral
+		zombieNurseRadiated
+		zombieWightRadiated
+		zombieLumberjack
+		zombieArlene
+		zombieMarleneRadiated
+		zombieSpider, .6
+		zombieWightFeral
+		zombieUtilityWorker
+		zombieSoldierFeral
+		zombieJoeRadiated
+		zombieTomClark
+		zombieMutated, .5
+		zombieBoeFeral
+		zombieBusinessMan
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1193']">
+		zombieDarleneRadiated
+		zombieSpiderRadiated, .6
+		zombieFemaleFatFeral
+		zombieYo
+		zombieSkateboarderFeral
+		zombieFatHawaiianFeral
+		zombieMutated, .4
+		zombieArleneRadiated
+		zombieFatCopFeral
+		zombieSoldierFeral
+		zombieMoeFeral
+		zombieBusinessManFeral
+		zombieLumberjack
+		zombieUtilityWorkerFeral
+		zombieSpider, .6
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1231']">
+		zombieBoe
+		zombieSpiderRadiated, .6
+		zombieTomClarkRadiated
+		zombieNurseFeral
+		zombieFatCop
+		zombieArleneFeral
+		zombieSkateboarderFeral
+		zombieSoldier
+		zombieJoeFeral
+		zombieMarleneFeral
+		zombieMutated, .5
+		zombieArleneRadiated
+		zombieSteveFeral
+		zombieTomClark
+		zombieTomClarkFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1321']">
+		zombiePartyGirl
+		zombieYoFeral
+		zombieBusinessMan
+		zombieDarleneRadiated
+		zombieYo
+		zombieMaleHazmatRadiated
+		zombieBiker
+		zombieMaleHazmat
+		zombieSoldierFeral
+		zombieBoe
+		zombieBoeFeral
+		zombieWightRadiated
+		zombieMutated, .4
+		zombieSteve
+		zombieYoRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1347']">
+		zombieMarleneFeral
+		zombieTomClarkFeral
+		zombieMarleneRadiated
+		zombieSoldier
+		zombieLumberjack
+		zombieMarlene
+		zombieMaleHazmatFeral
+		zombieNurse
+		zombieYo
+		zombieDarleneFeral
+		zombieMutated, .5
+		zombieWightFeral
+		zombieBusinessManFeral
+		animalZombieDog
+		zombieFatCop
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1373']">
+		zombieTomClarkFeral
+		zombieBoeFeral
+		zombieFemaleFatRadiated
+		animalZombieVulture, .3
+		zombieJoe
+		zombieJoeFeral
+		animalZombieDog
+		zombieArleneRadiated
+		zombieSpiderRadiated, .6
+		zombieJanitorRadiated
+		zombieBoe
+		animalZombieVultureRadiated, .3
+		zombieNurseRadiated
+		zombieMutated, .5
+		zombieArlene
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1399']">
+		zombieJoeRadiated
+		zombieSteve
+		zombieYoFeral
+		zombieSpider, .6
+		zombieNurse
+		zombieJoe
+		zombieBusinessManFeral
+		zombieLumberjackFeral
+		zombieFatCopFeral
+		zombieJanitorRadiated
+		zombieMutated, .4
+		zombieMarleneRadiated
+		zombieBoe
+		zombieDarleneFeral
+		zombieFemaleFatRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1412']">
+		zombieMoeRadiated
+		zombieSteveFeral
+		zombieArleneRadiated
+		zombieBoeRadiated
+		zombieMutated, .4
+		zombieLumberjackRadiated
+		zombieNurse
+		animalZombieVulture, .3
+		zombieSoldierFeral
+		zombieTomClarkFeral
+		zombieBusinessMan
+		zombieSpiderRadiated, .6
+		zombieJanitorRadiated
+		zombieNurseRadiated
+		zombieSteve
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1439']">
+		zombieFatCopRadiated
+		zombieSpiderFeral, .6
+		zombieSkateboarder
+		zombieMoeFeral
+		zombieFatCop
+		zombieJanitorRadiated
+		zombieJoeRadiated
+		zombieBiker
+		zombieMutated, .5
+		zombieJoe
+		zombieMaleHazmatRadiated
+		zombieDarleneRadiated
+		zombieYoRadiated
+		zombieSpiderRadiated, .6
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1452']">
+		zombieMutated, .4
+		zombieSteve
+		zombieBusinessMan
+		zombieMoeRadiated
+		zombieBikerRadiated
+		zombieBusinessManFeral
+		zombieFemaleFatRadiated
+		zombieJanitorRadiated
+		zombieFemaleFatFeral
+		zombieSoldierRadiated
+		zombieLumberjack
+		zombieBoeRadiated
+		animalZombieVultureRadiated, .3
+		zombieBikerFeral
+		zombieMaleHazmat
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1479']">
+		zombieSkateboarderRadiated
+		zombieNurseRadiated
+		zombieJoeFeral
+		zombieBikerRadiated
+		zombieMoe
+		zombieBiker
+		zombieSpiderFeral, .6
+		zombieSpiderRadiated, .6
+		zombieTomClarkFeral
+		zombieFemaleFatRadiated
+		zombieTomClark
+		zombieMaleHazmatFeral
+		zombieMutated, .5
+		zombieYoRadiated
+		zombieMutated, .4
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1560']">
+		zombieArleneRadiated
+		zombieSkateboarder
+		zombieSteveFeral
+		zombieJanitor
+		zombieMoeFeral
+		zombieBoeFeral
+		zombieMutated, .4
+		zombieBusinessMan
+		zombieBoe
+		zombieFatCop
+		zombieFemaleFat
+		zombieNurseFeral
+		zombieFatHawaiian
+		zombieJanitorFeral
+		zombieSpiderFeral, .6
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1573']">
+		zombieSteve
+		zombieJanitorRadiated
+		zombieFemaleFat
+		zombieTomClarkFeral
+		zombieJoeRadiated
+		zombieBoeFeral
+		zombieYoFeral
+		zombieSpiderRadiated, .6
+		zombieMutated, .4
+		zombieMoe
+		zombieTomClarkRadiated
+		zombieLumberjackFeral
+		zombieJanitorFeral
+		zombieArlene
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1628']">
+		zombieMutated, .4
+		zombieNurseRadiated
+		zombieFatCop
+		zombieLumberjack
+		zombieWightFeral
+		zombieMoeFeral
+		zombieBusinessMan
+		zombieBusinessManFeral
+		zombieJoeRadiated
+		zombieFatHawaiianFeral
+		zombieYo
+		zombieFemaleFatFeral
+		zombieFatHawaiian
+		zombiePartyGirl
+		zombieNurseFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1670']">
+		zombieMutated, .4
+		zombieMaleHazmatFeral
+		animalZombieVultureRadiated, .3
+		zombieLumberjackFeral
+		zombieJanitor
+		zombieNurse
+		zombieSoldier
+		zombieDarlene
+		zombieUtilityWorker
+		zombieSkateboarderRadiated
+		zombieMarleneFeral
+		zombieFatHawaiianRadiated
+		zombieSteveRadiated
+		zombieBusinessMan
+		zombieDarleneFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1698']">
+		zombieFatCopFeral
+		zombieBoe
+		zombieWightRadiated
+		zombieSkateboarder
+		zombieTomClarkFeral
+		animalZombieVultureRadiated, .3
+		zombieDarlene
+		zombieJanitorRadiated
+		zombieBiker
+		zombieLumberjack
+		zombieFemaleFatRadiated
+		zombieJoeRadiated
+		zombieBikerFeral
+		zombieMutated, .4
+		zombieSkateboarderRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1726']">
+		zombieUtilityWorker
+		zombieFatCop
+		zombieBiker
+		animalZombieVulture, .3
+		zombieJoeFeral
+		zombieSkateboarderRadiated
+		zombieMarleneFeral
+		zombieBoe
+		zombieDarleneRadiated
+		zombieBoeRadiated
+		zombieJanitorFeral
+		zombieNurse
+		zombieFatCopRadiated
+		zombieMutated, .5
+		zombieTomClark
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1754']">
+		zombieTomClarkFeral
+		zombieSpiderFeral, .6
+		zombieMutated, .4
+		zombieWightFeral
+		zombieSteveRadiated
+		zombieFemaleFatFeral
+		zombieJoe
+		zombieMaleHazmat
+		animalZombieVultureRadiated, .3
+		zombieDarlene
+		zombieBikerRadiated
+		zombieWightRadiated
+		zombieArlene
+		zombieMoeRadiated
+		zombieLumberjack
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1796']">
+		zombieMutated, .3
+		zombieJoeRadiated
+		zombieFemaleFatFeral
+		zombieFatCopRadiated
+		zombieMarlene
+		zombieJanitorRadiated
+		zombieYoFeral
+		zombieJanitorFeral
+		zombieFatHawaiianRadiated
+		zombiePartyGirl
+		zombieBiker
+		zombieFemaleFatRadiated
+		zombieFatCop
+		zombieMarleneRadiated
+		zombieYo
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1839']">
+		zombieJoe
+		zombieDarleneFeral
+		zombieBiker
+		zombieMoeFeral
+		zombieMarleneRadiated
+		zombieSoldierRadiated
+		zombieTomClarkFeral
+		zombieJanitor
+		zombieLumberjack
+		zombieBikerFeral
+		zombieFatHawaiian
+		zombieSkateboarderFeral
+		zombieArleneFeral
+		zombieMutated, .5
+		zombieSkateboarder
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1897']">
+		zombieTomClarkFeral
+		zombieJoe
+		zombieSpiderRadiated, .6
+		zombieTomClark
+		zombieMarleneFeral
+		zombieJanitorFeral
+		zombieDarleneRadiated
+		zombieFemaleFatFeral
+		zombiePartyGirl
+		zombieBoe
+		zombieDarlene
+		zombieBikerFeral
+		zombieMaleHazmatRadiated
+		zombieMutated, .5
+		zombieTomClarkRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1926']">
+		zombieSteveRadiated
+		zombieBoeRadiated
+		zombieSpiderFeral, .6
+		zombieSteveFeral
+		zombieFatCop
+		zombieSoldierRadiated
+		zombieMutated, .5
+		zombieArleneFeral
+		zombieFatHawaiianRadiated
+		zombieUtilityWorker
+		zombieFatHawaiianFeral
+		zombieBusinessManFeral
+		zombieBoe
+		zombieJanitorRadiated
+		zombieDarleneRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1969']">
+		zombieMoeRadiated
+		zombieMaleHazmatFeral
+		zombieMutated, .4
+		zombieSoldier
+		zombieDarleneFeral
+		zombieTomClarkFeral
+		zombieJoeFeral
+		zombieLumberjack
+		zombieSoldierRadiated
+		zombieFatCop
+		zombieYoRadiated
+		zombieTomClark
+		zombiePartyGirlFeral
+		zombieMarlene
+		zombieLumberjackFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2013']">
+		zombieBusinessMan
+		zombieYoRadiated
+		zombieUtilityWorker
+		zombieBiker
+		zombieFatCop
+		zombieMaleHazmatRadiated
+		zombieSkateboarder
+		zombieMutated, .5
+		zombieNurse
+		zombieBusinessManFeral
+		zombieYo
+		zombieSpider, .6
+		zombieDarleneFeral
+		zombieMarlene
+		zombieSoldierFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2132']">
+		zombieBusinessManFeral
+		zombieWightRadiated
+		zombieSteveFeral
+		zombieSoldier
+		zombieMutated, .4
+		animalZombieVulture, .3
+		zombieFemaleFat
+		zombieMoeRadiated
+		zombieTomClarkFeral
+		zombieMaleHazmatRadiated
+		zombieSoldierFeral
+		zombieSkateboarderFeral
+		zombieDarlene
+		zombieSkateboarderRadiated
+		zombieBikerRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2177']">
+		zombieFatHawaiianFeral
+		zombieSteveFeral
+		zombieArleneFeral
+		zombieBusinessManFeral
+		zombieSkateboarderFeral
+		zombieWightRadiated
+		zombieJoeFeral
+		zombieMarlene
+		zombieMaleHazmatRadiated
+		zombieJanitor
+		zombieMarleneFeral
+		zombieMutated, .5
+		zombieFatHawaiianRadiated
+		zombieJoe
+		zombieMaleHazmatFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2223']">
+		zombieFatCop
+		zombieDarleneRadiated
+		zombieMaleHazmatRadiated
+		zombieWightFeral
+		zombieSpider, .6
+		zombieBoe
+		zombieMutated, .4
+		zombieUtilityWorker
+		zombieSteveFeral
+		zombieMoeRadiated
+		zombieMarleneFeral
+		zombieNurseFeral
+		zombieArleneRadiated
+		zombieMutated, .5
+		animalZombieVultureRadiated, .3
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2314']">
+		zombieMoe
+		zombieFemaleFatFeral
+		zombieJanitor
+		zombieLumberjackRadiated
+		zombieTomClarkRadiated
+		animalZombieDog
+		zombieWightFeral
+		zombieSkateboarderRadiated
+		zombieWightRadiated
+		zombieBikerRadiated
+		zombieMutated, .4
+		zombieBusinessManFeral
+		zombieNurseFeral
+		zombieDarleneRadiated
+		zombieBoeRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2330']">
+		animalZombieDog
+		zombieNurseFeral
+		zombieWightFeral
+		zombieBoeFeral
+		zombieSoldierFeral
+		zombieBikerRadiated
+		zombieDarlene
+		zombieNurseRadiated
+		zombieFatCop
+		zombieMarleneFeral
+		zombieBusinessMan
+		zombieYoRadiated
+		zombieMutated, .5
+		zombieArlene
+		zombieBusinessManFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2438']">
+		zombieFemaleFatFeral
+		zombieSoldierRadiated
+		zombieSpiderFeral, .6
+		zombieBoeRadiated
+		zombieJanitor
+		zombieSteve
+		zombieLumberjackFeral
+		zombieUtilityWorkerFeral
+		zombieSoldierFeral
+		zombieWightRadiated
+		zombieMarleneRadiated
+		zombieMutated, .4
+		zombiePartyGirl
+		zombieMoeRadiated
+		zombieMaleHazmatRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2454']">
+		zombieMoe
+		zombieUtilityWorkerFeral
+		zombieBoeFeral
+		zombieMaleHazmatRadiated
+		zombieFemaleFat
+		zombieSkateboarderFeral
+		zombieBikerFeral
+		zombieUtilityWorker
+		zombieArlene
+		zombieBoe
+		zombieYoFeral
+		zombieWightFeral
+		zombieMutated, .4
+		zombieJanitorRadiated
+		zombieSteveRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2485']">
+		zombieSoldierRadiated
+		zombieMaleHazmat
+		zombieMutated, .5
+		zombieMoeRadiated
+		zombieBusinessManFeral
+		zombieFatCopFeral
+		zombieTomClarkFeral
+		zombieLumberjackFeral
+		zombieLumberjackRadiated
+		zombieNurseFeral
+		zombieJanitorFeral
+		zombieBiker
+		zombieTomClarkRadiated
+		zombieMaleHazmatRadiated
+		zombiePartyGirlFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2517']">
+		zombieFemaleFatRadiated
+		zombieBusinessMan
+		zombiePartyGirl
+		zombieFatHawaiianRadiated
+		zombieSoldierRadiated
+		zombieJoeRadiated
+		zombieMutated, .4
+		zombieLumberjack
+		zombieFatHawaiianFeral
+		zombieUtilityWorker
+		zombieNurse
+		zombieUtilityWorkerFeral
+		zombieFemaleFat
+		zombieSteveFeral
+		zombieDarleneFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2532']">
+		zombieBoeRadiated
+		zombieWightFeral
+		zombieMaleHazmatRadiated
+		zombieFatHawaiianRadiated
+		zombieYo
+		zombieBusinessManFeral
+		zombieMutated, .4
+		zombieMoeRadiated
+		zombieBusinessMan
+		zombieMarleneRadiated
+		zombieSoldier
+		zombieJanitorRadiated
+		zombieUtilityWorkerFeral
+		zombieFatHawaiian
+		zombieTomClarkRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2596']">
+		zombieWightRadiated
+		zombieFatHawaiianFeral
+		zombieBiker
+		animalZombieDog
+		zombiePartyGirlFeral
+		zombieMutated, .4
+		zombieTomClarkFeral
+		zombieFatHawaiian
+		zombieMoeFeral
+		zombieFatCopRadiated
+		zombieSkateboarder
+		zombieYoRadiated
+		zombieFatCopFeral
+		zombieBikerRadiated
+		zombieSoldierFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2612']">
+		zombiePartyGirlFeral
+		zombieMoeFeral
+		zombieLumberjack
+		zombieLumberjackFeral
+		zombieBoeRadiated
+		zombieUtilityWorkerFeral
+		zombieSoldier
+		zombieJoeRadiated
+		zombieSpiderFeral, .6
+		zombieSoldierRadiated
+		zombieTomClarkFeral
+		zombieFemaleFatFeral
+		zombieMutated, .5
+		zombieFatHawaiianFeral
+		zombieJanitor
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2628']">
+		zombieYoRadiated
+		zombieDarleneRadiated
+		zombieMutated, .5
+		zombieMarleneFeral
+		zombieMutated, .4
+		zombieFatCop
+		zombieDarlene
+		zombieWightRadiated
+		zombieFemaleFatFeral
+		zombieMoe
+		zombieTomClarkRadiated
+		zombieYoFeral
+		zombieBikerFeral
+		zombieNurse
+		zombieJanitorRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2724']">
+		zombieSkateboarderRadiated
+		zombieYoFeral
+		zombieBiker
+		zombieArlene
+		zombieFatHawaiianFeral
+		zombieTomClark
+		zombieFatCop
+		zombieFatHawaiianRadiated
+		zombieUtilityWorkerFeral
+		zombieSpiderFeral, .6
+		zombieBoeFeral
+		zombieSkateboarder
+		zombieMutated, .5
+		zombieWightFeral
+		zombieDarleneFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2740']">
+		zombieFemaleFat
+		zombieLumberjackRadiated
+		zombieDarlene
+		zombieFatHawaiian
+		zombieFemaleFatRadiated
+		zombieMarleneRadiated
+		zombieBusinessManFeral
+		zombieNurse
+		zombieMarleneFeral
+		zombieYo
+		zombieWightRadiated
+		zombieMutated, .4
+		zombieJanitorRadiated
+		zombieDarleneFeral
+		zombieWightFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2756']">
+		zombieMutated, .4
+		zombieSkateboarderFeral
+		zombieFemaleFatRadiated
+		zombieMoeRadiated
+		animalZombieVulture, .3
+		zombieBikerRadiated
+		zombieBiker
+		zombieUtilityWorker
+		zombieMutated, .5
+		zombieYo
+		zombieFatCopRadiated
+		zombieMarlene
+		animalZombieDog
+		zombieFatHawaiianFeral
+		zombieWightRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2772']">
+		zombieMoeFeral
+		animalZombieDog
+		zombieLumberjack
+		zombieWightFeral
+		zombieSteveRadiated
+		zombieArleneFeral
+		zombieMutated, .4
+		zombieDarleneRadiated
+		zombieYoFeral
+		zombieJoeRadiated
+		zombieMaleHazmatRadiated
+		zombieFatHawaiianRadiated
+		zombieBoeFeral
+		zombieJoeFeral
+		zombieDarleneFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2789']">
+		zombieMutated, .4
+		zombieMarleneRadiated
+		zombieSteveFeral
+		zombieSpider, .6
+		zombieMoe
+		zombieBusinessManFeral
+		zombieMoeRadiated
+		zombieSpiderRadiated, .6
+		zombieSkateboarderRadiated
+		zombieArlene
+		zombieBiker
+		zombieDarleneRadiated
+		zombieFatHawaiian
+		animalZombieVulture, .3
+		zombieNurseFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2821']">
+		zombiePartyGirl
+		zombieBiker
+		zombieSkateboarder
+		zombieArleneRadiated
+		animalZombieVulture, .3
+		zombieMutated, .5
+		zombieBoeRadiated
+		zombieFatHawaiianRadiated
+		zombieLumberjack
+		zombieTomClarkFeral
+		zombieSpiderRadiated, .6
+		zombieUtilityWorkerFeral
+		zombieLumberjackRadiated
+		zombieSteveRadiated
+		zombieYo
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2953']">
+		zombieMutated, .5
+		zombiePartyGirlFeral
+		zombieFatCopFeral
+		zombieTomClark
+		zombieNurse
+		zombieLumberjack
+		zombieSpiderRadiated, .6
+		zombieTomClarkRadiated
+		zombiePartyGirl
+		zombieJoeRadiated
+		zombieMarleneRadiated
+		zombieMaleHazmat
+		zombieMarlene
+		zombieNurseFeral
+		zombieLumberjackFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3019']">
+		zombieWightFeral
+		zombieFatHawaiianFeral
+		zombieTomClarkRadiated
+		zombieSpiderFeral, .6
+		animalZombieDog
+		animalZombieVulture, .3
+		zombieNurse
+		zombieMutated, .4
+		zombieSteveFeral
+		zombieMarleneFeral
+		zombieBikerFeral
+		zombieArleneRadiated
+		zombieJanitorRadiated
+		animalZombieVultureRadiated, .3
+		zombieJanitorFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3036']">
+		zombieSteve
+		zombieBikerFeral
+		zombieMutated, .5
+		zombieDarleneFeral
+		zombieBoe
+		zombieSpider, .6
+		zombieSpiderFeral, .6
+		zombieSteveFeral
+		zombieMaleHazmatRadiated
+		zombieBoeRadiated
+		zombieDarlene
+		zombieFatHawaiianFeral
+		zombieLumberjackRadiated
+		zombieJanitorFeral
+		zombieMaleHazmatFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3086']">
+		zombieFatHawaiianFeral
+		zombieMoeFeral
+		zombieNurse
+		zombieJoeRadiated
+		zombieSteve
+		zombieSoldierFeral
+		zombieBusinessMan
+		zombieMutated, .5
+		zombieSpider, .6
+		zombieMutated, .4
+		zombieFatCopFeral
+		zombieBoeFeral
+		zombieMoeRadiated
+		zombieJoeFeral
+		zombieSteveFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3103']">
+		zombieJoeRadiated
+		zombieDarleneFeral
+		zombieMaleHazmatFeral
+		zombieWightRadiated
+		zombieBoeFeral
+		zombieJoe
+		zombieFemaleFatFeral
+		zombieYoRadiated
+		zombieMaleHazmat
+		zombieMutated, .4
+		zombieMarleneFeral
+		zombieNurse
+		zombieDarlene
+		zombieSkateboarderRadiated
+		zombieMaleHazmatRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3170']">
+		zombieMutated, .5
+		zombieSkateboarderRadiated
+		zombieFemaleFatRadiated
+		zombieMarleneRadiated
+		zombieArleneFeral
+		zombieSpider, .6
+		zombieWightFeral
+		zombieMoe
+		zombiePartyGirlFeral
+		zombieSteveFeral
+		zombieSpiderRadiated, .6
+		zombieUtilityWorker
+		zombieLumberjack
+		zombieArlene
+		zombieUtilityWorkerFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3221']">
+		zombieBoe
+		zombieMutated, .5
+		zombieDarleneRadiated
+		zombieTomClarkFeral
+		zombieDarlene
+		zombieBikerRadiated
+		zombieMarleneFeral
+		zombieLumberjackRadiated
+		zombieSoldierRadiated
+		animalZombieDog
+		zombieMarlene
+		zombieBiker
+		zombieFatCopFeral
+		zombieSoldier
+		zombieSkateboarderFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3255']">
+		zombieSpiderFeral, .6
+		zombieUtilityWorker
+		zombieJanitorRadiated
+		zombieJoeRadiated
+		zombieUtilityWorkerFeral
+		zombieMarlene
+		zombieLumberjackFeral
+		zombieArleneFeral
+		zombieTomClark
+		zombieMutated, .5
+		zombieJoeFeral
+		zombieDarleneRadiated
+		zombieSoldierRadiated
+		zombieMaleHazmatRadiated
+		zombieJanitor
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3272']">
+		zombieBikerRadiated
+		zombieMarleneFeral
+		zombieUtilityWorker
+		zombieMaleHazmat
+		zombieFatCopRadiated
+		zombieFatCopFeral
+		zombieJanitor
+		zombieSkateboarder
+		zombieBikerFeral
+		zombieSteve
+		zombieSpider, .6
+		zombieMoeFeral
+		zombieMutated, .4
+		zombieJoeRadiated
+		zombieDarleneFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3324']">
+		zombieSoldierRadiated
+		zombieYoFeral
+		zombieDarleneFeral
+		zombieBoe
+		zombieMaleHazmatFeral
+		zombieNurseFeral
+		zombieMutated, .5
+		zombieSkateboarderFeral
+		zombieJanitorRadiated
+		zombieFemaleFat
+		zombieWightRadiated
+		zombieMaleHazmatRadiated
+		zombieMarlene
+		zombieSkateboarder
+		zombieSteveRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3358']">
+		zombieMaleHazmatRadiated
+		zombieFatCopFeral
+		zombieLumberjackRadiated
+		zombieYoRadiated
+		zombieNurseRadiated
+		zombieMarlene
+		zombiePartyGirlFeral
+		zombieMutated, .4
+		zombieJanitorFeral
+		zombieBusinessManFeral
+		zombieFatHawaiianFeral
+		zombieNurse
+		zombieWightRadiated
+		zombieFemaleFatRadiated
+		zombieLumberjackFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3410']">
+		zombieMutated, .5
+		zombieFatHawaiian
+		zombieSteveFeral
+		zombieSoldierFeral
+		zombieMoeRadiated
+		zombieDarlene
+		zombieSpiderFeral, .6
+		zombieBoeRadiated
+		zombieMaleHazmat
+		zombieLumberjackRadiated
+		zombieSpider, .6
+		zombieJoeFeral
+		zombieJoe
+		zombieWightRadiated
+		animalZombieVultureRadiated, .3
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3444']">
+		zombieBusinessMan
+		zombieDarlene
+		zombieMarlene
+		zombieYoRadiated
+		zombieUtilityWorkerFeral
+		zombieWightRadiated
+		zombieBikerFeral
+		zombieMarleneRadiated
+		zombieMaleHazmat
+		zombieSteveFeral
+		zombieMaleHazmatFeral
+		zombieMutated, .5
+		zombieBoe
+		zombieSpiderRadiated, .6
+		zombieUtilityWorker
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3462']">
+		zombieLumberjack
+		zombieSpider, .6
+		zombieFemaleFatRadiated
+		animalZombieDog
+		zombieUtilityWorker
+		zombieMutated, .4
+		zombieDarleneRadiated
+		zombieFemaleFat
+		zombieBoeRadiated
+		zombieTomClark
+		zombieJoe
+		zombieYoFeral
+		zombieSpiderFeral, .6
+		zombieSteveFeral
+		zombieYoRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3496']">
+		zombieSpiderRadiated, .6
+		zombieMutated, .4
+		zombieFemaleFatFeral
+		zombieFatHawaiianFeral
+		zombieDarleneFeral
+		zombieYoFeral
+		zombieNurseRadiated
+		zombieWightRadiated
+		zombieJanitorFeral
+		zombieFatCop
+		animalZombieVultureRadiated, .3
+		zombieMoe
+		zombieSoldier
+		zombieJoe
+		zombieSpider, .6
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3514']">
+		zombieFatCopFeral
+		zombieMarlene
+		zombieMarleneFeral
+		zombieBusinessMan
+		zombieMutated, .4
+		zombieArleneFeral
+		zombieMoeFeral
+		zombieLumberjackFeral
+		zombieFatHawaiianFeral
+		zombieDarlene
+		zombieJanitorRadiated
+		zombieArlene
+		zombieFemaleFatRadiated
+		zombieSoldier
+		zombieFatCopRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3549']">
+		zombieSkateboarderFeral
+		zombieSoldier
+		zombieBusinessMan
+		zombieTomClarkRadiated
+		zombieBiker
+		zombieFatHawaiianRadiated
+		zombieMutated, .5
+		zombieYo
+		zombieYoFeral
+		zombieMoeRadiated
+		zombieMarlene
+		zombieArleneRadiated
+		zombieBoeFeral
+		zombieBikerFeral
+		animalZombieVulture, .3
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3584']">
+		zombieFatHawaiianFeral
+		zombiePartyGirl
+		zombieArlene
+		zombieBusinessMan
+		zombieFemaleFatRadiated
+		zombieSteveRadiated
+		zombieSpider, .6
+		animalZombieVulture, .3
+		zombieSoldierRadiated
+		zombieWightRadiated
+		zombieMutated, .4
+		zombieJanitorRadiated
+		zombieFemaleFat
+		zombieBikerRadiated
+		zombieTomClarkFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3672']">
+		zombieTomClark
+		zombieJoeFeral
+		zombieJanitorRadiated
+		zombieJoeRadiated
+		animalZombieVulture, .3
+		zombieLumberjackRadiated
+		zombieSkateboarderFeral
+		zombieMaleHazmatFeral
+		zombieJoe
+		zombieFemaleFatRadiated
+		zombieYoFeral
+		zombieMutated, .5
+		zombieDarleneFeral
+		animalZombieDog
+		zombieJanitorFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3690']">
+		zombieWightRadiated
+		zombieSoldierFeral
+		zombieJoe
+		zombieBiker
+		zombieMutated, .5
+		zombieUtilityWorker
+		zombieSoldier
+		zombieBoeFeral
+		animalZombieVulture, .3
+		zombieSteveFeral
+		zombieBoe
+		zombieWightFeral
+		zombiePartyGirl
+		zombieFatCopRadiated
+		zombieSteveRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3707']">
+		zombieBiker
+		animalZombieVultureRadiated, .3
+		zombieDarleneRadiated
+		zombieBikerFeral
+		zombieSpiderFeral, .6
+		zombieSoldierFeral
+		zombieWightRadiated
+		zombieSoldier
+		zombieBikerRadiated
+		zombieWightFeral
+		zombieFatCopFeral
+		zombieArleneFeral
+		zombieMaleHazmat
+		zombieNurseRadiated
+		zombieMutated, .4
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3725']">
+		zombieYoRadiated
+		zombieNurseFeral
+		zombieFemaleFat
+		zombieSpider, .6
+		zombieNurse
+		zombieSoldier
+		zombieSpiderRadiated, .6
+		animalZombieVulture, .3
+		zombieBoeFeral
+		zombieJoeRadiated
+		zombieBikerRadiated
+		zombieBikerFeral
+		zombieUtilityWorkerFeral
+		zombieWightRadiated
+		zombieMutated, .4
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3743']">
+		zombieFemaleFat
+		zombieArleneRadiated
+		zombieMarleneRadiated
+		zombieSoldierRadiated
+		zombieBusinessManFeral
+		zombieBoe
+		zombieTomClark
+		zombieMutated, .5
+		animalZombieDog
+		zombieSkateboarder
+		zombieWightRadiated
+		zombieSkateboarderFeral
+		zombieSoldier
+		animalZombieVultureRadiated, .3
+		zombieJoe
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3779']">
+		zombieDarlene
+		zombieSteveFeral
+		zombieLumberjack
+		zombieMoeRadiated
+		zombieJanitorFeral
+		zombiePartyGirlFeral
+		zombieArlene
+		zombieMutated, .4
+		zombieTomClarkFeral
+		zombieMoeFeral
+		zombieFatCop
+		zombieFatHawaiianFeral
+		zombieFatHawaiianRadiated
+		zombieUtilityWorkerFeral
+		zombieSkateboarderRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3832']">
+		zombieDarleneFeral
+		zombieSteveRadiated
+		zombieNurseFeral
+		zombieMaleHazmat
+		zombieSpider, .6
+		zombieLumberjack
+		zombieJoeFeral
+		zombieYoFeral
+		zombieMaleHazmatFeral
+		zombieMutated, .5
+		zombieSoldierRadiated
+		zombieBusinessMan
+		zombiePartyGirlFeral
+		zombieJoeRadiated
+		zombieMaleHazmatRadiated
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3886']">
+		zombieJoeFeral
+		zombieJoeRadiated
+		zombieJanitorFeral
+		zombieSoldierRadiated
+		zombieArleneFeral
+		zombieBiker
+		zombieWightFeral
+		zombieMutated, .5
+		zombiePartyGirl
+		zombieBoeRadiated
+		zombieFatCopRadiated
+		zombieSkateboarderRadiated
+		zombieSoldier
+		zombieMarleneFeral
+		zombieFatHawaiianFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3958']">
+		zombieFatHawaiianRadiated
+		zombieFatCopRadiated
+		zombiePartyGirl
+		zombieMoe
+		zombieFatCop
+		animalZombieDog
+		zombieMutated, .4
+		zombieLumberjackRadiated
+		zombieBusinessMan
+		zombieMarleneRadiated
+		zombieJanitorFeral
+		zombieBusinessManFeral
+		zombieTomClarkFeral
+		zombieFatHawaiian
+		zombieSoldierFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3976']">
+		zombieMutated, .5
+		animalZombieVulture, .3
+		zombieMutated, .4
+		zombieSoldierRadiated
+		zombieSteveFeral
+		zombieSpiderFeral, .6
+		zombieFatHawaiianFeral
+		zombieFemaleFat
+		zombieFatHawaiianRadiated
+		zombieUtilityWorker
+		zombieWightFeral
+		zombieLumberjackRadiated
+		zombieDarleneFeral
+		zombieJanitor
+		zombieDarlene
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3995']">
+		zombiePartyGirl
+		zombieYoFeral
+		animalZombieDog
+		zombieSkateboarderFeral
+		zombieFemaleFatRadiated
+		zombieUtilityWorker
+		zombieBiker
+		zombieYoRadiated
+		zombieJoeRadiated
+		zombieTomClark
+		zombieMarleneRadiated
+		zombieFatCop
+		zombieFatCopFeral
+		zombieJoe
+		zombieMutated, .5
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS4013']">
+		zombieLumberjackFeral
+		zombieDarleneRadiated
+		zombieSpiderRadiated, .6
+		zombieYoFeral
+		zombieSpider, .6
+		zombieFatCop
+		zombieMaleHazmatFeral
+		zombieFatHawaiian
+		zombieWightFeral
+		zombieMutated, .4
+		zombieFatCopFeral
+		zombieBoeFeral
+		zombieDarleneFeral
+		zombieArleneFeral
+		zombieJoeFeral
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS4067']">
+		zombieMaleHazmat
+		zombieDarlene
+		zombieBikerFeral
+		zombieJanitorRadiated
+		zombieFatCop
+		zombieMaleHazmatFeral
+		zombieSoldierRadiated
+		zombieFemaleFat
+		zombieTomClarkFeral
+		zombieNurse
+		zombieFatCopFeral
+		zombieSoldierFeral
+		zombieMarleneFeral
+		zombieBikerRadiated
+		zombieMutated, .5
+  </set>
+  <set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS4086']">
+		zombieSpiderFeral, .6
+		zombieSkateboarderFeral
+		zombieMutated, .5
+		zombieUtilityWorkerFeral
+		zombieMaleHazmatRadiated
+		zombieTomClark
+		zombieSoldierFeral
+		zombieSoldier
+		animalZombieVulture, .3
+		zombieSoldierRadiated
+		zombieArlene
+		animalZombieVultureRadiated, .3
+		zombieSkateboarderRadiated
+		zombieFatCop
+		zombieDarleneFeral
+  </set>
 </configs>

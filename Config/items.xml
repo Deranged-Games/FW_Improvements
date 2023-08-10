@@ -63,76 +63,10 @@
         <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
       </effect_group>
     </item>
-
-    <!-- Adding Snowberries. -->
-    <item name="foodCropSnowberries">
-      <property name="Tags" value="food"/>
-      <property name="HoldType" value="31"/>
-      <property name="DisplayType" value="foodRaw"/>
-      <property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="Material" value="MresourceCrop"/>
-      <property name="Stacknumber" value="125"/> <!-- STK resource -->
-      <property name="EconomicValue" value="10"/>
-      <property name="EconomicBundleSize" value="5"/>
-      <property name="CraftingIngredientTime" value="30"/>
-      <property name="CustomIcon" value="foodCropBlueberries"/>
-      <property name="CustomIconTint" value="ff1010"/>
-      <property class="Action0">
-        <property name="Class" value="Eat"/>
-        <property name="Delay" value="1.0"/>
-        <property name="Use_time" value="..."/>
-        <property name="Sound_start" value="player_eating"/>
-      </property>
-      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-
-      <effect_group tiered="false" name="Food Tier 0">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-      </effect_group>
-    </item>
-    <item name="drinkJarWine">
-      <property name="HoldType" value="3"/>
-      <property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
-      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-      <property name="Material" value="Mglass"/>
-      <property name="Weight" value="10"/>
-      <property name="Stacknumber" value="10"/> <!-- STK drink -->
-      <property name="EconomicValue" value="200"/>
-      <property name="UnlockedBy" value="perkMasterChef,drinkJarBeerSchematic"/>
-      <property name="DisplayType" value="waterBeer"/>
-      <property name="Group" value="Food/Cooking,CFDrink/Cooking,Medical"/>
-      <property name="CustomIcon" value="drinkJarRiverWater"/>
-      <property name="CustomIconTint" value="ff30a0"/>
-      <property class="Action0">
-        <property name="Class" value="Eat"/>
-        <property name="Delay" value="2"/>
-        <property name="Use_time" value="..."/>
-        <property name="Sound_start" value="player_drinking"/>
-        <property name="Create_item" value="drinkJarEmpty"/>
-      </property>
-      <effect_group tiered="false" name="Drink Tier 3">
-        <requirement name="NotHasBuff" buff="buffIsOnFire"/>
-        <display_value name="dStaminaRegen" value=".4"/>
-        <display_value name="dEntityDamageBrawling" value="3"/>
-        <display_value name="dStunResist" value="1"/>
-        <display_value name="dDuration" value="180"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="add" value="180"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="set" value="600">
-          <requirement name="CVarCompare" cvar="$buffBeerDuration" operation="GT" value="180"/>
-        </triggered_effect>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffBeer"/>
-      </effect_group>
-
-      <effect_group tiered="false">
-        <requirement name="HasBuff" buff="buffIsOnFire"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
-      </effect_group>
-    </item>
   </append>
 
   <!-- Append types to acid group for campfire crafting. -->
-  <append xpath="/items/item[@name='resourceAcid']/property[@name='Group']/@value">,Chemicals,CFChemicals</append>
+  <append xpath="/items/item[@name='resourceAcid']/property[@name='Group']/@value">,CFChemicals</append>
 
   <!-- Append Steel Ammo to Weapons. -->
   <append xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
@@ -242,35 +176,6 @@
   <set xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group/passive_effect[@name='MaxRange']/@value">20</set>
   <set xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group/passive_effect[@name='SpreadDegreesVertical']/@value">1.2</set>
   <set xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group/passive_effect[@name='SpreadDegreesHorizontal']/@value">1.2</set>
-
-  <!-- Water from sinks -->
-  <append xpath="/items/item[@name='drinkJarEmpty']/property[@class='Action1']">
-    <property name="Focused_blockname_6" value="pedestalSink" />
-    <property name="Focused_blockname_7" value="utilitySink" />
-    <property name="Focused_blockname_8" value="wallMountSinkCommercial" />
-    <property name="Focused_blockname_9" value="counterMountedSinkCommercial" />
-    <property name="Focused_blockname_11" value="cntCabinetOldSink"/>
-    <property name="Focused_blockname_12" value="cntGraniteSink"/>
-    <property name="Focused_blockname_13" value="drinkingfountainSingle"/>
-    <property name="Focused_blockname_14" value="drinkingfountainDouble"/>
-    <property name="Focused_blockname_15" value="cntToilet02"/>
-    <property name="Focused_blockname_16" value="cntToilet01"/>
-    <property name="Focused_blockname_17" value="cntToilet03"/>
-    <property name="Focused_blockname_18" value="urinalCommercialMounted"/>
-  </append>
-
-  <!-- I want my jars back -->
-  <append xpath="/items/item[@name='drugHerbalAntibiotics']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-  <append xpath="/items/item[@name='drugAntibiotics']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-  <append xpath="/items/item[@name='foodEggBoiled']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-  <append xpath="/items/item[@name='foodBlueberryPie']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-  <append xpath="/items/item[@name='foodBoiledMeat']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-  <append xpath="/items/item[@name='foodCornBread']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-  <append xpath="/items/item[@name='foodCornOnTheCob']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-  <append xpath="/items/item[@name='foodHoboStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-  <append xpath="/items/item[@name='foodMeatStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-  <append xpath="/items/item[@name='foodVegetableStew']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
-  <append xpath="/items/item[@name='drugRecog']/property[@class='Action0']"><property name="Create_item" value="drinkJarEmpty"/></append>
 
   <!-- Ok, food values are big imbalanced -->
   <set xpath="/items/item[@name='foodCharredMeat']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>

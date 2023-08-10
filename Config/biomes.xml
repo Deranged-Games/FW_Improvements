@@ -1,7 +1,7 @@
 <configs>
   <append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.31']/decorations">
-    <decoration type="block" blockname="plantedHop3Harvest" prob="0.1" rotatemax="7"/>
-    <decoration type="block" blockname="plantedPotato3Harvest" prob="0.2" rotatemax="7"/>
+    <decoration type="block" blockname="plantedHop3Harvest" prob="0.05" rotatemax="7"/>
+    <decoration type="block" blockname="plantedPotato3Harvest" prob="0.1" rotatemax="7"/>
   </append>
   <append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.392']/decorations">
     <decoration type="block" blockname="plantedCorn3Harvest" prob="0.003" rotatemax="7"/>

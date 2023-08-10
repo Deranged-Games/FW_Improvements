@@ -12,5 +12,4 @@
       </effect_group>
     </buff>
   </append>
-  <remove xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group/passive_effect[@name='HealthMax']" />
 </configs>

@@ -23,11 +23,6 @@
       <ingredient name="resourceGunPowder" count="3"/>
       <ingredient name="resourceBulletCasingSteel" count="1"/>
     </recipe>
-    <recipe name="modernCookingHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
-      <ingredient name="resourceForgedIron" count="10"/>
-      <ingredient name="resourceElectricParts" count="4"/>
-      <ingredient name="resourceMetalPipe" count="1"/>
-    </recipe>
     <recipe name="resourceElectricParts" count="1" craft_area="workbench" tags="perkAdvancedEngineering">
       <ingredient name="resourceForgedIron" count="2"/>
       <ingredient name="resourceScrapPolymers" count="5"/>
@@ -160,27 +155,13 @@
       <ingredient name="resourceOil" count="4"/>
       <ingredient name="resourceMechanicalParts" count="10"/>
     </recipe>
-    <recipe name="drinkJarWine" count="1" craft_area="chemistryStation" tags="perkMasterChef,learnable,chemStationCrafting">
-      <ingredient name="foodCropSnowberries" count="10"/>
-      <ingredient name="drinkJarBoiledWater" count="1"/>
-      <effect_group>
-        <passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-2" tags="foodCropSnowberries"/>
-      </effect_group>
-    </recipe>
   </append>
-
-  <!-- Fermentation is done in CLEAN WATER -->
-  <set xpath="/recipes/recipe[@name='drinkJarBeer']/ingredient[@name='drinkJarRiverWater']/@name">drinkJarBoiledWater</set>
 
   <!-- Why so much tape and glue? -->
   <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='2']/@count">1</set>
   <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='3']/@count">1</set>
   <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='4']/@count">2</set>
   <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='5']/@count">2</set>
-  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='6']/@count">3</set>
-  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='7']/@count">3</set>
-  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='8']/@count">4</set>
-  <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='9']/@count">4</set>
   <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='10']/@count">5</set>
   <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='20']/@count">10</set>
   <set xpath="/recipes/recipe/ingredient[@name='resourceDuctTape' and @count='25']/@count">12</set>
