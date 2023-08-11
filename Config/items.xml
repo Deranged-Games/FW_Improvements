@@ -8,7 +8,7 @@
       <property name="CustomIconTint" value="a0a0ff"/>
       <property name="DescriptionKey" value="resourceBulletCasingSteelDesc"/>
       <property name="Material" value="MresourceScrapIron"/>
-      <property name="Stacknumber" value="500"/> <!-- STK resource -->
+      <property name="Stacknumber" value="500"/>
       <property name="EconomicValue" value="10"/>
       <property name="EconomicBundleSize" value="10"/>
       <property name="Group" value="Resources,Ammo/Weapons"/>
@@ -86,63 +86,25 @@
   <append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
 
   <!-- Parts unlocked by perks -->
-  <insertAfter xpath="/items/item[@name='gunRifleT1HuntingRifleParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkDeadEye"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeWpnSpearT3SteelSpearParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkJavelinMaster"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='gunShotgunT1DoubleBarrelParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkBoomstick"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeWpnClubT3SteelClubParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkPummelPete"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkSkullCrusher"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnucklesParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkBrawler"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeToolAxeT3ChainsawParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkMiner69r"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeToolAllSteelParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkMiner69r"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkMachineGunner"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='gunBowT1WoodenBowParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkArchery"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='gunHandgunT1PistolParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkGunslinger"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeWpnBladeT3MacheteParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkDeepCuts"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeWpnBatonT2StunBatonParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkElectrocutioner"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='gunBotRoboticsParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkTurrets"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='armorSteelSetParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkHeavyArmor"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='armorMilitarySetParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkLightArmor"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='gunExplosivesT3RocketLauncherParts']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkDemolitionsExpert"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='solarCell']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkAdvancedEngineering"/>
-  </insertAfter>
-  <insertAfter xpath="/items/item[@name='smallEngine']/property[@name='Material']">
-    <property name="UnlockedBy" value="perkGreaseMonkey"/>
-  </insertAfter>
+  <insertAfter xpath="/items/item[@name='gunRifleT1HuntingRifleParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingRifles"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeWpnSpearT3SteelSpearParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingSpears"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='gunShotgunT1DoubleBarrelParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingShotguns"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeWpnClubT3SteelClubParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingClubs"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingSledgehammers"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnucklesParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingKnuckles"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeToolAxeT3ChainsawParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingHarvestingTools"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeToolAllSteelParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingHarvestingTools"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='Material']"><property name="UnlockedBy" value="craftingMachineGuns"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='gunBowT1WoodenBowParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingBows"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='gunHandgunT1PistolParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingHandguns"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeWpnBladeT3MacheteParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingBlades"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='meleeWpnBatonT2StunBatonParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingRobotics"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='gunBotRoboticsParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingRobotics"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='armorSteelSetParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingArmor"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='armorMilitarySetParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingArmor"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='gunExplosivesT3RocketLauncherParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingExplosives"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='solarCell']/property[@name='Material']"><property name="UnlockedBy" value="craftingElectrician"/></insertAfter>
+  <insertAfter xpath="/items/item[@name='smallEngine']/property[@name='Material']"><property name="UnlockedBy" value="craftingVehicles"/></insertAfter>
 
   <!-- Reduce sensible block damage for zombies. -->
   <append xpath="/items/item[starts-with (@name,'meleeHandZombie')]/effect_group">

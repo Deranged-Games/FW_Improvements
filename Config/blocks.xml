@@ -43,7 +43,7 @@
 
   <!-- Unlock Solar Bank with Advanced Engineering -->
   <append xpath="/blocks/block[@name='solarbank']">
-    <property name="UnlockedBy" value="perkAdvancedEngineering"/>
+    <property name="UnlockedBy" value="craftingElectrician"/>
   </append>
 
   <!-- Crushed cars are still cars -->
