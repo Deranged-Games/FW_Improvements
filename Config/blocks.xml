@@ -69,4 +69,22 @@
   <remove xpath="/blocks/block[@name='steelGarageDoor4x3White']/drop"/>
   <remove xpath="/blocks/block[@name='steelGarageDoor5x3White']/drop"/>
   <remove xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']/drop"/>
+
+	<!-- Heat Map changes -->
+  <set xpath="/blocks/block[@name='wallTorchLightPlayer']/property[@name='HeatMapTime']/@value">1000</set>
+  <set xpath="/blocks/block[@name='candleWallLightPlayer']/property[@name='HeatMapTime']/@value">1000</set>
+  <set xpath="/blocks/block[@name='burningBarrelPlayer']/property[@name='HeatMapStrength']/@value">2</set>
+  <set xpath="/blocks/block[@name='burningBarrelPlayer']/property[@name='HeatMapTime']/@value">1000</set>
+  <set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapStrength']/@value">3</set>
+  <set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapTime']/@value">2000</set>
+  <set xpath="/blocks/block[@name='cntDewCollector']/property[@name='HeatMapStrength']/@value">0.5</set>
+  <set xpath="/blocks/block[@name='cntDewCollector']/property[@name='HeatMapTime']/@value">1000</set>
+  <set xpath="/blocks/block[@name='forge']/property[@name='HeatMapStrength']/@value">5</set>
+  <set xpath="/blocks/block[@name='forge']/property[@name='HeatMapTime']/@value">3000</set>
+  <set xpath="/blocks/block[@name='workbench']/property[@name='HeatMapStrength']/@value">1</set>
+  <set xpath="/blocks/block[@name='workbench']/property[@name='HeatMapTime']/@value">1000</set>
+  <set xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapStrength']/@value">2</set>
+  <set xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapTime']/@value">1000</set>
+  <set xpath="/blocks/block[@name='chemistryStation']/property[@name='HeatMapStrength']/@value">2</set>
+  <set xpath="/blocks/block[@name='chemistryStation']/property[@name='HeatMapTime']/@value">2000</set>
 </configs>

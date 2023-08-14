@@ -236,4 +236,8 @@
   <remove xpath="/recipes/recipe[starts-with (@name,'melee')]/effect_group/passive_effect[@name='CraftingIngredientCount']" />
   <remove xpath="/recipes/recipe[starts-with (@name,'gun')]/effect_group/passive_effect[@name='CraftingIngredientCount']" />
   <remove xpath="/recipes/recipe[starts-with (@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount']" />
+
+  <!-- Artifically limiting basic needs by implementation of a very specific resource through RNG is lazy -->
+  <remove xpath="/recipes/recipe[@name='cntDewCollector']/ingredient[@name='resourceWaterFilter']" />
+  <!-- By removing jars, and using this BS above, Fun Pimps are leaning players into pro-active raid or die situations -->
 </configs>
