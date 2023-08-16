@@ -155,6 +155,12 @@
       <ingredient name="resourceOil" count="4"/>
       <ingredient name="resourceMechanicalParts" count="10"/>
     </recipe>
+    <recipe name="drinkJarRiverWater" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,perkChefBoiledWater,boiledWater">
+      <ingredient name="resourceSnowBall" count="10"/>
+    </recipe>
+    <recipe name="drinkJarRiverWater" count="1" craft_area="campfire" craft_tool="toolBeaker" tags="perkMasterChef,perkChefBoiledWater,boiledWater">
+      <ingredient name="resourceYuccaFibers" count="250"/>
+    </recipe>
   </append>
 
   <!-- Why so much tape and glue? -->
@@ -171,16 +177,16 @@
   <!-- I dont want to use a gun made with duct tape -->
   <remove xpath="/recipes/recipe[starts-with (@name,'gun')]/ingredient[@name='resourceDuctTape']" />
 
-    <!-- Uhhhhh, what the actual fuck -->
+  <!-- Uhhhhh, what the actual fuck -->
   <set xpath="/recipes/recipe[@name='modArmorHelmetLight']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
 
   <!-- ======================================= Starting the stupidly specific stuff. ======================================= -->
-  <set xpath="/recipes/recipe[@name='drinkJarBeer']/ingredient[@name='resourceCropHopsFlower']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='drinkJarBeer']/ingredient[@name='resourceCropHopsFlower']/@count">4</set>
 
-  <set xpath="/recipes/recipe[@name='drinkYuccaJuiceSmoothie']/ingredient[@name='foodCropYuccaFruit']/@count">2</set>
-  <set xpath="/recipes/recipe[@name='drinkYuccaJuiceSmoothie']/ingredient[@name='foodCropBlueberries']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='drinkYuccaJuiceSmoothie']/ingredient[@name='foodCropYuccaFruit']/@count">3</set>
+  <set xpath="/recipes/recipe[@name='drinkYuccaJuiceSmoothie']/ingredient[@name='foodCropBlueberries']/@count">3</set>
 
-  <set xpath="/recipes/recipe[@name='drugAntibiotics' and @craft_area='campfire']/ingredient[@name='foodShamSandwich']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='drugAntibiotics' and @craft_area='campfire']/ingredient[@name='foodShamSandwich']/@count">3</set>
 
   <set xpath="/recipes/recipe[@name='drugFortBites']/ingredient[@name='medicalBloodBag']/@count">1</set>
   <set xpath="/recipes/recipe[@name='drugFortBites']/ingredient[@name='foodRottingFlesh']/@count">5</set>
@@ -192,27 +198,37 @@
 
   <set xpath="/recipes/recipe[@name='drugHerbalAntibiotics' and @craft_area='chemistryStation']/ingredient[@name='foodCropBlueberries']/@count">1</set>
 
-  <set xpath="/recipes/recipe[@name='foodBlueberryPie']/ingredient[@name='foodCropBlueberries']/@count">3</set>
+  <set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']/@count">4</set>
+  <set xpath="/recipes/recipe[@name='foodBoiledMeat']/ingredient[@name='foodRawMeat']/@count">4</set>
+  <set xpath="/recipes/recipe[@name='foodCharredMeat']/ingredient[@name='foodRawMeat']/@count">4</set>
+  <set xpath="/recipes/recipe[@name='foodChiliDog']/ingredient[@name='foodRawMeat']/@count">3</set>
+  <set xpath="/recipes/recipe[@name='foodGrilledMeat']/ingredient[@name='foodRawMeat']/@count">4</set>
 
-  <set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']/@count">2</set>
-  <set xpath="/recipes/recipe[@name='foodBoiledMeat']/ingredient[@name='foodRawMeat']/@count">3</set>
-  <set xpath="/recipes/recipe[@name='foodCharredMeat']/ingredient[@name='foodRawMeat']/@count">3</set>
-  <set xpath="/recipes/recipe[@name='foodChiliDog']/ingredient[@name='foodRawMeat']/@count">2</set>
-  <set xpath="/recipes/recipe[@name='foodGrilledMeat']/ingredient[@name='foodRawMeat']/@count">3</set>
-
-  <set xpath="/recipes/recipe[@name='foodMeatStew']/ingredient[@name='foodRawMeat']/@count">3</set>
+  <set xpath="/recipes/recipe[@name='foodMeatStew']/ingredient[@name='foodRawMeat']/@count">4</set>
   <set xpath="/recipes/recipe[@name='foodMeatStew']/ingredient[@name='foodCropPotato']/@count">2</set>
   <set xpath="/recipes/recipe[@name='foodMeatStew']/ingredient[@name='foodCropCorn']/@count">2</set>
 
-  <set xpath="/recipes/recipe[@name='foodShamChowder']/ingredient[@name='foodCropPotato']/@count">2</set>
-  <set xpath="/recipes/recipe[@name='foodShamChowder']/ingredient[@name='foodCropCorn']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='foodSteakAndPotato']/ingredient[@name='foodRawMeat']/@count">4</set>
+  <set xpath="/recipes/recipe[@name='foodSteakAndPotato']/ingredient[@name='foodCropMushrooms']/@count">1</set>
 
-  <set xpath="/recipes/recipe[@name='foodSteakAndPotato']/ingredient[@name='foodRawMeat']/@count">3</set>
-  <set xpath="/recipes/recipe[@name='foodSteakAndPotato']/ingredient[@name='foodCropPotato']/@count">1</set>
+  <set xpath="/recipes/recipe[@name='foodCornBread']/@count">4</set>
+  <set xpath="/recipes/recipe[@name='foodCornBread']/ingredient[@name='foodCornMeal']/@count">4</set>
+  <remove xpath="/recipes/recipe[@name='foodCornBread']/ingredient[@name='drinkJarBoiledWater']" />
+  <append xpath="/recipes/recipe[@name='foodCornBread']">
+    <ingredient name="resourceAnimalFat" count="1"/>
+    <ingredient name="foodEgg" count="2"/>
+  </append>
 
-  <set xpath="/recipes/recipe[@name='foodVegetableStew']/ingredient[@name='foodCropPotato']/@count">2</set>
-  <set xpath="/recipes/recipe[@name='foodVegetableStew']/ingredient[@name='foodCropCorn']/@count">2</set>
-  <set xpath="/recipes/recipe[@name='foodVegetableStew']/ingredient[@name='foodCropMushrooms']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='foodBlueberryPie']/ingredient[@name='foodCropBlueberries']/@count">4</set>
+  <set xpath="/recipes/recipe[@name='foodBlueberryPie']/ingredient[@name='foodCornMeal']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='foodBlueberryPie']/ingredient[@name='foodEgg']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='foodBlueberryPie']/ingredient[@name='resourceAnimalFat']/@count">2</set>
+  <remove xpath="/recipes/recipe[@name='foodBlueberryPie']/ingredient[@name='drinkJarBoiledWater']" />
+
+  <set xpath="/recipes/recipe[@name='foodPumpkinPie']/ingredient[@name='foodCornMeal']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='foodPumpkinPie']/ingredient[@name='foodEgg']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='foodPumpkinPie']/ingredient[@name='resourceAnimalFat']/@count">2</set>
+  <remove xpath="/recipes/recipe[@name='foodPumpkinPie']/ingredient[@name='drinkJarBoiledWater']" />
 
   <!-- Crop to seed ratios -->
   <set xpath="/recipes/recipe[@name='plantedAloe1']/ingredient[@name='resourceCropAloeLeaf']">1</set>

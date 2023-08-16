@@ -70,6 +70,9 @@
   <remove xpath="/blocks/block[@name='steelGarageDoor5x3White']/drop"/>
   <remove xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']/drop"/>
 
+  <!-- Remove purifier from dew collector drop -->
+  <remove xpath="/blocks/block[@name='cntDewCollector']/drop[@event='Destroy']"/>
+
 	<!-- Heat Map changes -->
   <set xpath="/blocks/block[@name='wallTorchLightPlayer']/property[@name='HeatMapTime']/@value">1000</set>
   <set xpath="/blocks/block[@name='candleWallLightPlayer']/property[@name='HeatMapTime']/@value">1000</set>

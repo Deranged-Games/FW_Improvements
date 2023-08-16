@@ -139,6 +139,10 @@
   <set xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group/passive_effect[@name='SpreadDegreesVertical']/@value">1.2</set>
   <set xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group/passive_effect[@name='SpreadDegreesHorizontal']/@value">1.2</set>
 
+  <!-- I want my jars back -->
+  <append xpath="/items/item[@name='foodBoiledMeat']/property[@class='Action0']"><property name="Create_item" value="drinkJarRiverWater"/></append>
+  <append xpath="/items/item[@name='foodEggBoiled']/property[@class='Action0']"><property name="Create_item" value="drinkJarRiverWater"/></append>
+
   <!-- Ok, food values are big imbalanced -->
   <set xpath="/items/item[@name='foodCharredMeat']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>
   <set xpath="/items/item[@name='foodGrilledMeat']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">20</set>
@@ -146,22 +150,22 @@
   <set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">20</set>
 
   <!-- Water is more scarce, so lets make it more effective -->
-  <set xpath="/items/item[@name='drinkJarRiverWater']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">30</set>
-  <set xpath="/items/item[@name='drinkJarBoiledWater']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">40</set>
-  <set xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">50</set>
-  <set xpath="/items/item[@name='drinkJarYuccaJuice']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">40</set>
-  <set xpath="/items/item[@name='drinkJarGoldenRodTea']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">40</set>
-  <set xpath="/items/item[@name='drinkJarRedTea']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">40</set>
+  <set xpath="/items/item[@name='drinkJarRiverWater']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">20</set>
+  <set xpath="/items/item[@name='drinkJarBoiledWater']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">30</set>
+  <set xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">40</set>
+  <set xpath="/items/item[@name='drinkJarYuccaJuice']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">30</set>
+  <set xpath="/items/item[@name='drinkJarGoldenRodTea']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">30</set>
+  <set xpath="/items/item[@name='drinkJarRedTea']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">30</set>
   <set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">20</set>
-  <set xpath="/items/item[@name='drinkCanMegaCrush']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">20</set>
+  <set xpath="/items/item[@name='drinkCanMegaCrush']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">15</set>
   <set xpath="/items/item[@name='drinkJarCoffee']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">20</set>
-  <set xpath="/items/item[@name='drinkJarBlackStrapCoffee']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">20</set>
+  <set xpath="/items/item[@name='drinkJarBlackStrapCoffee']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">15</set>
 
-  <set xpath="/items/item[@name='foodCanMiso']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">20</set>
-  <set xpath="/items/item[@name='foodCanPeas']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">20</set>
+  <set xpath="/items/item[@name='foodCanMiso']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">15</set>
+  <set xpath="/items/item[@name='foodCanPeas']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">15</set>
   <set xpath="/items/item[@name='foodCanPears']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">10</set>
-  <set xpath="/items/item[@name='foodCanSoup']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">20</set>
-  <set xpath="/items/item[@name='foodCanStock']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">20</set>
+  <set xpath="/items/item[@name='foodCanSoup']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">15</set>
+  <set xpath="/items/item[@name='foodCanStock']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">15</set>
 
   <!-- Autoshotty is not auto.. and baddy -->
   <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">210</set>
