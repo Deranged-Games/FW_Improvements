@@ -161,6 +161,18 @@
     <recipe name="drinkJarRiverWater" count="1" craft_area="campfire" craft_tool="toolBeaker" tags="perkMasterChef,perkChefBoiledWater,boiledWater">
       <ingredient name="resourceYuccaFibers" count="250"/>
     </recipe>
+    <recipe name="bunkBedMade" count="1">
+      <ingredient name="resourceCloth" count="60"/>
+      <ingredient name="resourceCropCottonPlant" count="20"/>
+      <ingredient name="resourceSpring" count="10"/>
+      <ingredient name="resourceForgedIron" count="5"/>
+      <ingredient name="resourceMetalPipe" count="5"/>
+    </recipe>
+    <recipe name="cntLootChest_PlayerVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="resourceForgedIron" count="40"/>
+      <ingredient name="resourceSpring" count="5"/>
+      <ingredient name="resourceMechanicalParts" count="5"/>
+    </recipe>
   </append>
 
   <!-- Why so much tape and glue? -->
@@ -188,7 +200,9 @@
   <set xpath="/recipes/recipe[@name='modGunReflexSight']/ingredient[@name='resourceForgedSteel']/@count">5</set>
   <set xpath="/recipes/recipe[@name='modGunScopeMedium']/ingredient[@name='resourceForgedSteel']/@count">5</set>
 
-  <!-- ======================================= Starting the stupidly specific stuff. ======================================= -->
+  <!-- Starting the stupidly specific stuff. -->
+  <set xpath="/recipes/recipe[@name='bed02']/ingredient[@name='resourceWood']/@count">50</set>
+
   <set xpath="/recipes/recipe[@name='drinkJarBeer']/ingredient[@name='resourceCropHopsFlower']/@count">4</set>
 
   <set xpath="/recipes/recipe[@name='drinkYuccaJuiceSmoothie']/ingredient[@name='foodCropYuccaFruit']/@count">3</set>

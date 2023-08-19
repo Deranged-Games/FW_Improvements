@@ -1,15 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
   <append xpath="/buffs">
-    <buff name="Sleeping2"  name_key="Sleeping" description_key="Sleeping in a bed keeps you comfortable and slowly regenerates health." tooltip_key="You're resting in a bed" icon="ui_game_symbol_map_bed">
+    <buff name="Sleeping"  name_key="Sleeping" description_key="Sleeping in a bedroll slowly regenerates health." tooltip_key="You're resting in a bedroll" icon="ui_game_symbol_map_bed">
+      <stack_type value="ignore"/>
+      <duration value="1"/>
+      <effect_group>
+        <passive_effect name="HypothermalResist" operation="base_add" value="10"/>
+        <passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
+        <passive_effect name="HealthChangeOT" operation="base_add" value="0.1"/>
+      </effect_group>
+    </buff>
+    <buff name="Sleeping2"  name_key="Sleeping" description_key="Sleeping in a bed slowly regenerates health and provides cold resistance." tooltip_key="You're resting in a bed" icon="ui_game_symbol_map_bed">
       <stack_type value="ignore"/>
       <duration value="1"/>
       <effect_group>
         <passive_effect name="HypothermalResist" operation="base_add" value="30"/>
         <passive_effect name="HyperthermalResist" operation="base_add" value="30"/>
-        <passive_effect name="HealthChangeOT" operation="base_add" value="0.5"/>
-        <passive_effect name="FoodLossPerHealthPointLost" operation="perc_add" value="-0.5"/>
+        <passive_effect name="HealthChangeOT" operation="base_add" value="0.25"/>
       </effect_group>
     </buff>
+  </append>
+
+  <append xpath="/buffs/buff[@name='buffElementCold']/effect_group">
+    <passive_effect name="RunSpeed" operation="perc_subtract" value=".1"/>
+    <passive_effect name="WalkSpeed" operation="perc_subtract" value=".1"/>
+    <passive_effect name="CrouchSpeed" operation="perc_subtract" value=".1"/>
+    <passive_effect name="JumpStrength" operation="perc_subtract" value=".1"/>
+    <passive_effect name="AttacksPerMinute" operation="perc_subtract" value=".1"/>
+  </append>
+  <append xpath="/buffs/buff[@name='buffElementFreezing']/effect_group">
+    <passive_effect name="RunSpeed" operation="perc_subtract" value=".3"/>
+    <passive_effect name="WalkSpeed" operation="perc_subtract" value=".3"/>
+    <passive_effect name="CrouchSpeed" operation="perc_subtract" value=".3"/>
+    <passive_effect name="JumpStrength" operation="perc_subtract" value=".3"/>
+    <passive_effect name="AttacksPerMinute" operation="perc_subtract" value=".3"/>
   </append>
 </configs>

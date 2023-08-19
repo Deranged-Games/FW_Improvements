@@ -1,51 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
+  <append xpath="/lootcontainers">
+    <lootcontainer name="ammoCarton" size="8,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="1" loot_quality_template="qualBaseTemplate">
+      <item group="groupAmmoSmallNoArrow" />
+    </lootcontainer>
+		<lootcontainer name="chestT4NOPOP" count="0" size="8,8" sound_open="UseActions/chest_tier4_open" sound_close="UseActions/chest_tier4_close" loot_quality_template="qualBaseTemplate"/>
+		<lootcontainer name="chestT5NOPOP" count="0" size="8,8" sound_open="UseActions/chest_tier5_open" sound_close="UseActions/chest_tier5_close" loot_quality_template="qualBaseTemplate"/>
+  </append>
+
   <setattribute xpath="/lootcontainers/lootcontainer[@name='sinks']" name="size">8,6</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@name='cupboard']" name="size">8,6</setattribute>
-  <setattribute xpath="/lootcontainers/lootcontainer[@name='woodenDesk']" name="size">8,6</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@name='woodenDeskNOPOP']" name="size">8,6</setattribute>
-  <setattribute xpath="/lootcontainers/lootcontainer[@name='metalDesk']" name="size">8,6</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@name='metalDeskNOPOP']" name="size">8,6</setattribute>
-  <setattribute xpath="/lootcontainers/lootcontainer[@name='nightstand']" name="size">8,6</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@name='nightstandNOPOP']" name="size">8,6</setattribute>
-  <setattribute xpath="/lootcontainers/lootcontainer[@name='lockers']" name="size">8,9</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@name='lockersNOPOP']" name="size">8,9</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@name='bookcase']" name="size">8,6</setattribute>
   <setattribute xpath="/lootcontainers/lootcontainer[@name='beerCooler']" name="size">8,6</setattribute>
-  <setattribute xpath="/lootcontainers/lootcontainer[@name='medicineCabinet']" name="size">8,6</setattribute>
+	<setattribute xpath="/lootcontainers/lootcontainer[@name='refrigeratorNOPOP']" name="size">8,6</setattribute>
+	<setattribute xpath="/lootcontainers/lootcontainer[@name='laundryNOPOP']" name="size">6,4</setattribute>
+	<setattribute xpath="/lootcontainers/lootcontainer[@name='dishwasherNOPOP']" name="size">6,4</setattribute>
+	<setattribute xpath="/lootcontainers/lootcontainer[@name='playerCooler']" name="size">6,4</setattribute>
+	<setattribute xpath="/lootcontainers/lootcontainer[@name='playerProduce']" name="size">6,4</setattribute>
+	<setattribute xpath="/lootcontainers/lootcontainer[@name='waterCooler']" name="size">6,4</setattribute>
+
+  <!-- Slightly reduce ammo in loot -->
+  <set xpath="/lootcontainers/lootgroup[@name='group9mmSmall']/item[@name='ammo9mmBulletBall']/@count">4,7</set>
+  <set xpath="/lootcontainers/lootgroup[@name='group9mmMedium']/item[@name='ammo9mmBulletBall']/@count">8,15</set>
+  <set xpath="/lootcontainers/lootgroup[@name='group9mmLarge']/item[@name='ammo9mmBulletBall']/@count">20,30</set>
+
+  <set xpath="/lootcontainers/lootgroup[@name='group762mmSmall']/item[@name='ammo762mmBulletBall']/@count">4,7</set>
+  <set xpath="/lootcontainers/lootgroup[@name='group762mmMedium']/item[@name='ammo762mmBulletBall']/@count">8,15</set>
+  <set xpath="/lootcontainers/lootgroup[@name='group762mmLarge']/item[@name='ammo762mmBulletBall']/@count">20,30</set>
+
+  <set xpath="/lootcontainers/lootgroup[@name='group44MagnumSmall']/item[@name='ammo44MagnumBulletBall']/@count">3,5</set>
+  <set xpath="/lootcontainers/lootgroup[@name='group44MagnumMedium']/item[@name='ammo44MagnumBulletBall']/@count">6,10</set>
+  <set xpath="/lootcontainers/lootgroup[@name='group44MagnumLarge']/item[@name='ammo44MagnumBulletBall']/@count">13,20</set>
+
+  <set xpath="/lootcontainers/lootgroup[@name='groupArrowIronSmall']/item[@name='ammoArrowIron']/@count">2,5</set>
+  <set xpath="/lootcontainers/lootgroup[@name='groupArrowIronMedium']/item[@name='ammoArrowIron']/@count">7,10</set>
+  <set xpath="/lootcontainers/lootgroup[@name='groupArrowIronLarge']/item[@name='ammoArrowIron']/@count">12,20</set>
+
+  <set xpath="/lootcontainers/lootgroup[@name='groupCrossbowBoltIronSmall']/item[@name='ammoCrossbowBoltIron']/@count">2,5</set>
+  <set xpath="/lootcontainers/lootgroup[@name='groupCrossbowBoltIronMedium']/item[@name='ammoCrossbowBoltIron']/@count">7,10</set>
+  <set xpath="/lootcontainers/lootgroup[@name='groupCrossbowBoltIronLarge']/item[@name='ammoCrossbowBoltIron']/@count">12,20</set>
 
   <!-- Steel Ammo Added to Loot Tables -->
-  <!-- ammo9mmBulletSteel ammo44MagnumBulletSteel ammo762mmBulletFMJSteel -->
+  <!-- resourceBulletCasingSteel ammo9mmBulletSteel ammo44MagnumBulletSteel ammo762mmBulletFMJSteel -->
   <insertAfter xpath="/lootcontainers/lootgroup[@name='group44MagnumLarge']">
+    <lootgroup name="groupResourceSteelBulletCasingSmall">
+      <item name="resourceBulletCasingSteel" count="5,10" loot_stage_count_mod="0.01"/>
+    </lootgroup>
+    <lootgroup name="groupResourceSteelBulletCasingMedium">
+      <item name="resourceBulletCasingSteel" count="10,15" loot_stage_count_mod="0.01"/>
+    </lootgroup>
+    <lootgroup name="groupResourceSteelBulletCasingLarge">
+      <item name="resourceBulletCasingSteel" count="15,20" loot_stage_count_mod="0.01"/>
+    </lootgroup>
     <lootgroup name="group9mmSmallSteel">
-      <item name="ammo9mmBulletSteel" count="6,8" loot_stage_count_mod="0.01"/>
+      <item name="ammo9mmBulletSteel" count="3,5" loot_stage_count_mod="0.01"/>
     </lootgroup>
     <lootgroup name="group9mmMediumSteel">
-      <item name="ammo9mmBulletSteel" count="10,20" loot_stage_count_mod="0.01"/>
+      <item name="ammo9mmBulletSteel" count="5,12" loot_stage_count_mod="0.01"/>
     </lootgroup>
     <lootgroup name="group9mmLargeSteel">
-      <item name="ammo9mmBulletSteel" count="25,35" loot_stage_count_mod="0.01"/>
+      <item name="ammo9mmBulletSteel" count="12,25" loot_stage_count_mod="0.01"/>
     </lootgroup>
     <lootgroup name="group762mmSmallSteel">
-      <item name="ammo762mmBulletFMJSteel" count="5,7" loot_stage_count_mod="0.01"/>
+      <item name="ammo762mmBulletFMJSteel" count="2,4" loot_stage_count_mod="0.01"/>
     </lootgroup>
     <lootgroup name="group762mmMediumSteel">
-      <item name="ammo762mmBulletFMJSteel" count="8,15" loot_stage_count_mod="0.01"/>
+      <item name="ammo762mmBulletFMJSteel" count="3,10" loot_stage_count_mod="0.01"/>
     </lootgroup>
     <lootgroup name="group762mmLargeSteel">
-      <item name="ammo762mmBulletFMJSteel" count="20,30" loot_stage_count_mod="0.01"/>
+      <item name="ammo762mmBulletFMJSteel" count="8,18" loot_stage_count_mod="0.01"/>
     </lootgroup>
     <lootgroup name="group44MagnumSmallSteel">
-      <item name="ammo44MagnumBulletSteel" count="4,6" loot_stage_count_mod="0.01"/>
+      <item name="ammo44MagnumBulletSteel" count="3,5" loot_stage_count_mod="0.01"/>
     </lootgroup>
     <lootgroup name="group44MagnumMediumSteel">
-      <item name="ammo44MagnumBulletSteel" count="8,12" loot_stage_count_mod="0.01"/>
+      <item name="ammo44MagnumBulletSteel" count="5,10" loot_stage_count_mod="0.01"/>
     </lootgroup>
     <lootgroup name="group44MagnumLargeSteel">
-      <item name="ammo44MagnumBulletSteel" count="16,26" loot_stage_count_mod="0.01"/>
+      <item name="ammo44MagnumBulletSteel" count="9,12" loot_stage_count_mod="0.01"/>
     </lootgroup>
   </insertAfter>
 
+  <append xpath="/lootcontainers/lootgroup[@name='groupAmmoResourcesSmall']">
+	  <item group="groupResourceSteelBulletCasingSmall"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='groupAmmoResourcesMedium']">
+	  <item group="groupResourceSteelBulletCasingMedium"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='groupAmmoResourcesLarge']">
+	  <item group="groupResourceSteelBulletCasingLarge"/>
+  </append>
   <append xpath="/lootcontainers/lootgroup[@name='groupQuestAmmo']">
     <item name="ammo9mmBulletSteel" count="100" loot_prob_template="QuestT1Prob"/>
     <item name="ammo44MagnumBulletSteel" count="75" loot_prob_template="QuestT1Prob"/>

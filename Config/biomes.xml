@@ -1,17 +1,61 @@
 <configs>
+  <!-- Add edible plants to the wild -->
   <append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.31']/decorations">
-    <decoration type="block" blockname="plantedHop3Harvest" prob="0.05" rotatemax="7"/>
-    <decoration type="block" blockname="plantedPotato3Harvest" prob="0.1" rotatemax="7"/>
+    <decoration type="block" blockname="plantedHop3Harvest" prob="0.05" rotatemax="3"/>
+    <decoration type="block" blockname="plantedPotato3Harvest" prob="0.15" rotatemax="3"/>
   </append>
   <append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.392']/decorations">
-    <decoration type="block" blockname="plantedCorn3Harvest" prob="0.003" rotatemax="7"/>
-    <decoration type="block" blockname="plantedCornDead" prob="0.003" rotatemax="7"/>
+    <decoration type="block" blockname="plantedCorn3Harvest" prob="0.003" rotatemax="3"/>
+    <decoration type="block" blockname="plantedCornDead" prob="0.003" rotatemax="3"/>
   </append>
   <append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.412']/decorations">
-    <decoration type="block" blockname="plantedMushroom3Harvest" prob="0.003" rotatemax="7"/>
-    <decoration type="block" blockname="plantedPumpkin3Harvest" prob="0.001" rotatemax="7"/>
+    <decoration type="block" blockname="plantedMushroom3Harvest" prob="0.003" rotatemax="3"/>
+    <decoration type="block" blockname="plantedPumpkin3Harvest" prob="0.001" rotatemax="3"/>
   </append>
   <append xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.24']/decorations">
-    <decoration type="block" blockname="plantedCoffee3Harvest" prob="0.01" rotatemax="7"/>
+    <decoration type="block" blockname="plantedCoffee3Harvest" prob="0.01" rotatemax="3"/>
   </append>
+  <remove xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[@prob='0.3']/decorations/decoration[@blockname='plantedBlueberry3Harvest']"/>
+  <append xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[@prob='0.3']/decorations">
+    <decoration type="block" blockname="plantedBlueberry3Harvest" prob=".002" rotatemax="3"/>
+  </append>
+
+  <!-- Clear skies for burnt forest and wasteland -->
+	<append xpath="/worldgeneration/biomes/biome[@name='burnt_forest']"><spectrum name="pine_forest"/></append>
+  <set xpath="/worldgeneration/biomes/biome[@name='wasteland']/spectrum/@name">pine_forest</set>
+
+  <!-- Weather frequency tweaks -->
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='default']/@prob">60</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='fog']/@prob">5</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='snow']/@prob">25</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='storm']/@prob">10</set>
+
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='default']/@prob">82</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='fog']/@prob">3</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='rain']/@prob">10</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/@prob">5</set>
+
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='default']/@prob">95</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='rain']/@prob">2</set> 
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='storm']/@prob">3</set>
+
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='default']/@prob">90</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='rain']/@prob">5</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='storm']/@prob">5</set>
+
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='default']/@prob">90</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='rain']/@prob">5</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='storm']/@prob">5</set>
+
+  <!-- Lower bloodmoon fog -->
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='bloodMoon']/Fog/@min">3</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='bloodMoon']/Fog/@max">3</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='bloodMoon']/Fog/@min">3</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='bloodMoon']/Fog/@max">3</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='bloodMoon']/Fog/@min">3</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='bloodMoon']/Fog/@max">3</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='bloodMoon']/Fog/@min">3</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='bloodMoon']/Fog/@max">3</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='bloodMoon']/Fog/@min">3</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='bloodMoon']/Fog/@max">3</set>
 </configs>
