@@ -1,22 +1,22 @@
 <configs>
 	<set xpath="/entitygroups/entitygroup[@name='WildGameForest']">
-		animalRabbit, 20
-		animalChicken, 20
-		animalStag, 5
-		animalDoe, 5
-		none, 50
+		animalRabbit, 17
+		animalChicken, 17
+		animalStag, 3
+		animalDoe, 3
+		none, 60
 	</set>
 	<set xpath="/entitygroups/entitygroup[@name='WildGameForestNight']">
 		animalRabbit, 5
 		animalChicken, 5
-		animalStag, 10
-		animalDoe, 10
-		none, 70
+		animalStag, 5
+		animalDoe, 5
+		none, 80
 	</set>	
 	<set xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']">
 		animalSnake, 10
-		animalWolf, 6
-		animalBear, 4
+		animalWolf, 7
+		animalBear, 3
 		none, 80
 	</set>
 	<set xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForest']">
@@ -26,9 +26,10 @@
 		none, 80
 	</set>
 	<set xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">
-		animalZombieVulture, 35
-		animalZombieDog, 35
-		animalZombieBear, 30
+		animalZombieVulture, 30
+		animalZombieDog, 25
+		animalZombieBear, 15
+		none, 30
 	</set>
 
   <set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS36']">

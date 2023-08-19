@@ -76,4 +76,8 @@
 	  <item group="group762mmLargeSteel"/>
 	  <item group="group44MagnumLargeSteel" loot_prob_template="ProbT1Cap"/>
   </append>
+
+  <set xpath="/lootcontainers/lootgroup[@name='groupScrapUncommon']/item[@name='resourceScrapBrass']/@count">40,180</set>
+  <set xpath="/lootcontainers/lootgroup[@name='groupWorkbenchLoot01']/item[@name='resourceScrapBrass']/@count">10,70</set>
+  <set xpath="/lootcontainers/lootgroup[@name='groupForge01']/item[@name='resourceScrapBrass']/@count">20,60</set>
 </configs>

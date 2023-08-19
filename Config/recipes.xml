@@ -178,7 +178,15 @@
   <remove xpath="/recipes/recipe[starts-with (@name,'gun')]/ingredient[@name='resourceDuctTape']" />
 
   <!-- Uhhhhh, what the actual fuck -->
+  <set xpath="/recipes/recipe[@name='meleeToolWireTool']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
   <set xpath="/recipes/recipe[@name='modArmorHelmetLight']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
+  <set xpath="/recipes/recipe[@name='modArmorMuffledConnectors']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
+  <set xpath="/recipes/recipe[@name='modArmorAdvancedMuffledConnectors']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
+  <set xpath="/recipes/recipe[@name='modArmorWaterPurifier']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
+
+  <set xpath="/recipes/recipe[@name='modGunLaserSight']/ingredient[@name='resourceForgedSteel']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='modGunReflexSight']/ingredient[@name='resourceForgedSteel']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='modGunScopeMedium']/ingredient[@name='resourceForgedSteel']/@count">5</set>
 
   <!-- ======================================= Starting the stupidly specific stuff. ======================================= -->
   <set xpath="/recipes/recipe[@name='drinkJarBeer']/ingredient[@name='resourceCropHopsFlower']/@count">4</set>
