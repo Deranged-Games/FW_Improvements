@@ -63,6 +63,15 @@
         <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
       </effect_group>
     </item>
+    <item name="resourceBrick">
+      <property name="Extends" value="resourceForgedIron"/>
+      <property name="CustomIcon" value="resourceForgedIron"/>
+      <property name="CustomIconTint" value="ffa0a0"/>
+      <property name="DescriptionKey" value="resourceBrickDesc"/>
+      <property name="Material" value="MresourceCobblestones"/>
+      <property name="EconomicValue" value="8"/>
+      <property name="CraftingIngredientTime" value="0.5"/>
+    </item>
   </append>
 
   <!-- Append types to acid group for campfire crafting. -->
@@ -119,6 +128,17 @@
     <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="stone,concrete"/>
     <passive_effect name="DamageModifier" operation="perc_set" value=".2" tags="metal"/>
   </append>
+
+  <!-- Reduce sensible block damage for animals. -->
+  <set xpath="/items/item[@name='ammoProjectileZombieVomit']/property[@class='Action1']/property[@name='DamageBlock']/@value">60</set>
+
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/property[@class='Action1']/property[@name='DamageBlock']/@value">120</set>
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/property[@class='Action1']/property[@name='Explosion.RadiusBlocks']/@value">1</set>
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/effect_group/passive_effect[@name='BlockDamage']/@value">75</set>
+
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitRadiated']/property[@class='Action1']/property[@name='DamageBlock']/@value">180</set>
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitRadiated']/property[@class='Action1']/property[@name='Explosion.RadiusBlocks']/@value">1</set>
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitRadiated']/effect_group/passive_effect[@name='BlockDamage']/@value">100</set>
 
   <!-- Remove exp debuff from higher tier tools -->
   <remove xpath="/items/item[starts-with (@name,'meleeTool')]/effect_group/passive_effect[@name='PlayerExpGain']"/>

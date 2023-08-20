@@ -5,6 +5,11 @@
   <set xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']/@value">2400</set>
   <set xpath="/entity_classes/entity_class[@name='DroppedLootContainerTwitch']/property[@name='TimeStayAfterDeath']/@value">2400</set>
 
+  <!-- Handle Cop Damage -->
+  <set xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='Explosion.BlockDamage']/@value">300</set>
+  <set xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']/property[@name='Explosion.BlockDamage']/@value">450</set>
+  <set xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']/property[@name='Explosion.BlockDamage']/@value">550</set>
+
   <!-- Remove doggo cries -->
 	<set xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='SoundDeath']/@value">wolfattack</set>
 	<set xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='SoundDeath']/@value">wolfattack</set>

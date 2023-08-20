@@ -173,6 +173,13 @@
       <ingredient name="resourceSpring" count="5"/>
       <ingredient name="resourceMechanicalParts" count="5"/>
     </recipe>
+    <recipe name="resourceBrick" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering" craft_time="2">
+      <ingredient name="unit_clay" count="10"/>
+      <ingredient name="unit_glass" count="2"/>
+    </recipe>
+    <recipe name="brickShapes:VariantHelper" count="1">
+      <ingredient name="resourceBrick" count="10"/>
+    </recipe>
   </append>
 
   <!-- Why so much tape and glue? -->

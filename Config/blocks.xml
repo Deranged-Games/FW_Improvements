@@ -93,6 +93,15 @@
     </block>
   </append>
 
+  <!-- Buildable Bricks -->
+  <set xpath="/blocks/block[@name='brickShapes']/property[@class='UpgradeBlock']">
+		<property name="ToBlock" value="concreteShapes"/>
+		<property name="Item" value="resourceConcreteMix"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="4"/>
+  </set>
+  <set xpath="/blocks/block[@name='brickShapes']/property[@class='RepairItems']/property/@name">resourceBrick</set>
+
   <!-- Bed buffs -->
   <append xpath="blocks/block[@name='bedroll']">
     <property name="BuffsWhenWalkedOn" value="Sleeping"/>
