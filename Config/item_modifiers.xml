@@ -3,6 +3,9 @@
   <set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingBasic']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">2</set>
   <set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingReinforced']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">4</set>
 
+  <!-- Burney Stun Baton. -->
+  <append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']/@installable_tags">,perkElectrocutioner</append>
+
   <!-- More range buff for long barrel -->
   <set xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']/effect_group/passive_effect[@name='DamageFalloffRange']/@value">.4</set>
   <set xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']/effect_group/passive_effect[@name='MaxRange']/@value">.4</set>

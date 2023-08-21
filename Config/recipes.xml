@@ -229,7 +229,14 @@
   <set xpath="/recipes/recipe[@name='modGunReflexSight']/ingredient[@name='resourceForgedSteel']/@count">5</set>
   <set xpath="/recipes/recipe[@name='modGunScopeMedium']/ingredient[@name='resourceForgedSteel']/@count">5</set>
 
-  <!-- Starting the stupidly specific stuff. -->
+  <!-- Glass blocks for scopes -->
+  <set xpath="/recipes/recipe[@name='modGunScopeLarge']/ingredient[@name='resourceBrokenGlass']/@count">4</set>
+  <set xpath="/recipes/recipe[@name='modGunScopeMedium']/ingredient[@name='resourceBrokenGlass']/@count">3</set>
+  <set xpath="/recipes/recipe[@name='modGunScopeSmall']/ingredient[@name='resourceBrokenGlass']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='modGunScopeLarge']/ingredient[@name='resourceBrokenGlass']/@name">glassBlockVariantHelper</set>
+  <set xpath="/recipes/recipe[@name='modGunScopeMedium']/ingredient[@name='resourceBrokenGlass']/@name">glassBlockVariantHelper</set>
+  <set xpath="/recipes/recipe[@name='modGunScopeSmall']/ingredient[@name='resourceBrokenGlass']/@name">glassBlockVariantHelper</set>
+
   <set xpath="/recipes/recipe[@name='bed02']/ingredient[@name='resourceWood']/@count">50</set>
 
   <!-- ================================ -->
