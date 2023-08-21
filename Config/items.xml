@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
-  <!-- Add Steel Ammo Items -->
+  <!-- ================================ -->
+  <!-- ===== First: Add new items ===== -->
+  <!-- ================================ -->
   <append xpath="/items">
+    <!-- Add Steel Ammo Items -->
     <item name="resourceBulletCasingSteel">
       <property name="Extends" value="resourceBulletCasing"/>
       <property name="CustomIcon" value="resourceBulletCasing"/>
@@ -63,6 +66,7 @@
         <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
       </effect_group>
     </item>
+    <!-- Add Bricks into the game -->
     <item name="resourceBrick">
       <property name="Extends" value="resourceForgedIron"/>
       <property name="CustomIcon" value="resourceForgedIron"/>
@@ -77,6 +81,9 @@
   <!-- Append types to acid group for campfire crafting. -->
   <append xpath="/items/item[@name='resourceAcid']/property[@name='Group']/@value">,CFChemicals</append>
 
+  <!-- ================================ -->
+  <!-- ===== Weapon & Tool Tweaks ===== -->
+  <!-- ================================ -->
   <!-- Append Steel Ammo to Weapons. -->
   <append xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
   <append xpath="/items/item[@name='gunHandgunT1Pistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
@@ -115,31 +122,6 @@
   <insertAfter xpath="/items/item[@name='solarCell']/property[@name='Material']"><property name="UnlockedBy" value="craftingElectrician"/></insertAfter>
   <insertAfter xpath="/items/item[@name='smallEngine']/property[@name='Material']"><property name="UnlockedBy" value="craftingVehicles"/></insertAfter>
 
-  <!-- Reduce sensible block damage for zombies. -->
-  <append xpath="/items/item[starts-with (@name,'meleeHandZombie')]/effect_group">
-    <passive_effect name="DamageModifier" operation="perc_set" value=".5" tags="earth"/>
-    <passive_effect name="DamageModifier" operation="perc_set" value=".2" tags="stone,concrete"/>
-    <passive_effect name="DamageModifier" operation="perc_set" value=".4" tags="metal"/>
-  </append>
-
-  <!-- Reduce sensible block damage for animals. -->
-  <append xpath="/items/item[starts-with (@name,'meleeHandAnimal')]/effect_group">
-    <passive_effect name="DamageModifier" operation="perc_set" value=".4" tags="earth"/>
-    <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="stone,concrete"/>
-    <passive_effect name="DamageModifier" operation="perc_set" value=".2" tags="metal"/>
-  </append>
-
-  <!-- Reduce sensible block damage for animals. -->
-  <set xpath="/items/item[@name='ammoProjectileZombieVomit']/property[@class='Action1']/property[@name='DamageBlock']/@value">60</set>
-
-  <set xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/property[@class='Action1']/property[@name='DamageBlock']/@value">120</set>
-  <set xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/property[@class='Action1']/property[@name='Explosion.RadiusBlocks']/@value">1</set>
-  <set xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/effect_group/passive_effect[@name='BlockDamage']/@value">75</set>
-
-  <set xpath="/items/item[@name='ammoProjectileZombieVomitRadiated']/property[@class='Action1']/property[@name='DamageBlock']/@value">180</set>
-  <set xpath="/items/item[@name='ammoProjectileZombieVomitRadiated']/property[@class='Action1']/property[@name='Explosion.RadiusBlocks']/@value">1</set>
-  <set xpath="/items/item[@name='ammoProjectileZombieVomitRadiated']/effect_group/passive_effect[@name='BlockDamage']/@value">100</set>
-
   <!-- Remove exp debuff from higher tier tools -->
   <remove xpath="/items/item[starts-with (@name,'meleeTool')]/effect_group/passive_effect[@name='PlayerExpGain']"/>
 
@@ -159,6 +141,84 @@
   <set xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group/passive_effect[@name='SpreadDegreesVertical']/@value">1.2</set>
   <set xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group/passive_effect[@name='SpreadDegreesHorizontal']/@value">1.2</set>
 
+  <!-- Autoshotty is not auto.. and baddy -->
+  <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">210</set>
+  <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='BurstRoundCount']/@value">50</set>
+
+  <!-- ================================= -->
+  <!-- ===== Armor Balance Changes ===== -->
+  <!-- ================================= -->
+  <set xpath="/items/item[@name='armorClothMaster']/property[@name='RepairTools']/@value">resourceDuctTape</set>
+  <set xpath="/items/item[starts-with (@name,'armorCloth')]/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">5,7.5</set>
+  <set xpath="/items/item[starts-with (@name,'armorCloth')]/effect_group/passive_effect[@name='ElementalDamageResist']/@value">5,7.5</set>
+  <set xpath="/items/item[starts-with (@name,'armorCloth')]/effect_group/passive_effect[@name='DegradationMax']/@value">30,45</set>
+
+  <set xpath="/items/item[@name='armorLeatherMaster']/property[@name='RepairTools']/@value">resourceSewingKit</set>
+  <set xpath="/items/item[starts-with (@name,'armorLeather')]/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">8,12</set>
+  <set xpath="/items/item[starts-with (@name,'armorLeather')]/effect_group/passive_effect[@name='ElementalDamageResist']/@value">8,12</set>
+  <set xpath="/items/item[starts-with (@name,'armorLeather')]/effect_group/passive_effect[@name='DegradationMax']/@value">50,80</set>
+
+  <set xpath="/items/item[@name='armorMilitaryMaster']/property[@name='RepairTools']/@value">resourceMilitaryFiber</set>
+  <set xpath="/items/item[starts-with (@name,'armorMilitary')]/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">12,17</set>
+  <set xpath="/items/item[starts-with (@name,'armorMilitary')]/effect_group/passive_effect[@name='ElementalDamageResist']/@value">12,17</set>
+  <set xpath="/items/item[starts-with (@name,'armorMilitary')]/effect_group/passive_effect[@name='DegradationMax']/@value">90,130</set>
+
+  <set xpath="/items/item[@name='armorScrapMaster']/property[@name='RepairTools']/@value">resourceDuctTape</set>
+  <set xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">15,20</set>
+  <set xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group/passive_effect[@name='ElementalDamageResist']/@value">15,20</set>
+  <set xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group/passive_effect[@name='DegradationMax']/@value">20,40</set>
+  <append xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group">
+    <passive_effect name="HypothermalResist" operation="base_subtract" value="1.5,1" tier="1,6"/>
+    <passive_effect name="HyperthermalResist" operation="base_subtract" value="1.5,1" tier="1,6"/>
+  </append>
+
+  <set xpath="/items/item[@name='armorIronMaster']/property[@name='RepairTools']/@value">resourceRepairKit</set>
+  <set xpath="/items/item[starts-with (@name,'armorIron')]/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">20,27</set>
+  <set xpath="/items/item[starts-with (@name,'armorIron')]/effect_group/passive_effect[@name='ElementalDamageResist']/@value">20,27</set>
+  <set xpath="/items/item[starts-with (@name,'armorIron')]/effect_group/passive_effect[@name='DegradationMax']/@value">50,100</set>
+  <append xpath="/items/item[starts-with (@name,'armorIron')]/effect_group">
+    <passive_effect name="HypothermalResist" operation="base_subtract" value="2.5,2" tier="1,6"/>
+    <passive_effect name="HyperthermalResist" operation="base_subtract" value="2.5,2" tier="1,6"/>
+  </append>
+
+  <set xpath="/items/item[@name='armorSteelMaster']/property[@name='RepairTools']/@value">armorSteelSetParts</set>
+  <set xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">30,40</set>
+  <set xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group/passive_effect[@name='ElementalDamageResist']/@value">30,40</set>
+  <set xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group/passive_effect[@name='DegradationMax']/@value">90,165</set>
+  <append xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group">
+    <passive_effect name="HypothermalResist" operation="base_subtract" value="2,1.5" tier="1,6"/>
+    <passive_effect name="HyperthermalResist" operation="base_subtract" value="2,1.5" tier="1,6"/>
+  </append>
+
+  <!-- =================================== -->
+  <!-- ===== NPC Block Damage Tweaks ===== -->
+  <!-- =================================== -->
+  <!-- Cop spit tweaks. -->
+  <set xpath="/items/item[@name='ammoProjectileZombieVomit']/property[@class='Action1']/property[@name='DamageBlock']/@value">60</set>
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/property[@class='Action1']/property[@name='DamageBlock']/@value">120</set>
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/property[@class='Action1']/property[@name='Explosion.RadiusBlocks']/@value">1</set>
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/effect_group/passive_effect[@name='BlockDamage']/@value">75</set>
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitRadiated']/property[@class='Action1']/property[@name='DamageBlock']/@value">180</set>
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitRadiated']/property[@class='Action1']/property[@name='Explosion.RadiusBlocks']/@value">1</set>
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitRadiated']/effect_group/passive_effect[@name='BlockDamage']/@value">100</set>
+
+  <!-- Reduce sensible block damage for zombies. -->
+  <append xpath="/items/item[starts-with (@name,'meleeHandZombie')]/effect_group">
+    <passive_effect name="DamageModifier" operation="perc_set" value=".5" tags="earth"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value=".2" tags="stone,concrete"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value=".4" tags="metal"/>
+  </append>
+
+  <!-- Reduce sensible block damage for animals. -->
+  <append xpath="/items/item[starts-with (@name,'meleeHandAnimal')]/effect_group">
+    <passive_effect name="DamageModifier" operation="perc_set" value=".4" tags="earth"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="stone,concrete"/>
+    <passive_effect name="DamageModifier" operation="perc_set" value=".2" tags="metal"/>
+  </append>
+
+  <!-- ============================= -->
+  <!-- ===== Consumable Tweaks ===== -->
+  <!-- ============================= -->
   <!-- I want my jars back -->
   <append xpath="/items/item[@name='foodBoiledMeat']/property[@class='Action0']"><property name="Create_item" value="drinkJarRiverWater"/></append>
   <append xpath="/items/item[@name='foodEggBoiled']/property[@class='Action0']"><property name="Create_item" value="drinkJarRiverWater"/></append>
@@ -186,10 +246,6 @@
   <set xpath="/items/item[@name='foodCanPears']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">10</set>
   <set xpath="/items/item[@name='foodCanSoup']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">15</set>
   <set xpath="/items/item[@name='foodCanStock']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">15</set>
-
-  <!-- Autoshotty is not auto.. and baddy -->
-  <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">210</set>
-  <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='BurstRoundCount']/@value">50</set>
 
   <!-- Longer consumable durations -->
   <set xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group/triggered_effect[@cvar='$buffRedTeaDuration' and @operation='add']/@value">900</set>
@@ -231,8 +287,6 @@
   <set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/effect_group/triggered_effect[@cvar='$buffGrandpasLearningElixirDuration' and @operation='add']/@value">720</set>
   <set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/effect_group/triggered_effect[@cvar='$buffGrandpasLearningElixirDuration' and @operation='set']/@value">2160</set>
   <set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/effect_group/triggered_effect[@cvar='$buffGrandpasLearningElixirDuration' and @operation='set']/requirement/@value">2160</set>
-
-
 
   <set xpath="/items/item[@name='drugSteroids']/effect_group/triggered_effect[@cvar='$buffDrugSteroidsDuration' and @operation='add']/@value">1800</set>
   <set xpath="/items/item[@name='drugSteroids']/effect_group/triggered_effect[@cvar='$buffDrugSteroidsDuration' and @operation='set']/@value">5400</set>
@@ -290,8 +344,6 @@
   <set xpath="/items/item[@name='drugSugarButts']/effect_group/triggered_effect[@cvar='$buffDrugSugarButtsDuration' and @operation='set']/@value">5400</set>
   <set xpath="/items/item[@name='drugSugarButts']/effect_group/triggered_effect[@cvar='$buffDrugSugarButtsDuration' and @operation='set']/requirement/@value">5400</set>
 
-
-
   <set xpath="/items/item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='$buffPumpkinCheesecakeDuration' and @operation='add']/@value">900</set>
   <set xpath="/items/item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='$buffPumpkinCheesecakeDuration' and @operation='set']/@value">2700</set>
   <set xpath="/items/item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='$buffPumpkinCheesecakeDuration' and @operation='set']/requirement/@value">2700</set>
@@ -299,5 +351,4 @@
   <set xpath="/items/item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='$buffShamChowderDuration' and @operation='add']/@value">1800</set>
   <set xpath="/items/item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='$buffShamChowderDuration' and @operation='set']/@value">5400</set>
   <set xpath="/items/item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='$buffShamChowderDuration' and @operation='set']/requirement/@value">5400</set>
-
 </configs>

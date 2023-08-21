@@ -68,6 +68,82 @@
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="smallEngine"/>
   </append>
 
+  <!-- ################################## -->
+  <!-- More Crafting books based on perks -->
+  <!-- ################################## -->
+  <append xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="riflesCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="explosivesCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkJavelinMaster']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="spearsCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="salvageToolsCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="shotgunsCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="clubsCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="sledgehammersCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkHeavyArmor']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4" value="0.4,0.8,1.2,2" tags="armorCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3" value="0.5,1,2" tags="foodCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="harvestingToolsCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkBrawler']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="knucklesCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="machineGunsCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="seedCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkArchery']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="bowsCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="handgunsCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkDeepCuts']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="bladesCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4" value="0.4,0.8,1.2,2" tags="armorCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="roboticsCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkTurrets']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="roboticsCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkPhysician']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="medicalCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="electricianCSM"/>
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="trapsCSM"/>
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="workstationCSM"/>
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="repairToolsCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="0.3,0.6,0.9,1.2,2" tags="vehiclesCSM"/>
+  </append>
+  <append xpath="/progression/perks/perk[@name='perkLockPicking']/effect_group">
+    <passive_effect name="LootQuantity" operation="perc_add" level="1,2,3" value="0.5,1,2" tags="workstationCSM"/>
+  </append>
+
   <!-- ####################### -->
   <!-- Crafting Skills Updates -->
   <!-- ####################### -->
