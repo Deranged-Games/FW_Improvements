@@ -91,6 +91,19 @@
       <property name="SortOrder2" value="0204"/>
       <property name="FilterTags" value="MC_playerBlocks,SC_decor,SC_playerHelpers"/>
     </block>
+
+    <block name="barbedWireSpindleVariantHelper">
+      <property name="Extends" value="barbedWireSpindle1m"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="barbedWireSpindle1m"/>
+      <property name="ItemTypeIcon" value="all_blocks"/>
+      <property name="DescriptionKey" value="barbedWireSheetDesc"/>
+      <property name="SelectAlternates" value="true"/>
+      <property name="PlaceAltBlockValue" value="barbedWireSpindle1m,barbedWireSpindleDiagonal1m"/>
+      <property name="SortOrder1" value="U200"/>
+      <property name="SortOrder2" value="0000"/>
+      <property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+    </block>
   </append>
 
   <!-- Buildable Bricks -->
@@ -101,6 +114,11 @@
 		<property name="UpgradeHitCount" value="4"/>
   </set>
   <set xpath="/blocks/block[@name='brickShapes']/property[@class='RepairItems']/property/@name">resourceBrick</set>
+
+  <!-- I really want these rugs for my base -->
+  <append xpath="/blocks/block[@name='rugBear']" >
+    <property name="CanPickup" value="true"/>
+  </append>
 
   <!-- Bed buffs -->
   <append xpath="blocks/block[@name='bedroll']">

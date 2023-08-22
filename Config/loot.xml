@@ -23,6 +23,12 @@
 	<setattribute xpath="/lootcontainers/lootcontainer[@name='playerProduce']" name="size">6,4</setattribute>
 	<setattribute xpath="/lootcontainers/lootcontainer[@name='waterCooler']" name="size">6,4</setattribute>
 
+  <!-- Add night vision mod to helmets -->
+  <set xpath="/lootcontainers/lootgroup/item[@name='armorMilitaryHelmet']/@mods">modNVHelmetLight</set>
+  <set xpath="/lootcontainers/lootgroup/item[@name='armorMilitaryHelmet']/@mod_chance">.5</set>
+  <set xpath="/lootcontainers/lootgroup/item[@name='armorSwatHelmet']/@mods">modNVHelmetLight</set>
+  <set xpath="/lootcontainers/lootgroup/item[@name='armorSwatHelmet']/@mod_chance">.3</set>
+
   <!-- Slightly reduce ammo in loot -->
   <set xpath="/lootcontainers/lootgroup[@name='group9mmSmall']/item[@name='ammo9mmBulletBall']/@count">4,7</set>
   <set xpath="/lootcontainers/lootgroup[@name='group9mmMedium']/item[@name='ammo9mmBulletBall']/@count">8,15</set>
@@ -140,4 +146,184 @@
   <set xpath="/lootcontainers/lootgroup[@name='groupScrapUncommon']/item[@name='resourceScrapBrass']/@count">40,180</set>
   <set xpath="/lootcontainers/lootgroup[@name='groupWorkbenchLoot01']/item[@name='resourceScrapBrass']/@count">10,70</set>
   <set xpath="/lootcontainers/lootgroup[@name='groupForge01']/item[@name='resourceScrapBrass']/@count">20,60</set>
+
+  <!-- Better Tier Magazine Bundles -->
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='groupQuestRewardSkillMagazinesAll']">
+    <lootgroup name="groupQuestRewardT2SkillMagazinesAll01" count="4" >
+      <item name="bowsSkillMagazine" count="2"/>
+      <item name="spearsSkillMagazine" count="2"/>
+      <item name="clubsSkillMagazine" count="2"/>
+      <item name="sledgehammersSkillMagazine" count="2"/>
+      <item name="harvestingToolsSkillMagazine" count="2"/>
+      <item name="knucklesSkillMagazine" count="2"/>
+      <item name="bladesSkillMagazine" count="2"/>
+      <item name="repairToolsSkillMagazine" count="2"/>
+      <item name="salvageToolsSkillMagazine" count="2"/>
+      <item name="handgunsSkillMagazine" count="2"/>
+      <item name="shotgunsSkillMagazine" count="2"/>
+      <item name="riflesSkillMagazine" count="2"/>
+      <item name="machineGunsSkillMagazine" count="2"/>
+      <item name="explosivesSkillMagazine" count="2"/>
+      <item name="armorSkillMagazine" count="2"/>
+      <item name="roboticsSkillMagazine" count="2"/>
+      <item name="workstationSkillMagazine" count="2"/>
+      <item name="medicalSkillMagazine" count="2"/>
+      <item name="foodSkillMagazine" count="2"/>
+      <item name="seedSkillMagazine" count="2"/>
+      <item name="vehiclesSkillMagazine" count="2"/>
+      <item name="electricianSkillMagazine" count="2"/>
+      <item name="trapsSkillMagazine" count="2"/>
+    </lootgroup>
+    <lootgroup name="groupQuestRewardT2SkillMagazinesAll" count="all">
+      <item group="groupQuestRewardT2SkillMagazinesAll01" />
+    </lootgroup>
+    <lootgroup name="groupQuestRewardT3SkillMagazinesAll01" count="3" >
+      <item name="bowsSkillMagazine" count="3"/>
+      <item name="spearsSkillMagazine" count="3"/>
+      <item name="clubsSkillMagazine" count="3"/>
+      <item name="sledgehammersSkillMagazine" count="3"/>
+      <item name="harvestingToolsSkillMagazine" count="3"/>
+      <item name="knucklesSkillMagazine" count="3"/>
+      <item name="bladesSkillMagazine" count="3"/>
+      <item name="repairToolsSkillMagazine" count="3"/>
+      <item name="salvageToolsSkillMagazine" count="3"/>
+      <item name="handgunsSkillMagazine" count="3"/>
+      <item name="shotgunsSkillMagazine" count="3"/>
+      <item name="riflesSkillMagazine" count="3"/>
+      <item name="machineGunsSkillMagazine" count="3"/>
+      <item name="explosivesSkillMagazine" count="3"/>
+      <item name="armorSkillMagazine" count="3"/>
+      <item name="roboticsSkillMagazine" count="3"/>
+      <item name="workstationSkillMagazine" count="3"/>
+      <item name="medicalSkillMagazine" count="3"/>
+      <item name="foodSkillMagazine" count="3"/>
+      <item name="seedSkillMagazine" count="3"/>
+      <item name="vehiclesSkillMagazine" count="3"/>
+      <item name="electricianSkillMagazine" count="3"/>
+      <item name="trapsSkillMagazine" count="3"/>
+    </lootgroup>
+    <lootgroup name="groupQuestRewardT3SkillMagazinesAll" count="all">
+      <item group="groupQuestRewardT3SkillMagazinesAll01" />
+    </lootgroup>
+    <lootgroup name="groupQuestRewardT4SkillMagazinesAll01" count="4" >
+      <item name="bowsSkillMagazine" count="3"/>
+      <item name="spearsSkillMagazine" count="3"/>
+      <item name="clubsSkillMagazine" count="3"/>
+      <item name="sledgehammersSkillMagazine" count="3"/>
+      <item name="harvestingToolsSkillMagazine" count="3"/>
+      <item name="knucklesSkillMagazine" count="3"/>
+      <item name="bladesSkillMagazine" count="3"/>
+      <item name="repairToolsSkillMagazine" count="3"/>
+      <item name="salvageToolsSkillMagazine" count="3"/>
+      <item name="handgunsSkillMagazine" count="3"/>
+      <item name="shotgunsSkillMagazine" count="3"/>
+      <item name="riflesSkillMagazine" count="3"/>
+      <item name="machineGunsSkillMagazine" count="3"/>
+      <item name="explosivesSkillMagazine" count="3"/>
+      <item name="armorSkillMagazine" count="3"/>
+      <item name="roboticsSkillMagazine" count="3"/>
+      <item name="workstationSkillMagazine" count="3"/>
+      <item name="medicalSkillMagazine" count="3"/>
+      <item name="foodSkillMagazine" count="3"/>
+      <item name="seedSkillMagazine" count="3"/>
+      <item name="vehiclesSkillMagazine" count="3"/>
+      <item name="electricianSkillMagazine" count="3"/>
+      <item name="trapsSkillMagazine" count="3"/>
+    </lootgroup>
+    <lootgroup name="groupQuestRewardT4SkillMagazinesAll" count="all">
+      <item group="groupQuestRewardT4SkillMagazinesAll01" />
+    </lootgroup>
+    <lootgroup name="groupQuestRewardT5SkillMagazinesAll01" count="3" >
+      <item name="bowsSkillMagazine" count="4"/>
+      <item name="spearsSkillMagazine" count="4"/>
+      <item name="clubsSkillMagazine" count="4"/>
+      <item name="sledgehammersSkillMagazine" count="4"/>
+      <item name="harvestingToolsSkillMagazine" count="4"/>
+      <item name="knucklesSkillMagazine" count="4"/>
+      <item name="bladesSkillMagazine" count="4"/>
+      <item name="repairToolsSkillMagazine" count="4"/>
+      <item name="salvageToolsSkillMagazine" count="4"/>
+      <item name="handgunsSkillMagazine" count="4"/>
+      <item name="shotgunsSkillMagazine" count="4"/>
+      <item name="riflesSkillMagazine" count="4"/>
+      <item name="machineGunsSkillMagazine" count="4"/>
+      <item name="explosivesSkillMagazine" count="4"/>
+      <item name="armorSkillMagazine" count="4"/>
+      <item name="roboticsSkillMagazine" count="4"/>
+      <item name="workstationSkillMagazine" count="4"/>
+      <item name="medicalSkillMagazine" count="4"/>
+      <item name="foodSkillMagazine" count="4"/>
+      <item name="seedSkillMagazine" count="4"/>
+      <item name="vehiclesSkillMagazine" count="4"/>
+      <item name="electricianSkillMagazine" count="4"/>
+      <item name="trapsSkillMagazine" count="4"/>
+    </lootgroup>
+    <lootgroup name="groupQuestRewardT5SkillMagazinesAll" count="all">
+      <item group="groupQuestRewardT5SkillMagazinesAll01" />
+    </lootgroup>
+    <lootgroup name="groupQuestRewardT6SkillMagazinesAll01" count="4" >
+      <item name="bowsSkillMagazine" count="4"/>
+      <item name="spearsSkillMagazine" count="4"/>
+      <item name="clubsSkillMagazine" count="4"/>
+      <item name="sledgehammersSkillMagazine" count="4"/>
+      <item name="harvestingToolsSkillMagazine" count="4"/>
+      <item name="knucklesSkillMagazine" count="4"/>
+      <item name="bladesSkillMagazine" count="4"/>
+      <item name="repairToolsSkillMagazine" count="4"/>
+      <item name="salvageToolsSkillMagazine" count="4"/>
+      <item name="handgunsSkillMagazine" count="4"/>
+      <item name="shotgunsSkillMagazine" count="4"/>
+      <item name="riflesSkillMagazine" count="4"/>
+      <item name="machineGunsSkillMagazine" count="4"/>
+      <item name="explosivesSkillMagazine" count="4"/>
+      <item name="armorSkillMagazine" count="4"/>
+      <item name="roboticsSkillMagazine" count="4"/>
+      <item name="workstationSkillMagazine" count="4"/>
+      <item name="medicalSkillMagazine" count="4"/>
+      <item name="foodSkillMagazine" count="4"/>
+      <item name="seedSkillMagazine" count="4"/>
+      <item name="vehiclesSkillMagazine" count="4"/>
+      <item name="electricianSkillMagazine" count="4"/>
+      <item name="trapsSkillMagazine" count="4"/>
+    </lootgroup>
+    <lootgroup name="groupQuestRewardT6SkillMagazinesAll" count="all">
+      <item group="groupQuestRewardT6SkillMagazinesAll01" />
+    </lootgroup>
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='groupQuestT1SkillMagazineBundle']">
+    <lootgroup name="groupQuestT2SkillMagazineBundle">
+      <item name="questRewardT2SkillMagazineBundle"/>
+    </lootgroup>
+    <lootgroup name="groupQuestT3SkillMagazineBundle">
+      <item name="questRewardT3SkillMagazineBundle"/>
+    </lootgroup>
+    <lootgroup name="groupQuestT4SkillMagazineBundle">
+      <item name="questRewardT4SkillMagazineBundle"/>
+    </lootgroup>
+    <lootgroup name="groupQuestT5SkillMagazineBundle">
+      <item name="questRewardT5SkillMagazineBundle"/>
+    </lootgroup>
+    <lootgroup name="groupQuestT6SkillMagazineBundle">
+      <item name="questRewardT6SkillMagazineBundle"/>
+    </lootgroup>
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootcontainer[@name='questRewardSkillMagazines']">
+    <lootcontainer name="questRewardT2SkillMagazines" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+      <item group="groupQuestRewardT2SkillMagazinesAll"/>
+    </lootcontainer>
+    <lootcontainer name="questRewardT3SkillMagazines" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+      <item group="groupQuestRewardT3SkillMagazinesAll"/>
+    </lootcontainer>
+    <lootcontainer name="questRewardT4SkillMagazines" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+      <item group="groupQuestRewardT4SkillMagazinesAll"/>
+    </lootcontainer>
+    <lootcontainer name="questRewardT5SkillMagazines" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+      <item group="groupQuestRewardT5SkillMagazinesAll"/>
+    </lootcontainer>
+    <lootcontainer name="questRewardT6SkillMagazines" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+      <item group="groupQuestRewardT6SkillMagazinesAll"/>
+    </lootcontainer>
+  </insertAfter>
 </configs>

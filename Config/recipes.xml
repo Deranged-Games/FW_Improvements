@@ -200,6 +200,11 @@
     <recipe name="brickShapes:VariantHelper" count="1">
       <ingredient name="resourceBrick" count="10"/>
     </recipe>
+
+    <!-- Barbed wire for players -->
+    <recipe name="barbedWireSpindleVariantHelper" count="1">
+      <ingredient name="resourceScrapIron" count="25"/>
+    </recipe>
   </append>
 
   <!-- ====================================== -->

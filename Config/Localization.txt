@@ -5,14 +5,17 @@ ammo762mmBulletFMJSteel,items,Ammo,,,"7.62mm Round, Steel (Ammo)",,,,,,,,,,,,,,
 ammoSteelCasedGroupDesc,items,Ammo,,,"Steel-cased ammunition is a cheap alternative to using brass but wears down weapons faster.",,,,,,,,,,,,,,
 resourceBulletCasingSteel,items,Item,,,"Bullet Casing, Steel",,,,,,,,,,,,,,
 resourceBulletCasingSteelDesc,items,Item,,,"Steel bullet casings are cheaper but cause more wear on the weapon.",,,,,,,,,,,,,,
+
 xuiFoodAmount,,,,,Food Amount,,,,,,,,,,,,,,
 xuiFoodPercentage,,,,,Food Percentage,,,,,,,,,,,,,,
 xuiWaterAmount,,,,,Water Amount,,,,,,,,,,,,,,
 xuiWaterPercentage,,,,,Water Percentage,,,,,,,,,,,,,,
 xuiTemperature,,,,,Temperature,,,,,,,,,,,,,,
+
 tooltipJammed,UI,Menu,,,{0} Use {1} [ff0000](Jammed),,,,,,,,,,,,,,
 tooltipLocked,UI,Menu,,,{0} Use {1} [ff0000](Locked),,,,,,,,,,,,,,
 tooltipUnlocked,UI,Menu,,,{0} Use {1} [00ff00](Unlocked),,,,,,,,,,,,,,
+
 lootEntity,UI,Use Prompt,,,{0} Search {1} [00ff00](Untouched),,,,,,,,,,,,,,
 lootTooltipEmpty,UI,Use Prompt,,,{1} [DECEA3](Empty),,,,,,,,,,,,,,
 lootTooltipNew,UI,Use Prompt,,,{0} Search {1} [00ff00](Untouched),,,,,,,,,,,,,,
@@ -21,14 +24,28 @@ useCampfire,UI,HUD,,,Press [00ff00]{0}[-] to use,,,,,,,,,,,,,,
 useForge,UI,HUD,,,Press [00ff00]{0}[-] to use,,,,,,,,,,,,,,
 useSecureDoor,UI,HUD,,,Press [00ff00]{0}[-] to open,,,,,,,,,,,,,,
 useWorkstation,UI,HUD,,,Press [00ff00]{0}[-] to use,,,,,,,,,,,,,,
+
 harvestParts,progression,Attribute,,,Tool Parts,,,,,,,,,,,,,,
 armorParts,progression,Attribute,,,Armor Parts,,,,,,,,,,,,,,
 solarParts,progression,Attribute,,,Solar Panel Banks,,,,,,,,,,,,,,
+
 cntHardenedChestSecure_Player,blocks,block,,,"Hardened T4 Chest",,,,,,,,,,,,,,
 cntHardenedChestInsecure_Player,blocks,block,,,"Hardened T4 Chest",,,,,,,,,,,,,,
 cntHardenedChestSecureT5_Player,blocks,block,,,"Hardened T5 Chest",,,,,,,,,,,,,,
 cntHardenedChestInsecureT5_Player,blocks,block,,,"Hardened T5 Chest",,,,,,,,,,,,,,
 cntLootChest_PlayerVariantHelper,blocks,block,,,"Hardened Chest",,,,,,,,,,,,,,
 cntLootChest_PlayerVariantHelperDesc,blocks,block,,,"An extremely durable and secure storage.",,,,,,,,,,,,,,
+
 resourceBrick,items,Item,,,"Brick",,,,,,,,,,,,,,
 resourceBrickDesc,items,Item,,,"Forge fired clay and crushed stone brick.",,,,,,,,,,,,,,
+
+modNVHelmetLight,item_modifiers,mod,,,Night Vision Helmet Mod,,,,,,,,,,,,,,
+modNVHelmetLightDesc,item_modifiers,mod,,,A helmet attachment that provides Night Vision when activated.,,,,,,,,,,,,,,
+
+barbedWireSpindleVariantHelper,items,item,,,Barbed Wire,,,,,,,,,,,,,,
+
+questRewardT2SkillMagazineBundle,items,item,,,Tier 2 Crafting Skill Magazine Bundle,,,,,,,,,,,,,,
+questRewardT3SkillMagazineBundle,items,item,,,Tier 3 Crafting Skill Magazine Bundle,,,,,,,,,,,,,,
+questRewardT4SkillMagazineBundle,items,item,,,Tier 4 Crafting Skill Magazine Bundle,,,,,,,,,,,,,,
+questRewardT5SkillMagazineBundle,items,item,,,Tier 5 Crafting Skill Magazine Bundle,,,,,,,,,,,,,,
+questRewardT6SkillMagazineBundle,items,item,,,Tier 6 Crafting Skill Magazine Bundle,,,,,,,,,,,,,,

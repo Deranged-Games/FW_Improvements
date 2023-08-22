@@ -6,9 +6,15 @@
   <set xpath="/entity_classes/entity_class[@name='DroppedLootContainerTwitch']/property[@name='TimeStayAfterDeath']/@value">2400</set>
 
   <!-- Handle Cop Damage -->
-  <set xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='Explosion.BlockDamage']/@value">300</set>
-  <set xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']/property[@name='Explosion.BlockDamage']/@value">450</set>
-  <set xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']/property[@name='Explosion.BlockDamage']/@value">550</set>
+  <set xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='Explosion.BlockDamage']/@value">250</set>
+  <set xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']/property[@name='Explosion.BlockDamage']/@value">325</set>
+  <set xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']/property[@name='Explosion.BlockDamage']/@value">400</set>
+
+  <!-- Anti-Player, not block, Demolitions -->
+  <set xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='Explosion.RadiusBlocks']/@value">3</set>
+  <set xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='Explosion.RadiusEntities']/@value">12</set>
+  <set xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='Explosion.BlockDamage']/@value">250</set>
+  <remove xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='StompsSpikes']"/>
 
   <!-- Remove doggo cries -->
 	<set xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='SoundDeath']/@value">wolfattack</set>

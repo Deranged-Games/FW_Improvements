@@ -66,6 +66,7 @@
         <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
       </effect_group>
     </item>
+
     <!-- Add Bricks into the game -->
     <item name="resourceBrick">
       <property name="Extends" value="resourceForgedIron"/>
@@ -76,10 +77,79 @@
       <property name="EconomicValue" value="8"/>
       <property name="CraftingIngredientTime" value="0.5"/>
     </item>
+
+    <!-- Better Tier Magazine Bundles -->
+    <item name="questRewardT2SkillMagazineBundle">
+      <property name="Extends" value="questRewardT1SkillMagazineBundle"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="CF7F29"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property class="Action0">
+        <property name="Class" value="OpenLootBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="LootList" value="questRewardT2SkillMagazines"/>
+      </property>
+    </item>
+    <item name="questRewardT3SkillMagazineBundle">
+      <property name="Extends" value="questRewardT1SkillMagazineBundle"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="A2A41B"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property class="Action0">
+        <property name="Class" value="OpenLootBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="LootList" value="questRewardT3SkillMagazines"/>
+      </property>
+    </item>
+    <item name="questRewardT4SkillMagazineBundle">
+      <property name="Extends" value="questRewardT1SkillMagazineBundle"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="42C234"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property class="Action0">
+        <property name="Class" value="OpenLootBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="LootList" value="questRewardT4SkillMagazines"/>
+      </property>
+    </item>
+    <item name="questRewardT5SkillMagazineBundle">
+      <property name="Extends" value="questRewardT1SkillMagazineBundle"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="315DCE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property class="Action0">
+        <property name="Class" value="OpenLootBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="LootList" value="questRewardT5SkillMagazines"/>
+      </property>
+    </item>
+    <item name="questRewardT6SkillMagazineBundle">
+      <property name="Extends" value="questRewardT1SkillMagazineBundle"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="A42ACC"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property class="Action0">
+        <property name="Class" value="OpenLootBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="LootList" value="questRewardT6SkillMagazines"/>
+      </property>
+    </item>
   </append>
+
+  <!-- Set T1 CSM bundle to T1 color -->
+  <set xpath="/items/item[@name='questRewardT1SkillMagazineBundle']/property[@name='CustomIconTint']/@value">9C8867</set>
 
   <!-- Append types to acid group for campfire crafting. -->
   <append xpath="/items/item[@name='resourceAcid']/property[@name='Group']/@value">,CFChemicals</append>
+
+  <!-- Swap out the headlamp with night vision in quest rewards. -->
+  <csv xpath="/items/item[starts-with(@name,'questRewardT2LightArmor')]/property[@class='Action0']/property[@name='Create_item']/@value" delim="," op="remove">modArmorHelmetLight</csv>
+  <csv xpath="/items/item[starts-with(@name,'questRewardT2LightArmor')]/property[@class='Action0']/property[@name='Create_item']/@value" delim="," op="add">modNVHelmetLight</csv>
 
   <!-- ================================ -->
   <!-- ===== Weapon & Tool Tweaks ===== -->
@@ -148,23 +218,18 @@
   <!-- ================================= -->
   <!-- ===== Armor Balance Changes ===== -->
   <!-- ================================= -->
-  <!-- 
-  <set xpath="/items/item[@name='armorClothMaster']/property[@name='RepairTools']/@value">resourceDuctTape</set>
   <set xpath="/items/item[starts-with (@name,'armorCloth')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">5,7.5</set>
   <set xpath="/items/item[starts-with (@name,'armorCloth')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">5,7.5</set>
   <set xpath="/items/item[starts-with (@name,'armorCloth')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">3</set>
 
-  <set xpath="/items/item[@name='armorLeatherMaster']/property[@name='RepairTools']/@value">resourceSewingKit</set>
   <set xpath="/items/item[starts-with (@name,'armorLeather')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">8,12</set>
   <set xpath="/items/item[starts-with (@name,'armorLeather')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">8,12</set>
   <set xpath="/items/item[starts-with (@name,'armorLeather')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">4</set>
 
-  <set xpath="/items/item[@name='armorMilitaryMaster']/property[@name='RepairTools']/@value">resourceMilitaryFiber</set>
   <set xpath="/items/item[starts-with (@name,'armorMilitary')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">12,17</set>
   <set xpath="/items/item[starts-with (@name,'armorMilitary')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">12,17</set>
   <set xpath="/items/item[starts-with (@name,'armorMilitary')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">4</set>
 
-  <set xpath="/items/item[@name='armorScrapMaster']/property[@name='RepairTools']/@value">resourceDuctTape</set>
   <set xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">15,20</set>
   <set xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">15,20</set>
   <set xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">8</set>
@@ -173,7 +238,6 @@
     <passive_effect name="HyperthermalResist" operation="base_subtract" value="1.5,1" tier="1,6"/>
   </append>
 
-  <set xpath="/items/item[@name='armorIronMaster']/property[@name='RepairTools']/@value">resourceRepairKit</set>
   <set xpath="/items/item[starts-with (@name,'armorIron')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">20,27</set>
   <set xpath="/items/item[starts-with (@name,'armorIron')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">20,27</set>
   <set xpath="/items/item[starts-with (@name,'armorIron')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">6</set>
@@ -182,7 +246,6 @@
     <passive_effect name="HyperthermalResist" operation="base_subtract" value="2.5,2" tier="1,6"/>
   </append>
 
-  <set xpath="/items/item[@name='armorSteelMaster']/property[@name='RepairTools']/@value">armorSteelSetParts</set>
   <set xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">30,40</set>
   <set xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">30,40</set>
   <set xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">4</set>
@@ -190,19 +253,18 @@
     <passive_effect name="HypothermalResist" operation="base_subtract" value="2,1.5" tier="1,6"/>
     <passive_effect name="HyperthermalResist" operation="base_subtract" value="2,1.5" tier="1,6"/>
   </append>
-  -->
 
   <!-- =================================== -->
   <!-- ===== NPC Block Damage Tweaks ===== -->
   <!-- =================================== -->
   <!-- Cop spit tweaks. -->
-  <set xpath="/items/item[@name='ammoProjectileZombieVomit']/property[@class='Action1']/property[@name='DamageBlock']/@value">60</set>
-  <set xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/property[@class='Action1']/property[@name='DamageBlock']/@value">120</set>
+  <set xpath="/items/item[@name='ammoProjectileZombieVomit']/property[@class='Action1']/property[@name='DamageBlock']/@value">50</set>
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/property[@class='Action1']/property[@name='DamageBlock']/@value">100</set>
   <set xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/property[@class='Action1']/property[@name='Explosion.RadiusBlocks']/@value">1</set>
-  <set xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/effect_group/passive_effect[@name='BlockDamage']/@value">75</set>
-  <set xpath="/items/item[@name='ammoProjectileZombieVomitRadiated']/property[@class='Action1']/property[@name='DamageBlock']/@value">180</set>
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/effect_group/passive_effect[@name='BlockDamage']/@value">50</set>
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitRadiated']/property[@class='Action1']/property[@name='DamageBlock']/@value">125</set>
   <set xpath="/items/item[@name='ammoProjectileZombieVomitRadiated']/property[@class='Action1']/property[@name='Explosion.RadiusBlocks']/@value">1</set>
-  <set xpath="/items/item[@name='ammoProjectileZombieVomitRadiated']/effect_group/passive_effect[@name='BlockDamage']/@value">100</set>
+  <set xpath="/items/item[@name='ammoProjectileZombieVomitRadiated']/effect_group/passive_effect[@name='BlockDamage']/@value">75</set>
 
   <!-- Reduce sensible block damage for zombies. -->
   <append xpath="/items/item[starts-with (@name,'meleeHandZombie')]/effect_group">

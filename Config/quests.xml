@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+  <set xpath="/quests/quest[starts-with(@id,'tier2_')]/reward[@id='groupQuestT1SkillMagazineBundle']/@id">groupQuestT2SkillMagazineBundle</set>
+  <set xpath="/quests/quest[starts-with(@id,'tier3_')]/reward[@id='groupQuestT1SkillMagazineBundle']/@id">groupQuestT3SkillMagazineBundle</set>
+  <set xpath="/quests/quest[starts-with(@id,'tier4_')]/reward[@id='groupQuestT1SkillMagazineBundle']/@id">groupQuestT4SkillMagazineBundle</set>
+  <set xpath="/quests/quest[starts-with(@id,'tier5_')]/reward[@id='groupQuestT1SkillMagazineBundle']/@id">groupQuestT5SkillMagazineBundle</set>
+  <set xpath="/quests/quest[starts-with(@id,'tier6_')]/reward[@id='groupQuestT1SkillMagazineBundle']/@id">groupQuestT6SkillMagazineBundle</set>
+</configs>
