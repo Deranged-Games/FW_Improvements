@@ -148,25 +148,26 @@
   <!-- ================================= -->
   <!-- ===== Armor Balance Changes ===== -->
   <!-- ================================= -->
+  <!-- 
   <set xpath="/items/item[@name='armorClothMaster']/property[@name='RepairTools']/@value">resourceDuctTape</set>
   <set xpath="/items/item[starts-with (@name,'armorCloth')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">5,7.5</set>
   <set xpath="/items/item[starts-with (@name,'armorCloth')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">5,7.5</set>
-  <set xpath="/items/item[starts-with (@name,'armorCloth')]/effect_group/passive_effect[@name='DegradationMax']/@value">30,45</set>
+  <set xpath="/items/item[starts-with (@name,'armorCloth')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">3</set>
 
   <set xpath="/items/item[@name='armorLeatherMaster']/property[@name='RepairTools']/@value">resourceSewingKit</set>
   <set xpath="/items/item[starts-with (@name,'armorLeather')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">8,12</set>
   <set xpath="/items/item[starts-with (@name,'armorLeather')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">8,12</set>
-  <set xpath="/items/item[starts-with (@name,'armorLeather')]/effect_group/passive_effect[@name='DegradationMax']/@value">50,80</set>
+  <set xpath="/items/item[starts-with (@name,'armorLeather')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">4</set>
 
   <set xpath="/items/item[@name='armorMilitaryMaster']/property[@name='RepairTools']/@value">resourceMilitaryFiber</set>
   <set xpath="/items/item[starts-with (@name,'armorMilitary')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">12,17</set>
   <set xpath="/items/item[starts-with (@name,'armorMilitary')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">12,17</set>
-  <set xpath="/items/item[starts-with (@name,'armorMilitary')]/effect_group/passive_effect[@name='DegradationMax']/@value">90,130</set>
+  <set xpath="/items/item[starts-with (@name,'armorMilitary')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">4</set>
 
   <set xpath="/items/item[@name='armorScrapMaster']/property[@name='RepairTools']/@value">resourceDuctTape</set>
   <set xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">15,20</set>
   <set xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">15,20</set>
-  <set xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group/passive_effect[@name='DegradationMax']/@value">20,40</set>
+  <set xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">8</set>
   <append xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group">
     <passive_effect name="HypothermalResist" operation="base_subtract" value="1.5,1" tier="1,6"/>
     <passive_effect name="HyperthermalResist" operation="base_subtract" value="1.5,1" tier="1,6"/>
@@ -175,7 +176,7 @@
   <set xpath="/items/item[@name='armorIronMaster']/property[@name='RepairTools']/@value">resourceRepairKit</set>
   <set xpath="/items/item[starts-with (@name,'armorIron')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">20,27</set>
   <set xpath="/items/item[starts-with (@name,'armorIron')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">20,27</set>
-  <set xpath="/items/item[starts-with (@name,'armorIron')]/effect_group/passive_effect[@name='DegradationMax']/@value">50,100</set>
+  <set xpath="/items/item[starts-with (@name,'armorIron')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">6</set>
   <append xpath="/items/item[starts-with (@name,'armorIron')]/effect_group">
     <passive_effect name="HypothermalResist" operation="base_subtract" value="2.5,2" tier="1,6"/>
     <passive_effect name="HyperthermalResist" operation="base_subtract" value="2.5,2" tier="1,6"/>
@@ -184,11 +185,12 @@
   <set xpath="/items/item[@name='armorSteelMaster']/property[@name='RepairTools']/@value">armorSteelSetParts</set>
   <set xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">30,40</set>
   <set xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">30,40</set>
-  <set xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group/passive_effect[@name='DegradationMax']/@value">90,165</set>
+  <set xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">4</set>
   <append xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group">
     <passive_effect name="HypothermalResist" operation="base_subtract" value="2,1.5" tier="1,6"/>
     <passive_effect name="HyperthermalResist" operation="base_subtract" value="2,1.5" tier="1,6"/>
   </append>
+  -->
 
   <!-- =================================== -->
   <!-- ===== NPC Block Damage Tweaks ===== -->
