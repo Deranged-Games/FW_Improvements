@@ -287,8 +287,6 @@
   <!-- =========================== -->
   <!-- ===== Drug rebalacing ===== -->
   <!-- =========================== -->
-  <set xpath="/recipes/recipe[@name='drinkJarBeer']/ingredient[@name='resourceCropHopsFlower']/@count">4</set>
-
   <set xpath="/recipes/recipe[@name='drinkYuccaJuiceSmoothie']/ingredient[@name='foodCropYuccaFruit']/@count">3</set>
   <set xpath="/recipes/recipe[@name='drinkYuccaJuiceSmoothie']/ingredient[@name='foodCropBlueberries']/@count">3</set>
 

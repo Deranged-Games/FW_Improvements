@@ -38,6 +38,12 @@
   <!-- Burney Stun Baton. -->
   <append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']/@installable_tags">,perkElectrocutioner</append>
 
+  <!-- Share mods between batons and clubs. -->
+  <append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBarbedWire']/@installable_tags">,perkElectrocutioner</append>
+  <append xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalSpikes']/@installable_tags">,perkElectrocutioner</append>
+  <append xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalChain']/@installable_tags">,perkElectrocutioner</append>
+  <append xpath="/item_modifiers/item_modifier[@name='modMeleeStunBatonRepulsor']/@installable_tags">,club</append>
+
   <!-- More range buff for long barrel -->
   <set xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']/effect_group/passive_effect[@name='DamageFalloffRange']/@value">.4</set>
   <set xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']/effect_group/passive_effect[@name='MaxRange']/@value">.4</set>
