@@ -1,0 +1,3 @@
+<configs>
+  <set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='15']/spawn/@group">MurderPaws</set>
+</configs>

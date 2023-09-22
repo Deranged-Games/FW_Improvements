@@ -1,4 +1,11 @@
 <configs>
+  <append xpath="/entitygroups">
+    <entitygroup name="MurderPaws">
+      animalZombieVulture
+      animalZombieDog
+      animalZombieBear
+    </entitygroup>
+  </append>
 	<set xpath="/entitygroups/entitygroup[@name='WildGameForest']">
 		animalRabbit, 17
 		animalChicken, 17
