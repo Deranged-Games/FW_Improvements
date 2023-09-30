@@ -188,8 +188,8 @@
     <recipe name="armorMilitarySetParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkLightArmor,learnable">
       <ingredient name="unit_iron" count="100"/>
       <ingredient name="unit_clay" count="200"/>
-	    <ingredient name="unit_glass" count="50"/>
-	    <ingredient name="unit_brass" count="50"/>
+      <ingredient name="unit_glass" count="50"/>
+      <ingredient name="unit_brass" count="50"/>
     </recipe>
 
     <!-- Brick blocks reintegration -->
@@ -204,6 +204,126 @@
     <!-- Barbed wire for players -->
     <recipe name="barbedWireSpindleVariantHelper" count="1">
       <ingredient name="resourceScrapIron" count="25"/>
+    </recipe>
+
+    <!-- Keg Recipes -->
+    <recipe name="BrewKeg" count="1" craft_area="workbench"> 
+      <ingredient name="resourceWood" count="100"/>
+      <ingredient name="resourceForgedIron" count="20"/>
+    </recipe>
+    <recipe name="drinkJarBeer" count="10" craft_area="BrewKeg" craft_time="840" tags="perkMasterChef,learnable"> 
+      <ingredient name="resourceCropHopsFlower" count="40"/>
+      <ingredient name="drinkJarBoiledWater" count="10"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-10,-20" tags="resourceCropHopsFlower"/>
+      </effect_group>
+    </recipe>
+    <recipe name="drinkJarGrandpasAwesomeSauce" count="10" craft_area="BrewKeg" craft_time="1048" tags="perkMasterChef,learnable">
+      <ingredient name="foodHoney" count="30"/>
+      <ingredient name="foodCropMushrooms" count="30"/>
+      <ingredient name="foodCropGraceCorn" count="10"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-5,-10" tags="foodHoney,foodCropMushrooms"/>
+      </effect_group>
+    </recipe>
+    <recipe name="drinkJarGrandpasLearningElixir" count="10" craft_area="BrewKeg" craft_time="1048" tags="perkMasterChef,learnable">
+      <ingredient name="foodCanDogfood" count="10"/>
+      <ingredient name="drinkJarRedTea" count="10"/>
+      <ingredient name="drinkJarBeer" count="10"/>
+      <ingredient name="foodCropGraceCorn" count="10"/>
+    </recipe>
+    <recipe name="drinkJarGrandpasMoonshine" count="10" craft_area="BrewKeg" craft_time="1048" tags="perkMasterChef,learnable">
+      <ingredient name="foodCornMeal" count="30"/>
+      <ingredient name="drinkJarBeer" count="10"/>
+      <ingredient name="foodCropBlueberries" count="30"/>
+      <ingredient name="foodCropGraceCorn" count="10"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-5,-10" tags="foodCornMeal,foodCropBlueberries"/>
+      </effect_group>
+    </recipe>
+    <recipe name="drinkJarBlueberryWine" count="10" craft_area="BrewKeg" craft_time="960" tags="perkMasterChef,learnable"> 
+      <ingredient name="foodCropBlueberries" count="50"/>
+      <ingredient name="drinkJarBoiledWater" count="8"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-5,-10" tags="foodCropBlueberries"/>
+      </effect_group>
+    </recipe>
+    <recipe name="drinkJarMead" count="10" craft_area="BrewKeg" craft_time="960" tags="perkMasterChef,learnable"> 
+      <ingredient name="foodHoney" count="5"/>
+      <ingredient name="drinkJarBoiledWater" count="6"/>
+    </recipe>
+
+    <!-- Hydroponic Farm Recipes -->
+    <recipe name="HydroponicVerticalFarm" count="1" craft_time="300" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="resourceElectricParts" count="10"/>
+      <ingredient name="resourceMechanicalParts" count="5"/>
+      <ingredient name="farmPlotBlockVariantHelper" count="5"/>
+      <ingredient name="toolCookingPot" count="5"/>
+    </recipe>
+    <recipe name="resourceCropCottonPlant" count="20" craft_time="5670" craft_area="HydroponicVerticalFarm" craft_tool="resourceHeadlight" tags="HVF_Crafting,HVF_BUFF_SE">
+      <ingredient name="plantedCotton1" count="5"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+      <ingredient name="drinkJarRiverWater" count="1"/>
+    </recipe>
+    <recipe name="resourceCropGoldenrodPlant" count="20" craft_time="5670" craft_area="HydroponicVerticalFarm" craft_tool="resourceHeadlight" tags="HVF_Crafting,HVF_BUFF_SE">
+      <ingredient name="plantedGoldenrod1" count="5"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+      <ingredient name="drinkJarRiverWater" count="1"/>
+    </recipe>
+    <recipe name="resourceCropChrysanthemumPlant" count="20" craft_time="5670" craft_area="HydroponicVerticalFarm" craft_tool="resourceHeadlight" tags="HVF_Crafting,HVF_BUFF_SE">
+      <ingredient name="plantedChrysanthemum1" count="5"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+      <ingredient name="drinkJarRiverWater" count="1"/>
+    </recipe>
+    <recipe name="foodCropMushrooms" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="resourceHeadlight" tags="HVF_Crafting,HVF_BUFF_SE">
+      <ingredient name="plantedMushroom1" count="5"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="30"/>
+      <ingredient name="drinkJarRiverWater" count="1"/>
+    </recipe>
+    <recipe name="foodCropCorn" count="20" craft_time="9450" craft_area="HydroponicVerticalFarm" craft_tool="resourceHeadlight" tags="HVF_Crafting,HVF_BUFF_SE">
+      <ingredient name="plantedCorn1" count="5"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+      <ingredient name="drinkJarRiverWater" count="3"/>
+    </recipe>
+    <recipe name="resourceCropHopsFlower" count="20" craft_time="9450" craft_area="HydroponicVerticalFarm" craft_tool="resourceHeadlight" tags="HVF_Crafting,HVF_BUFF_SE">
+      <ingredient name="plantedHop1" count="5"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+      <ingredient name="drinkJarRiverWater" count="3"/>
+    </recipe>
+    <recipe name="foodCropPotato" count="20" craft_time="9450" craft_area="HydroponicVerticalFarm" craft_tool="resourceHeadlight" tags="HVF_Crafting,HVF_BUFF_SE">
+      <ingredient name="plantedPotato1" count="5"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+      <ingredient name="drinkJarRiverWater" count="3"/>
+    </recipe>
+    <recipe name="foodCropPumpkin" count="20" craft_time="9450" craft_area="HydroponicVerticalFarm" craft_tool="resourceHeadlight" tags="HVF_Crafting,HVF_BUFF_SE">
+      <ingredient name="plantedPumpkin1" count="5"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="10"/>
+      <ingredient name="drinkJarRiverWater" count="3"/>
+    </recipe>
+    <recipe name="resourceCropAloeLeaf" count="20" craft_time="9450" craft_area="HydroponicVerticalFarm" craft_tool="resourceHeadlight" tags="HVF_Crafting,HVF_BUFF_SE">
+      <ingredient name="plantedAloe1" count="5"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="20"/>
+      <ingredient name="drinkJarRiverWater" count="1"/>
+    </recipe>
+    <recipe name="resourceCropCoffeeBeans" count="20" craft_time="9450" craft_area="HydroponicVerticalFarm" craft_tool="resourceHeadlight" tags="HVF_Crafting,HVF_BUFF_SE">
+      <ingredient name="plantedCoffee1" count="5"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="20"/>
+      <ingredient name="drinkJarRiverWater" count="1"/>
+    </recipe>
+    <recipe name="foodCropYuccaFruit" count="20" craft_time="9450" craft_area="HydroponicVerticalFarm" craft_tool="resourceHeadlight" tags="HVF_Crafting,HVF_BUFF_SE">
+      <ingredient name="plantedYucca1" count="5"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="20"/>
+      <ingredient name="drinkJarRiverWater" count="1"/>
+    </recipe>
+    <recipe name="foodCropBlueberries" count="20" craft_time="9450" craft_area="HydroponicVerticalFarm" craft_tool="resourceHeadlight" tags="HVF_Crafting,HVF_BUFF_SE">
+      <ingredient name="plantedBlueberry1" count="5"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="10"/>
+      <ingredient name="drinkJarRiverWater" count="2"/>
+    </recipe>
+    <recipe name="foodCropGraceCorn" count="20" craft_time="9450" craft_area="HydroponicVerticalFarm" craft_tool="resourceHeadlight" tags="HVF_Crafting,HVF_BUFF_SE">
+      <ingredient name="plantedGraceCorn1" count="5"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="25"/>
+      <ingredient name="drinkJarRiverWater" count="5"/>
     </recipe>
   </append>
 

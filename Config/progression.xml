@@ -68,6 +68,10 @@
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="smallEngine"/>
   </append>
 
+  <!-- Add key and wine to crafting skills -->
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[@name_key='foodT3-1,foodT3-2,foodT3-3,foodT3-4,foodT3-5']/unlock_entry[@unlock_tier='1']/@item">,drinkJarBlueberryWine,drinkJarMead</append>
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/effect_group/passive_effect[@level='27,100']/@tags">,drinkJarBlueberryWine,drinkJarMead</append>
+
   <!-- ########################################## -->
   <!-- Reduced CSM loot chance to equal perk rank -->
   <!-- ########################################## -->
@@ -189,22 +193,22 @@
   </append>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/display_entry"/>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']">
-		<display_entry icon="meleeToolRepairT0StoneAxe" name_key="harvestToolsStone" has_quality="true" unlock_level="1,3,5,7,10,20" >
-			<unlock_entry item="meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel" unlock_tier="1" />
-		</display_entry>
-		<display_entry icon="meleeToolPickT1IronPickaxe" name_key="harvestToolsIron" has_quality="true" unlock_level="11,14,18,22,26,40" >
-			<unlock_entry item="meleeToolPickT1IronPickaxe,meleeToolShovelT1IronShovel,meleeToolAxeT1IronFireaxe" unlock_tier="1" />
-		</display_entry>
-		<display_entry icon="meleeToolPickT2SteelPickaxe" name_key="harvestToolsSteel" has_quality="true" unlock_level="27,35,43,51,59,75" >
-			<unlock_entry item="meleeToolPickT2SteelPickaxe,meleeToolShovelT2SteelShovel,meleeToolAxeT2SteelAxe" unlock_tier="1" />
-		</display_entry>
-		<display_entry icon="meleeToolPickT3Auger" name_key="harvestToolsMechanical" has_quality="true" unlock_level="60,70,78,86,94,100" >
-			<unlock_entry item="meleeToolPickT3Auger,meleeToolAxeT3Chainsaw" unlock_tier="1" />
-		</display_entry>
-		<display_entry icon="meleeToolAllSteelParts" name_key="harvestParts" has_quality="true" unlock_level="50,80" >
-			<unlock_entry item="meleeToolAllSteelParts" unlock_tier="1" />
-			<unlock_entry item="meleeToolAxeT3ChainsawParts" unlock_tier="2" />
-		</display_entry>
+    <display_entry icon="meleeToolRepairT0StoneAxe" name_key="harvestToolsStone" has_quality="true" unlock_level="1,3,5,7,10,20" >
+      <unlock_entry item="meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel" unlock_tier="1" />
+    </display_entry>
+    <display_entry icon="meleeToolPickT1IronPickaxe" name_key="harvestToolsIron" has_quality="true" unlock_level="11,14,18,22,26,40" >
+      <unlock_entry item="meleeToolPickT1IronPickaxe,meleeToolShovelT1IronShovel,meleeToolAxeT1IronFireaxe" unlock_tier="1" />
+    </display_entry>
+    <display_entry icon="meleeToolPickT2SteelPickaxe" name_key="harvestToolsSteel" has_quality="true" unlock_level="27,35,43,51,59,75" >
+      <unlock_entry item="meleeToolPickT2SteelPickaxe,meleeToolShovelT2SteelShovel,meleeToolAxeT2SteelAxe" unlock_tier="1" />
+    </display_entry>
+    <display_entry icon="meleeToolPickT3Auger" name_key="harvestToolsMechanical" has_quality="true" unlock_level="60,70,78,86,94,100" >
+      <unlock_entry item="meleeToolPickT3Auger,meleeToolAxeT3Chainsaw" unlock_tier="1" />
+    </display_entry>
+    <display_entry icon="meleeToolAllSteelParts" name_key="harvestParts" has_quality="true" unlock_level="50,80" >
+      <unlock_entry item="meleeToolAllSteelParts" unlock_tier="1" />
+      <unlock_entry item="meleeToolAxeT3ChainsawParts" unlock_tier="2" />
+    </display_entry>
   </append>
 
   <!-- craftingRepairTools -->
@@ -214,8 +218,8 @@
   </append>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingRepairTools']/display_entry"/>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRepairTools']">
-		<display_entry item="meleeToolRepairT1ClawHammer" unlock_level="5,10,15,20,25,35" />
-		<display_entry item="meleeToolRepairT3Nailgun" unlock_level="26,30,35,40,45,50" />
+    <display_entry item="meleeToolRepairT1ClawHammer" unlock_level="5,10,15,20,25,35" />
+    <display_entry item="meleeToolRepairT3Nailgun" unlock_level="26,30,35,40,45,50" />
   </append>
 
   <!-- craftingSalvageTools -->
@@ -226,9 +230,9 @@
   </append>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingSalvageTools']/display_entry"/>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSalvageTools']">
-		<display_entry item="meleeToolSalvageT1Wrench" unlock_level="2,6,11,16,21,34" />
-		<display_entry item="meleeToolSalvageT2Ratchet" unlock_level="22,28,34,40,46,58" />
-		<display_entry item="meleeToolSalvageT3ImpactDriver" unlock_level="47,54,60,66,71,75" />
+    <display_entry item="meleeToolSalvageT1Wrench" unlock_level="2,6,11,16,21,34" />
+    <display_entry item="meleeToolSalvageT2Ratchet" unlock_level="22,28,34,40,46,58" />
+    <display_entry item="meleeToolSalvageT3ImpactDriver" unlock_level="47,54,60,66,71,75" />
   </append>
 
   <!-- craftingKnuckles -->
@@ -240,10 +244,10 @@
   </append>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingKnuckles']/display_entry"/>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingKnuckles']">
-		<display_entry item="meleeWpnKnucklesT0LeatherKnuckles" unlock_level="1,3,5,7,10,20" />
-		<display_entry item="meleeWpnKnucklesT1IronKnuckles" unlock_level="11,17,24,31,38,50" />
-		<display_entry item="meleeWpnKnucklesT3SteelKnucklesParts" unlock_level="30" />
-		<display_entry item="meleeWpnKnucklesT3SteelKnuckles" unlock_level="39,48,55,62,68,75" />
+    <display_entry item="meleeWpnKnucklesT0LeatherKnuckles" unlock_level="1,3,5,7,10,20" />
+    <display_entry item="meleeWpnKnucklesT1IronKnuckles" unlock_level="11,17,24,31,38,50" />
+    <display_entry item="meleeWpnKnucklesT3SteelKnucklesParts" unlock_level="30" />
+    <display_entry item="meleeWpnKnucklesT3SteelKnuckles" unlock_level="39,48,55,62,68,75" />
   </append>
 
   <!-- craftingBlades -->
@@ -255,10 +259,10 @@
   </append>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/display_entry"/>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']">
-		<display_entry item="meleeWpnBladeT0BoneKnife" unlock_level="1,3,5,7,10,20" />
-		<display_entry item="meleeWpnBladeT1HuntingKnife" unlock_level="11,17,24,31,38,53" />
-		<display_entry item="meleeWpnBladeT3MacheteParts" unlock_level="30" />
-		<display_entry item="meleeWpnBladeT3Machete" unlock_level="39,48,55,62,68,75" />
+    <display_entry item="meleeWpnBladeT0BoneKnife" unlock_level="1,3,5,7,10,20" />
+    <display_entry item="meleeWpnBladeT1HuntingKnife" unlock_level="11,17,24,31,38,53" />
+    <display_entry item="meleeWpnBladeT3MacheteParts" unlock_level="30" />
+    <display_entry item="meleeWpnBladeT3Machete" unlock_level="39,48,55,62,68,75" />
   </append>
 
   <!-- craftingClubs -->
@@ -270,10 +274,10 @@
   </append>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingClubs']/display_entry"/>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingClubs']">
-		<display_entry item="meleeWpnClubT0WoodenClub" unlock_level="1,3,5,7,10,20" />
-		<display_entry item="meleeWpnClubT1BaseballBat" unlock_level="11,17,24,31,38,52" />
-		<display_entry item="meleeWpnClubT3SteelClubParts" unlock_level="30" />
-		<display_entry item="meleeWpnClubT3SteelClub" unlock_level="39,48,55,62,68,75" />
+    <display_entry item="meleeWpnClubT0WoodenClub" unlock_level="1,3,5,7,10,20" />
+    <display_entry item="meleeWpnClubT1BaseballBat" unlock_level="11,17,24,31,38,52" />
+    <display_entry item="meleeWpnClubT3SteelClubParts" unlock_level="30" />
+    <display_entry item="meleeWpnClubT3SteelClub" unlock_level="39,48,55,62,68,75" />
   </append>
 
   <!-- craftingSledgehammers -->
@@ -285,10 +289,10 @@
   </append>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingSledgehammers']/display_entry"/>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSledgehammers']">
-		<display_entry item="meleeWpnSledgeT0StoneSledgehammer" unlock_level="1,3,5,7,10,20" />
-		<display_entry item="meleeWpnSledgeT1IronSledgehammer" unlock_level="11,17,24,31,38,52" />
-		<display_entry item="meleeWpnSledgeT3SteelSledgehammerParts" unlock_level="30" />
-		<display_entry item="meleeWpnSledgeT3SteelSledgehammer" unlock_level="39,48,55,62,68,75" />
+    <display_entry item="meleeWpnSledgeT0StoneSledgehammer" unlock_level="1,3,5,7,10,20" />
+    <display_entry item="meleeWpnSledgeT1IronSledgehammer" unlock_level="11,17,24,31,38,52" />
+    <display_entry item="meleeWpnSledgeT3SteelSledgehammerParts" unlock_level="30" />
+    <display_entry item="meleeWpnSledgeT3SteelSledgehammer" unlock_level="39,48,55,62,68,75" />
   </append>
 
   <!-- craftingBows -->
@@ -302,11 +306,11 @@
   </append>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingBows']/display_entry"/>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBows']">
-		<display_entry item="gunBowT0PrimitiveBow" unlock_level="1,3,5,7,9,14" />
-		<display_entry item="gunBowT1WoodenBow" unlock_level="10,12,15,18,21,28" />
-		<display_entry item="gunBowT1IronCrossbow" unlock_level="22,26,30,34,38,48" />
-		<display_entry item="gunBowT3CompoundBow" unlock_level="39,46,53,60,67,78" />
-		<display_entry item="gunBowT3CompoundCrossbow" unlock_level="68,76,82,88,94,100" />
+    <display_entry item="gunBowT0PrimitiveBow" unlock_level="1,3,5,7,9,14" />
+    <display_entry item="gunBowT1WoodenBow" unlock_level="10,12,15,18,21,28" />
+    <display_entry item="gunBowT1IronCrossbow" unlock_level="22,26,30,34,38,48" />
+    <display_entry item="gunBowT3CompoundBow" unlock_level="39,46,53,60,67,78" />
+    <display_entry item="gunBowT3CompoundCrossbow" unlock_level="68,76,82,88,94,100" />
   </append>
 
   <!-- craftingSpears -->
@@ -318,10 +322,10 @@
   </append>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingSpears']/display_entry"/>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSpears']">
-		<display_entry item="meleeWpnSpearT0StoneSpear" unlock_level="1,3,5,7,10,21" />
-		<display_entry item="meleeWpnSpearT1IronSpear" unlock_level="11,17,24,31,38,53" />
-		<display_entry item="meleeWpnSpearT3SteelSpearParts" unlock_level="30" />
-		<display_entry item="meleeWpnSpearT3SteelSpear" unlock_level="39,48,56,64,72,75" />
+    <display_entry item="meleeWpnSpearT0StoneSpear" unlock_level="1,3,5,7,10,21" />
+    <display_entry item="meleeWpnSpearT1IronSpear" unlock_level="11,17,24,31,38,53" />
+    <display_entry item="meleeWpnSpearT3SteelSpearParts" unlock_level="30" />
+    <display_entry item="meleeWpnSpearT3SteelSpear" unlock_level="39,48,56,64,72,75" />
   </append>
 
   <!-- craftingHandguns -->
@@ -335,11 +339,11 @@
   </append>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingHandguns']/display_entry"/>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingHandguns']">
-		<display_entry item="gunHandgunT0PipePistol" unlock_level="1,3,5,7,10,15" />
-		<display_entry item="gunHandgunT1Pistol" unlock_level="11,13,16,19,22,28" />
-		<display_entry item="gunHandgunT2Magnum44" unlock_level="23,26,30,34,38,48" />
-		<display_entry item="gunHandgunT3SMG5" unlock_level="39,46,53,60,67,80" />
-		<display_entry item="gunHandgunT3DesertVulture" unlock_level="68,76,82,88,94,100" />
+    <display_entry item="gunHandgunT0PipePistol" unlock_level="1,3,5,7,10,15" />
+    <display_entry item="gunHandgunT1Pistol" unlock_level="11,13,16,19,22,28" />
+    <display_entry item="gunHandgunT2Magnum44" unlock_level="23,26,30,34,38,48" />
+    <display_entry item="gunHandgunT3SMG5" unlock_level="39,46,53,60,67,80" />
+    <display_entry item="gunHandgunT3DesertVulture" unlock_level="68,76,82,88,94,100" />
   </append>
 
   <!-- craftingShotguns -->
@@ -352,11 +356,11 @@
   </append>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingShotguns']/display_entry"/>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingShotguns']">
-		<display_entry item="gunShotgunT0PipeShotgun" unlock_level="1,3,5,7,10,16" />
-		<display_entry item="gunShotgunT1DoubleBarrel" unlock_level="11,14,18,22,26,37" />
-		<display_entry item="gunShotgunT2PumpShotgun" unlock_level="27,35,43,51,59,72" />
-		<display_entry item="gunShotgunT1DoubleBarrelParts" unlock_level="50" />
-		<display_entry item="gunShotgunT3AutoShotgun" unlock_level="60,70,78,86,94,100" />
+    <display_entry item="gunShotgunT0PipeShotgun" unlock_level="1,3,5,7,10,16" />
+    <display_entry item="gunShotgunT1DoubleBarrel" unlock_level="11,14,18,22,26,37" />
+    <display_entry item="gunShotgunT2PumpShotgun" unlock_level="27,35,43,51,59,72" />
+    <display_entry item="gunShotgunT1DoubleBarrelParts" unlock_level="50" />
+    <display_entry item="gunShotgunT3AutoShotgun" unlock_level="60,70,78,86,94,100" />
   </append>
 
   <!-- craftingRifles -->
@@ -369,11 +373,11 @@
   </append>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']/display_entry"/>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']">
-		<display_entry item="gunRifleT0PipeRifle" unlock_level="1,3,5,7,10,16" />
-		<display_entry item="gunRifleT1HuntingRifle" unlock_level="11,14,18,22,26,38" />
-		<display_entry item="gunRifleT2LeverActionRifle" unlock_level="27,35,43,51,59,73" />
-		<display_entry item="gunRifleT1HuntingRifleParts" unlock_level="50" />
-		<display_entry item="gunRifleT3SniperRifle" unlock_level="60,70,78,86,94,100" />
+    <display_entry item="gunRifleT0PipeRifle" unlock_level="1,3,5,7,10,16" />
+    <display_entry item="gunRifleT1HuntingRifle" unlock_level="11,14,18,22,26,38" />
+    <display_entry item="gunRifleT2LeverActionRifle" unlock_level="27,35,43,51,59,73" />
+    <display_entry item="gunRifleT1HuntingRifleParts" unlock_level="50" />
+    <display_entry item="gunRifleT3SniperRifle" unlock_level="60,70,78,86,94,100" />
   </append>
 
   <!-- craftingMachineGuns -->
@@ -386,11 +390,11 @@
   </append>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingMachineGuns']/display_entry"/>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMachineGuns']">
-		<display_entry item="gunMGT0PipeMachineGun" unlock_level="1,3,5,7,10,16" />
-		<display_entry item="gunMGT1AK47" unlock_level="11,14,18,22,26,38" />
-		<display_entry item="gunMGT2TacticalAR" unlock_level="27,35,43,51,59,72" />
-		<display_entry item="gunMGT1AK47Parts" unlock_level="50" />
-		<display_entry item="gunMGT3M60" unlock_level="60,70,78,86,94,100" />
+    <display_entry item="gunMGT0PipeMachineGun" unlock_level="1,3,5,7,10,16" />
+    <display_entry item="gunMGT1AK47" unlock_level="11,14,18,22,26,38" />
+    <display_entry item="gunMGT2TacticalAR" unlock_level="27,35,43,51,59,72" />
+    <display_entry item="gunMGT1AK47Parts" unlock_level="50" />
+    <display_entry item="gunMGT3M60" unlock_level="60,70,78,86,94,100" />
   </append>
 
   <!-- craftingExplosives -->
@@ -411,11 +415,11 @@
   </append>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingRobotics']/display_entry"/>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRobotics']">
-		<display_entry item="meleeWpnBatonT0PipeBaton" unlock_level="1,3,5,7,10,15" />
-		<display_entry item="gunBotT1JunkSledge" unlock_level="11,13,16,19,22,28" />
-		<display_entry item="meleeWpnBatonT2StunBaton" unlock_level="23,26,30,34,38,49" />
-		<display_entry item="gunBotT2JunkTurret" unlock_level="39,46,53,60,67,80" />
-		<display_entry item="gunBotT3JunkDrone" unlock_level="68,76,82,88,94,100" />
+    <display_entry item="meleeWpnBatonT0PipeBaton" unlock_level="1,3,5,7,10,15" />
+    <display_entry item="gunBotT1JunkSledge" unlock_level="11,13,16,19,22,28" />
+    <display_entry item="meleeWpnBatonT2StunBaton" unlock_level="23,26,30,34,38,49" />
+    <display_entry item="gunBotT2JunkTurret" unlock_level="39,46,53,60,67,80" />
+    <display_entry item="gunBotT3JunkDrone" unlock_level="68,76,82,88,94,100" />
   </append>
 
   <!-- craftingArmor -->
@@ -428,19 +432,19 @@
   </append>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/display_entry"/>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']">
-		<display_entry icon="resourceCloth" name_key="armorT1" has_quality="true" unlock_level="1,3,5,7,10,20">
-			<unlock_entry item="armorClothMaster,armorScrapMaster" unlock_tier="1" recipes="armorClothHat,armorClothJacket,armorClothGloves,armorClothPants,armorClothBoots,armorScrapMaster,armorScrapHelmet,armorScrapChest,armorScrapGloves,armorScrapLegs,armorScrapBoots" />
-		</display_entry>
-		<display_entry icon="resourceLeather" name_key="armorT2" has_quality="true" unlock_level="11,17,24,31,38,52" >
-			<unlock_entry item="armorLeatherMaster,armorIronMaster" unlock_tier="1" recipes="armorLeatherHood,armorLeatherChest,armorLeatherGloves,armorLeatherPants,armorLeatherBoots,armorIronMaster,armorIronHelmet,armorIronChest,armorIronGloves,armorIronLegs,armorIronBoots" />
-		</display_entry>
-		<display_entry icon="resourceMilitaryFiber" name_key="armorT3" has_quality="true" unlock_level="39,48,56,64,72,75" >
-			<unlock_entry item="armorMilitaryMaster,armorSteelMaster,resourceMilitaryFiber" unlock_tier="1" recipes="armorMilitaryHelmet,armorMilitaryVest,armorMilitaryGloves,armorMilitaryLegs,armorMilitaryBoots,armorSteelMaster,armorSteelHelmet,armorSteelChest,armorSteelGloves,armorSteelLegs,armorSteelBoots,resourceMilitaryFiber" />
-		</display_entry>
-		<display_entry icon="armorSteelSetParts" name_key="armorParts" has_quality="true" unlock_level="50,80" >
-			<unlock_entry item="armorSteelSetParts" unlock_tier="1" />
-			<unlock_entry item="armorMilitarySetParts" unlock_tier="2" />
-		</display_entry>
+    <display_entry icon="resourceCloth" name_key="armorT1" has_quality="true" unlock_level="1,3,5,7,10,20">
+      <unlock_entry item="armorClothMaster,armorScrapMaster" unlock_tier="1" recipes="armorClothHat,armorClothJacket,armorClothGloves,armorClothPants,armorClothBoots,armorScrapMaster,armorScrapHelmet,armorScrapChest,armorScrapGloves,armorScrapLegs,armorScrapBoots" />
+    </display_entry>
+    <display_entry icon="resourceLeather" name_key="armorT2" has_quality="true" unlock_level="11,17,24,31,38,52" >
+      <unlock_entry item="armorLeatherMaster,armorIronMaster" unlock_tier="1" recipes="armorLeatherHood,armorLeatherChest,armorLeatherGloves,armorLeatherPants,armorLeatherBoots,armorIronMaster,armorIronHelmet,armorIronChest,armorIronGloves,armorIronLegs,armorIronBoots" />
+    </display_entry>
+    <display_entry icon="resourceMilitaryFiber" name_key="armorT3" has_quality="true" unlock_level="39,48,56,64,72,75" >
+      <unlock_entry item="armorMilitaryMaster,armorSteelMaster,resourceMilitaryFiber" unlock_tier="1" recipes="armorMilitaryHelmet,armorMilitaryVest,armorMilitaryGloves,armorMilitaryLegs,armorMilitaryBoots,armorSteelMaster,armorSteelHelmet,armorSteelChest,armorSteelGloves,armorSteelLegs,armorSteelBoots,resourceMilitaryFiber" />
+    </display_entry>
+    <display_entry icon="armorSteelSetParts" name_key="armorParts" has_quality="true" unlock_level="50,80" >
+      <unlock_entry item="armorSteelSetParts" unlock_tier="1" />
+      <unlock_entry item="armorMilitarySetParts" unlock_tier="2" />
+    </display_entry>
   </append>
 
   <!-- craftingElectrician -->
@@ -450,9 +454,9 @@
     <passive_effect name="CraftingTier" operation="base_add" level="75,82,89,95,100" value="1,2,3,4,5" tags="carBattery"/>
   </append>
   <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']">
-		<display_entry icon="solarbank" name_key="solarParts" has_quality="true" unlock_level="80,90" >
-			<unlock_entry item="solarbank" unlock_tier="1" />
-			<unlock_entry item="solarCell" unlock_tier="2" />
-		</display_entry>
+    <display_entry icon="solarbank" name_key="solarParts" has_quality="true" unlock_level="80,90" >
+      <unlock_entry item="solarbank" unlock_tier="1" />
+      <unlock_entry item="solarCell" unlock_tier="2" />
+    </display_entry>
   </append>
 </configs>

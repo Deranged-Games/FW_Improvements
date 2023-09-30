@@ -17,19 +17,19 @@
   <remove xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='StompsSpikes']"/>
 
   <!-- Remove doggo cries -->
-	<set xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='SoundDeath']/@value">wolfattack</set>
-	<set xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='SoundDeath']/@value">wolfattack</set>
-	<set xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='SoundDeath']/@value">Enemies/Zombie_Dogs/zombiedogattack</set>
+  <set xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='SoundDeath']/@value">wolfattack</set>
+  <set xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='SoundDeath']/@value">wolfattack</set>
+  <set xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='SoundDeath']/@value">Enemies/Zombie_Dogs/zombiedogattack</set>
 
   <!-- Rebalance Food -->
-	<set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='resourceAnimalFat']/@count">15</set>
-	<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@name='resourceAnimalFat']/@count">15</set>
-	<set xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@name='resourceAnimalFat']/@count">5</set>
-	<set xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@name='resourceAnimalFat']/@count">6</set>
-	<set xpath="/entity_classes/entity_class[@name='animalCoyote']/drop[@name='resourceAnimalFat']/@count">3</set>
-	<set xpath="/entity_classes/entity_class[@name='animalMountainLion']/drop[@name='resourceAnimalFat']/@count">6</set>
-	<set xpath="/entity_classes/entity_class[@name='animalZombieDog']/drop[@name='resourceAnimalFat']/@count">3</set>
-	<set xpath="/entity_classes/entity_class[@name='animalBoar']/drop[@name='resourceAnimalFat']/@count">6</set>
+  <set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='resourceAnimalFat']/@count">15</set>
+  <set xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@name='resourceAnimalFat']/@count">15</set>
+  <set xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@name='resourceAnimalFat']/@count">5</set>
+  <set xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@name='resourceAnimalFat']/@count">6</set>
+  <set xpath="/entity_classes/entity_class[@name='animalCoyote']/drop[@name='resourceAnimalFat']/@count">3</set>
+  <set xpath="/entity_classes/entity_class[@name='animalMountainLion']/drop[@name='resourceAnimalFat']/@count">6</set>
+  <set xpath="/entity_classes/entity_class[@name='animalZombieDog']/drop[@name='resourceAnimalFat']/@count">3</set>
+  <set xpath="/entity_classes/entity_class[@name='animalBoar']/drop[@name='resourceAnimalFat']/@count">6</set>
 
   <!-- Boss animal buffs -->
   <append xpath="/entity_classes/entity_class[@name='animalBear']">

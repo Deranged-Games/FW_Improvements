@@ -14,13 +14,13 @@
       <property name="AllowAllRotations" value="true"/>
       <property name="Path" value="solid"/>
       <property name="LPHardnessScale" value="8"/>
-	    <property name="MaxDamage" value="7500"/>
+      <property name="MaxDamage" value="7500"/>
       <property class="RepairItems">
         <property name="resourceForgedIron" value="1"/>
       </property>
-	    <drop event="Destroy" name="resourceScrapIron" count="3,10"/>
+      <drop event="Destroy" name="resourceScrapIron" count="3,10"/>
       <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	    <property name="DowngradeBlock" value="cntHardenedChestInsecure_Player"/>
+      <property name="DowngradeBlock" value="cntHardenedChestInsecure_Player"/>
       <property name="SortOrder1" value="B104"/>
       <property name="SortOrder2" value="0006"/>
       <property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
@@ -38,7 +38,7 @@
       <property name="AllowAllRotations" value="true"/>
       <property name="Path" value="solid"/>
       <property name="LPHardnessScale" value="8"/>
-	    <property name="MaxDamage" value="7500"/>
+      <property name="MaxDamage" value="7500"/>
       <property class="RepairItems">
         <property name="resourceForgedIron" value="1"/>
       </property>
@@ -62,7 +62,7 @@
       <property name="MultiBlockDim" value="2,1,1"/>
       <property name="Place" value="TowardsPlacerInverted"/>
       <property name="MaxDamage" value="10000"/>
-	    <property name="DowngradeBlock" value="cntHardenedChestInsecureT5_Player"/>
+      <property name="DowngradeBlock" value="cntHardenedChestInsecureT5_Player"/>
       <property name="SortOrder1" value="B104"/>
       <property name="SortOrder2" value="0008"/>
     </block>
@@ -104,14 +104,75 @@
       <property name="SortOrder2" value="0000"/>
       <property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
     </block>
+
+    <block name="BrewKeg">
+      <property name="Class" value="Campfire" />
+      <property name="Extends" value="decoEntityMetalMaster"/>
+      <property name="MaxDamage" value="200"/>
+      <property name="Model" value="Entities/Decor/wineBarrelPrefab"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceScrapIron" count="15,30" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceScrapWood" count="30,40" tag="allHarvest"/>
+      <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+      <property name="CustomIcon" value="wineBarrel"/>
+    </block>
+    <block name="HydroponicVerticalFarm">
+      <property name="Class" value="Workstation"/>
+      <property class="Workstation">
+        <property name="Modules" value="output"/>
+        <property name="CraftingAreaRecipes" value="HydroponicVerticalFarm"/>
+      </property>
+      <property name="CustomIcon" value="plantHydroponicVertical"/>
+      <property name="DisplayType" value="blockMulti"/>
+      <property name="Stacknumber" value="500"/>
+      <property name="WorkstationIcon" value="ui_game_symbol_crops"/>
+      <property name="Material" value="Miron_scrap"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="Entities/Plants/plantHydroponicVerticalPrefab"/>
+      <property name="ModelOffset" value="0,0.5,0"/>
+      <property name="MultiBlockDim" value="1,2,1"/>
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+      <property name="OnlySimpleRotations" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="StabilitySupport" value="true"/>
+      <property name="Weight" value="0"/>
+      <property name="EconomicValue" value="1000"/>
+      <property name="TraderStageTemplate" value="midTier1"/>
+      <property name="MaxDamage" value="800"/>
+      <property name="HeatMapStrength" value="0"/>
+      <property name="HeatMapTime" value="5000"/>
+      <property name="HeatMapFrequency" value="1000"/>
+      <property name="OpenSound" value="open_workbench"/>
+      <property name="CloseSound" value="close_workbench"/>
+      <property name="TakeDelay" value="5"/>
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="10"/>
+        <property name="resourceMetalPipe" value="10"/>
+        <property name="resourceWood" value="40"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="5" tag="allHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="2" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceHeadlight" count="2" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="4" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceScrapIron" count="5" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+      <property name="SortOrder1" value="B281"/>
+      <property name="SortOrder2" value="0303"/>
+      <property name="Group" value="Building,TCScience,advBuilding"/>
+      <property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+    </block>
   </append>
 
   <!-- Buildable Bricks -->
   <set xpath="/blocks/block[@name='brickShapes']/property[@class='UpgradeBlock']">
-		<property name="ToBlock" value="concreteShapes"/>
-		<property name="Item" value="resourceConcreteMix"/>
-		<property name="ItemCount" value="10"/>
-		<property name="UpgradeHitCount" value="4"/>
+    <property name="ToBlock" value="concreteShapes"/>
+    <property name="Item" value="resourceConcreteMix"/>
+    <property name="ItemCount" value="10"/>
+    <property name="UpgradeHitCount" value="4"/>
   </set>
   <set xpath="/blocks/block[@name='brickShapes']/property[@class='RepairItems']/property/@name">resourceBrick</set>
 
@@ -159,10 +220,10 @@
     <property name="CanPickup" value="true" />
   </append>
 
-	<!-- Pickup wild plants -->
-	<append xpath="/blocks/block[contains(@name,'3Harvest') and not(contains(@name,'Player'))]">
-		<property name="Class" value="CropsGrown"/>
-	</append>
+  <!-- Pickup wild plants -->
+  <append xpath="/blocks/block[contains(@name,'3Harvest') and not(contains(@name,'Player'))]">
+    <property name="Class" value="CropsGrown"/>
+  </append>
 
   <!-- Unlock Solar Bank with Advanced Engineering -->
   <append xpath="/blocks/block[@name='solarbank']">
@@ -183,7 +244,7 @@
     <drop event="Harvest" name="resourceScrapPolymers" count="5,12" tag="salvageHarvest"/>
   </append>
 
-	<!-- Return garage doors and draw bridges -->
+  <!-- Return garage doors and draw bridges -->
   <remove xpath="/blocks/block[@name='ironGarageDoorWhite']/drop"/>
   <remove xpath="/blocks/block[@name='woodenGarageDoor3x3White']/drop"/>
   <remove xpath="/blocks/block[@name='woodenGarageDoor4x3White']/drop"/>
@@ -196,9 +257,14 @@
   <!-- Remove purifier from dew collector drop -->
   <remove xpath="/blocks/block[@name='cntDewCollector']/drop[@event='Destroy']"/>
 
-	<!-- Lootable Ammo Cartons -->
-	<append xpath="/blocks/block[@name='palletCartonMilitaryBase']">	
-		<property name="Class" value="Loot"/>
-		<property name='LootList' value = 'ammoCarton'/>
-	</append>
+  <!-- Lootable Ammo Cartons -->
+  <append xpath="/blocks/block[@name='palletCartonMilitaryBase']">  
+    <property name="Class" value="Loot"/>
+    <property name='LootList' value = 'ammoCarton'/>
+  </append>
+
+  <set xpath="/blocks/block[@name='treeStump']/drop[@name='foodHoney']/@prob">1</set>
+  <set xpath="/blocks/block[@name='treeStump']/drop[@name='foodHoney']/@count">1,3</set>
+  <set xpath="/blocks/block[@name='treeStumpPOI']/drop[@name='foodHoney']/@prob">1</set>
+  <set xpath="/blocks/block[@name='treeStumpPOI']/drop[@name='foodHoney']/@count">1,3</set>
 </configs>

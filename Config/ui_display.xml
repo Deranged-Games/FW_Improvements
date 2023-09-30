@@ -11,4 +11,14 @@
   <append xpath="/ui_display_info/crafting_category_display/crafting_category_list[@display_type='chemistryStation']">
     <crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
   </append>
+
+  <append xpath="/ui_display_info/crafting_category_display">
+    <crafting_category_list display_type="HydroponicVerticalFarm">
+      <crafting_category name="HVF_All" icon="ui_game_symbol_book" display_name="XUI_CraftingList_HVF_All" />
+      <crafting_category name="HVF_Food" icon="ui_game_symbol_fork" display_name="XUI_CraftingList_HVF_Food" />
+      <crafting_category name="HVF_Drink" icon="ui_game_symbol_thirst" display_name="XUI_CraftingList_HVF_Drink" />
+      <crafting_category name="HVF_Med" icon="ui_game_symbol_medical" display_name="XUI_CraftingList_HVF_Med" />
+      <crafting_category name="HVF_Res" icon="ui_game_symbol_resource" display_name="XUI_CraftingList_HVF_Res" />
+    </crafting_category_list>
+  </append>
 </configs>

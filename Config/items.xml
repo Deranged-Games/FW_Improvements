@@ -139,6 +139,78 @@
         <property name="LootList" value="questRewardT6SkillMagazines"/>
       </property>
     </item>
+
+    <!-- New Booze -->
+    <item name="drinkJarBlueberryWine"> 
+      <property name="HoldType" value="3"/>
+      <property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+      <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+      <property name="CustomIcon" value="decoWineBottle"/>
+      <property name="CustomIconTint" value="50a0ff"/>
+      <property name="Material" value="Mglass"/>
+      <property name="Weight" value="10"/>
+      <property name="Stacknumber" value="10"/> 
+      <property name="EconomicValue" value="180"/>
+      <property name="UnlockedBy" value="craftingFood"/>
+      <property name="DisplayType" value="waterBeer"/>
+      <property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="1"/>
+        <property name="Sound_start" value="player_drinking"/>
+      </property>
+      <effect_group tiered="false">
+        <requirement name="NotHasBuff" buff="buffIsOnFire"/>
+        <display_value name="dStaminaRegen" value=".4"/>
+        <display_value name="dEntityDamageBrawling" value="3"/>
+        <display_value name="dStunResist" value="1"/>
+        <display_value name="dDuration" value="200"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="add" value="200"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="set" value="600">
+          <requirement name="CVarCompare" cvar="$buffBeerDuration" operation="GT" value="600"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffBeer"/>
+      </effect_group>
+      <effect_group tiered="false">
+        <requirement name="HasBuff" buff="buffIsOnFire"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+      </effect_group>
+    </item>  
+    <item name="drinkJarMead"> 
+      <property name="HoldType" value="3"/>
+      <property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+      <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+      <property name="CustomIcon" value="decoWineBottle"/>
+      <property name="CustomIconTint" value="ffff50"/>
+      <property name="Material" value="Mglass"/>
+      <property name="Weight" value="10"/>
+      <property name="Stacknumber" value="10"/> 
+      <property name="EconomicValue" value="200"/>
+      <property name="UnlockedBy" value="craftingFood"/>
+      <property name="DisplayType" value="waterBeer"/>
+      <property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="1"/>
+        <property name="Sound_start" value="player_drinking"/>
+      </property>
+      <effect_group tiered="false">
+        <requirement name="NotHasBuff" buff="buffIsOnFire"/>
+        <display_value name="dStaminaRegen" value=".4"/>
+        <display_value name="dEntityDamageBrawling" value="3"/>
+        <display_value name="dStunResist" value="1"/>
+        <display_value name="dDuration" value="200"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="add" value="200"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="set" value="600">
+          <requirement name="CVarCompare" cvar="$buffBeerDuration" operation="GT" value="600"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffBeer"/>
+      </effect_group>
+      <effect_group tiered="false">
+        <requirement name="HasBuff" buff="buffIsOnFire"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+      </effect_group>
+    </item>
   </append>
 
   <!-- Set T1 CSM bundle to T1 color -->
@@ -415,4 +487,31 @@
   <set xpath="/items/item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='$buffShamChowderDuration' and @operation='add']/@value">1800</set>
   <set xpath="/items/item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='$buffShamChowderDuration' and @operation='set']/@value">5400</set>
   <set xpath="/items/item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='$buffShamChowderDuration' and @operation='set']/requirement/@value">5400</set>
+
+  <!-- Hydroponic Farm Changes -->
+  <append xpath="/items/item[@name='resourceCropAloeLeaf']/property[@name='Group']/@value">,HVF_All,HVF_Med</append>
+  <append xpath="/items/item[@name='foodCropBlueberries']/property[@name='Group']/@value">,HVF_All,HVF_Food,HVF_Drink,HVF_Med</append>
+  <append xpath="/items/item[@name='resourceCropChrysanthemumPlant']/property[@name='Group']/@value">,HVF_All,HVF_Drink,HVF_Med,HVF_Res</append>
+  <append xpath="/items/item[@name='resourceCropCoffeeBeans']/property[@name='Group']/@value">,HVF_All,HVF_Drink</append>
+  <append xpath="/items/item[@name='foodCropCorn']/property[@name='Group']/@value">,HVF_All,HVF_Food</append>
+  <append xpath="/items/item[@name='resourceCropCottonPlant']/property[@name='Group']/@value">,HVF_All,HVF_Res</append>
+  <append xpath="/items/item[@name='resourceCropGoldenrodPlant']/property[@name='Group']/@value">,HVF_All,HVF_Drink</append>
+  <append xpath="/items/item[@name='foodCropGraceCorn']/property[@name='Group']/@value">,HVF_All,HVF_Drink,HVF_Res</append>
+  <append xpath="/items/item[@name='resourceCropHopsFlower']/property[@name='Group']/@value">,HVF_All,HVF_Drink</append>
+  <append xpath="/items/item[@name='foodCropMushrooms']/property[@name='Group']/@value">,HVF_All,HVF_Food,HVF_Drink</append>
+  <append xpath="/items/item[@name='foodCropPotato']/property[@name='Group']/@value">,HVF_All,HVF_Food</append>
+  <append xpath="/items/item[@name='foodCropYuccaFruit']/property[@name='Group']/@value">,HVF_All,HVF_Drink</append>
+  <append xpath="/items/item[@name='foodCropPumpkin']/property[@name='Group']/@value">,HVF_All,HVF_Food</append>
+
+  <append xpath="/items/item[@name='resourceWaterFilter']">
+    <effect_group tiered="false">
+      <passive_effect name="CraftingTime" operation="perc_subtract" value="0.25" tags="HVF_BUFF_SE"/>
+    </effect_group>
+  </append>
+
+  <append xpath="/items/item[@name='smallEngine']">
+    <effect_group tiered="false">
+      <passive_effect name="CraftingTime" operation="perc_subtract" value="0.25" tags="HVF_BUFF_SE"/>
+    </effect_group>
+  </append>
 </configs>
