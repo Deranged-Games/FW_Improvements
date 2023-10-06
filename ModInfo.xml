@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-  <ModInfo>
-    <Name value="Frag Whore Improvements" />
-    <Description value="Multiple alterations to Alpha 21 balance." />
-    <Author value="Dondelium" />
-    <Version value="0.21.5" />
-  </ModInfo>
+  <Name value="FW_Improvements" />
+  <DisplayName value="Frag Whore Improvements" />
+  <Description value="Multiple basic alterations to Alpha 21 balance." />
+  <Author value="Dondelium" />
+  <Version value="0.21.6" compat="A21" />
+  <Website value="" />
 </xml>

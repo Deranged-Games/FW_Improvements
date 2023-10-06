@@ -20,5 +20,24 @@
       <crafting_category name="HVF_Med" icon="ui_game_symbol_medical" display_name="XUI_CraftingList_HVF_Med" />
       <crafting_category name="HVF_Res" icon="ui_game_symbol_resource" display_name="XUI_CraftingList_HVF_Res" />
     </crafting_category_list>
+    <crafting_category_list display_type="cntStoveWorking">
+      <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+      <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+      <crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+    </crafting_category_list>
+    <crafting_category_list display_type="cntWallOvenWorking">
+      <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+    </crafting_category_list>
+    <crafting_category_list display_type="cntGasRangeWorking">
+      <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+      <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+    </crafting_category_list>
+    <crafting_category_list display_type="cntMicrowaveWorking">
+      <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+      <crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+    </crafting_category_list>
+    <crafting_category_list display_type="cntCoffeeMakerWorking">
+      <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+    </crafting_category_list>
   </append>
 </configs>

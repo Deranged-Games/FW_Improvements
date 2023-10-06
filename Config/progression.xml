@@ -459,4 +459,8 @@
       <unlock_entry item="solarCell" unlock_tier="2" />
     </display_entry>
   </append>
+
+  <!-- Working Cooking Appliances -->
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[@unlock_level='27,35,43,51,59']/unlock_entry[@item='foodChiliDog']/@item">,workingCookingHelper</append>
+  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='51,100']/@tags">,workingCookingHelper</append>
 </configs>

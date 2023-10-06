@@ -141,7 +141,7 @@
     </item>
 
     <!-- New Booze -->
-    <item name="drinkJarBlueberryWine"> 
+    <item name="drinkJarBlueberryWine">
       <property name="HoldType" value="3"/>
       <property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
       <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -149,7 +149,7 @@
       <property name="CustomIconTint" value="50a0ff"/>
       <property name="Material" value="Mglass"/>
       <property name="Weight" value="10"/>
-      <property name="Stacknumber" value="10"/> 
+      <property name="Stacknumber" value="10"/>
       <property name="EconomicValue" value="180"/>
       <property name="UnlockedBy" value="craftingFood"/>
       <property name="DisplayType" value="waterBeer"/>
@@ -175,8 +175,8 @@
         <requirement name="HasBuff" buff="buffIsOnFire"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
       </effect_group>
-    </item>  
-    <item name="drinkJarMead"> 
+    </item>
+    <item name="drinkJarMead">
       <property name="HoldType" value="3"/>
       <property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
       <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -184,7 +184,7 @@
       <property name="CustomIconTint" value="ffff50"/>
       <property name="Material" value="Mglass"/>
       <property name="Weight" value="10"/>
-      <property name="Stacknumber" value="10"/> 
+      <property name="Stacknumber" value="10"/>
       <property name="EconomicValue" value="200"/>
       <property name="UnlockedBy" value="craftingFood"/>
       <property name="DisplayType" value="waterBeer"/>

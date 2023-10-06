@@ -207,11 +207,11 @@
     </recipe>
 
     <!-- Keg Recipes -->
-    <recipe name="BrewKeg" count="1" craft_area="workbench"> 
+    <recipe name="BrewKeg" count="1" craft_area="workbench">
       <ingredient name="resourceWood" count="100"/>
       <ingredient name="resourceForgedIron" count="20"/>
     </recipe>
-    <recipe name="drinkJarBeer" count="10" craft_area="BrewKeg" craft_time="840" tags="perkMasterChef,learnable"> 
+    <recipe name="drinkJarBeer" count="10" craft_area="BrewKeg" craft_time="840" tags="perkMasterChef,learnable">
       <ingredient name="resourceCropHopsFlower" count="40"/>
       <ingredient name="drinkJarBoiledWater" count="10"/>
       <effect_group>
@@ -241,16 +241,22 @@
         <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-5,-10" tags="foodCornMeal,foodCropBlueberries"/>
       </effect_group>
     </recipe>
-    <recipe name="drinkJarBlueberryWine" count="10" craft_area="BrewKeg" craft_time="960" tags="perkMasterChef,learnable"> 
+    <recipe name="drinkJarBlueberryWine" count="10" craft_area="BrewKeg" craft_time="960" tags="perkMasterChef,learnable">
       <ingredient name="foodCropBlueberries" count="50"/>
       <ingredient name="drinkJarBoiledWater" count="8"/>
       <effect_group>
         <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-5,-10" tags="foodCropBlueberries"/>
       </effect_group>
     </recipe>
-    <recipe name="drinkJarMead" count="10" craft_area="BrewKeg" craft_time="960" tags="perkMasterChef,learnable"> 
+    <recipe name="drinkJarMead" count="10" craft_area="BrewKeg" craft_time="960" tags="perkMasterChef,learnable">
       <ingredient name="foodHoney" count="5"/>
       <ingredient name="drinkJarBoiledWater" count="6"/>
+    </recipe>
+    <recipe name="drinkJarPureMineralWater" count="1" craft_area="BrewKeg" tags="perkMasterChef,learnable">
+      <ingredient name="drinkJarBoiledWater" count="10"/>
+      <ingredient name="resourceCoal" count="5"/>
+      <ingredient name="resourceCropGoldenrodPlant" count="5"/>
+      <ingredient name="resourceCropChrysanthemumPlant" count="5"/>
     </recipe>
 
     <!-- Hydroponic Farm Recipes -->
@@ -325,6 +331,191 @@
       <ingredient name="resourcePotassiumNitratePowder" count="25"/>
       <ingredient name="drinkJarRiverWater" count="5"/>
     </recipe>
+
+    <!-- Working Appliances Recipes -->
+    <recipe name="workingCookingHelper" count="1" craft_time="45" craft_area="workbench" tags="workbenchCrafting,learnable">
+      <ingredient name="resourceForgedIron" count="10"/>
+      <ingredient name="resourceMechanicalParts" count="5"/>
+      <ingredient name="resourceElectricParts" count="5"/>
+      <ingredient name="resourceMetalPipe" count="5"/>
+    </recipe>
+    <!-- Steeping -->
+    <recipe name="drinkJarGoldenRodTea" count="1" craft_area="coffeemaker">
+      <ingredient name="resourceCropGoldenrodPlant" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+    <recipe name="drinkJarRedTea" count="1" craft_area="coffeemaker">
+      <ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+    <recipe name="drinkJarCoffee" count="1" craft_area="coffeemaker">
+      <ingredient name="resourceCropCoffeeBeans" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+    <recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="coffeemaker">
+      <ingredient name="resourceCropCoffeeBeans" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="resourceGunPowder" count="5"/>
+    </recipe>
+    <recipe name="drinkJarYuccaJuice" count="1" craft_area="coffeemaker">
+      <ingredient name="foodCropYuccaFruit" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+    <!-- Frying -->
+    <recipe name="drinkJarBoiledWater" count="1" craft_area="gasrange" craft_tool="toolCookingPot" tags="perkMasterChef">
+      <ingredient name="resourceSnowBall" count="10"/>
+    </recipe>
+    <recipe name="drinkJarBoiledWater" count="1" craft_area="gasrange" craft_tool="toolCookingPot" tags="perkMasterChef">
+      <ingredient name="drinkJarRiverWater" count="1"/>
+    </recipe>
+    <recipe name="foodBaconAndEggs" count="1" craft_area="gasrange" craft_tool="toolCookingPot" tags="perkMasterChef">
+      <ingredient name="foodRawMeat" count="2"/>
+      <ingredient name="foodEgg" count="2"/>
+    </recipe>
+    <recipe name="foodGrilledMeat" count="1" craft_area="gasrange" craft_tool="toolCookingPot" tags="perkMasterChef">
+      <ingredient name="foodRawMeat" count="2"/>
+    </recipe>
+    <recipe name="foodSteakAndPotato" count="1" craft_area="gasrange" craft_tool="toolCookingPot" tags="perkMasterChef">
+      <ingredient name="foodRawMeat" count="2"/>
+      <ingredient name="foodCropPotato" count="1"/>
+      <ingredient name="foodCropMushrooms" count="1"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+    </recipe>
+    <recipe name="foodChiliDog" count="2" craft_area="gasrange" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCanChili" count="1"/>
+      <ingredient name="foodRawMeat" count="3"/>
+      <ingredient name="foodCornBread" count="2"/>
+    </recipe>
+    <recipe name="foodFishTacos" count="2" craft_area="gasrange" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCanSalmon" count="1"/>
+      <ingredient name="foodCornMeal" count="3"/>
+    </recipe>
+    <recipe name="foodFishTacos" count="2" craft_area="gasrange" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCanTuna" count="1"/>
+      <ingredient name="foodCornMeal" count="3"/>
+    </recipe>
+    <recipe name="foodTunaFishGravyToast" count="2" craft_area="gasrange" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCanTuna" count="1"/>
+      <ingredient name="foodCornMeal" count="2"/>
+      <ingredient name="foodCornBread" count="2"/>
+      <ingredient name="resourceAnimalFat" count="2"/>
+      <ingredient name="foodCanPeas" count="1"/>
+    </recipe>
+    <recipe name="foodSpaghetti" count="2" craft_area="gasrange" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCanBeef" count="1"/>
+      <ingredient name="foodCanPasta" count="1"/>
+      <ingredient name="foodCropMushrooms" count="2"/>
+      <ingredient name="resourceAnimalFat" count="2"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+    <recipe name="foodHoboStew" count="1" craft_time="40" craft_area="gasrange" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodRottingFlesh" count="5"/>
+      <ingredient name="foodCropPotato" count="1"/>
+      <ingredient name="foodCropCorn" count="1"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+    <recipe name="foodMeatStew" count="1" craft_area="gasrange" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodRawMeat" count="2"/>
+      <ingredient name="foodCropPotato" count="2"/>
+      <ingredient name="foodCropCorn" count="2"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+    <recipe name="foodGumboStew" count="2" craft_area="gasrange" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCanBeef" count="1"/>
+      <ingredient name="foodCanPeas" count="1"/>
+      <ingredient name="foodCanStock" count="1"/>
+      <ingredient name="resourceAnimalFat" count="3"/>
+      <ingredient name="drinkJarBoiledWater" count="2"/>
+    </recipe>
+    <recipe name="foodShamChowder" count="2" craft_area="gasrange" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCanSham" count="1"/>
+      <ingredient name="foodCropPotato" count="2"/>
+      <ingredient name="foodCropCorn" count="2"/>
+      <ingredient name="drinkJarBoiledWater" count="2"/>
+    </recipe>
+    <recipe name="foodVegetableStew" count="1" craft_area="gasrange" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCropPotato" count="1"/>
+      <ingredient name="foodCropCorn" count="1"/>
+      <ingredient name="foodCropMushrooms" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+    <!-- Baking -->
+    <recipe name="foodCornBread" count="5" craft_area="stove" craft_tool="toolCookingPot" tags="perkMasterChef">
+      <ingredient name="foodCornMeal" count="4"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="foodEgg" count="2"/>
+    </recipe>
+    <recipe name="foodBlueberryPie" count="1" craft_area="stove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCropBlueberries" count="3"/>
+      <ingredient name="foodEgg" count="2"/>
+      <ingredient name="foodCornMeal" count="2"/>
+      <ingredient name="resourceAnimalFat" count="2"/>
+    </recipe>
+    <recipe name="foodPumpkinPie" count="1" craft_area="stove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCropPumpkin" count="2"/>
+      <ingredient name="foodEgg" count="2"/>
+      <ingredient name="foodCornMeal" count="2"/>
+      <ingredient name="resourceAnimalFat" count="2"/>
+    </recipe>
+    <recipe name="foodPumpkinCheesecake" count="1" craft_area="stove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCropPumpkin" count="1"/>
+      <ingredient name="foodEgg" count="1"/>
+      <ingredient name="foodCornMeal" count="1"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="drinkJarBeer" count="1"/>
+    </recipe>
+    <recipe name="foodPumpkinBread" count="1" craft_area="stove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCropPumpkin" count="1"/>
+      <ingredient name="foodCornMeal" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+    <recipe name="foodShepardsPie" count="1" craft_area="stove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCanLamb" count="1"/>
+      <ingredient name="foodCanPeas" count="1"/>
+      <ingredient name="foodCropCorn" count="1"/>
+      <ingredient name="resourceAnimalFat" count="3"/>
+      <ingredient name="foodCropPotato" count="1"/>
+    </recipe>
+    <!-- Atrosities -->
+    <recipe name="foodCanSham" count="1" craft_time="15" craft_area="microwave">
+      <ingredient name="foodRottingFlesh" count="3"/>
+      <ingredient name="resourceBone" count="3"/>
+      <ingredient name="resourceAnimalFat" count="3"/>
+    </recipe>
+    <recipe name="drugHerbalAntibiotics" count="1" craft_area="microwave">
+      <ingredient name="foodCropBlueberries" count="2"/>
+      <ingredient name="foodCropMushrooms" count="2"/>
+      <ingredient name="resourceCropChrysanthemumPlant" count="2"/>
+      <ingredient name="resourcePotassiumNitratePowder" count="2"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+    <recipe name="resourceGlue" count="1" craft_area="microwave">
+      <ingredient name="resourceBone" count="4"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+    <recipe name="resourcePaint" count="500" craft_area="microwave">
+      <ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+    <recipe name="foodBakedPotato" count="2" craft_area="microwave">
+      <ingredient name="foodCropPotato" count="1"/>
+    </recipe>
+    <recipe name="foodBoiledMeat" count="1" craft_area="microwave">
+      <ingredient name="foodRawMeat" count="2"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+    <recipe name="foodCharredMeat" count="1" craft_area="microwave">
+      <ingredient name="foodRawMeat" count="2"/>
+    </recipe>
+    <recipe name="foodCornOnTheCob" count="2" craft_area="microwave">
+      <ingredient name="foodCropCorn" count="1"/>
+    </recipe>
+    <recipe name="foodEggBoiled" count="1" craft_area="microwave">
+      <ingredient name="foodEgg" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
   </append>
 
   <!-- ====================================== -->
@@ -363,6 +554,61 @@
   <set xpath="/recipes/recipe[@name='modGunScopeSmall']/ingredient[@name='resourceBrokenGlass']/@name">glassBlockVariantHelper</set>
 
   <set xpath="/recipes/recipe[@name='bed02']/ingredient[@name='resourceWood']/@count">50</set>
+
+  <!-- Cloth rebalance -->
+  <set xpath="/recipes/recipe[@name='resourceCloth']/ingredient[@name='resourceCropCottonPlant']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='resourceCloth']/ingredient[@name='resourceYuccaFibers']/@count">50</set>
+
+  <set xpath="/recipes/recipe[@name='resourceDuctTape']/ingredient[@name='resourceCloth']/@count">2</set>
+
+  <set xpath="/recipes/recipe[@name='medicalBandage']/ingredient[@name='resourceCloth']/@count">2</set>
+  <set xpath="/recipes/recipe[@name='medicalPlasterCast']/ingredient[@name='resourceCloth']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='medicalSplint']/ingredient[@name='resourceCloth']/@count">2</set>
+
+  <set xpath="/recipes/recipe[@name='ammoArrowFlaming']/ingredient[@name='resourceCloth']/@count">1</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']/ingredient[@name='resourceCloth']/@count">100</set>
+  <set xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']/ingredient[@name='resourceCloth']/@count">1</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']/ingredient[@name='resourceCloth']/@count">100</set>
+  <set xpath="/recipes/recipe[@name='thrownAmmoMolotovCocktail']/ingredient[@name='resourceCloth']/@count">1</set>
+  <set xpath="/recipes/recipe[@name='meleeToolTorch']/ingredient[@name='resourceCloth']/@count">1</set>
+
+  <set xpath="/recipes/recipe[@name='armorClothBoots']/ingredient[@name='resourceCloth']/@count">10</set>
+  <set xpath="/recipes/recipe[@name='armorClothGloves']/ingredient[@name='resourceCloth']/@count">10</set>
+  <set xpath="/recipes/recipe[@name='armorClothHat']/ingredient[@name='resourceCloth']/@count">10</set>
+  <set xpath="/recipes/recipe[@name='armorClothJacket']/ingredient[@name='resourceCloth']/@count">10</set>
+  <set xpath="/recipes/recipe[@name='armorClothPants']/ingredient[@name='resourceCloth']/@count">10</set>
+
+  <set xpath="/recipes/recipe[@name='modArmorBandolier']/ingredient[@name='resourceCloth']/@count">25</set>
+  <set xpath="/recipes/recipe[@name='modArmorInsulatedLiner']/ingredient[@name='resourceCloth']/@count">25</set>
+  <set xpath="/recipes/recipe[@name='modRoboticDroneMoraleBoosterMod']/ingredient[@name='resourceCloth']/@count">25</set>
+  <set xpath="/recipes/recipe[@name='modVehicleExpandedSeat']/ingredient[@name='resourceCloth']/@count">25</set>
+  <set xpath="/recipes/recipe[@name='modClothingStoragePocket']/ingredient[@name='resourceCloth']/@count">25</set>
+  <set xpath="/recipes/recipe[@name='modClothingCargoStoragePocket']/ingredient[@name='resourceCloth']/@count">25</set>
+
+  <set xpath="/recipes/recipe[@name='apparelBallCap']/ingredient[@name='resourceCloth']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='apparelBandana']/ingredient[@name='resourceCloth']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='apparelFlannelShirt']/ingredient[@name='resourceCloth']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='apparelSweatshirt']/ingredient[@name='resourceCloth']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='apparelSkullCap']/ingredient[@name='resourceCloth']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='apparelDenimPants']/ingredient[@name='resourceCloth']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='apparelDenimShortsPants']/ingredient[@name='resourceCloth']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='apparelOveralls']/ingredient[@name='resourceCloth']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='apparelSkirt']/ingredient[@name='resourceCloth']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='apparelTankTop']/ingredient[@name='resourceCloth']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='apparelTShirtPlain']/ingredient[@name='resourceCloth']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='apparelCoatPufferCoat']/ingredient[@name='resourceCloth']/@count">10</set>
+  <set xpath="/recipes/recipe[@name='apparelArmyPants']/ingredient[@name='resourceCloth']/@count">10</set>
+  <set xpath="/recipes/recipe[@name='apparelArmyShirt']/ingredient[@name='resourceCloth']/@count">10</set>
+
+  <set xpath="/recipes/recipe[@name='bed02']/ingredient[@name='resourceCloth']/@count">20</set>
+  <set xpath="/recipes/recipe[@name='oldChair1VariantHelper']/ingredient[@name='resourceCloth']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='pictureVariantHelper']/ingredient[@name='resourceCloth']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='sandbagBlockVariantHelper']/ingredient[@name='resourceCloth']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='sectionalPlaidCouchSofaBlockVariantHelper']/ingredient[@name='resourceCloth']/@count">10</set>
+  <set xpath="/recipes/recipe[@name='couchModernBlockVariantHelper']/ingredient[@name='resourceCloth']/@count">10</set>
+  <set xpath="/recipes/recipe[@name='couchUglySingleBlockVariantHelper']/ingredient[@name='resourceCloth']/@count">10</set>
+  <set xpath="/recipes/recipe[@name='couchUglySmallBlockVariantHelper']/ingredient[@name='resourceCloth']/@count">10</set>
+  <set xpath="/recipes/recipe[@name='couchUglyLargeBlockVariantHelper']/ingredient[@name='resourceCloth']/@count">10</set>
 
   <!-- ================================ -->
   <!-- ===== Nutrition rebalacing ===== -->

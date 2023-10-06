@@ -17,7 +17,7 @@
   <!-- Forge input slots -->
   <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">PhDwindowForgeInput</set>
 
-  <append xpath="/xui/ruleset">    
+  <append xpath="/xui/ruleset">
     <window_group name="workstation_BrewKeg" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" >
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
@@ -25,7 +25,7 @@
       <window name="windowOutput" />
       <window name="windowNonPagingHeader" />
       <window name="windowCombine" />
-    </window_group>  
+    </window_group>
   </append>
   <append xpath="/xui/ruleset[@name='default']" >
     <window_group name="workstation_HydroponicVerticalFarm" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
@@ -33,6 +33,49 @@
       <window name="craftingInfoPanel"/>
       <window name="windowCraftingQueue"/>
       <window name="windowTools_HVF"/>
+      <window name="windowOutput" />
+      <window name="windowNonPagingHeader" />
+    </window_group>
+    <window_group name="workstation_cntStoveWorking" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+      <window name="windowCraftingList"/>
+      <window name="craftingInfoPanel"/>
+      <window name="windowCraftingQueue"/>
+      <window name="windowToolsCampfire" />
+      <window name="windowFuel" />
+      <window name="windowOutput" />
+      <window name="windowNonPagingHeader" />
+    </window_group>
+    <window_group name="workstation_cntWallOvenWorking" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+      <window name="windowCraftingList"/>
+      <window name="craftingInfoPanel"/>
+      <window name="windowCraftingQueue"/>
+      <window name="windowTools_wallOven" />
+      <window name="windowFuel" />
+      <window name="windowOutput" />
+      <window name="windowNonPagingHeader" />
+    </window_group>
+    <window_group name="workstation_cntGasRangeWorking" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+      <window name="windowCraftingList"/>
+      <window name="craftingInfoPanel"/>
+      <window name="windowCraftingQueue"/>
+      <window name="windowTools_gasRange" />
+      <window name="windowFuel" />
+      <window name="windowOutput" />
+      <window name="windowNonPagingHeader" />
+    </window_group>
+    <window_group name="workstation_cntMicrowaveWorking" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+      <window name="windowCraftingList"/>
+      <window name="craftingInfoPanel"/>
+      <window name="windowCraftingQueue"/>
+      <window name="windowFuel" />
+      <window name="windowOutput" />
+      <window name="windowNonPagingHeader" />
+    </window_group>
+    <window_group name="workstation_cntCoffeeMakerWorking" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+      <window name="windowCraftingList"/>
+      <window name="craftingInfoPanel"/>
+      <window name="windowCraftingQueue"/>
+      <window name="windowFuel" />
       <window name="windowOutput" />
       <window name="windowNonPagingHeader" />
     </window_group>
