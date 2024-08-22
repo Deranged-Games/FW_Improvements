@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<configs>
-  <set xpath="/materials/material[@id='Mcobblestone_shapes']/property[@name='MaxDamage']/@value">1500</set>
-  <set xpath="/materials/material[@id='Mbrick_shapes']/property[@name='MaxDamage']/@value">3000</set>
-  <set xpath="/materials/material[@id='Mbrick']/property[@name='MaxDamage']/@value">3000</set>
-  <set xpath="/materials/material[@id='Mconcrete_shapes']/property[@name='MaxDamage']/@value">6000</set>
-  <set xpath="/materials/material[@id='Msteel_shapes']/property[@name='MaxDamage']/@value">12000</set>
-</configs>

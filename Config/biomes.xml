@@ -1,16 +1,16 @@
 <configs>
   <!-- Add edible plants to the wild -->
   <append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.31']/decorations">
-    <decoration type="block" blockname="plantedHop3Harvest" prob="0.05" rotatemax="3"/>
-    <decoration type="block" blockname="plantedPotato3Harvest" prob="0.15" rotatemax="3"/>
+    <decoration type="block" blockname="plantedHop3Harvest" prob="0.005" rotatemax="3"/>
+    <decoration type="block" blockname="plantedPotato3Harvest" prob="0.015" rotatemax="3"/>
   </append>
   <append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.392']/decorations">
     <decoration type="block" blockname="plantedCorn3Harvest" prob="0.003" rotatemax="3"/>
     <decoration type="block" blockname="plantedCornDead" prob="0.003" rotatemax="3"/>
   </append>
   <append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.412']/decorations">
-    <decoration type="block" blockname="plantedMushroom3Harvest" prob="0.003" rotatemax="3"/>
-    <decoration type="block" blockname="plantedPumpkin3Harvest" prob="0.001" rotatemax="3"/>
+    <decoration type="block" blockname="plantedMushroom3Harvest" prob="0.0006" rotatemax="3"/>
+    <decoration type="block" blockname="plantedPumpkin3Harvest" prob="0.0003" rotatemax="3"/>
   </append>
   <append xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.24']/decorations">
     <decoration type="block" blockname="plantedCoffee3Harvest" prob="0.01" rotatemax="3"/>

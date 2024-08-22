@@ -1,9 +1,8 @@
 <configs>
   <!-- Loot and player bag remain for longer -->
-  <set xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']/property[@name='TimeStayAfterDeath']/@value">2400</set>
-  <set xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']/property[@name='TimeStayAfterDeath']/@value">2400</set>
-  <set xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']/@value">2400</set>
-  <set xpath="/entity_classes/entity_class[@name='DroppedLootContainerTwitch']/property[@name='TimeStayAfterDeath']/@value">2400</set>
+  <set xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']/property[@name='TimeStayAfterDeath']/@value">3600</set>
+  <set xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']/property[@name='TimeStayAfterDeath']/@value">3600</set>
+  <set xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']/@value">3600</set>
 
   <!-- Handle Cop Damage -->
   <set xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='Explosion.BlockDamage']/@value">250</set>
@@ -33,23 +32,23 @@
 
   <!-- Boss animal buffs -->
   <append xpath="/entity_classes/entity_class[@name='animalBear']">
-    <property name="DismemberMultiplierHead" value=".4"/>
+    <property name="DismemberMultiplierHead" value=".2"/>
     <property name="DismemberMultiplierArms" value=".4"/>
     <property name="DismemberMultiplierLegs" value=".4"/>
   </append>
   <append xpath="/entity_classes/entity_class[@name='animalZombieBear']">
-    <property name="DismemberMultiplierHead" value=".2"/>
+    <property name="DismemberMultiplierHead" value=".1"/>
     <property name="DismemberMultiplierArms" value=".2"/>
     <property name="DismemberMultiplierLegs" value=".2"/>
   </append>
   <append xpath="/entity_classes/entity_class[@name='animalWolf']">
-    <property name="DismemberMultiplierHead" value=".7"/>
-    <property name="DismemberMultiplierArms" value=".7"/>
-    <property name="DismemberMultiplierLegs" value=".7"/>
+    <property name="DismemberMultiplierHead" value=".3"/>
+    <property name="DismemberMultiplierArms" value=".6"/>
+    <property name="DismemberMultiplierLegs" value=".6"/>
   </append>
   <append xpath="/entity_classes/entity_class[@name='animalDireWolf']">
-    <property name="DismemberMultiplierHead" value=".4"/>
-    <property name="DismemberMultiplierArms" value=".4"/>
-    <property name="DismemberMultiplierLegs" value=".4"/>
+    <property name="DismemberMultiplierHead" value=".1"/>
+    <property name="DismemberMultiplierArms" value=".3"/>
+    <property name="DismemberMultiplierLegs" value=".3"/>
   </append>
 </configs>

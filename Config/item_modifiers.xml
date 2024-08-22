@@ -1,36 +1,4 @@
 <configs>
-  <append xpath="/item_modifiers">
-    <!-- Create night vision mod -->
-    <item_modifier name="modNVHelmetLight" installable_tags="head" modifier_tags="misc,modArmorHelmetLight" blocked_tags="noMods,clothing" type="attachment">
-      <property name="Extends" value="modGeneralMaster" param1="CustomIcon" />
-      <property name="Material" value="Msteel" />
-      <property name="Weight" value="8" />
-      <property name="DegradationBreaksAfter" value="false" />
-      <property name="EconomicValue" value="1500" />
-      <property name="CustomIcon" value="apparelNightvisionGoggles" />
-      <property name="CustomIconTint" value="50,125,50" />
-      <property name="ActivateObject" value="NightVision" />
-      <property name="ImageEffectOnActive" value="NightVision" />
-      <property name="PlaySoundOnActive" value="nightvision_toggle" />
-      <effect_group tiered="false">
-        <requirement name="IsLocalPlayer" />
-        <triggered_effect trigger="onSelfItemActivate" action="ModifyScreenEffect" effect_name="NightVision" intensity="1" fade="0" />
-        <triggered_effect trigger="onSelfItemDeactivate" action="ModifyScreenEffect" effect_name="NightVision" intensity="0" fade="0" />
-        <triggered_effect trigger="onSelfEquipStop" action="ModifyScreenEffect" effect_name="NightVision" intensity="0" fade="0" />
-        <triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLightTPV" prefab="ScreenEffects/DeferredNV/NVGLight" parentTransform="Spotlight" localPos="0,0,0" localRot="90,0,0" />
-        <triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLightFPV" prefab="ScreenEffects/DeferredNV/NVGLight" parentTransform="CameraNode" localPos="0,0,.1" localRot="-90,0,0" />
-        <triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLightTPV" />
-        <triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLightFPV" />
-        <triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightTPV" active="@!.IsFPV" />
-        <triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightFPV" active="@.IsFPV" />
-        <triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightTPV" active="false" />
-        <triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightFPV" active="false" />
-        <triggered_effect trigger="onSelfChangedView" action="SetPartActive" part="HeadLightTPV" active="@!.IsFPV" />
-        <triggered_effect trigger="onSelfChangedView" action="SetPartActive" part="HeadLightFPV" active="@.IsFPV" />
-      </effect_group>
-    </item_modifier>
-  </append>
-
   <!-- Armor Mod Buffs -->
   <set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingBasic']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">2</set>
   <set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingReinforced']/effect_group/passive_effect[@name='PhysicalDamageResist']/@value">4</set>
@@ -66,21 +34,21 @@
   <!-- Bipods should negate sway, and massive recoil when they are set -->
   <remove xpath="/item_modifiers/item_modifier[@name='modGunBipod']/effect_group/passive_effect"/>
   <append xpath="/item_modifiers/item_modifier[@name='modGunBipod']/effect_group">
-    <passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.7"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
-    <passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.7"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
-    <passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.7"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
-    <passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.7"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
-    <passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.5"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
-    <passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.5"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
+    <passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.4"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
+    <passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.4"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
+    <passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.4"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
+    <passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.4"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
+    <passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.3"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
+    <passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.3"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
     <passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="2"><requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/></passive_effect>
     <passive_effect name="WeaponHandling" operation="perc_add" value="-.1"/>
   </append>
 
-  <!-- Foregrips are not fucking magic -->
-  <set xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/effect_group/passive_effect[@name='KickDegreesVerticalMin']/@value">-.3</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/effect_group/passive_effect[@name='KickDegreesVerticalMax']/@value">-.3</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/effect_group/passive_effect[@name='KickDegreesHorizontalMin']/@value">-.3</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/effect_group/passive_effect[@name='KickDegreesHorizontalMax']/@value">-.3</set>
+  <!-- Foregrips are not magic, they usually extend your grip reach making you MORE unstable -->
+  <set xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/effect_group/passive_effect[@name='KickDegreesVerticalMin']/@value">-.25</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/effect_group/passive_effect[@name='KickDegreesVerticalMax']/@value">-.25</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/effect_group/passive_effect[@name='KickDegreesHorizontalMin']/@value">-.25</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/effect_group/passive_effect[@name='KickDegreesHorizontalMax']/@value">-.25</set>
 
   <!-- Arrow Rest Mod Buffs -->
   <set xpath="/item_modifiers/item_modifier[@name='modGunBowArrowRest']/effect_group/passive_effect[@name='SpreadMultiplierAiming']/@value">-.2</set>
@@ -90,7 +58,7 @@
   <set xpath="/item_modifiers/item_modifier[@name='modMeleeTemperedBlade']/effect_group/passive_effect[@name='BlockDamage']/@value">.2</set>
   <set xpath="/item_modifiers/item_modifier[@name='modMeleeTemperedBlade']/effect_group/passive_effect[@name='DegradationPerUse']/@value">-.3</set>
 
-  <!-- Weighted Head Buff -->
+  <!-- Weighted Head rework -->
   <remove xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/effect_group/requirement" />
   <append xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/effect_group">
     <passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
@@ -106,11 +74,4 @@
       <passive_effect name="AttacksPerMinute" operation="perc_add" value=".1"/>
     </effect_group>
   </append>
-
-  <!-- Remove exp debuff from using modifiers -->
-  <remove xpath="/item_modifiers/item_modifier[@name='modMeleeFiremansAxeMod']/effect_group/triggered_effect"/>
-  <remove xpath="/item_modifiers/item_modifier[@name='modMeleeGraveDigger']/effect_group/triggered_effect"/>
-  <remove xpath="/item_modifiers/item_modifier[@name='modMeleeBunkerBuster']/effect_group/triggered_effect"/>
-  <remove xpath="/item_modifiers/item_modifier[@name='modMeleeIronBreaker']/effect_group/triggered_effect"/>
-  <remove xpath="/item_modifiers/item_modifier[@name='modMeleeWoodSplitter']/effect_group/triggered_effect"/>
 </configs>

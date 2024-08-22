@@ -1,268 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
-  <!-- ================================ -->
-  <!-- ===== First: Add new items ===== -->
-  <!-- ================================ -->
-  <append xpath="/items">
-    <!-- Add Steel Ammo Items -->
-    <item name="resourceBulletCasingSteel">
-      <property name="Extends" value="resourceBulletCasing"/>
-      <property name="CustomIcon" value="resourceBulletCasing"/>
-      <property name="CustomIconTint" value="a0a0ff"/>
-      <property name="DescriptionKey" value="resourceBulletCasingSteelDesc"/>
-      <property name="Material" value="MresourceScrapIron"/>
-      <property name="Stacknumber" value="500"/>
-      <property name="EconomicValue" value="10"/>
-      <property name="EconomicBundleSize" value="10"/>
-      <property name="Group" value="Resources,Ammo/Weapons"/>
-      <property name="CraftingSkillGroup" value="craftSkillGuns"/>
-    </item>
-    <item name="ammo9mmBulletSteel">
-      <property name="Extends" value="ammo9mmBulletBall"/>
-      <property name="CustomIcon" value="ammo9mmBulletBall"/>
-      <property name="CustomIconTint" value="a0a0ff"/>
-      <property name="DisplayType" value="ammoBulletSteel"/>
-      <property name="Material" value="Msteel"/>
-      <property name="EconomicValue" value="8"/>
-      <property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
-      <property name="UnlockedBy" value="perkPistolPeteHPAmmo"/>
-      <effect_group name="Base Effects" tiered="false">
-        <passive_effect name="EntityDamage" operation="base_set" value="29"/>
-        <passive_effect name="BlockDamage" operation="base_set" value="6"/>
-        <passive_effect name="DegradationPerUse" operation="perc_add" value="1"/>
-        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
-        <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
-      </effect_group>
-    </item>
-    <item name="ammo44MagnumBulletSteel">
-      <property name="Extends" value="ammo44MagnumBulletBall"/>
-      <property name="CustomIcon" value="ammo44MagnumBulletBall"/>
-      <property name="CustomIconTint" value="a0a0ff"/>
-      <property name="DisplayType" value="ammoBulletSteel"/>
-      <property name="Material" value="Msteel"/>
-      <property name="EconomicValue" value="9"/>
-      <property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
-      <property name="UnlockedBy" value="perkEnforcerHPAmmo"/>
-      <effect_group name="Base Effects" tiered="false">
-        <passive_effect name="EntityDamage" operation="base_set" value="76"/>
-        <passive_effect name="BlockDamage" operation="base_set" value="10"/>
-        <passive_effect name="DegradationPerUse" operation="perc_add" value="1"/>
-      </effect_group>
-    </item>
-    <item name="ammo762mmBulletFMJSteel">
-      <property name="Extends" value="ammo762mmBulletBall"/>
-      <property name="CustomIcon" value="ammo762mmBulletBall"/>
-      <property name="CustomIconTint" value="a0a0ff"/>
-      <property name="DisplayType" value="ammoBulletSteel"/>
-      <property name="Material" value="Msteel"/>
-      <property name="EconomicValue" value="10"/>
-      <property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
-      <property name="UnlockedBy" value="perkSniperHPAmmo"/>
-      <effect_group name="Base Effects" tiered="false">
-        <passive_effect name="EntityDamage" operation="base_set" value="46"/>
-        <passive_effect name="BlockDamage" operation="base_set" value="7"/>
-        <passive_effect name="DegradationPerUse" operation="perc_add" value="1"/>
-        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
-        <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
-      </effect_group>
-    </item>
-
-    <!-- Add Bricks into the game -->
-    <item name="resourceBrick">
-      <property name="Extends" value="resourceForgedIron"/>
-      <property name="CustomIcon" value="resourceForgedIron"/>
-      <property name="CustomIconTint" value="ffa0a0"/>
-      <property name="DescriptionKey" value="resourceBrickDesc"/>
-      <property name="Material" value="MresourceCobblestones"/>
-      <property name="EconomicValue" value="8"/>
-      <property name="CraftingIngredientTime" value="0.5"/>
-    </item>
-
-    <!-- Better Tier Magazine Bundles -->
-    <item name="questRewardT2SkillMagazineBundle">
-      <property name="Extends" value="questRewardT1SkillMagazineBundle"/>
-      <property name="CustomIcon" value="bundleBooks"/>
-      <property name="CustomIconTint" value="CF7F29"/>
-      <property name="ItemTypeIcon" value="bundle"/>
-      <property class="Action0">
-        <property name="Class" value="OpenLootBundle"/>
-        <property name="Delay" value="0"/>
-        <property name="Sound_start" value="close_garbage"/>
-        <property name="LootList" value="questRewardT2SkillMagazines"/>
-      </property>
-    </item>
-    <item name="questRewardT3SkillMagazineBundle">
-      <property name="Extends" value="questRewardT1SkillMagazineBundle"/>
-      <property name="CustomIcon" value="bundleBooks"/>
-      <property name="CustomIconTint" value="A2A41B"/>
-      <property name="ItemTypeIcon" value="bundle"/>
-      <property class="Action0">
-        <property name="Class" value="OpenLootBundle"/>
-        <property name="Delay" value="0"/>
-        <property name="Sound_start" value="close_garbage"/>
-        <property name="LootList" value="questRewardT3SkillMagazines"/>
-      </property>
-    </item>
-    <item name="questRewardT4SkillMagazineBundle">
-      <property name="Extends" value="questRewardT1SkillMagazineBundle"/>
-      <property name="CustomIcon" value="bundleBooks"/>
-      <property name="CustomIconTint" value="42C234"/>
-      <property name="ItemTypeIcon" value="bundle"/>
-      <property class="Action0">
-        <property name="Class" value="OpenLootBundle"/>
-        <property name="Delay" value="0"/>
-        <property name="Sound_start" value="close_garbage"/>
-        <property name="LootList" value="questRewardT4SkillMagazines"/>
-      </property>
-    </item>
-    <item name="questRewardT5SkillMagazineBundle">
-      <property name="Extends" value="questRewardT1SkillMagazineBundle"/>
-      <property name="CustomIcon" value="bundleBooks"/>
-      <property name="CustomIconTint" value="315DCE"/>
-      <property name="ItemTypeIcon" value="bundle"/>
-      <property class="Action0">
-        <property name="Class" value="OpenLootBundle"/>
-        <property name="Delay" value="0"/>
-        <property name="Sound_start" value="close_garbage"/>
-        <property name="LootList" value="questRewardT5SkillMagazines"/>
-      </property>
-    </item>
-    <item name="questRewardT6SkillMagazineBundle">
-      <property name="Extends" value="questRewardT1SkillMagazineBundle"/>
-      <property name="CustomIcon" value="bundleBooks"/>
-      <property name="CustomIconTint" value="A42ACC"/>
-      <property name="ItemTypeIcon" value="bundle"/>
-      <property class="Action0">
-        <property name="Class" value="OpenLootBundle"/>
-        <property name="Delay" value="0"/>
-        <property name="Sound_start" value="close_garbage"/>
-        <property name="LootList" value="questRewardT6SkillMagazines"/>
-      </property>
-    </item>
-
-    <!-- New Booze -->
-    <item name="drinkJarBlueberryWine">
-      <property name="HoldType" value="3"/>
-      <property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
-      <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-      <property name="CustomIcon" value="decoWineBottle"/>
-      <property name="CustomIconTint" value="50a0ff"/>
-      <property name="Material" value="Mglass"/>
-      <property name="Weight" value="10"/>
-      <property name="Stacknumber" value="10"/>
-      <property name="EconomicValue" value="180"/>
-      <property name="UnlockedBy" value="craftingFood"/>
-      <property name="DisplayType" value="waterBeer"/>
-      <property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
-      <property class="Action0">
-        <property name="Class" value="Eat"/>
-        <property name="Delay" value="1"/>
-        <property name="Sound_start" value="player_drinking"/>
-      </property>
-      <effect_group tiered="false">
-        <requirement name="NotHasBuff" buff="buffIsOnFire"/>
-        <display_value name="dStaminaRegen" value=".4"/>
-        <display_value name="dEntityDamageBrawling" value="3"/>
-        <display_value name="dStunResist" value="1"/>
-        <display_value name="dDuration" value="200"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="add" value="200"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="set" value="600">
-          <requirement name="CVarCompare" cvar="$buffBeerDuration" operation="GT" value="600"/>
-        </triggered_effect>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffBeer"/>
-      </effect_group>
-      <effect_group tiered="false">
-        <requirement name="HasBuff" buff="buffIsOnFire"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
-      </effect_group>
-    </item>
-    <item name="drinkJarMead">
-      <property name="HoldType" value="3"/>
-      <property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
-      <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-      <property name="CustomIcon" value="decoWineBottle"/>
-      <property name="CustomIconTint" value="ffff50"/>
-      <property name="Material" value="Mglass"/>
-      <property name="Weight" value="10"/>
-      <property name="Stacknumber" value="10"/>
-      <property name="EconomicValue" value="200"/>
-      <property name="UnlockedBy" value="craftingFood"/>
-      <property name="DisplayType" value="waterBeer"/>
-      <property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
-      <property class="Action0">
-        <property name="Class" value="Eat"/>
-        <property name="Delay" value="1"/>
-        <property name="Sound_start" value="player_drinking"/>
-      </property>
-      <effect_group tiered="false">
-        <requirement name="NotHasBuff" buff="buffIsOnFire"/>
-        <display_value name="dStaminaRegen" value=".4"/>
-        <display_value name="dEntityDamageBrawling" value="3"/>
-        <display_value name="dStunResist" value="1"/>
-        <display_value name="dDuration" value="200"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="add" value="200"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="set" value="600">
-          <requirement name="CVarCompare" cvar="$buffBeerDuration" operation="GT" value="600"/>
-        </triggered_effect>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffBeer"/>
-      </effect_group>
-      <effect_group tiered="false">
-        <requirement name="HasBuff" buff="buffIsOnFire"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
-      </effect_group>
-    </item>
-  </append>
-
-  <!-- Set T1 CSM bundle to T1 color -->
-  <set xpath="/items/item[@name='questRewardT1SkillMagazineBundle']/property[@name='CustomIconTint']/@value">9C8867</set>
-
   <!-- Append types to acid group for campfire crafting. -->
   <append xpath="/items/item[@name='resourceAcid']/property[@name='Group']/@value">,CFChemicals</append>
-
-  <!-- Swap out the headlamp with night vision in quest rewards. -->
-  <csv xpath="/items/item[starts-with(@name,'questRewardT2LightArmor')]/property[@class='Action0']/property[@name='Create_item']/@value" delim="," op="remove">modArmorHelmetLight</csv>
-  <csv xpath="/items/item[starts-with(@name,'questRewardT2LightArmor')]/property[@class='Action0']/property[@name='Create_item']/@value" delim="," op="add">modNVHelmetLight</csv>
-
-  <!-- ================================ -->
-  <!-- ===== Weapon & Tool Tweaks ===== -->
-  <!-- ================================ -->
-  <!-- Append Steel Ammo to Weapons. -->
-  <append xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
-  <append xpath="/items/item[@name='gunHandgunT1Pistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
-  <append xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteel</append>
-  <append xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteel</append>
-  <append xpath="/items/item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
-
-  <append xpath="/items/item[@name='gunRifleT0PipeRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
-  <append xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
-  <append xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
-  <append xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
-
-  <append xpath="/items/item[@name='gunMGT0PipeMachineGun']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
-  <append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
-  <append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
-  <append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
-
-  <!-- Parts unlocked by perks -->
-  <insertAfter xpath="/items/item[@name='gunRifleT1HuntingRifleParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingRifles"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeWpnSpearT3SteelSpearParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingSpears"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='gunShotgunT1DoubleBarrelParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingShotguns"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeWpnClubT3SteelClubParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingClubs"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingSledgehammers"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnucklesParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingKnuckles"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeToolAxeT3ChainsawParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingHarvestingTools"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeToolAllSteelParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingHarvestingTools"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='Material']"><property name="UnlockedBy" value="craftingMachineGuns"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='gunBowT1WoodenBowParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingBows"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='gunHandgunT1PistolParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingHandguns"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeWpnBladeT3MacheteParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingBlades"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='meleeWpnBatonT2StunBatonParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingRobotics"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='gunBotRoboticsParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingRobotics"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='armorSteelSetParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingArmor"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='armorMilitarySetParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingArmor"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='gunExplosivesT3RocketLauncherParts']/property[@name='Material']"><property name="UnlockedBy" value="craftingExplosives"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='solarCell']/property[@name='Material']"><property name="UnlockedBy" value="craftingElectrician"/></insertAfter>
-  <insertAfter xpath="/items/item[@name='smallEngine']/property[@name='Material']"><property name="UnlockedBy" value="craftingVehicles"/></insertAfter>
 
   <!-- Remove exp debuff from higher tier tools -->
   <remove xpath="/items/item[starts-with (@name,'meleeTool')]/effect_group/passive_effect[@name='PlayerExpGain']"/>
@@ -286,45 +25,6 @@
   <!-- Autoshotty is not auto.. and baddy -->
   <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">210</set>
   <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='BurstRoundCount']/@value">50</set>
-
-  <!-- ================================= -->
-  <!-- ===== Armor Balance Changes ===== -->
-  <!-- ================================= -->
-  <set xpath="/items/item[starts-with (@name,'armorCloth')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">5,7.5</set>
-  <set xpath="/items/item[starts-with (@name,'armorCloth')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">5,7.5</set>
-  <set xpath="/items/item[starts-with (@name,'armorCloth')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">3</set>
-
-  <set xpath="/items/item[starts-with (@name,'armorLeather')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">8,12</set>
-  <set xpath="/items/item[starts-with (@name,'armorLeather')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">8,12</set>
-  <set xpath="/items/item[starts-with (@name,'armorLeather')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">4</set>
-
-  <set xpath="/items/item[starts-with (@name,'armorMilitary')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">12,17</set>
-  <set xpath="/items/item[starts-with (@name,'armorMilitary')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">12,17</set>
-  <set xpath="/items/item[starts-with (@name,'armorMilitary')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">4</set>
-
-  <set xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">15,20</set>
-  <set xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">15,20</set>
-  <set xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">8</set>
-  <append xpath="/items/item[starts-with (@name,'armorScrap')]/effect_group">
-    <passive_effect name="HypothermalResist" operation="base_subtract" value="1.5,1" tier="1,6"/>
-    <passive_effect name="HyperthermalResist" operation="base_subtract" value="1.5,1" tier="1,6"/>
-  </append>
-
-  <set xpath="/items/item[starts-with (@name,'armorIron')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">20,27</set>
-  <set xpath="/items/item[starts-with (@name,'armorIron')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">20,27</set>
-  <set xpath="/items/item[starts-with (@name,'armorIron')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">6</set>
-  <append xpath="/items/item[starts-with (@name,'armorIron')]/effect_group">
-    <passive_effect name="HypothermalResist" operation="base_subtract" value="2.5,2" tier="1,6"/>
-    <passive_effect name="HyperthermalResist" operation="base_subtract" value="2.5,2" tier="1,6"/>
-  </append>
-
-  <set xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group/passive_effect[@name='PhysicalDamageResist' and @tier='1,6']/@value">30,40</set>
-  <set xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group/passive_effect[@name='ElementalDamageResist' and @tier='1,6']/@value">30,40</set>
-  <set xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group/passive_effect[@name='DegradationPerUse']/@value">4</set>
-  <append xpath="/items/item[starts-with (@name,'armorSteel')]/effect_group">
-    <passive_effect name="HypothermalResist" operation="base_subtract" value="2,1.5" tier="1,6"/>
-    <passive_effect name="HyperthermalResist" operation="base_subtract" value="2,1.5" tier="1,6"/>
-  </append>
 
   <!-- =================================== -->
   <!-- ===== NPC Block Damage Tweaks ===== -->
@@ -360,12 +60,11 @@
   <append xpath="/items/item[@name='foodEggBoiled']/property[@class='Action0']"><property name="Create_item" value="drinkJarRiverWater"/></append>
 
   <!-- Ok, food values are big imbalanced -->
-  <set xpath="/items/item[@name='foodCharredMeat']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>
-  <set xpath="/items/item[@name='foodGrilledMeat']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">20</set>
-  <set xpath="/items/item[@name='foodBoiledMeat']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">20</set>
+  <set xpath="/items/item[@name='foodGrilledMeat']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>
+  <set xpath="/items/item[@name='foodBoiledMeat']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>
   <set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">20</set>
 
-  <!-- Water is more scarce, so lets make it more effective -->
+  <!-- Hydration rework. Tad more realistic, less "rarer means more hydration" -->
   <set xpath="/items/item[@name='drinkJarRiverWater']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">20</set>
   <set xpath="/items/item[@name='drinkJarBoiledWater']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">30</set>
   <set xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">40</set>
@@ -384,134 +83,107 @@
   <set xpath="/items/item[@name='foodCanStock']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">15</set>
 
   <!-- Longer consumable durations -->
-  <set xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group/triggered_effect[@cvar='$buffRedTeaDuration' and @operation='add']/@value">900</set>
-  <set xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group/triggered_effect[@cvar='$buffRedTeaDuration' and @operation='set']/@value">2700</set>
-  <set xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group/triggered_effect[@cvar='$buffRedTeaDuration' and @operation='set']/requirement/@value">2700</set>
+  <set xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group/triggered_effect[@cvar='$buffRedTeaDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group/triggered_effect[@cvar='$buffRedTeaDuration' and @operation='set']/@value">1800</set>
+  <set xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group/triggered_effect[@cvar='$buffRedTeaDuration' and @operation='set']/requirement/@value">1800</set>
 
-  <set xpath="/items/item[@name='drinkJarRedTea']/effect_group/triggered_effect[@cvar='$buffRedTeaDuration' and @operation='add']/@value">720</set>
-  <set xpath="/items/item[@name='drinkJarRedTea']/effect_group/triggered_effect[@cvar='$buffRedTeaDuration' and @operation='set']/@value">2160</set>
-  <set xpath="/items/item[@name='drinkJarRedTea']/effect_group/triggered_effect[@cvar='$buffRedTeaDuration' and @operation='set']/requirement/@value">2160</set>
+  <set xpath="/items/item[@name='drinkJarRedTea']/effect_group/triggered_effect[@cvar='$buffRedTeaDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drinkJarRedTea']/effect_group/triggered_effect[@cvar='$buffRedTeaDuration' and @operation='set']/@value">1800</set>
+  <set xpath="/items/item[@name='drinkJarRedTea']/effect_group/triggered_effect[@cvar='$buffRedTeaDuration' and @operation='set']/requirement/@value">1800</set>
 
-  <set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group/triggered_effect[@cvar='$buffYuccaJuiceSmoothieDuration' and @operation='add']/@value">2700</set>
-  <set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group/triggered_effect[@cvar='$buffYuccaJuiceSmoothieDuration' and @operation='set']/@value">8100</set>
-  <set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group/triggered_effect[@cvar='$buffYuccaJuiceSmoothieDuration' and @operation='set']/requirement/@value">8100</set>
+  <set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group/triggered_effect[@cvar='$buffYuccaJuiceSmoothieDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group/triggered_effect[@cvar='$buffYuccaJuiceSmoothieDuration' and @operation='set']/@value">1800</set>
+  <set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group/triggered_effect[@cvar='$buffYuccaJuiceSmoothieDuration' and @operation='set']/requirement/@value">1800</set>
 
-  <set xpath="/items/item[@name='drinkCanMegaCrush']/effect_group/triggered_effect[@cvar='$buffMegaCrushDuration' and @operation='add']/@value">360</set>
-  <set xpath="/items/item[@name='drinkCanMegaCrush']/effect_group/triggered_effect[@cvar='$buffMegaCrushDuration' and @operation='set']/@value">1080</set>
-  <set xpath="/items/item[@name='drinkCanMegaCrush']/effect_group/triggered_effect[@cvar='$buffMegaCrushDuration' and @operation='set']/requirement/@value">1080</set>
+  <set xpath="/items/item[@name='drinkCanMegaCrush']/effect_group/triggered_effect[@cvar='$buffMegaCrushDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drinkCanMegaCrush']/effect_group/triggered_effect[@cvar='$buffMegaCrushDuration' and @operation='set']/@value">1800</set>
+  <set xpath="/items/item[@name='drinkCanMegaCrush']/effect_group/triggered_effect[@cvar='$buffMegaCrushDuration' and @operation='set']/requirement/@value">1800</set>
 
-  <set xpath="/items/item[@name='drinkJarCoffee']/effect_group/triggered_effect[@cvar='$buffCoffeeDuration' and @operation='add']/@value">540</set>
-  <set xpath="/items/item[@name='drinkJarCoffee']/effect_group/triggered_effect[@cvar='$buffCoffeeDuration' and @operation='set']/@value">1620</set>
-  <set xpath="/items/item[@name='drinkJarCoffee']/effect_group/triggered_effect[@cvar='$buffCoffeeDuration' and @operation='set']/requirement/@value">1620</set>
+  <set xpath="/items/item[@name='drinkJarCoffee']/effect_group/triggered_effect[@cvar='$buffCoffeeDuration' and @operation='add']/@value">300</set>
+  <set xpath="/items/item[@name='drinkJarCoffee']/effect_group/triggered_effect[@cvar='$buffCoffeeDuration' and @operation='set']/@value">900</set>
+  <set xpath="/items/item[@name='drinkJarCoffee']/effect_group/triggered_effect[@cvar='$buffCoffeeDuration' and @operation='set']/requirement/@value">900</set>
 
-  <set xpath="/items/item[@name='drinkJarBlackStrapCoffee']/effect_group/triggered_effect[@cvar='$buffCoffeeBSDuration' and @operation='add']/@value">1080</set>
-  <set xpath="/items/item[@name='drinkJarBlackStrapCoffee']/effect_group/triggered_effect[@cvar='$buffCoffeeBSDuration' and @operation='set']/@value">3240</set>
-  <set xpath="/items/item[@name='drinkJarBlackStrapCoffee']/effect_group/triggered_effect[@cvar='$buffCoffeeBSDuration' and @operation='set']/requirement/@value">3240</set>
+  <set xpath="/items/item[@name='drinkJarBlackStrapCoffee']/effect_group/triggered_effect[@cvar='$buffCoffeeBSDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drinkJarBlackStrapCoffee']/effect_group/triggered_effect[@cvar='$buffCoffeeBSDuration' and @operation='set']/@value">1800</set>
+  <set xpath="/items/item[@name='drinkJarBlackStrapCoffee']/effect_group/triggered_effect[@cvar='$buffCoffeeBSDuration' and @operation='set']/requirement/@value">1800</set>
 
-  <set xpath="/items/item[@name='drinkJarBeer']/effect_group/triggered_effect[@cvar='$buffBeerDuration' and @operation='add']/@value">135</set>
-  <set xpath="/items/item[@name='drinkJarBeer']/effect_group/triggered_effect[@cvar='$buffBeerDuration' and @operation='set']/@value">405</set>
-  <set xpath="/items/item[@name='drinkJarBeer']/effect_group/triggered_effect[@cvar='$buffBeerDuration' and @operation='set']/requirement/@value">405</set>
+  <set xpath="/items/item[@name='drinkJarBeer']/effect_group/triggered_effect[@cvar='$buffBeerDuration' and @operation='add']/@value">120</set>
+  <set xpath="/items/item[@name='drinkJarBeer']/effect_group/triggered_effect[@cvar='$buffBeerDuration' and @operation='set']/@value">600</set>
+  <set xpath="/items/item[@name='drinkJarBeer']/effect_group/triggered_effect[@cvar='$buffBeerDuration' and @operation='set']/requirement/@value">600</set>
 
-  <set xpath="/items/item[@name='drinkJarGrandpasMoonshine']/effect_group/triggered_effect[@cvar='$buffGrandpasMoonshineDuration' and @operation='add']/@value">135</set>
-  <set xpath="/items/item[@name='drinkJarGrandpasMoonshine']/effect_group/triggered_effect[@cvar='$buffGrandpasMoonshineDuration' and @operation='set']/@value">405</set>
-  <set xpath="/items/item[@name='drinkJarGrandpasMoonshine']/effect_group/triggered_effect[@cvar='$buffGrandpasMoonshineDuration' and @operation='set']/requirement/@value">405</set>
+  <set xpath="/items/item[@name='drinkJarGrandpasMoonshine']/effect_group/triggered_effect[@cvar='$buffGrandpasMoonshineDuration' and @operation='add']/@value">180</set>
+  <set xpath="/items/item[@name='drinkJarGrandpasMoonshine']/effect_group/triggered_effect[@cvar='$buffGrandpasMoonshineDuration' and @operation='set']/@value">900</set>
+  <set xpath="/items/item[@name='drinkJarGrandpasMoonshine']/effect_group/triggered_effect[@cvar='$buffGrandpasMoonshineDuration' and @operation='set']/requirement/@value">900</set>
 
-  <set xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/effect_group/triggered_effect[@cvar='$buffGrandpasAwesomeSauceDuration' and @operation='add']/@value">540</set>
-  <set xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/effect_group/triggered_effect[@cvar='$buffGrandpasAwesomeSauceDuration' and @operation='set']/@value">1620</set>
-  <set xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/effect_group/triggered_effect[@cvar='$buffGrandpasAwesomeSauceDuration' and @operation='set']/requirement/@value">1620</set>
+  <set xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/effect_group/triggered_effect[@cvar='$buffGrandpasAwesomeSauceDuration' and @operation='add']/@value">120</set>
+  <set xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/effect_group/triggered_effect[@cvar='$buffGrandpasAwesomeSauceDuration' and @operation='set']/@value">360</set>
+  <set xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/effect_group/triggered_effect[@cvar='$buffGrandpasAwesomeSauceDuration' and @operation='set']/requirement/@value">360</set>
 
-  <set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/effect_group/triggered_effect[@cvar='$buffGrandpasLearningElixirDuration' and @operation='add']/@value">720</set>
-  <set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/effect_group/triggered_effect[@cvar='$buffGrandpasLearningElixirDuration' and @operation='set']/@value">2160</set>
-  <set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/effect_group/triggered_effect[@cvar='$buffGrandpasLearningElixirDuration' and @operation='set']/requirement/@value">2160</set>
+  <set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/effect_group/triggered_effect[@cvar='$buffGrandpasLearningElixirDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/effect_group/triggered_effect[@cvar='$buffGrandpasLearningElixirDuration' and @operation='set']/@value">1800</set>
+  <set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/effect_group/triggered_effect[@cvar='$buffGrandpasLearningElixirDuration' and @operation='set']/requirement/@value">1800</set>
 
   <set xpath="/items/item[@name='drugSteroids']/effect_group/triggered_effect[@cvar='$buffDrugSteroidsDuration' and @operation='add']/@value">1800</set>
-  <set xpath="/items/item[@name='drugSteroids']/effect_group/triggered_effect[@cvar='$buffDrugSteroidsDuration' and @operation='set']/@value">5400</set>
-  <set xpath="/items/item[@name='drugSteroids']/effect_group/triggered_effect[@cvar='$buffDrugSteroidsDuration' and @operation='set']/requirement/@value">5400</set>
+  <set xpath="/items/item[@name='drugSteroids']/effect_group/triggered_effect[@cvar='$buffDrugSteroidsDuration' and @operation='set']/@value">3600</set>
+  <set xpath="/items/item[@name='drugSteroids']/effect_group/triggered_effect[@cvar='$buffDrugSteroidsDuration' and @operation='set']/requirement/@value">3600</set>
 
-  <set xpath="/items/item[@name='drugRecog']/effect_group/triggered_effect[@cvar='$buffDrugRecogDuration' and @operation='add']/@value">900</set>
-  <set xpath="/items/item[@name='drugRecog']/effect_group/triggered_effect[@cvar='$buffDrugRecogDuration' and @operation='set']/@value">2700</set>
-  <set xpath="/items/item[@name='drugRecog']/effect_group/triggered_effect[@cvar='$buffDrugRecogDuration' and @operation='set']/requirement/@value">2700</set>
+  <set xpath="/items/item[@name='drugRecog']/effect_group/triggered_effect[@cvar='$buffDrugRecogDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drugRecog']/effect_group/triggered_effect[@cvar='$buffDrugRecogDuration' and @operation='set']/@value">1200</set>
+  <set xpath="/items/item[@name='drugRecog']/effect_group/triggered_effect[@cvar='$buffDrugRecogDuration' and @operation='set']/requirement/@value">1200</set>
 
-  <set xpath="/items/item[@name='drugFortBites']/effect_group/triggered_effect[@cvar='$buffDrugFortBitesDuration' and @operation='add']/@value">360</set>
-  <set xpath="/items/item[@name='drugFortBites']/effect_group/triggered_effect[@cvar='$buffDrugFortBitesDuration' and @operation='set']/@value">1080</set>
-  <set xpath="/items/item[@name='drugFortBites']/effect_group/triggered_effect[@cvar='$buffDrugFortBitesDuration' and @operation='set']/requirement/@value">1080</set>
+  <set xpath="/items/item[@name='drugFortBites']/effect_group/triggered_effect[@cvar='$buffDrugFortBitesDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drugFortBites']/effect_group/triggered_effect[@cvar='$buffDrugFortBitesDuration' and @operation='set']/@value">1200</set>
+  <set xpath="/items/item[@name='drugFortBites']/effect_group/triggered_effect[@cvar='$buffDrugFortBitesDuration' and @operation='set']/requirement/@value">1200</set>
 
-  <set xpath="/items/item[@name='drugAtomJunkies']/effect_group/triggered_effect[@cvar='$buffDrugAtomJunkiesDuration' and @operation='add']/@value">900</set>
-  <set xpath="/items/item[@name='drugAtomJunkies']/effect_group/triggered_effect[@cvar='$buffDrugAtomJunkiesDuration' and @operation='set']/@value">2700</set>
-  <set xpath="/items/item[@name='drugAtomJunkies']/effect_group/triggered_effect[@cvar='$buffDrugAtomJunkiesDuration' and @operation='set']/requirement/@value">2700</set>
+  <set xpath="/items/item[@name='drugAtomJunkies']/effect_group/triggered_effect[@cvar='$buffDrugAtomJunkiesDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drugAtomJunkies']/effect_group/triggered_effect[@cvar='$buffDrugAtomJunkiesDuration' and @operation='set']/@value">1200</set>
+  <set xpath="/items/item[@name='drugAtomJunkies']/effect_group/triggered_effect[@cvar='$buffDrugAtomJunkiesDuration' and @operation='set']/requirement/@value">1200</set>
 
-  <set xpath="/items/item[@name='drugCovertCats']/effect_group/triggered_effect[@cvar='$buffDrugCovertCatsDuration' and @operation='add']/@value">900</set>
-  <set xpath="/items/item[@name='drugCovertCats']/effect_group/triggered_effect[@cvar='$buffDrugCovertCatsDuration' and @operation='set']/@value">2700</set>
-  <set xpath="/items/item[@name='drugCovertCats']/effect_group/triggered_effect[@cvar='$buffDrugCovertCatsDuration' and @operation='set']/requirement/@value">2700</set>
+  <set xpath="/items/item[@name='drugCovertCats']/effect_group/triggered_effect[@cvar='$buffDrugCovertCatsDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drugCovertCats']/effect_group/triggered_effect[@cvar='$buffDrugCovertCatsDuration' and @operation='set']/@value">1200</set>
+  <set xpath="/items/item[@name='drugCovertCats']/effect_group/triggered_effect[@cvar='$buffDrugCovertCatsDuration' and @operation='set']/requirement/@value">1200</set>
 
-  <set xpath="/items/item[@name='drugEyeKandy']/effect_group/triggered_effect[@cvar='$buffDrugEyeKandyDuration' and @operation='add']/@value">900</set>
-  <set xpath="/items/item[@name='drugEyeKandy']/effect_group/triggered_effect[@cvar='$buffDrugEyeKandyDuration' and @operation='set']/@value">2700</set>
-  <set xpath="/items/item[@name='drugEyeKandy']/effect_group/triggered_effect[@cvar='$buffDrugEyeKandyDuration' and @operation='set']/requirement/@value">2700</set>
+  <set xpath="/items/item[@name='drugEyeKandy']/effect_group/triggered_effect[@cvar='$buffDrugEyeKandyDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drugEyeKandy']/effect_group/triggered_effect[@cvar='$buffDrugEyeKandyDuration' and @operation='set']/@value">1200</set>
+  <set xpath="/items/item[@name='drugEyeKandy']/effect_group/triggered_effect[@cvar='$buffDrugEyeKandyDuration' and @operation='set']/requirement/@value">1200</set>
 
-  <set xpath="/items/item[@name='drugHackers']/effect_group/triggered_effect[@cvar='$buffDrugHackersDuration' and @operation='add']/@value">1800</set>
-  <set xpath="/items/item[@name='drugHackers']/effect_group/triggered_effect[@cvar='$buffDrugHackersDuration' and @operation='set']/@value">5400</set>
-  <set xpath="/items/item[@name='drugHackers']/effect_group/triggered_effect[@cvar='$buffDrugHackersDuration' and @operation='set']/requirement/@value">5400</set>
+  <set xpath="/items/item[@name='drugHackers']/effect_group/triggered_effect[@cvar='$buffDrugHackersDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drugHackers']/effect_group/triggered_effect[@cvar='$buffDrugHackersDuration' and @operation='set']/@value">1200</set>
+  <set xpath="/items/item[@name='drugHackers']/effect_group/triggered_effect[@cvar='$buffDrugHackersDuration' and @operation='set']/requirement/@value">1200</set>
 
-  <set xpath="/items/item[@name='drugHealthBar']/effect_group/triggered_effect[@cvar='$buffDrugHealthBarDuration' and @operation='add']/@value">900</set>
-  <set xpath="/items/item[@name='drugHealthBar']/effect_group/triggered_effect[@cvar='$buffDrugHealthBarDuration' and @operation='set']/@value">2700</set>
-  <set xpath="/items/item[@name='drugHealthBar']/effect_group/triggered_effect[@cvar='$buffDrugHealthBarDuration' and @operation='set']/requirement/@value">2700</set>
+  <set xpath="/items/item[@name='drugHealthBar']/effect_group/triggered_effect[@cvar='$buffDrugHealthBarDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drugHealthBar']/effect_group/triggered_effect[@cvar='$buffDrugHealthBarDuration' and @operation='set']/@value">1200</set>
+  <set xpath="/items/item[@name='drugHealthBar']/effect_group/triggered_effect[@cvar='$buffDrugHealthBarDuration' and @operation='set']/requirement/@value">1200</set>
 
-  <set xpath="/items/item[@name='drugJailBreakers']/effect_group/triggered_effect[@cvar='$buffDrugJailBreakersDuration' and @operation='add']/@value">1800</set>
-  <set xpath="/items/item[@name='drugJailBreakers']/effect_group/triggered_effect[@cvar='$buffDrugJailBreakersDuration' and @operation='set']/@value">5400</set>
-  <set xpath="/items/item[@name='drugJailBreakers']/effect_group/triggered_effect[@cvar='$buffDrugJailBreakersDuration' and @operation='set']/requirement/@value">5400</set>
+  <set xpath="/items/item[@name='drugJailBreakers']/effect_group/triggered_effect[@cvar='$buffDrugJailBreakersDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drugJailBreakers']/effect_group/triggered_effect[@cvar='$buffDrugJailBreakersDuration' and @operation='set']/@value">1200</set>
+  <set xpath="/items/item[@name='drugJailBreakers']/effect_group/triggered_effect[@cvar='$buffDrugJailBreakersDuration' and @operation='set']/requirement/@value">1200</set>
 
-  <set xpath="/items/item[@name='drugNerdTats']/effect_group/triggered_effect[@cvar='$buffDrugNerdTatsDuration' and @operation='add']/@value">900</set>
-  <set xpath="/items/item[@name='drugNerdTats']/effect_group/triggered_effect[@cvar='$buffDrugNerdTatsDuration' and @operation='set']/@value">2700</set>
-  <set xpath="/items/item[@name='drugNerdTats']/effect_group/triggered_effect[@cvar='$buffDrugNerdTatsDuration' and @operation='set']/requirement/@value">2700</set>
+  <set xpath="/items/item[@name='drugNerdTats']/effect_group/triggered_effect[@cvar='$buffDrugNerdTatsDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drugNerdTats']/effect_group/triggered_effect[@cvar='$buffDrugNerdTatsDuration' and @operation='set']/@value">1200</set>
+  <set xpath="/items/item[@name='drugNerdTats']/effect_group/triggered_effect[@cvar='$buffDrugNerdTatsDuration' and @operation='set']/requirement/@value">1200</set>
 
-  <set xpath="/items/item[@name='drugOhShitzDrops']/effect_group/triggered_effect[@cvar='$buffDrugOhShitzDropsDuration' and @operation='add']/@value">900</set>
-  <set xpath="/items/item[@name='drugOhShitzDrops']/effect_group/triggered_effect[@cvar='$buffDrugOhShitzDropsDuration' and @operation='set']/@value">2700</set>
-  <set xpath="/items/item[@name='drugOhShitzDrops']/effect_group/triggered_effect[@cvar='$buffDrugOhShitzDropsDuration' and @operation='set']/requirement/@value">2700</set>
+  <set xpath="/items/item[@name='drugOhShitzDrops']/effect_group/triggered_effect[@cvar='$buffDrugOhShitzDropsDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drugOhShitzDrops']/effect_group/triggered_effect[@cvar='$buffDrugOhShitzDropsDuration' and @operation='set']/@value">1200</set>
+  <set xpath="/items/item[@name='drugOhShitzDrops']/effect_group/triggered_effect[@cvar='$buffDrugOhShitzDropsDuration' and @operation='set']/requirement/@value">1200</set>
 
-  <set xpath="/items/item[@name='drugRockBusters']/effect_group/triggered_effect[@cvar='$buffDrugRockBustersDuration' and @operation='add']/@value">1800</set>
-  <set xpath="/items/item[@name='drugRockBusters']/effect_group/triggered_effect[@cvar='$buffDrugRockBustersDuration' and @operation='set']/@value">5400</set>
+  <set xpath="/items/item[@name='drugRockBusters']/effect_group/triggered_effect[@cvar='$buffDrugRockBustersDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drugRockBusters']/effect_group/triggered_effect[@cvar='$buffDrugRockBustersDuration' and @operation='set']/@value">1200</set>
   <set xpath="/items/item[@name='drugRockBusters']/effect_group/triggered_effect[@cvar='$buffDrugRockBustersDuration' and @operation='set']/requirement/@value">5400</set>
 
-  <set xpath="/items/item[@name='drugSkullCrushers']/effect_group/triggered_effect[@cvar='$buffDrugSkullCrushersDuration' and @operation='add']/@value">900</set>
-  <set xpath="/items/item[@name='drugSkullCrushers']/effect_group/triggered_effect[@cvar='$buffDrugSkullCrushersDuration' and @operation='set']/@value">2700</set>
-  <set xpath="/items/item[@name='drugSkullCrushers']/effect_group/triggered_effect[@cvar='$buffDrugSkullCrushersDuration' and @operation='set']/requirement/@value">2700</set>
+  <set xpath="/items/item[@name='drugSkullCrushers']/effect_group/triggered_effect[@cvar='$buffDrugSkullCrushersDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drugSkullCrushers']/effect_group/triggered_effect[@cvar='$buffDrugSkullCrushersDuration' and @operation='set']/@value">1200</set>
+  <set xpath="/items/item[@name='drugSkullCrushers']/effect_group/triggered_effect[@cvar='$buffDrugSkullCrushersDuration' and @operation='set']/requirement/@value">1200</set>
 
-  <set xpath="/items/item[@name='drugSugarButts']/effect_group/triggered_effect[@cvar='$buffDrugSugarButtsDuration' and @operation='add']/@value">1800</set>
-  <set xpath="/items/item[@name='drugSugarButts']/effect_group/triggered_effect[@cvar='$buffDrugSugarButtsDuration' and @operation='set']/@value">5400</set>
-  <set xpath="/items/item[@name='drugSugarButts']/effect_group/triggered_effect[@cvar='$buffDrugSugarButtsDuration' and @operation='set']/requirement/@value">5400</set>
+  <set xpath="/items/item[@name='drugSugarButts']/effect_group/triggered_effect[@cvar='$buffDrugSugarButtsDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='drugSugarButts']/effect_group/triggered_effect[@cvar='$buffDrugSugarButtsDuration' and @operation='set']/@value">1200</set>
+  <set xpath="/items/item[@name='drugSugarButts']/effect_group/triggered_effect[@cvar='$buffDrugSugarButtsDuration' and @operation='set']/requirement/@value">1200</set>
 
-  <set xpath="/items/item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='$buffPumpkinCheesecakeDuration' and @operation='add']/@value">900</set>
-  <set xpath="/items/item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='$buffPumpkinCheesecakeDuration' and @operation='set']/@value">2700</set>
-  <set xpath="/items/item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='$buffPumpkinCheesecakeDuration' and @operation='set']/requirement/@value">2700</set>
+  <set xpath="/items/item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='$buffPumpkinCheesecakeDuration' and @operation='add']/@value">600</set>
+  <set xpath="/items/item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='$buffPumpkinCheesecakeDuration' and @operation='set']/@value">1800</set>
+  <set xpath="/items/item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='$buffPumpkinCheesecakeDuration' and @operation='set']/requirement/@value">1800</set>
 
-  <set xpath="/items/item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='$buffShamChowderDuration' and @operation='add']/@value">1800</set>
-  <set xpath="/items/item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='$buffShamChowderDuration' and @operation='set']/@value">5400</set>
-  <set xpath="/items/item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='$buffShamChowderDuration' and @operation='set']/requirement/@value">5400</set>
-
-  <!-- Hydroponic Farm Changes -->
-  <append xpath="/items/item[@name='resourceCropAloeLeaf']/property[@name='Group']/@value">,HVF_All,HVF_Med</append>
-  <append xpath="/items/item[@name='foodCropBlueberries']/property[@name='Group']/@value">,HVF_All,HVF_Food,HVF_Drink,HVF_Med</append>
-  <append xpath="/items/item[@name='resourceCropChrysanthemumPlant']/property[@name='Group']/@value">,HVF_All,HVF_Drink,HVF_Med,HVF_Res</append>
-  <append xpath="/items/item[@name='resourceCropCoffeeBeans']/property[@name='Group']/@value">,HVF_All,HVF_Drink</append>
-  <append xpath="/items/item[@name='foodCropCorn']/property[@name='Group']/@value">,HVF_All,HVF_Food</append>
-  <append xpath="/items/item[@name='resourceCropCottonPlant']/property[@name='Group']/@value">,HVF_All,HVF_Res</append>
-  <append xpath="/items/item[@name='resourceCropGoldenrodPlant']/property[@name='Group']/@value">,HVF_All,HVF_Drink</append>
-  <append xpath="/items/item[@name='foodCropGraceCorn']/property[@name='Group']/@value">,HVF_All,HVF_Drink,HVF_Res</append>
-  <append xpath="/items/item[@name='resourceCropHopsFlower']/property[@name='Group']/@value">,HVF_All,HVF_Drink</append>
-  <append xpath="/items/item[@name='foodCropMushrooms']/property[@name='Group']/@value">,HVF_All,HVF_Food,HVF_Drink</append>
-  <append xpath="/items/item[@name='foodCropPotato']/property[@name='Group']/@value">,HVF_All,HVF_Food</append>
-  <append xpath="/items/item[@name='foodCropYuccaFruit']/property[@name='Group']/@value">,HVF_All,HVF_Drink</append>
-  <append xpath="/items/item[@name='foodCropPumpkin']/property[@name='Group']/@value">,HVF_All,HVF_Food</append>
-
-  <append xpath="/items/item[@name='resourceWaterFilter']">
-    <effect_group tiered="false">
-      <passive_effect name="CraftingTime" operation="perc_subtract" value="0.25" tags="HVF_BUFF_SE"/>
-    </effect_group>
-  </append>
-
-  <append xpath="/items/item[@name='smallEngine']">
-    <effect_group tiered="false">
-      <passive_effect name="CraftingTime" operation="perc_subtract" value="0.25" tags="HVF_BUFF_SE"/>
-    </effect_group>
-  </append>
+  <set xpath="/items/item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='$buffShamChowderDuration' and @operation='add']/@value">900</set>
+  <set xpath="/items/item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='$buffShamChowderDuration' and @operation='set']/@value">2700</set>
+  <set xpath="/items/item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='$buffShamChowderDuration' and @operation='set']/requirement/@value">2700</set>
 </configs>

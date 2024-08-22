@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
-  <set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='velocityMax']/@value">18, 27</set>
-  <set xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='velocityMax']/@value">12, 18</set>
-  <set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='velocityMax']/@value">12, 18</set>
+  <set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='motorTorque_turbo']/@value">1, 1, 2, 2</set>
+  <set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='velocityMax_turbo']/@value">18, 9, 27, 9</set>
+
+  <set xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='motorTorque_turbo']/@value">1400, 500, 2100, 650</set>
+  <set xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='velocityMax_turbo']/@value">12, 6, 18, 8</set>
+
+  <set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='motorTorque_turbo']/@value">3500, 1500, 4500, 2000</set>
+  <set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='velocityMax_turbo']/@value">12, 6, 18, 9</set>
 </configs>

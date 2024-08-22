@@ -24,7 +24,7 @@
     <spawn maxcount="5" respawndelay="0.1" time="Night" entitygroup="ZombiesDowntown" tags="downtown" />
 
     <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" />
-    <spawn maxcount="1" respawndelay="1.1" time="Night" entitygroup="EnemyAnimalsBurntForest" spawnDeadChance="0" />
+    <spawn maxcount="1" respawndelay="1.1" time="Night" entitygroup="EnemyAnimalsBurntForestAny" spawnDeadChance="0" />
   </set>
   <set xpath="/spawning/biome[@name='desert']">
     <spawn maxcount="1" respawndelay="6" time="Any" entitygroup="ZombiesAll" notags="commercial,industrial,downtown" />

@@ -2,8 +2,8 @@
 <xml>
   <Name value="FW_Improvements" />
   <DisplayName value="Frag Whore Improvements" />
-  <Description value="Multiple basic alterations to Alpha 21 balance." />
+  <Description value="Multiple basic alterations to 1.0 balance." />
   <Author value="Dondelium" />
-  <Version value="0.21.6" compat="A21" />
+  <Version value="1.0.0" compat="b336" />
   <Website value="" />
 </xml>
