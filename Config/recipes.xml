@@ -91,6 +91,14 @@
     <ingredient name="foodEgg" count="2"/>
   </append>
 
+  <set xpath="/recipes/recipe[@name='foodPumpkinBread']/@count">4</set>
+  <set xpath="/recipes/recipe[@name='foodPumpkinBread']/ingredient[@name='foodCornMeal']/@count">4</set>
+  <remove xpath="/recipes/recipe[@name='foodPumpkinBread']/ingredient[@name='drinkJarBoiledWater']" />
+  <append xpath="/recipes/recipe[@name='foodPumpkinBread']">
+    <ingredient name="resourceAnimalFat" count="1"/>
+    <ingredient name="foodEgg" count="2"/>
+  </append>
+
   <set xpath="/recipes/recipe[@name='foodBlueberryPie']/ingredient[@name='foodCropBlueberries']/@count">4</set>
   <set xpath="/recipes/recipe[@name='foodBlueberryPie']/ingredient[@name='foodCornMeal']/@count">2</set>
   <set xpath="/recipes/recipe[@name='foodBlueberryPie']/ingredient[@name='foodEgg']/@count">2</set>

@@ -53,4 +53,21 @@
   <set xpath="/blocks/block[@name='treeStump']/drop[@name='foodHoney']/@count">1,2</set>
   <set xpath="/blocks/block[@name='treeStumpPOI']/drop[@name='foodHoney']/@prob">1</set>
   <set xpath="/blocks/block[@name='treeStumpPOI']/drop[@name='foodHoney']/@count">1,2</set>
+
+  <!-- Heat Map Strength Changes -->
+  <set xpath="/blocks/block[@name='wallTorchLightPlayer']/property[@name='HeatMapTime']/@value">3000</set>
+  <set xpath="/blocks/block[@name='candleWallLightPlayer']/property[@name='HeatMapTime']/@value">3000</set>
+  <set xpath="/blocks/block[@name='burningBarrelPlayer']/property[@name='HeatMapTime']/@value">3000</set>
+  <set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapStrength']/@value">4</set>
+  <set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapTime']/@value">3000</set>
+  <set xpath="/blocks/block[@name='cntDewCollector']/property[@name='HeatMapStrength']/@value">1</set>
+  <set xpath="/blocks/block[@name='cntDewCollector']/property[@name='HeatMapTime']/@value">3000</set>
+  <set xpath="/blocks/block[@name='forge']/property[@name='HeatMapStrength']/@value">6</set>
+  <set xpath="/blocks/block[@name='forge']/property[@name='HeatMapTime']/@value">4000</set>
+  <set xpath="/blocks/block[@name='workbench']/property[@name='HeatMapStrength']/@value">4</set>
+  <set xpath="/blocks/block[@name='workbench']/property[@name='HeatMapTime']/@value">3000</set>
+  <set xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapStrength']/@value">3</set>
+  <set xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapTime']/@value">3000</set>
+  <set xpath="/blocks/block[@name='chemistryStation']/property[@name='HeatMapStrength']/@value">4</set>
+  <set xpath="/blocks/block[@name='chemistryStation']/property[@name='HeatMapTime']/@value">3000</set>
 </configs>

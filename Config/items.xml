@@ -62,7 +62,7 @@
   <!-- Ok, food values are big imbalanced -->
   <set xpath="/items/item[@name='foodGrilledMeat']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>
   <set xpath="/items/item[@name='foodBoiledMeat']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>
-  <set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">20</set>
+  <set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>
 
   <!-- Hydration rework. Tad more realistic, less "rarer means more hydration" -->
   <set xpath="/items/item[@name='drinkJarRiverWater']/effect_group/triggered_effect[@cvar='$waterAmountAdd' and @operation='add']/@value">20</set>

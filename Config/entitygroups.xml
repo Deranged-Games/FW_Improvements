@@ -23,7 +23,7 @@
 	<set xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']">
 		animalSnake, 10
 		animalWolf, 4
-		animalBear, 1
+		animalBearSmall, 1
 		none, 85
 	</set>
 	<set xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForestAny']">
