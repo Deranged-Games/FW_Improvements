@@ -6,6 +6,6 @@
   <set xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='motorTorque_turbo']/@value">1400, 500, 2100, 650</set>
   <set xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='velocityMax_turbo']/@value">12, 6, 18, 8</set>
 
-  <set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='motorTorque_turbo']/@value">3500, 1500, 4500, 2000</set>
-  <set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='velocityMax_turbo']/@value">12, 6, 18, 9</set>
+  <set xpath="/vehicles/vehicle[@name='vehicleTruck4x4']/property[@name='motorTorque_turbo']/@value">3500, 1500, 4500, 2000</set>
+  <set xpath="/vehicles/vehicle[@name='vehicleTruck4x4']/property[@name='velocityMax_turbo']/@value">12, 6, 18, 9</set>
 </configs>
