@@ -148,8 +148,11 @@
   <set xpath="/recipes/recipe[@name='plantedCoffee1']/ingredient[@name='resourceCropCoffeeBeans']/@count">1</set>
   <set xpath="/recipes/recipe[@name='plantedPumpkin1']/ingredient[@name='foodCropPumpkin']/@count">1</set>
 
-  <!-- A more skilled craftsman does not mean more wasteful -->
-  <remove xpath="/recipes/recipe[starts-with (@name,'melee')]/effect_group/passive_effect[@name='CraftingIngredientCount']" />
-  <remove xpath="/recipes/recipe[starts-with (@name,'gun')]/effect_group/passive_effect[@name='CraftingIngredientCount']" />
-  <remove xpath="/recipes/recipe[starts-with (@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount']" />
+  <!-- Tweaks to tier level based ingredient counts -->
+  <set xpath="/recipes/recipe[starts-with (@name,'melee')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@operation">perc_add</set>
+  <set xpath="/recipes/recipe[starts-with (@name,'melee')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@value">.5,2.5</set>
+  <set xpath="/recipes/recipe[starts-with (@name,'gun')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@operation">perc_add</set>
+  <set xpath="/recipes/recipe[starts-with (@name,'gun')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@value">.5,2.5</set>
+  <set xpath="/recipes/recipe[starts-with (@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@operation">perc_add</set>
+  <set xpath="/recipes/recipe[starts-with (@name,'armor')]/effect_group/passive_effect[@name='CraftingIngredientCount' and @level='2,6']/@value">.5,2.5</set>
 </configs>

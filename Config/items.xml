@@ -26,6 +26,24 @@
   <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">210</set>
   <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group/passive_effect[@name='BurstRoundCount']/@value">50</set>
 
+  <!-- Throwables should be a bit better -->
+  <set xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='Explosion.BlockDamage']/@value">25</set>
+  <set xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='Explosion.EntityDamage']/@value">300</set>
+  <set xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='Explosion.RadiusBlocks']/@value">2</set>
+  <set xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='Explosion.RadiusEntities']/@value">5</set>
+
+  <set xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Explosion.BlockDamage']/@value">20</set>
+  <set xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Explosion.EntityDamage']/@value">350</set>
+  <set xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Explosion.RadiusBlocks']/@value">1</set>
+  <set xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Explosion.RadiusEntities']/@value">7</set>
+
+  <set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Explosion.BlockDamage']/@value">5000</set>
+  <set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Explosion.EntityDamage']/@value">250</set>
+  <set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Explosion.RadiusEntities']/@value">2</set>
+
+  <set xpath="/items/item[@name='thrownDynamite']/property[@name='Explosion.EntityDamage']/@value">1000</set>
+  <set xpath="/items/item[@name='thrownDynamite']/property[@name='Explosion.RadiusEntities']/@value">9</set>
+
   <!-- =================================== -->
   <!-- ===== NPC Block Damage Tweaks ===== -->
   <!-- =================================== -->
