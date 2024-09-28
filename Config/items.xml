@@ -44,6 +44,14 @@
   <set xpath="/items/item[@name='thrownDynamite']/property[@name='Explosion.EntityDamage']/@value">1000</set>
   <set xpath="/items/item[@name='thrownDynamite']/property[@name='Explosion.RadiusEntities']/@value">9</set>
 
+  <set xpath="/items/item[@name='ammoRocketHE']/property[@name='Explosion.BlockDamage']/@value">4000</set>
+  <set xpath="/items/item[@name='ammoRocketHE']/property[@name='Explosion.EntityDamage']/@value">750</set>
+  <set xpath="/items/item[@name='ammoRocketHE']/property[@name='Explosion.RadiusEntities']/@value">7</set>
+
+  <set xpath="/items/item[@name='ammoRocketFrag']/property[@name='Explosion.BlockDamage']/@value">200</set>
+  <set xpath="/items/item[@name='ammoRocketFrag']/property[@name='Explosion.EntityDamage']/@value">800</set>
+  <set xpath="/items/item[@name='ammoRocketFrag']/property[@name='Explosion.RadiusEntities']/@value">10</set>
+
   <!-- =================================== -->
   <!-- ===== NPC Block Damage Tweaks ===== -->
   <!-- =================================== -->
